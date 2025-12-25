@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "party-popper",
+    "emoji": "🎉",
+    "name": "Party Popper",
+    "unicode_name": "PARTY POPPER",
+    "unicode_version": "Unicode 6.0",
+    "codepoint": "U+1F389",
+    "shortcodes": [":tada:"],
+
+    "category": "Celebration",
+
+    "meaning": "The party popper emoji represents celebration, joy, and exciting moments such as achievements, announcements, and festive occasions.",
+
+    "usage_examples": [
+      "We finally launched our product 🎉",
+      "Happy Birthday 🎉",
+      "Congratulations on your promotion 🎉"
+    ],
+
+    "chat_examples": [
+      {
+        "context": "Celebration",
+        "person_a": "We crossed 10,000 users today!",
+        "person_b": "That’s incredible news 🎉"
+      },
+      {
+        "context": "Birthday",
+        "person_a": "Happy Birthday!",
+        "person_b": "Thank you so much 🎉"
+      }
+    ],
+
+    "when_to_use": "Use this emoji when celebrating wins, milestones, achievements, or happy announcements in both personal and professional conversations.",
+    "when_not_to_use": "Avoid using this emoji in serious, emotional, or sensitive situations where celebration would feel inappropriate.",
+
+    "related_emojis": ["confetti-ball", "sparkles"],
+
+    "custom_note": "",
+    "custom_html": ""
+  }
+]
