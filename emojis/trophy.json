@@ -1,0 +1,85 @@
+{
+  "slug": "trophy",
+  "emoji": "🏆",
+  "name": "Trophy",
+  "category": "Celebration",
+
+  "meaning": "The trophy emoji represents victory, achievement, success, and recognition earned through effort or competition.",
+
+  "usage_examples": [
+    "We won first place 🏆",
+    "Hard work pays off 🏆",
+    "Champion of the season 🏆"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Achievement",
+      "person_a": "We won the competition!",
+      "person_b": "Congratulations 🏆"
+    },
+    {
+      "context": "Sports",
+      "person_a": "Our team took the title",
+      "person_b": "Well deserved 🏆"
+    },
+    {
+      "context": "Big win",
+      "person_a": "Guess what?",
+      "person_b": "What happened?",
+      "person_a_2": "I won the award",
+      "person_b_2": "That’s amazing 🏆"
+    }
+  ],
+
+  "when_to_use": "Use this emoji when celebrating wins, awards, championships, or major accomplishments.",
+  "when_not_to_use": "Avoid using it in casual updates or situations without a clear achievement.",
+
+  "unicode_name": "TROPHY",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F3C6",
+  "shortcodes": [":trophy:"],
+
+  "related_emojis": [
+    "party-popper",
+    "confetti-ball",
+    "clinking-glasses"
+  ],
+
+  "fun_fact": "The 🏆 Trophy emoji is commonly used beyond sports to celebrate academic, professional, and personal victories across digital platforms.",
+
+  "faqs": [
+    {
+      "q": "What does the 🏆 emoji mean?",
+      "a": "It represents winning, success, and recognition."
+    },
+    {
+      "q": "Is 🏆 only for sports?",
+      "a": "No, it also applies to achievements in work, school, or personal goals."
+    },
+    {
+      "q": "Can 🏆 be used professionally?",
+      "a": "Yes, especially to acknowledge accomplishments or awards."
+    },
+    {
+      "q": "Is 🏆 a positive emoji?",
+      "a": "Yes, it strongly conveys success and pride."
+    },
+    {
+      "q": "When should 🏆 be avoided?",
+      "a": "Avoid using it where no achievement is involved."
+    },
+    {
+      "q": "Does 🏆 imply competition?",
+      "a": "Often yes, but it can also symbolize personal victories."
+    },
+    {
+      "q": "Is 🏆 popular on social media?",
+      "a": "Yes, especially in achievement announcements."
+    },
+    {
+      "q": "Why is 🏆 widely recognized?",
+      "a": "Because trophies are a universal symbol of winning."
+    }
+  ]
+}

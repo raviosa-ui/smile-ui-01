@@ -1,0 +1,83 @@
+{
+  "slug": "heart-hands",
+  "emoji": "🫶",
+  "name": "Heart Hands",
+  "category": "Love",
+
+  "meaning": "The Heart Hands emoji represents love, appreciation, gratitude, and heartfelt support expressed in a warm and inclusive way.",
+
+  "usage_examples": [
+    "So much love for you 🫶",
+    "Thank you for always being there 🫶",
+    "Sending love your way 🫶"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Gratitude",
+      "person_a": "You helped me when I needed it the most",
+      "person_b": "Always here for you 🫶"
+    },
+    {
+      "context": "Emotional support",
+      "person_a": "Today was really tough",
+      "person_b": "I’ve got you 🫶"
+    },
+    {
+      "context": "Affection",
+      "person_a": "I appreciate you so much",
+      "person_b": "Right back at you 🫶"
+    }
+  ],
+
+  "fun_fact": "The 🫶 Heart Hands emoji became especially popular on social media as a symbol of inclusive love, support, and appreciation beyond romantic contexts.",
+
+  "faqs": [
+    {
+      "q": "What does 🫶 Heart Hands mean?",
+      "a": "It represents love, care, gratitude, and emotional support."
+    },
+    {
+      "q": "Is 🫶 romantic?",
+      "a": "It can be romantic, but it is also widely used platonically."
+    },
+    {
+      "q": "Can 🫶 be used for friends and family?",
+      "a": "Yes, it is commonly used to express appreciation and support."
+    },
+    {
+      "q": "Is 🫶 appropriate professionally?",
+      "a": "In casual or supportive work environments, yes."
+    },
+    {
+      "q": "Does 🫶 replace ❤️?",
+      "a": "It complements ❤️ by adding a more expressive, caring gesture."
+    },
+    {
+      "q": "Is 🫶 emotional?",
+      "a": "Yes, it conveys warmth and sincerity."
+    },
+    {
+      "q": "Is 🫶 used globally?",
+      "a": "Yes, it is widely understood across cultures."
+    },
+    {
+      "q": "Does 🫶 look the same everywhere?",
+      "a": "Designs vary slightly, but the meaning stays consistent."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when expressing love, gratitude, appreciation, or emotional support.",
+  "when_not_to_use": "Avoid using it in very formal, serious, or emotionally negative conversations.",
+
+  "unicode_name": "HEART HANDS",
+  "unicode_version": "Unicode 14.0",
+  "codepoint": "U+1FAF6",
+  "shortcodes": [":heart_hands:"],
+
+  "related_emojis": [
+    "red-heart",
+    "two-hearts",
+    "sparkling-heart"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "slug": "pinata",
+  "emoji": "🪅",
+  "name": "Piñata",
+  "category": "Celebration",
+
+  "meaning": "The piñata emoji represents fun-filled celebrations, parties, surprises, and joyful moments often associated with birthdays and festive gatherings.",
+
+  "usage_examples": [
+    "The party is going to be fun 🪅",
+    "Birthday vibes 🪅",
+    "Let’s celebrate together 🪅"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Party",
+      "person_a": "Are you coming to the birthday party?",
+      "person_b": "Of course 🪅"
+    },
+    {
+      "context": "Celebration",
+      "person_a": "The decorations are ready",
+      "person_b": "This will be fun 🪅"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "How was the event?",
+      "person_b": "Amazing!",
+      "person_a_2": "Everyone enjoyed it?",
+      "person_b_2": "Yes, total party vibes 🪅"
+    }
+  ],
+
+  "when_to_use": "Use this emoji for parties, birthdays, festive events, and moments focused on fun and enjoyment.",
+  "when_not_to_use": "Avoid using it in serious, professional, or emotionally sensitive situations.",
+
+  "unicode_name": "PINATA",
+  "unicode_version": "Unicode 13.0",
+  "codepoint": "U+1FA85",
+  "shortcodes": [":pinata:"],
+
+  "related_emojis": [
+    "balloon",
+    "birthday-cake",
+    "party-popper"
+  ],
+
+  "fun_fact": "The 🪅 Piñata emoji is inspired by traditional celebrations where a decorated container is broken open to release treats, symbolizing joy, surprise, and communal fun.",
+
+  "faqs": [
+    {
+      "q": "What does the 🪅 Piñata emoji mean?",
+      "a": "It represents parties, celebrations, fun, and festive surprises."
+    },
+    {
+      "q": "Is 🪅 used mainly for birthdays?",
+      "a": "Yes, it’s commonly associated with birthday parties and celebrations."
+    },
+    {
+      "q": "Can 🪅 be used casually?",
+      "a": "Yes, it works best in casual and playful conversations."
+    },
+    {
+      "q": "Is 🪅 suitable for professional use?",
+      "a": "Only in very informal or celebratory workplace settings."
+    },
+    {
+      "q": "Why is 🪅 linked to fun?",
+      "a": "Because piñatas traditionally represent excitement, surprises, and group enjoyment."
+    },
+    {
+      "q": "Is 🪅 a positive emoji?",
+      "a": "Yes, it conveys happiness and celebration."
+    },
+    {
+      "q": "Can 🪅 replace 🎉?",
+      "a": "It can complement 🎉, but 🪅 focuses more on playful party vibes."
+    },
+    {
+      "q": "When should 🪅 be avoided?",
+      "a": "Avoid it in serious or emotional discussions."
+    }
+  ]
+}

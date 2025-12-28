@@ -1,0 +1,57 @@
+{
+  "slug": "balloon",
+  "emoji": "🎈",
+  "name": "Balloon",
+  "category": "Celebration",
+
+  "meaning": "The Balloon emoji represents celebration, happiness, and special occasions, often linked to birthdays, parties, and joyful events.",
+
+  "usage_examples": [
+    "Happy Birthday 🎈",
+    "The party decorations look amazing 🎈",
+    "Celebrating our anniversary 🎈"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Birthday",
+      "person_a": "It’s my birthday today!",
+      "person_b": "Have a great one 🎈"
+    },
+    {
+      "context": "Party planning",
+      "person_a": "Did you decorate the venue?",
+      "person_b": "Yes, with balloons 🎈"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "How was the event?",
+      "person_b": "It was beautiful",
+      "person_a_2": "Everyone enjoyed it?",
+      "person_b_2": "Absolutely 🎈"
+    }
+  ],
+
+  "fun_fact": "The 🎈 Balloon emoji is commonly associated with birthdays and childhood celebrations and often symbolizes lighthearted joy and festivity.",
+
+  "faqs": [
+    { "q": "What does the 🎈 Balloon emoji mean?", "a": "It represents celebration, happiness, and festive occasions." },
+    { "q": "When should I use 🎈?", "a": "Use it for birthdays, parties, anniversaries, and joyful events." },
+    { "q": "Is 🎈 different from 🎉?", "a": "Yes, 🎈 feels softer and more decorative, while 🎉 feels energetic." },
+    { "q": "Can 🎈 be used professionally?", "a": "Only in informal or celebratory workplace messages." },
+    { "q": "Is 🎈 a positive emoji?", "a": "Yes, it is universally positive." },
+    { "q": "Does 🎈 work for kids’ events?", "a": "Yes, it is especially popular for children’s celebrations." },
+    { "q": "Can 🎈 replace words?", "a": "It enhances tone but should support text." },
+    { "q": "Is 🎈 casual?", "a": "Yes, it is mainly casual and friendly." }
+  ],
+
+  "when_to_use": "Use this emoji when celebrating birthdays, parties, decorations, or cheerful occasions.",
+  "when_not_to_use": "Avoid using it in serious, emotional, or formal discussions.",
+
+  "unicode_name": "BALLOON",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F388",
+  "shortcodes": [":balloon:"],
+
+  "related_emojis": ["party-popper", "confetti-ball", "partying-face"]
+}

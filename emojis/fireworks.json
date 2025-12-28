@@ -1,0 +1,57 @@
+{
+  "slug": "fireworks",
+  "emoji": "🎆",
+  "name": "Fireworks",
+  "category": "Celebration",
+
+  "meaning": "The fireworks emoji represents large-scale celebrations, excitement, and spectacular moments.",
+
+  "usage_examples": [
+    "Happy New Year 🎆",
+    "The festival ended with fireworks 🎆",
+    "What an amazing celebration 🎆"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Festival",
+      "person_a": "The fireworks start at midnight!",
+      "person_b": "I can’t wait 🎆"
+    },
+    {
+      "context": "Event",
+      "person_a": "Did you see the finale?",
+      "person_b": "Yes, the fireworks were stunning 🎆"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "How was the New Year party?",
+      "person_b": "It was incredible",
+      "person_a_2": "Anything special?",
+      "person_b_2": "The fireworks were unforgettable 🎆"
+    }
+  ],
+
+  "fun_fact": "The 🎆 Fireworks emoji is commonly associated with New Year’s Eve, national holidays, and large public celebrations worldwide.",
+
+  "faqs": [
+    { "q": "What does 🎆 Fireworks emoji mean?", "a": "It represents grand celebrations, excitement, and major festive events." },
+    { "q": "When should I use 🎆?", "a": "Use it for New Year celebrations, festivals, and large events." },
+    { "q": "Is 🎆 different from 🎉?", "a": "Yes, 🎆 suggests large-scale public celebrations, while 🎉 is more personal." },
+    { "q": "Can 🎆 be used professionally?", "a": "Yes, for celebratory announcements or major milestones." },
+    { "q": "Is 🎆 always positive?", "a": "Yes, it is associated with excitement and joy." },
+    { "q": "Does 🎆 work for birthdays?", "a": "Yes, especially for big or milestone birthdays." },
+    { "q": "Is 🎆 used globally?", "a": "Yes, especially during national holidays and festivals." },
+    { "q": "Can 🎆 replace words?", "a": "It can enhance celebration but should support text." }
+  ],
+
+  "when_to_use": "Use this emoji when celebrating large events, festivals, New Year’s Eve, or major achievements.",
+  "when_not_to_use": "Avoid using it in serious, emotional, or sensitive conversations.",
+
+  "unicode_name": "FIREWORKS",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F386",
+  "shortcodes": [":fireworks:"],
+
+  "related_emojis": ["party-popper", "confetti-ball", "sparkles"]
+}

@@ -1,0 +1,85 @@
+{
+  "slug": "cupcake",
+  "emoji": "🧁",
+  "name": "Cupcake",
+  "category": "Celebration",
+
+  "meaning": "The cupcake emoji represents celebrations, treats, happiness, and sweet moments often associated with birthdays, parties, and small joyful occasions.",
+
+  "usage_examples": [
+    "Happy Birthday 🧁",
+    "Celebration treats are ready 🧁",
+    "That calls for a cupcake 🧁"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Birthday",
+      "person_a": "Did you get a cake?",
+      "person_b": "Yes, cupcakes 🧁"
+    },
+    {
+      "context": "Small celebration",
+      "person_a": "We finished the project!",
+      "person_b": "Cupcakes for everyone 🧁"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "How are we celebrating?",
+      "person_b": "With cupcakes!",
+      "person_a_2": "Sounds perfect",
+      "person_b_2": "Sweet and simple 🧁"
+    }
+  ],
+
+  "when_to_use": "Use this emoji for birthdays, parties, desserts, treats, or small joyful celebrations.",
+  "when_not_to_use": "Avoid using it in serious, emotional, or professional discussions.",
+
+  "unicode_name": "CUPCAKE",
+  "unicode_version": "Unicode 11.0",
+  "codepoint": "U+1F9C1",
+  "shortcodes": [":cupcake:"],
+
+  "related_emojis": [
+    "birthday-cake",
+    "wrapped-gift",
+    "balloon"
+  ],
+
+  "fun_fact": "The 🧁 Cupcake emoji is often used online to symbolize small wins or self-reward moments, not just desserts.",
+
+  "faqs": [
+    {
+      "q": "What does the 🧁 Cupcake emoji mean?",
+      "a": "It represents celebration, treats, and sweet moments."
+    },
+    {
+      "q": "Is 🧁 mainly used for birthdays?",
+      "a": "It is common for birthdays but also for casual celebrations."
+    },
+    {
+      "q": "Can 🧁 be used at work?",
+      "a": "Yes, in informal or friendly workplace conversations."
+    },
+    {
+      "q": "Is 🧁 a positive emoji?",
+      "a": "Yes, it conveys happiness and enjoyment."
+    },
+    {
+      "q": "Can 🧁 replace 🎂?",
+      "a": "Yes, especially for modern or casual birthday messages."
+    },
+    {
+      "q": "Is 🧁 gender-specific?",
+      "a": "No, it is neutral and universal."
+    },
+    {
+      "q": "Does 🧁 imply reward?",
+      "a": "Often yes, especially for small achievements."
+    },
+    {
+      "q": "When should 🧁 be avoided?",
+      "a": "Avoid it in serious or emotional situations."
+    }
+  ]
+}

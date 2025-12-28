@@ -3,40 +3,149 @@
     "slug": "party-popper",
     "emoji": "🎉",
     "name": "Party Popper",
-    "unicode_name": "PARTY POPPER",
-    "unicode_version": "Unicode 6.0",
-    "codepoint": "U+1F389",
-    "shortcodes": [":tada:"],
-
     "category": "Celebration",
-
     "meaning": "The party popper emoji represents celebration, joy, and exciting moments such as achievements, announcements, and festive occasions.",
-
     "usage_examples": [
       "We finally launched our product 🎉",
       "Happy Birthday 🎉",
       "Congratulations on your promotion 🎉"
     ],
-
     "chat_examples": [
       {
-        "context": "Celebration",
-        "person_a": "We crossed 10,000 users today!",
-        "person_b": "That’s incredible news 🎉"
+        "context": "Quick celebration",
+        "person_a": "We hit 10k users today!",
+        "person_b": "That’s amazing 🎉"
       },
       {
         "context": "Birthday",
         "person_a": "Happy Birthday!",
         "person_b": "Thank you so much 🎉"
+      },
+      {
+        "context": "Big celebration",
+        "person_a": "How are you?",
+        "person_b": "I am fine",
+        "person_a_2": "I topped my exam!",
+        "person_b_2": "Congratulations 🎉"
       }
     ],
+    "fun_fact": "The 🎉 emoji is often called a confetti popper and is strongly associated with New Year’s Eve celebrations worldwide.",
+    "faqs": [
+      { "q": "What does 🎉 mean?", "a": "It represents celebration and happiness." },
+      { "q": "When should you use 🎉?", "a": "Use it for achievements and good news." },
+      { "q": "Is 🎉 professional?", "a": "Yes, in informal workplaces." },
+      { "q": "Is 🎉 always positive?", "a": "Yes, it conveys joy." },
+      { "q": "Can 🎉 be sarcastic?", "a": "Rarely." },
+      { "q": "Is 🎉 formal?", "a": "No." },
+      { "q": "Why is 🎉 popular?", "a": "It conveys excitement quickly." },
+      { "q": "Does 🎉 look same everywhere?", "a": "Design varies by platform." }
+    ],
+    "when_to_use": "Use when celebrating wins or announcements.",
+    "when_not_to_use": "Avoid in serious situations.",
+    "unicode_name": "PARTY POPPER",
+    "unicode_version": "Unicode 6.0",
+    "codepoint": "U+1F389",
+    "shortcodes": [":tada:"],
+    "related_emojis": ["confetti-ball", "sparkles"]
+  },
 
-    "when_to_use": "Use this emoji when celebrating wins, milestones, achievements, or happy announcements in both personal and professional conversations.",
-    "when_not_to_use": "Avoid using this emoji in serious, emotional, or sensitive situations where celebration would feel inappropriate.",
+  {
+    "name": "Confetti Ball",
+    "emoji": "🎊",
+    "slug": "confetti-ball",
+    "category": "Celebration",
+    "meaning": "The Confetti Ball emoji represents celebration, congratulations, and festive moments.",
+    "usage_examples": [
+      "We finally closed the deal 🎊",
+      "Congratulations on your success 🎊",
+      "Happy anniversary 🎊"
+    ],
+    "chat_examples": [
+      {
+        "context": "Celebration",
+        "person_a": "We reached our sales target!",
+        "person_b": "Amazing work 🎊"
+      },
+      {
+        "context": "Achievement",
+        "person_a": "I got promoted today",
+        "person_b": "Well deserved 🎊"
+      },
+      {
+        "context": "Big celebration",
+        "person_a": "How did your interview go?",
+        "person_b": "I got selected!",
+        "person_a_2": "That’s fantastic news",
+        "person_b_2": "Thank you 🎊"
+      }
+    ],
+    "fun_fact": "🎊 is strongly associated with ceremonial celebrations in Japanese culture.",
+    "faqs": [
+      { "q": "What does 🎊 mean?", "a": "It represents celebration." },
+      { "q": "Is 🎊 formal?", "a": "More formal than 🎉." },
+      { "q": "Is 🎊 professional?", "a": "Yes, in congratulatory contexts." },
+      { "q": "Is 🎊 positive?", "a": "Yes." },
+      { "q": "When to avoid 🎊?", "a": "Serious conversations." },
+      { "q": "Is 🎊 global?", "a": "Yes, especially Japan." },
+      { "q": "Birthday usage?", "a": "Yes." },
+      { "q": "Replace words?", "a": "No, complement text." }
+    ],
+    "when_to_use": "Use for achievements and announcements.",
+    "when_not_to_use": "Avoid in emotional situations.",
+    "unicode_name": "CONFETTI BALL",
+    "unicode_version": "Unicode 6.0",
+    "codepoint": "U+1F38A",
+    "shortcodes": [":confetti_ball:"],
+    "related_emojis": ["party-popper", "sparkles"]
+  },
 
-    "related_emojis": ["confetti-ball", "sparkles"],
-
-    "custom_note": "",
-    "custom_html": ""
+  {
+    "name": "Fireworks",
+    "emoji": "🎆",
+    "slug": "fireworks",
+    "category": "Celebration",
+    "meaning": "The Fireworks emoji represents celebration, excitement, and large-scale joyful events.",
+    "usage_examples": [
+      "Happy New Year 🎆",
+      "That deserves fireworks 🎆",
+      "Celebrating the big win 🎆"
+    ],
+    "chat_examples": [
+      {
+        "context": "Festival",
+        "person_a": "The sky looks amazing!",
+        "person_b": "Fireworks everywhere 🎆"
+      },
+      {
+        "context": "Achievement",
+        "person_a": "We finally won",
+        "person_b": "Time to celebrate 🎆"
+      },
+      {
+        "context": "Big celebration",
+        "person_a": "Did you hear the news?",
+        "person_b": "Yes!",
+        "person_a_2": "We won the award",
+        "person_b_2": "Fireworks time 🎆"
+      }
+    ],
+    "fun_fact": "🎆 is most commonly used during New Year and national festivals.",
+    "faqs": [
+      { "q": "What does 🎆 mean?", "a": "Large celebrations." },
+      { "q": "Is 🎆 seasonal?", "a": "Mostly festivals." },
+      { "q": "Is 🎆 professional?", "a": "In informal contexts." },
+      { "q": "Is 🎆 positive?", "a": "Yes." },
+      { "q": "Difference from 🎉?", "a": "Bigger celebration." },
+      { "q": "Global usage?", "a": "Yes." },
+      { "q": "Platform difference?", "a": "Design varies." },
+      { "q": "Can 🎆 replace words?", "a": "No." }
+    ],
+    "when_to_use": "Use for major events and festivals.",
+    "when_not_to_use": "Avoid serious topics.",
+    "unicode_name": "FIREWORKS",
+    "unicode_version": "Unicode 6.0",
+    "codepoint": "U+1F386",
+    "shortcodes": [":fireworks:"],
+    "related_emojis": ["party-popper", "confetti-ball"]
   }
 ]

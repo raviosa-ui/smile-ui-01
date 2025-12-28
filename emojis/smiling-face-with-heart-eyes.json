@@ -1,0 +1,50 @@
+{
+  "name": "Smiling Face with Heart-Eyes",
+  "emoji": "😍",
+  "slug": "smiling-face-with-heart-eyes",
+  "category": "Love",
+  "meaning": "The Smiling Face with Heart-Eyes emoji represents intense love, admiration, attraction, or being completely captivated by someone or something.",
+  "unicode_name": "SMILING FACE WITH HEART-SHAPED EYES",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F60D",
+  "shortcodes": [":heart_eyes:"],
+  "usage_examples": [
+    "I can’t stop looking at this 😍",
+    "You look amazing 😍",
+    "I love this song so much 😍"
+  ],
+  "chat_examples": [
+    {
+      "context": "Admiration",
+      "person_a": "Did you see the photos?",
+      "person_b": "Yes, they’re stunning 😍"
+    },
+    {
+      "context": "Romantic reaction",
+      "person_a": "I made this just for you",
+      "person_b": "I’m in love 😍"
+    }
+  ],
+  "when_to_use": "Use this emoji when expressing strong attraction, admiration, excitement, or love toward a person, object, or experience.",
+  "when_not_to_use": "Avoid using it in formal or professional communication, as it can feel overly emotional or flirtatious.",
+  "related_emojis": ["red-heart", "smiling-face-with-hearts", "face-blowing-a-kiss"],
+  "fun_fact": "😍 is one of the most frequently used emojis worldwide and is commonly associated with fandoms, crushes, and viral content.",
+  "faqs": [
+    {
+      "q": "What does 😍 mean?",
+      "a": "It expresses love, admiration, or being deeply impressed."
+    },
+    {
+      "q": "Is 😍 romantic?",
+      "a": "Yes, it often conveys romantic or strong affectionate feelings."
+    },
+    {
+      "q": "Can 😍 be used for things, not people?",
+      "a": "Yes, it’s commonly used for food, fashion, music, or anything you love."
+    },
+    {
+      "q": "Is 😍 stronger than ❤️?",
+      "a": "😍 expresses visible excitement and attraction, while ❤️ is more general love."
+    }
+  ]
+}

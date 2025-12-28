@@ -1,0 +1,85 @@
+{
+  "slug": "clinking-glasses",
+  "emoji": "🥂",
+  "name": "Clinking Glasses",
+  "category": "Celebration",
+
+  "meaning": "The clinking glasses emoji represents celebration, toasting, shared success, and joyful moments marked by togetherness.",
+
+  "usage_examples": [
+    "Cheers to our success 🥂",
+    "Happy anniversary 🥂",
+    "We did it together 🥂"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Toast",
+      "person_a": "We finally wrapped up the project!",
+      "person_b": "Well done everyone 🥂"
+    },
+    {
+      "context": "Celebration",
+      "person_a": "It’s our anniversary today",
+      "person_b": "That’s wonderful 🥂"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "Guess what?",
+      "person_b": "What happened?",
+      "person_a_2": "I got the offer letter!",
+      "person_b_2": "Cheers to that 🥂"
+    }
+  ],
+
+  "when_to_use": "Use this emoji when celebrating achievements, milestones, anniversaries, or moments worth toasting.",
+  "when_not_to_use": "Avoid using it in serious, sensitive, or negative conversations.",
+
+  "unicode_name": "CLINKING GLASSES",
+  "unicode_version": "Unicode 9.0",
+  "codepoint": "U+1F942",
+  "shortcodes": [":clinking_glasses:"],
+
+  "related_emojis": [
+    "party-popper",
+    "confetti-ball",
+    "fireworks"
+  ],
+
+  "fun_fact": "The 🥂 emoji is commonly used to symbolize virtual toasts in digital celebrations, especially when people cannot celebrate together in person.",
+
+  "faqs": [
+    {
+      "q": "What does the 🥂 Clinking Glasses emoji mean?",
+      "a": "It represents celebration, toasting, shared joy, and success."
+    },
+    {
+      "q": "Is 🥂 used only for alcohol?",
+      "a": "No, it represents celebration in general, not specifically drinking."
+    },
+    {
+      "q": "Can 🥂 be used professionally?",
+      "a": "Yes, in informal or celebratory professional environments."
+    },
+    {
+      "q": "Is 🥂 appropriate for achievements?",
+      "a": "Yes, it’s commonly used to toast milestones and wins."
+    },
+    {
+      "q": "When should 🥂 be avoided?",
+      "a": "Avoid it in serious or sensitive situations."
+    },
+    {
+      "q": "Is 🥂 positive?",
+      "a": "Yes, it universally conveys joy and celebration."
+    },
+    {
+      "q": "Does 🥂 look the same on all platforms?",
+      "a": "Designs vary, but the meaning stays consistent."
+    },
+    {
+      "q": "Why is 🥂 popular online?",
+      "a": "It visually represents togetherness and shared success."
+    }
+  ]
+}

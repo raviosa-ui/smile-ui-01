@@ -1,0 +1,85 @@
+{
+  "slug": "sparkler",
+  "emoji": "🎇",
+  "name": "Sparkler",
+  "category": "Celebration",
+
+  "meaning": "The Sparkler emoji represents celebration, excitement, magical moments, and festive joy. It is often used for special occasions, holidays, and moments that feel bright or memorable.",
+
+  "usage_examples": [
+    "That moment felt magical 🎇",
+    "Happy Diwali 🎇",
+    "What a night 🎇"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Festival",
+      "person_a": "The lights look amazing tonight",
+      "person_b": "Absolutely beautiful 🎇"
+    },
+    {
+      "context": "Celebration",
+      "person_a": "This day couldn’t have gone better",
+      "person_b": "Truly special 🎇"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "How was the celebration?",
+      "person_b": "Unforgettable",
+      "person_a_2": "Really?",
+      "person_b_2": "Pure magic 🎇"
+    }
+  ],
+
+  "when_to_use": "Use this emoji for festivals, magical moments, celebrations, and visually exciting events.",
+  "when_not_to_use": "Avoid using it in serious, emotional, or non-celebratory contexts.",
+
+  "unicode_name": "SPARKLER",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F387",
+  "shortcodes": [":sparkler:"],
+
+  "related_emojis": [
+    "fireworks",
+    "party-popper",
+    "confetti-ball"
+  ],
+
+  "fun_fact": "The 🎇 Sparkler emoji is commonly associated with festivals like Diwali and New Year celebrations, symbolizing light, joy, and positive energy.",
+
+  "faqs": [
+    {
+      "q": "What does the 🎇 Sparkler emoji mean?",
+      "a": "It represents celebration, excitement, and magical moments."
+    },
+    {
+      "q": "Is 🎇 different from 🎆?",
+      "a": "Yes, 🎇 feels more intimate and magical, while 🎆 represents large fireworks."
+    },
+    {
+      "q": "Is 🎇 used for festivals?",
+      "a": "Yes, especially for light-based festivals and celebrations."
+    },
+    {
+      "q": "Can 🎇 be used casually?",
+      "a": "Yes, it works well in casual and joyful conversations."
+    },
+    {
+      "q": "Is 🎇 appropriate for professional use?",
+      "a": "Only in informal or celebratory professional settings."
+    },
+    {
+      "q": "Does 🎇 imply excitement?",
+      "a": "Yes, it visually reinforces excitement and joy."
+    },
+    {
+      "q": "Is 🎇 globally understood?",
+      "a": "Yes, it is widely recognized across cultures."
+    },
+    {
+      "q": "When should 🎇 be avoided?",
+      "a": "Avoid it in serious or sensitive discussions."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "slug": "wrapped-gift",
+  "emoji": "🎁",
+  "name": "Wrapped Gift",
+  "category": "Celebration",
+
+  "meaning": "The wrapped gift emoji represents surprises, celebrations, special occasions, and the joy of giving or receiving presents.",
+
+  "usage_examples": [
+    "I have a surprise for you 🎁",
+    "Happy Birthday 🎁",
+    "Something special is coming 🎁"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Surprise",
+      "person_a": "I got you something",
+      "person_b": "Really? 🎁"
+    },
+    {
+      "context": "Birthday",
+      "person_a": "Happy Birthday!",
+      "person_b": "Thank you 🎁"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "Guess what arrived today?",
+      "person_b": "What is it?",
+      "person_a_2": "Your gift!",
+      "person_b_2": "I’m excited 🎁"
+    }
+  ],
+
+  "when_to_use": "Use this emoji for birthdays, anniversaries, holidays, surprises, or when giving or receiving gifts.",
+  "when_not_to_use": "Avoid using it in serious, emotional, or formal professional discussions.",
+
+  "unicode_name": "WRAPPED GIFT",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F381",
+  "shortcodes": [":gift:"],
+
+  "related_emojis": [
+    "party-popper",
+    "balloon",
+    "birthday-cake"
+  ],
+
+  "fun_fact": "The 🎁 Wrapped Gift emoji is one of the most commonly used symbols during holidays like Christmas and birthdays across messaging platforms.",
+
+  "faqs": [
+    {
+      "q": "What does the 🎁 emoji mean?",
+      "a": "It represents gifts, surprises, and celebratory occasions."
+    },
+    {
+      "q": "Is 🎁 only for birthdays?",
+      "a": "No, it’s used for many celebrations including holidays and surprises."
+    },
+    {
+      "q": "Can 🎁 be used professionally?",
+      "a": "Yes, in informal or congratulatory workplace messages."
+    },
+    {
+      "q": "Is 🎁 a positive emoji?",
+      "a": "Yes, it conveys excitement and generosity."
+    },
+    {
+      "q": "When should 🎁 be avoided?",
+      "a": "Avoid using it in serious or sensitive conversations."
+    },
+    {
+      "q": "Does 🎁 imply an actual gift?",
+      "a": "Not always; it can also symbolize appreciation or surprise."
+    },
+    {
+      "q": "Is 🎁 popular on social media?",
+      "a": "Yes, especially around holidays and announcements."
+    },
+    {
+      "q": "Why is 🎁 associated with celebrations?",
+      "a": "Because gifting is a universal way to mark special moments."
+    }
+  ]
+}

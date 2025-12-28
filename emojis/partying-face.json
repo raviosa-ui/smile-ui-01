@@ -1,0 +1,57 @@
+{
+  "slug": "partying-face",
+  "emoji": "🥳",
+  "name": "Partying Face",
+  "category": "Celebration",
+
+  "meaning": "The Partying Face emoji represents excitement, fun, and personal celebration, often associated with parties and joyful moments.",
+
+  "usage_examples": [
+    "It’s my birthday today 🥳",
+    "We finally finished the project 🥳",
+    "Weekend plans are set 🥳"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Birthday",
+      "person_a": "It’s my birthday!",
+      "person_b": "Happy Birthday 🥳"
+    },
+    {
+      "context": "Good news",
+      "person_a": "I got the job offer",
+      "person_b": "That’s awesome 🥳"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "How was the party?",
+      "person_b": "So much fun",
+      "person_a_2": "Did you enjoy it?",
+      "person_b_2": "Absolutely 🥳"
+    }
+  ],
+
+  "fun_fact": "The 🥳 Partying Face emoji is often used for birthdays and personal celebrations, symbolizing fun rather than formal events.",
+
+  "faqs": [
+    { "q": "What does 🥳 Partying Face mean?", "a": "It represents fun, excitement, and personal celebration." },
+    { "q": "When should I use 🥳?", "a": "Use it for birthdays, parties, and happy personal news." },
+    { "q": "Is 🥳 different from 🎉?", "a": "Yes, 🥳 feels more personal and playful, while 🎉 is more general celebration." },
+    { "q": "Can 🥳 be used professionally?", "a": "Only in informal or friendly work environments." },
+    { "q": "Is 🥳 always positive?", "a": "Yes, it conveys joy and excitement." },
+    { "q": "Does 🥳 work for achievements?", "a": "Yes, especially personal wins." },
+    { "q": "Is 🥳 casual?", "a": "Yes, it is mostly used in casual conversations." },
+    { "q": "Can 🥳 replace words?", "a": "It enhances emotion but should support text." }
+  ],
+
+  "when_to_use": "Use this emoji for birthdays, parties, personal achievements, and joyful announcements.",
+  "when_not_to_use": "Avoid using it in serious, formal, or sensitive discussions.",
+
+  "unicode_name": "PARTYING FACE",
+  "unicode_version": "Unicode 11.0",
+  "codepoint": "U+1F973",
+  "shortcodes": [":partying_face:"],
+
+  "related_emojis": ["party-popper", "confetti-ball", "fireworks"]
+}

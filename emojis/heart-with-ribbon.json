@@ -1,0 +1,50 @@
+{
+  "name": "Heart with Ribbon",
+  "emoji": "💝",
+  "slug": "heart-with-ribbon",
+  "category": "Love",
+  "meaning": "The Heart with Ribbon emoji represents gifted love, thoughtful affection, and romantic gestures given with care. It often symbolizes love presented as a meaningful gift.",
+  "unicode_name": "HEART WITH RIBBON",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F49D",
+  "shortcodes": [":gift_heart:"],
+  "usage_examples": [
+    "This is for you 💝",
+    "Happy anniversary, my love 💝",
+    "Sending you all my love 💝"
+  ],
+  "chat_examples": [
+    {
+      "context": "Romantic gift",
+      "person_a": "I got you something special",
+      "person_b": "Aww, thank you 💝"
+    },
+    {
+      "context": "Anniversary",
+      "person_a": "One year together today",
+      "person_b": "Best gift of my life 💝"
+    }
+  ],
+  "when_to_use": "Use this emoji when expressing love through gifts, surprises, anniversaries, or thoughtful romantic gestures.",
+  "when_not_to_use": "Avoid using it in professional conversations or situations where romantic symbolism is inappropriate.",
+  "related_emojis": ["red-heart", "beating-heart", "sparkling-heart"],
+  "fun_fact": "The 💝 emoji is often associated with Valentine’s Day and symbolizes love that is intentionally given rather than simply felt.",
+  "faqs": [
+    {
+      "q": "What does the 💝 Heart with Ribbon emoji mean?",
+      "a": "It represents gifted love, romance, and thoughtful affection."
+    },
+    {
+      "q": "Is 💝 more romantic than ❤️?",
+      "a": "Yes, 💝 emphasizes love presented as a gift or special gesture."
+    },
+    {
+      "q": "When is 💝 commonly used?",
+      "a": "On anniversaries, Valentine’s Day, or when giving emotional or physical gifts."
+    },
+    {
+      "q": "Can 💝 be used platonically?",
+      "a": "Rarely; it usually carries a romantic or affectionate meaning."
+    }
+  ]
+}

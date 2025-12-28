@@ -1,0 +1,76 @@
+{
+  "name": "Mending Heart",
+  "emoji": "❤️‍🩹",
+  "slug": "mending-heart",
+  "category": "Love",
+  "meaning": "The Mending Heart emoji represents healing after heartbreak, emotional recovery, forgiveness, and the process of moving forward after emotional pain.",
+  "unicode_name": "MENDING HEART",
+  "unicode_version": "Unicode 13.1",
+  "codepoint": "U+2764 U+FE0F U+200D U+1FA79",
+  "shortcodes": [":mending_heart:"],
+  "usage_examples": [
+    "Slowly healing, one day at a time ❤️‍🩹",
+    "Things are getting better now ❤️‍🩹",
+    "Learning to love again ❤️‍🩹"
+  ],
+  "chat_examples": [
+    {
+      "context": "Emotional recovery",
+      "person_a": "It still hurts, but I’m improving",
+      "person_b": "That’s healing ❤️‍🩹"
+    },
+    {
+      "context": "After breakup",
+      "person_a": "I thought I’d never move on",
+      "person_b": "You’re getting there ❤️‍🩹"
+    },
+    {
+      "context": "Supportive message",
+      "person_a": "Some days are harder than others",
+      "person_b": "Take your time ❤️‍🩹"
+    }
+  ],
+  "when_to_use": "Use this emoji when expressing emotional healing, recovery after heartbreak, self-care, or gradual emotional improvement.",
+  "when_not_to_use": "Avoid using it in cheerful or celebratory love moments where no healing context exists.",
+  "related_emojis": [
+    "broken-heart",
+    "red-heart",
+    "beating-heart",
+    "smiling-face-with-hearts"
+  ],
+  "fun_fact": "❤️‍🩹 was introduced to represent emotional healing, expanding the heart emoji set beyond just love and heartbreak.",
+  "faqs": [
+    {
+      "q": "What does the ❤️‍🩹 Mending Heart emoji mean?",
+      "a": "It represents healing, recovery, and emotional repair."
+    },
+    {
+      "q": "Is ❤️‍🩹 used after a breakup?",
+      "a": "Yes, it commonly symbolizes healing after heartbreak."
+    },
+    {
+      "q": "Does ❤️‍🩹 mean love?",
+      "a": "It represents love in recovery rather than active romance."
+    },
+    {
+      "q": "Can ❤️‍🩹 be used for mental health support?",
+      "a": "Yes, it is often used to show emotional support and healing."
+    },
+    {
+      "q": "Is ❤️‍🩹 a new emoji?",
+      "a": "Yes, it was introduced in Unicode 13.1."
+    },
+    {
+      "q": "Is ❤️‍🩹 widely supported?",
+      "a": "Yes, most modern platforms support it."
+    },
+    {
+      "q": "Is ❤️‍🩹 different from 💔?",
+      "a": "Yes, 💔 shows pain, while ❤️‍🩹 shows healing."
+    },
+    {
+      "q": "Can ❤️‍🩹 be used positively?",
+      "a": "Yes, it carries a hopeful and supportive tone."
+    }
+  ]
+}

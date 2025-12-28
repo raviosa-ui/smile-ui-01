@@ -1,0 +1,76 @@
+{
+  "name": "Broken Heart",
+  "emoji": "💔",
+  "slug": "broken-heart",
+  "category": "Love",
+  "meaning": "The Broken Heart emoji represents heartbreak, emotional pain, loss, sadness in love, or the end of a romantic relationship.",
+  "unicode_name": "BROKEN HEART",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F494",
+  "shortcodes": [":broken_heart:"],
+  "usage_examples": [
+    "Feeling really sad today 💔",
+    "That breakup hurt more than I expected 💔",
+    "Some wounds take time to heal 💔"
+  ],
+  "chat_examples": [
+    {
+      "context": "Breakup",
+      "person_a": "I didn’t think it would end like this",
+      "person_b": "I know… it hurts 💔"
+    },
+    {
+      "context": "Emotional pain",
+      "person_a": "I trusted them completely",
+      "person_b": "I’m so sorry 💔"
+    },
+    {
+      "context": "Sad love moment",
+      "person_a": "Love isn’t always easy",
+      "person_b": "Sometimes it breaks you 💔"
+    }
+  ],
+  "when_to_use": "Use this emoji when expressing heartbreak, emotional loss, disappointment in love, or deep sadness related to relationships.",
+  "when_not_to_use": "Avoid using it in lighthearted conversations or professional contexts where emotional distress is inappropriate.",
+  "related_emojis": [
+    "red-heart",
+    "beating-heart",
+    "heart-exclamation",
+    "love-letter"
+  ],
+  "fun_fact": "💔 is one of the most universally recognized emojis for emotional pain and is often used beyond romantic contexts to express deep disappointment.",
+  "faqs": [
+    {
+      "q": "What does the 💔 Broken Heart emoji mean?",
+      "a": "It represents heartbreak, sadness, or emotional pain."
+    },
+    {
+      "q": "Is 💔 always about romantic love?",
+      "a": "Mostly yes, but it can also express deep emotional disappointment."
+    },
+    {
+      "q": "Can 💔 be used after a breakup?",
+      "a": "Yes, it is one of the most common emojis used after breakups."
+    },
+    {
+      "q": "Is 💔 stronger than 😢?",
+      "a": "Yes, 💔 conveys deeper emotional pain related to love."
+    },
+    {
+      "q": "Can 💔 be used in social media posts?",
+      "a": "Yes, especially when expressing emotional struggles or loss."
+    },
+    {
+      "q": "Does 💔 imply permanent loss?",
+      "a": "Not always; it can also express temporary heartbreak."
+    },
+    {
+      "q": "Is 💔 widely understood?",
+      "a": "Yes, it is universally recognized as a symbol of heartbreak."
+    },
+    {
+      "q": "Is 💔 part of the love emoji category?",
+      "a": "Yes, it represents the painful side of love."
+    }
+  ]
+}

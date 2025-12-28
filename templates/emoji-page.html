@@ -4,104 +4,68 @@
   <meta charset="utf-8" />
   <title>{{PAGE_TITLE}}</title>
 
-  <!-- Primary SEO -->
   <meta name="description" content="{{META_DESCRIPTION}}" />
   <link rel="canonical" href="{{CANONICAL_URL}}" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="{{OG_TITLE}}" />
   <meta property="og:description" content="{{OG_DESCRIPTION}}" />
   <meta property="og:url" content="{{CANONICAL_URL}}" />
   <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="SmileyMeaning" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{{TWITTER_TITLE}}" />
   <meta name="twitter:description" content="{{TWITTER_DESCRIPTION}}" />
 
-  <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- GLOBAL_HEAD_INJECT -->
 </head>
 
 <body>
-
 <!-- GLOBAL_BODY_TOP_INJECT -->
-
-<header>
-  <!-- GLOBAL_NAV_INJECT -->
-</header>
 
 <main>
 
-  <h1>{{H1}}</h1>
+<h1>{{H1}}</h1>
 
-  <!-- INTRO / QUICK MEANING -->
-  <section>
-    {{INTRO_MEANING}}
-  </section>
+<section>
+{{INTRO_MEANING}}
+</section>
 
-  <!-- AD SLOT: TOP (after intro, high-performance, policy-safe) -->
-  <!-- AD_SLOT_TOP -->
 
-  <!-- USAGE EXAMPLES -->
-  <section>
-    <h2>How people use this emoji</h2>
-    {{USAGE_EXAMPLES}}
-  </section>
+<section>
+<h2>When to use it</h2>
+<p>{{WHEN_TO_USE}}</p>
 
-  <!-- CHAT EXAMPLES (CSS-based later, text-first now) -->
-  <section>
-    <h2>Chat examples</h2>
-    {{CHAT_EXAMPLES}}
-  </section>
+<h2>When not to use it</h2>
+<p>{{WHEN_NOT_TO_USE}}</p>
+</section>
 
-  <!-- CONTEXTUAL GUIDANCE -->
-  <section>
-    <h2>When to use it</h2>
-    <p>{{WHEN_TO_USE}}</p>
+<section>
+<h2>Unicode and technical information</h2>
+{{UNICODE_INFO}}
+</section>
 
-    <h2>When not to use it</h2>
-    <p>{{WHEN_NOT_TO_USE}}</p>
-  </section>
+<section>
+<h2>Platform appearance</h2>
+{{PLATFORM_DISCLAIMER}}
+</section>
 
-  <!-- UNICODE / TECHNICAL -->
-  <section>
-    <h2>Unicode and technical information</h2>
-    {{UNICODE_INFO}}
-  </section>
 
-  <!-- PLATFORM APPEARANCE -->
-  <section>
-    <h2>Platform appearance</h2>
-    {{PLATFORM_DISCLAIMER}}
-  </section>
-
-  <!-- OPTIONAL: PER-EMOJI EMERGENCY TEXT -->
-  {{CUSTOM_NOTE}}
-  {{CUSTOM_HTML}}
-
-  <!-- AD SLOT: BOTTOM (safe, consistent) -->
-  <!-- AD_SLOT_BOTTOM -->
-
-  <!-- RELATED EMOJIS -->
-  <section>
-    <h2>Related emojis</h2>
-    {{RELATED_EMOJIS}}
-  </section>
+<section>
+<h2>Related emojis</h2>
+{{RELATED_EMOJIS}}
+</section>
 
 </main>
 
-<footer>
-  <!-- GLOBAL_FOOTER_INJECT -->
-</footer>
-
-<!-- STRUCTURED DATA (JSON-LD injected later) -->
-<!-- JSON_LD_INJECT -->
-
 <!-- GLOBAL_BODY_BOTTOM_INJECT -->
-
 </body>
 </html>

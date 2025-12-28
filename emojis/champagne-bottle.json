@@ -1,0 +1,85 @@
+{
+  "slug": "champagne-bottle",
+  "emoji": "🍾",
+  "name": "Champagne Bottle",
+  "category": "Celebration",
+
+  "meaning": "The champagne bottle emoji represents celebration, success, luxury, and major milestones. It is commonly used for big achievements, parties, and festive occasions.",
+
+  "usage_examples": [
+    "We finally did it 🍾",
+    "Time to celebrate 🍾",
+    "Big win tonight 🍾"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Achievement",
+      "person_a": "The deal is officially closed",
+      "person_b": "Amazing news 🍾"
+    },
+    {
+      "context": "Party",
+      "person_a": "Everyone is coming over tonight",
+      "person_b": "Champagne is ready 🍾"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "Guess what?",
+      "person_b": "What happened?",
+      "person_a_2": "We hit our yearly target",
+      "person_b_2": "That deserves champagne 🍾"
+    }
+  ],
+
+  "when_to_use": "Use this emoji when celebrating major achievements, milestones, victories, or luxurious events.",
+  "when_not_to_use": "Avoid using it in serious, sensitive, or non-celebratory discussions.",
+
+  "unicode_name": "BOTTLE WITH POPPING CORK",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F37E",
+  "shortcodes": [":champagne:"],
+
+  "related_emojis": [
+    "clinking-glasses",
+    "party-popper",
+    "trophy"
+  ],
+
+  "fun_fact": "The 🍾 Champagne Bottle emoji is often used to symbolize not just parties, but also major life achievements and luxury moments.",
+
+  "faqs": [
+    {
+      "q": "What does the 🍾 emoji mean?",
+      "a": "It represents celebration, success, and special occasions."
+    },
+    {
+      "q": "Is 🍾 only about alcohol?",
+      "a": "No, it often symbolizes celebration rather than drinking."
+    },
+    {
+      "q": "Can 🍾 be used professionally?",
+      "a": "Yes, in informal or celebratory professional settings."
+    },
+    {
+      "q": "Is 🍾 suitable for announcements?",
+      "a": "Yes, especially for big wins or milestones."
+    },
+    {
+      "q": "When should 🍾 be avoided?",
+      "a": "Avoid it in serious or sensitive conversations."
+    },
+    {
+      "q": "Does 🍾 imply luxury?",
+      "a": "Often yes, especially in celebratory contexts."
+    },
+    {
+      "q": "Is 🍾 used worldwide?",
+      "a": "Yes, it is widely understood across cultures."
+    },
+    {
+      "q": "Can 🍾 replace 🎉?",
+      "a": "It can, especially for more premium or milestone celebrations."
+    }
+  ]
+}
