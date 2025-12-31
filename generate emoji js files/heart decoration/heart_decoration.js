@@ -1,72 +1,77 @@
+const TARGET_SLUG = "heart-decoration";
 const fs = require("fs");
 const path = require("path");
 const SITE_URL = "https://smileymeaning.com";
+if (!process.env.ALLOW_WRITE) {
+  console.error("❌ Write blocked. Use ALLOW_WRITE=1 to run this generator.");
+  process.exit(1);
+}
 /* ================================
-   HEART ON FIRE ❤️‍🔥 CONTENT
+   HEART DECORATION 💟 CONTENT
    ================================ */
 const meaningBlocks = {
   Love: [
     (e) => `
-      <p>The ${e.name} emoji ${e.emoji} shows a red heart engulfed in flames, commonly used to represent intense passion, burning love, or strong romantic desire.</p>
-      <p>It often appears in messages expressing fiery attraction, lust, or overwhelming emotional intensity.</p>
-      <p>This emoji helps convey excitement, heat, and ardent affection in a bold visual way.</p>
+      <p>The ${e.name} emoji ${e.emoji} depicts a bright, sparkling heart decoration with a square border and small dots, often used to add a cute, decorative touch of love or affection.</p>
+      <p>It commonly appears in messages to enhance romantic or sweet statements with a playful, ornate flair.</p>
+      <p>This emoji helps convey warmth and adoration in a visually charming and embellished way.</p>
     `
   ]
 };
 const usageExplanationBlocks = {
   Love: [
     (e) => `
-      <p>This emoji is commonly used in flirtatious chats, romantic messages, and social media posts highlighting desire.</p>
-      <p>It helps emphasize powerful attraction and passionate feelings.</p>
+      <p>This emoji is commonly used in casual romantic chats, social media bios, and decorative messages.</p>
+      <p>It helps emphasize affection with a stylish, ornamental heart design.</p>
     `
   ]
 };
 const detailedMeaningBlocks = {
   Love: [
     (e) => `
-      <p>The ${e.name} emoji ${e.emoji} depicts a classic red heart surrounded by vivid flames, symbolizing love that is passionate, consuming, and full of heat. It captures the idea of "burning" desire or love that feels irresistibly intense.</p>
-      <p>This dramatic visual instantly conveys excitement and sexual chemistry in text conversations, where subtle words might fall short. Its bold design makes it perfect for expressing strong romantic or physical attraction across cultures.</p>
-      <p>While primarily romantic, it can also represent anything "hot" or intensely exciting, though its core meaning remains tied to fiery love and lust.</p>
+      <p>The ${e.name} emoji ${e.emoji} represents a decorative heart symbol, featuring a shining heart inside a square frame with corner dots, giving it a fancy and ornate appearance. It goes beyond a plain heart to add a sense of embellishment and cuteness to expressions of love or liking.</p>
+      <p>This visual decoration helps make messages feel more polished and aesthetically pleasing while still conveying affection. Its unique design makes it popular for adding flair to romantic notes, usernames, or captions without being overly intense.</p>
+      <p>Across platforms, it evokes a lighthearted, decorative form of love that feels playful and charming rather than deeply passionate.</p>
     `
   ]
 };
 const realLifeUsageBlocks = {
   Love: [
     (e) => `
-      <p>In everyday messaging, the ${e.name} emoji ${e.emoji} appears when someone wants to express strong attraction, compliment a partner's appeal, or describe intense chemistry.</p>
-      <p>On social media, it's common in flirty comments, thirst traps, or posts celebrating passionate relationships.</p>
-      <p>Couples use it to spice up conversations, while singles might add it when talking about a new crush or date that feels electric.</p>
-      <p>It also shows up in reactions to attractive photos, steamy content, or any moment where desire and excitement are the focus.</p>
+      <p>In everyday messaging, the ${e.name} emoji ${e.emoji} is popular for decorating romantic texts, Valentine's wishes, or cute confessions to make them stand out.</p>
+      <p>On social media, it's frequently used in bios, display names, or post captions to add a sparkling heart accent and show affection stylishly.</p>
+      <p>Friends often include it in group chats for playful teasing or to decorate birthday messages for loved ones.</p>
+      <p>It also appears in aesthetic posts, journaling apps, or anywhere a fancy heart decoration enhances the visual appeal while expressing care.</p>
     `
   ]
 };
 const toneImpactBlocks = {
   Love: [
     (e) => `
-      <p>Incorporating the ${e.name} emoji ${e.emoji} instantly intensifies the tone, adding heat, boldness, and sensual energy to a message.</p>
-      <p>It brings a layer of passion and excitement, making recipients feel the strength of the sender's desire.</p>
-      <p>Even mild compliments become flirtatious and charged, while romantic statements feel more urgent and captivating.</p>
-      <p>This emoji signals strong attraction and confidence, often heightening the emotional and physical tension in the conversation.</p>
+      <p>Incorporating the ${e.name} emoji ${e.emoji} adds a decorative and playful layer to the tone, making messages feel cute, stylish, and lightly affectionate.</p>
+      <p>It brings a sparkling, ornate warmth that enhances sweetness without overwhelming intensity.</p>
+      <p>Even simple texts gain a charming, embellished feel, encouraging a fun and flirty response.</p>
+      <p>This emoji ensures the affectionate intent comes across as adorable and visually appealing rather than plain.</p>
     `
   ]
 };
 const professionalVsCasualBlocks = {
   Love: [
     (e) => `
-      <p>In casual personal settings among partners or close friends, the ${e.name} emoji ${e.emoji} is freely used to express desire and keep things playful.</p>
-      <p>In professional environments, its overtly sexual and passionate connotation makes it highly inappropriate for work communication.</p>
-      <p>It belongs in private romantic chats or social media where flirtation and intensity are welcome.</p>
-      <p>Being mindful of the audience prevents it from seeming unprofessional or crossing boundaries.</p>
+      <p>In casual settings among friends or romantic partners, the ${e.name} emoji ${e.emoji} is freely used to decorate messages and add cute affection.</p>
+      <p>In most professional environments, its decorative and heart-themed nature makes it too personal and informal for work communication.</p>
+      <p>It fits best in personal chats, social media, or creative contexts where visual flair and light romance are welcome.</p>
+      <p>Understanding the audience helps use its ornamental charm appropriately without crossing boundaries.</p>
     `
   ]
 };
 const misuseBlocks = {
   Love: [
     (e) => `
-      <p>A common misuse of the ${e.name} emoji ${e.emoji} is sending it too early in a relationship or to someone not interested, which can come across as overly forward or intense.</p>
-      <p>Using it jokingly in non-romantic contexts may confuse recipients due to its strong sexual undertone.</p>
-      <p>Placing it in serious, platonic, or negative messages creates conflicting signals given its association with passion.</p>
-      <p>Using it appropriately ensures it conveys genuine fiery attraction rather than discomfort or misunderstanding.</p>
+      <p>A common misuse of the ${e.name} emoji ${e.emoji} is over-decorating serious or professional messages, where its cute sparkle can seem out of place or frivolous.</p>
+      <p>Using it in somber, argumentative, or purely platonic contexts might send unintended romantic signals.</p>
+      <p>Placing it alongside negative text creates confusing mixed messages due to its inherently affectionate design.</p>
+      <p>Considering the context ensures this decorative heart enhances rather than distracts from the intended meaning.</p>
     `
   ]
 };
@@ -74,7 +79,7 @@ const platformDisclaimerBlocks = {
   Love: [
     (e) => `
       <p>The ${e.name} emoji ${e.emoji} may appear slightly different across platforms such as Google, Apple, WhatsApp, and Samsung.</p>
-      <p>Despite visual differences, its heart on fire meaning remains consistent.</p>
+      <p>Despite visual differences, its decorative heart meaning remains consistent.</p>
     `
   ]
 };
@@ -152,7 +157,9 @@ const emojis = emojiFiles.map(file =>
   JSON.parse(fs.readFileSync(path.join(emojiDir, file), "utf8"))
 );
 const template = fs.readFileSync("templates/emoji-page.html", "utf8");
-emojis.forEach(e => {
+emojis
+  .filter(e => e.slug === TARGET_SLUG)
+  .forEach(e => {
   let html = template;
   const title = `${e.name} Emoji ${e.emoji} Meaning`;
   const desc = `Meaning of the ${e.name} emoji ${e.emoji}, with usage examples and detailed explanation.`;
@@ -195,4 +202,4 @@ emojis.forEach(e => {
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(path.join(outDir, "index.html"), html);
 });
-console.log("✅ Heart on Fire ❤️‍🔥 emoji page content updated successfully");
+console.log("✅ Heart Decoration 💟 emoji page content updated successfully");

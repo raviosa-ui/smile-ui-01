@@ -1,72 +1,77 @@
+const TARGET_SLUG = "broken-heart";
 const fs = require("fs");
 const path = require("path");
 const SITE_URL = "https://smileymeaning.com";
+if (!process.env.ALLOW_WRITE) {
+  console.error("❌ Write blocked. Use ALLOW_WRITE=1 to run this generator.");
+  process.exit(1);
+}
 /* ================================
-   HEART SUIT ♥️ CONTENT
+   BROKEN HEART 💔 CONTENT
    ================================ */
 const meaningBlocks = {
   Love: [
     (e) => `
-      <p>The ${e.name} emoji ${e.emoji} is a classic playing card suit symbol representing the hearts suit, commonly used to express love, affection, or romantic interest.</p>
-      <p>It frequently appears in messages as a stylish alternative to the standard red heart, adding a touch of card-game flair.</p>
-      <p>This emoji helps convey warmth and caring in a simple, iconic way rooted in traditional symbolism.</p>
+      <p>The ${e.name} emoji ${e.emoji} depicts a red heart cracked in two, commonly used to express heartbreak, deep sadness, or emotional pain from lost love.</p>
+      <p>It frequently appears in messages about breakups, rejection, or profound disappointment in relationships.</p>
+      <p>This emoji helps convey intense sorrow and vulnerability in a simple yet powerful visual way.</p>
     `
   ]
 };
 const usageExplanationBlocks = {
   Love: [
     (e) => `
-      <p>This emoji is commonly used in romantic chats, card game references, and messages expressing love or fondness.</p>
-      <p>It helps emphasize affection with a vintage, playing-card aesthetic.</p>
+      <p>This emoji is commonly used in personal chats, social media posts, and messages dealing with romantic loss or grief.</p>
+      <p>It helps emphasize feelings of devastation and emotional hurt.</p>
     `
   ]
 };
 const detailedMeaningBlocks = {
   Love: [
     (e) => `
-      <p>The ${e.name} emoji ${e.emoji} represents the hearts suit from a standard deck of playing cards, where hearts traditionally symbolize love, emotion, and romance. Its bold red design makes it a popular choice for conveying affection with a classic, timeless feel.</p>
-      <p>This visual reference bridges card symbolism with modern messaging, instantly evoking ideas of love and caring without being overly cute or modern. Its origins in card games give it a slightly retro or playful edge compared to plain heart emojis.</p>
-      <p>While strongly tied to romance, it can also reference actual card games or gambling, though its primary digital use remains as a symbol of love and heartfelt sentiment across cultures.</p>
+      <p>The ${e.name} emoji ${e.emoji} represents a classic symbol of heartbreak, showing a heart split down the middle to illustrate emotional fracture and pain. It captures the raw feeling of love gone wrong, whether from a breakup, unrequited feelings, or betrayal.</p>
+      <p>This visual metaphor bridges the gap in text communication by instantly conveying deep sadness that words alone might struggle to express. Its stark design makes it one of the most recognizable symbols of romantic despair across cultures.</p>
+      <p>While primarily tied to romantic contexts, it can also represent general profound disappointment or loss, though its core association remains with shattered love.</p>
     `
   ]
 };
 const realLifeUsageBlocks = {
   Love: [
     (e) => `
-      <p>In everyday messaging, the ${e.name} emoji ${e.emoji} appears when someone wants to express love in a classic or slightly formal way, such as in Valentine's messages or long-term relationships.</p>
-      <p>On social media, it's common in posts referencing poker, card games, or as a sophisticated alternative to more cartoonish hearts.</p>
-      <p>Couples use it for a vintage romantic vibe, while friends might include it when talking about games or luck in love.</p>
-      <p>It also shows up in casino-related content, gambling references, or any context blending romance with traditional card symbolism.</p>
+      <p>In everyday messaging, the ${e.name} emoji ${e.emoji} appears after breakups, when someone shares news of a failed relationship or rejection.</p>
+      <p>On social media, it's common in posts or stories announcing the end of a romance, venting frustration, or seeking comfort from friends.</p>
+      <p>Friends use it to console others going through heartbreak or to express sympathy when hearing sad love stories.</p>
+      <p>It also shows up in song lyrics shares, movie reactions, or any context where emotional pain from love is the central theme.</p>
     `
   ]
 };
 const toneImpactBlocks = {
   Love: [
     (e) => `
-      <p>Incorporating the ${e.name} emoji ${e.emoji} adds a classic, elegant layer to the tone, making messages feel timeless and sincerely affectionate.</p>
-      <p>It brings a sense of traditional romance and warmth, helping recipients feel genuinely cared for.</p>
-      <p>Even casual texts gain a touch of sophistication, while romantic statements feel more heartfelt and enduring.</p>
-      <p>This emoji signals mature affection and classic sentiment, often evoking nostalgia or playful card-game references.</p>
+      <p>Incorporating the ${e.name} emoji ${e.emoji} dramatically shifts the tone to one of sadness, vulnerability, and emotional weight.</p>
+      <p>It adds a layer of raw pain and melancholy, making recipients feel the depth of the sender's hurt.</p>
+      <p>Even light complaints gain seriousness, while genuine grief becomes unmistakably profound.</p>
+      <p>This emoji ensures the message is read with empathy, signaling that the topic involves real emotional distress.</p>
     `
   ]
 };
 const professionalVsCasualBlocks = {
   Love: [
     (e) => `
-      <p>In casual personal settings among friends or partners, the ${e.name} emoji ${e.emoji} is widely used to express love or reference card games without issue.</p>
-      <p>In professional environments, its romantic connotation generally makes it too personal for workplace communication.</p>
-      <p>It fits best in private chats, gaming discussions, or social media where affection or card references are appropriate.</p>
-      <p>Considering the context helps avoid sending unintended romantic signals in formal settings.</p>
+      <p>In casual personal settings among close friends or family, the ${e.name} emoji ${e.emoji} is openly used to share heartbreak and seek support.</p>
+      <p>In professional environments, its strong emotional and personal nature makes it inappropriate for workplace communication.</p>
+      <p>It belongs in private chats or social media where expressing romantic pain is acceptable and expected.</p>
+      <p>Considering the audience and context prevents it from seeming unprofessional or oversharing in formal settings.</p>
     `
   ]
 };
 const misuseBlocks = {
   Love: [
     (e) => `
-      <p>A common misuse of the ${e.name} emoji ${e.emoji} is using it in professional or platonic contexts where its strong love association can be misinterpreted as romantic interest.</p>
-      <p>Overusing it in non-romantic card game discussions may confuse recipients expecting a literal playing card reference.</p>
-      <p>Placing it in negative or sarcastic messages creates conflicting signals due to its positive, affectionate meaning.</p>
-      <p>Using it thoughtfully ensures it conveys genuine love or proper card-suit reference rather than mixed intentions.</p>
+      <p>A common misuse of the ${e.name} emoji ${e.emoji} is using it jokingly or sarcastically when no real emotional pain is involved, which can minimize genuine heartbreak for others.</p>
+      <p>Adding it to trivial complaints or minor disappointments exaggerates the situation and dilutes its powerful meaning.</p>
+      <p>Using it in positive or neutral contexts creates confusing mixed signals due to its inherently sorrowful design.</p>
+      <p>Respecting its emotional weight ensures it remains a sincere symbol of true heartbreak rather than casual exaggeration.</p>
     `
   ]
 };
@@ -74,7 +79,7 @@ const platformDisclaimerBlocks = {
   Love: [
     (e) => `
       <p>The ${e.name} emoji ${e.emoji} may appear slightly different across platforms such as Google, Apple, WhatsApp, and Samsung.</p>
-      <p>Despite visual differences, its heart suit meaning remains consistent.</p>
+      <p>Despite visual differences, its broken heart meaning remains consistent.</p>
     `
   ]
 };
@@ -152,7 +157,11 @@ const emojis = emojiFiles.map(file =>
   JSON.parse(fs.readFileSync(path.join(emojiDir, file), "utf8"))
 );
 const template = fs.readFileSync("templates/emoji-page.html", "utf8");
-emojis.forEach(e => {
+emojis
+  .filter(e => e.slug === TARGET_SLUG)
+  .forEach(e => {
+    
+
   let html = template;
   const title = `${e.name} Emoji ${e.emoji} Meaning`;
   const desc = `Meaning of the ${e.name} emoji ${e.emoji}, with usage examples and detailed explanation.`;
@@ -195,4 +204,4 @@ emojis.forEach(e => {
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(path.join(outDir, "index.html"), html);
 });
-console.log("✅ Heart Suit ♥️ emoji page content updated successfully");
+console.log("✅ Broken Heart 💔 emoji page content updated successfully");

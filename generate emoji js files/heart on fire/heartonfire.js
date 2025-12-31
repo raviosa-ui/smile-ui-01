@@ -1,72 +1,74 @@
+const TARGET_SLUG = "heart-on-fire";
 const fs = require("fs");
 const path = require("path");
 const SITE_URL = "https://smileymeaning.com";
+if (!process.env.ALLOW_WRITE) { console.error("❌ Write blocked. Use ALLOW_WRITE=1 to run this generator."); process.exit(1); }
 /* ================================
-   BROKEN HEART 💔 CONTENT
+   HEART ON FIRE ❤️‍🔥 CONTENT
    ================================ */
 const meaningBlocks = {
   Love: [
     (e) => `
-      <p>The ${e.name} emoji ${e.emoji} depicts a red heart cracked in two, commonly used to express heartbreak, deep sadness, or emotional pain from lost love.</p>
-      <p>It frequently appears in messages about breakups, rejection, or profound disappointment in relationships.</p>
-      <p>This emoji helps convey intense sorrow and vulnerability in a simple yet powerful visual way.</p>
+      <p>The ${e.name} emoji ${e.emoji} shows a red heart engulfed in flames, commonly used to represent intense passion, burning love, or strong romantic desire.</p>
+      <p>It often appears in messages expressing fiery attraction, lust, or overwhelming emotional intensity.</p>
+      <p>This emoji helps convey excitement, heat, and ardent affection in a bold visual way.</p>
     `
   ]
 };
 const usageExplanationBlocks = {
   Love: [
     (e) => `
-      <p>This emoji is commonly used in personal chats, social media posts, and messages dealing with romantic loss or grief.</p>
-      <p>It helps emphasize feelings of devastation and emotional hurt.</p>
+      <p>This emoji is commonly used in flirtatious chats, romantic messages, and social media posts highlighting desire.</p>
+      <p>It helps emphasize powerful attraction and passionate feelings.</p>
     `
   ]
 };
 const detailedMeaningBlocks = {
   Love: [
     (e) => `
-      <p>The ${e.name} emoji ${e.emoji} represents a classic symbol of heartbreak, showing a heart split down the middle to illustrate emotional fracture and pain. It captures the raw feeling of love gone wrong, whether from a breakup, unrequited feelings, or betrayal.</p>
-      <p>This visual metaphor bridges the gap in text communication by instantly conveying deep sadness that words alone might struggle to express. Its stark design makes it one of the most recognizable symbols of romantic despair across cultures.</p>
-      <p>While primarily tied to romantic contexts, it can also represent general profound disappointment or loss, though its core association remains with shattered love.</p>
+      <p>The ${e.name} emoji ${e.emoji} depicts a classic red heart surrounded by vivid flames, symbolizing love that is passionate, consuming, and full of heat. It captures the idea of "burning" desire or love that feels irresistibly intense.</p>
+      <p>This dramatic visual instantly conveys excitement and sexual chemistry in text conversations, where subtle words might fall short. Its bold design makes it perfect for expressing strong romantic or physical attraction across cultures.</p>
+      <p>While primarily romantic, it can also represent anything "hot" or intensely exciting, though its core meaning remains tied to fiery love and lust.</p>
     `
   ]
 };
 const realLifeUsageBlocks = {
   Love: [
     (e) => `
-      <p>In everyday messaging, the ${e.name} emoji ${e.emoji} appears after breakups, when someone shares news of a failed relationship or rejection.</p>
-      <p>On social media, it's common in posts or stories announcing the end of a romance, venting frustration, or seeking comfort from friends.</p>
-      <p>Friends use it to console others going through heartbreak or to express sympathy when hearing sad love stories.</p>
-      <p>It also shows up in song lyrics shares, movie reactions, or any context where emotional pain from love is the central theme.</p>
+      <p>In everyday messaging, the ${e.name} emoji ${e.emoji} appears when someone wants to express strong attraction, compliment a partner's appeal, or describe intense chemistry.</p>
+      <p>On social media, it's common in flirty comments, thirst traps, or posts celebrating passionate relationships.</p>
+      <p>Couples use it to spice up conversations, while singles might add it when talking about a new crush or date that feels electric.</p>
+      <p>It also shows up in reactions to attractive photos, steamy content, or any moment where desire and excitement are the focus.</p>
     `
   ]
 };
 const toneImpactBlocks = {
   Love: [
     (e) => `
-      <p>Incorporating the ${e.name} emoji ${e.emoji} dramatically shifts the tone to one of sadness, vulnerability, and emotional weight.</p>
-      <p>It adds a layer of raw pain and melancholy, making recipients feel the depth of the sender's hurt.</p>
-      <p>Even light complaints gain seriousness, while genuine grief becomes unmistakably profound.</p>
-      <p>This emoji ensures the message is read with empathy, signaling that the topic involves real emotional distress.</p>
+      <p>Incorporating the ${e.name} emoji ${e.emoji} instantly intensifies the tone, adding heat, boldness, and sensual energy to a message.</p>
+      <p>It brings a layer of passion and excitement, making recipients feel the strength of the sender's desire.</p>
+      <p>Even mild compliments become flirtatious and charged, while romantic statements feel more urgent and captivating.</p>
+      <p>This emoji signals strong attraction and confidence, often heightening the emotional and physical tension in the conversation.</p>
     `
   ]
 };
 const professionalVsCasualBlocks = {
   Love: [
     (e) => `
-      <p>In casual personal settings among close friends or family, the ${e.name} emoji ${e.emoji} is openly used to share heartbreak and seek support.</p>
-      <p>In professional environments, its strong emotional and personal nature makes it inappropriate for workplace communication.</p>
-      <p>It belongs in private chats or social media where expressing romantic pain is acceptable and expected.</p>
-      <p>Considering the audience and context prevents it from seeming unprofessional or oversharing in formal settings.</p>
+      <p>In casual personal settings among partners or close friends, the ${e.name} emoji ${e.emoji} is freely used to express desire and keep things playful.</p>
+      <p>In professional environments, its overtly sexual and passionate connotation makes it highly inappropriate for work communication.</p>
+      <p>It belongs in private romantic chats or social media where flirtation and intensity are welcome.</p>
+      <p>Being mindful of the audience prevents it from seeming unprofessional or crossing boundaries.</p>
     `
   ]
 };
 const misuseBlocks = {
   Love: [
     (e) => `
-      <p>A common misuse of the ${e.name} emoji ${e.emoji} is using it jokingly or sarcastically when no real emotional pain is involved, which can minimize genuine heartbreak for others.</p>
-      <p>Adding it to trivial complaints or minor disappointments exaggerates the situation and dilutes its powerful meaning.</p>
-      <p>Using it in positive or neutral contexts creates confusing mixed signals due to its inherently sorrowful design.</p>
-      <p>Respecting its emotional weight ensures it remains a sincere symbol of true heartbreak rather than casual exaggeration.</p>
+      <p>A common misuse of the ${e.name} emoji ${e.emoji} is sending it too early in a relationship or to someone not interested, which can come across as overly forward or intense.</p>
+      <p>Using it jokingly in non-romantic contexts may confuse recipients due to its strong sexual undertone.</p>
+      <p>Placing it in serious, platonic, or negative messages creates conflicting signals given its association with passion.</p>
+      <p>Using it appropriately ensures it conveys genuine fiery attraction rather than discomfort or misunderstanding.</p>
     `
   ]
 };
@@ -74,7 +76,7 @@ const platformDisclaimerBlocks = {
   Love: [
     (e) => `
       <p>The ${e.name} emoji ${e.emoji} may appear slightly different across platforms such as Google, Apple, WhatsApp, and Samsung.</p>
-      <p>Despite visual differences, its broken heart meaning remains consistent.</p>
+      <p>Despite visual differences, its heart on fire meaning remains consistent.</p>
     `
   ]
 };
@@ -152,7 +154,9 @@ const emojis = emojiFiles.map(file =>
   JSON.parse(fs.readFileSync(path.join(emojiDir, file), "utf8"))
 );
 const template = fs.readFileSync("templates/emoji-page.html", "utf8");
-emojis.forEach(e => {
+emojis
+  .filter(e => e.slug === TARGET_SLUG)
+  .forEach(e => {
   let html = template;
   const title = `${e.name} Emoji ${e.emoji} Meaning`;
   const desc = `Meaning of the ${e.name} emoji ${e.emoji}, with usage examples and detailed explanation.`;
@@ -195,4 +199,4 @@ emojis.forEach(e => {
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(path.join(outDir, "index.html"), html);
 });
-console.log("✅ Broken Heart 💔 emoji page content updated successfully");
+console.log("✅ Heart on Fire ❤️‍🔥 emoji page content updated successfully");

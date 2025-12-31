@@ -1,6 +1,8 @@
+const TARGET_SLUG = "white-heart";
 const fs = require("fs");
 const path = require("path");
 const SITE_URL = "https://smileymeaning.com";
+if (!process.env.ALLOW_WRITE) { console.error("❌ Write blocked. Use ALLOW_WRITE=1 to run this generator."); process.exit(1); }
 /* ================================
    WHITE HEART 🤍 CONTENT
    ================================ */
@@ -152,7 +154,9 @@ const emojis = emojiFiles.map(file =>
   JSON.parse(fs.readFileSync(path.join(emojiDir, file), "utf8"))
 );
 const template = fs.readFileSync("templates/emoji-page.html", "utf8");
-emojis.forEach(e => {
+emojis
+  .filter(e => e.slug === TARGET_SLUG)
+  .forEach(e => {
   let html = template;
   const title = `${e.name} Emoji ${e.emoji} Meaning`;
   const desc = `Meaning of the ${e.name} emoji ${e.emoji}, with usage examples and detailed explanation.`;

@@ -1,72 +1,75 @@
+const TARGET_SLUG = "heart-suit";
 const fs = require("fs");
 const path = require("path");
 const SITE_URL = "https://smileymeaning.com";
+if (!process.env.ALLOW_WRITE) { console.error("❌ Write blocked. Use ALLOW_WRITE=1 to run this generator."); process.exit(1); }
+
 /* ================================
-   MENDING HEART ❤️‍🩹 CONTENT
+   HEART SUIT ♥️ CONTENT
    ================================ */
 const meaningBlocks = {
   Love: [
     (e) => `
-      <p>The ${e.name} emoji ${e.emoji} shows a red heart wrapped in a white bandage, commonly used to represent healing from heartbreak, emotional recovery, or self-care after pain.</p>
-      <p>It often appears in messages about overcoming loss, personal growth, or mending a broken heart.</p>
-      <p>This emoji helps convey hope, resilience, and the process of emotional healing in a gentle visual way.</p>
+      <p>The ${e.name} emoji ${e.emoji} is a classic playing card suit symbol representing the hearts suit, commonly used to express love, affection, or romantic interest.</p>
+      <p>It frequently appears in messages as a stylish alternative to the standard red heart, adding a touch of card-game flair.</p>
+      <p>This emoji helps convey warmth and caring in a simple, iconic way rooted in traditional symbolism.</p>
     `
   ]
 };
 const usageExplanationBlocks = {
   Love: [
     (e) => `
-      <p>This emoji is commonly used in personal chats, social media posts, and messages focused on recovery and emotional well-being.</p>
-      <p>It helps emphasize themes of healing, forgiveness, and moving forward after hurt.</p>
+      <p>This emoji is commonly used in romantic chats, card game references, and messages expressing love or fondness.</p>
+      <p>It helps emphasize affection with a vintage, playing-card aesthetic.</p>
     `
   ]
 };
 const detailedMeaningBlocks = {
   Love: [
     (e) => `
-      <p>The ${e.name} emoji ${e.emoji} symbolizes the process of mending a broken heart, depicted as a heart with a bandage to illustrate recovery and care. It represents emotional healing after heartbreak, trauma, or disappointment in relationships.</p>
-      <p>This visual metaphor offers comfort in text communication by showing that pain is being addressed and recovery is underway. Its gentle design makes it a supportive symbol of resilience and self-love across cultures.</p>
-      <p>While rooted in romantic recovery, it can also express healing from any emotional wound, emphasizing hope and the possibility of feeling whole again.</p>
+      <p>The ${e.name} emoji ${e.emoji} represents the hearts suit from a standard deck of playing cards, where hearts traditionally symbolize love, emotion, and romance. Its bold red design makes it a popular choice for conveying affection with a classic, timeless feel.</p>
+      <p>This visual reference bridges card symbolism with modern messaging, instantly evoking ideas of love and caring without being overly cute or modern. Its origins in card games give it a slightly retro or playful edge compared to plain heart emojis.</p>
+      <p>While strongly tied to romance, it can also reference actual card games or gambling, though its primary digital use remains as a symbol of love and heartfelt sentiment across cultures.</p>
     `
   ]
 };
 const realLifeUsageBlocks = {
   Love: [
     (e) => `
-      <p>In everyday messaging, the ${e.name} emoji ${e.emoji} appears when someone shares updates about getting over a breakup or starting to feel better after emotional pain.</p>
-      <p>On social media, it's common in posts about personal growth, therapy journeys, or celebrating progress in healing.</p>
-      <p>Friends use it to encourage others recovering from heartbreak or to show support during tough emotional times.</p>
-      <p>It also shows up in self-care reminders, motivational quotes, or any context where emotional recovery and strength are highlighted.</p>
+      <p>In everyday messaging, the ${e.name} emoji ${e.emoji} appears when someone wants to express love in a classic or slightly formal way, such as in Valentine's messages or long-term relationships.</p>
+      <p>On social media, it's common in posts referencing poker, card games, or as a sophisticated alternative to more cartoonish hearts.</p>
+      <p>Couples use it for a vintage romantic vibe, while friends might include it when talking about games or luck in love.</p>
+      <p>It also shows up in casino-related content, gambling references, or any context blending romance with traditional card symbolism.</p>
     `
   ]
 };
 const toneImpactBlocks = {
   Love: [
     (e) => `
-      <p>Incorporating the ${e.name} emoji ${e.emoji} adds a tone of gentle hope, vulnerability, and quiet strength to a message.</p>
-      <p>It brings a layer of compassion and optimism, helping recipients sense care and the beginning of recovery.</p>
-      <p>Even sad reflections gain a note of positivity, while messages of progress feel more heartfelt and encouraging.</p>
-      <p>This emoji signals emotional honesty while focusing on healing, inviting empathy and support.</p>
+      <p>Incorporating the ${e.name} emoji ${e.emoji} adds a classic, elegant layer to the tone, making messages feel timeless and sincerely affectionate.</p>
+      <p>It brings a sense of traditional romance and warmth, helping recipients feel genuinely cared for.</p>
+      <p>Even casual texts gain a touch of sophistication, while romantic statements feel more heartfelt and enduring.</p>
+      <p>This emoji signals mature affection and classic sentiment, often evoking nostalgia or playful card-game references.</p>
     `
   ]
 };
 const professionalVsCasualBlocks = {
   Love: [
     (e) => `
-      <p>In casual personal settings among close friends or family, the ${e.name} emoji ${e.emoji} is warmly used to share healing journeys and offer mutual support.</p>
-      <p>In professional environments, its deeply personal and emotional nature generally makes it unsuitable for workplace communication.</p>
-      <p>It fits best in private conversations or social media where discussing emotional recovery is appropriate.</p>
-      <p>Considering the relationship and setting helps avoid oversharing in more formal contexts.</p>
+      <p>In casual personal settings among friends or partners, the ${e.name} emoji ${e.emoji} is widely used to express love or reference card games without issue.</p>
+      <p>In professional environments, its romantic connotation generally makes it too personal for workplace communication.</p>
+      <p>It fits best in private chats, gaming discussions, or social media where affection or card references are appropriate.</p>
+      <p>Considering the context helps avoid sending unintended romantic signals in formal settings.</p>
     `
   ]
 };
 const misuseBlocks = {
   Love: [
     (e) => `
-      <p>A common misuse of the ${e.name} emoji ${e.emoji} is applying it too soon after heartbreak, when healing hasn't genuinely begun, which can seem insincere.</p>
-      <p>Using it sarcastically or jokingly about minor setbacks diminishes its meaningful representation of real recovery.</p>
-      <p>Placing it in purely positive or unrelated contexts can create confusing signals due to its association with past pain.</p>
-      <p>Using it thoughtfully ensures it remains a sincere symbol of genuine emotional mending and hope.</p>
+      <p>A common misuse of the ${e.name} emoji ${e.emoji} is using it in professional or platonic contexts where its strong love association can be misinterpreted as romantic interest.</p>
+      <p>Overusing it in non-romantic card game discussions may confuse recipients expecting a literal playing card reference.</p>
+      <p>Placing it in negative or sarcastic messages creates conflicting signals due to its positive, affectionate meaning.</p>
+      <p>Using it thoughtfully ensures it conveys genuine love or proper card-suit reference rather than mixed intentions.</p>
     `
   ]
 };
@@ -74,7 +77,7 @@ const platformDisclaimerBlocks = {
   Love: [
     (e) => `
       <p>The ${e.name} emoji ${e.emoji} may appear slightly different across platforms such as Google, Apple, WhatsApp, and Samsung.</p>
-      <p>Despite visual differences, its mending heart meaning remains consistent.</p>
+      <p>Despite visual differences, its heart suit meaning remains consistent.</p>
     `
   ]
 };
@@ -152,7 +155,9 @@ const emojis = emojiFiles.map(file =>
   JSON.parse(fs.readFileSync(path.join(emojiDir, file), "utf8"))
 );
 const template = fs.readFileSync("templates/emoji-page.html", "utf8");
-emojis.forEach(e => {
+emojis
+  .filter(e => e.slug === TARGET_SLUG)
+  .forEach(e => {
   let html = template;
   const title = `${e.name} Emoji ${e.emoji} Meaning`;
   const desc = `Meaning of the ${e.name} emoji ${e.emoji}, with usage examples and detailed explanation.`;
@@ -195,4 +200,4 @@ emojis.forEach(e => {
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(path.join(outDir, "index.html"), html);
 });
-console.log("✅ Mending Heart ❤️‍🩹 emoji page content updated successfully");
+console.log("✅ Heart Suit ♥️ emoji page content updated successfully");
