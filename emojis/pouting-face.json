@@ -1,0 +1,75 @@
+{
+  "name": "Pouting Face",
+  "emoji": "😡",
+  "slug": "pouting-face",
+  "category": "Anger",
+  "meaning": "The Pouting Face emoji represents strong anger, frustration, and visible displeasure. It is used to express intense irritation or rage when emotions are no longer restrained and feelings are openly negative.",
+  "unicode_name": "POUTING FACE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F621",
+  "shortcodes": [":rage:"],
+  "usage_examples": [
+    "This is completely unacceptable 😡",
+    "I’m extremely angry about this 😡",
+    "That crossed the line 😡"
+  ],
+  "chat_examples": [
+    {
+      "context": "Strong frustration",
+      "person_a": "They ignored everything we agreed on",
+      "person_b": "That makes me furious 😡"
+    },
+    {
+      "context": "Anger escalation",
+      "person_a": "They blamed me for their mistake",
+      "person_b": "That’s infuriating 😡"
+    },
+    {
+      "context": "Boundary violation",
+      "person_a": "They did it again after I warned them",
+      "person_b": "That’s not okay 😡"
+    }
+  ],
+  "when_to_use": "Use this emoji when expressing strong anger, rage, or intense frustration where emotions are clearly heightened.",
+  "when_not_to_use": "Avoid using it in professional, diplomatic, or sensitive conversations where strong anger could escalate conflict.",
+  "related_emojis": [
+    "angry-face",
+    "face-with-symbols-on-mouth",
+    "face-with-steam-from-nose"
+  ],
+  "fun_fact": "😡 is one of the strongest anger emojis and is often used to show rage rather than mild irritation.",
+  "faqs": [
+    {
+      "q": "What does the 😡 Pouting Face emoji mean?",
+      "a": "It represents strong anger, rage, or intense frustration."
+    },
+    {
+      "q": "Is 😡 stronger than 😠?",
+      "a": "Yes, 😡 shows more intense anger than 😠."
+    },
+    {
+      "q": "Can 😡 express rage?",
+      "a": "Yes, it is commonly used to show rage or fury."
+    },
+    {
+      "q": "Is 😡 appropriate for work chats?",
+      "a": "No, it is generally considered too aggressive for professional communication."
+    },
+    {
+      "q": "Does 😡 show loss of control?",
+      "a": "It suggests high emotional intensity, but context matters."
+    },
+    {
+      "q": "Is 😡 suitable for social media?",
+      "a": "Yes, it is often used to express outrage or strong opinions."
+    },
+    {
+      "q": "Can 😡 be sarcastic?",
+      "a": "Rarely; it is usually interpreted as genuine anger."
+    },
+    {
+      "q": "Is 😡 universally understood?",
+      "a": "Yes, it is globally recognized as a symbol of anger."
+    }
+  ]
+}

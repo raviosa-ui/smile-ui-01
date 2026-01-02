@@ -1,0 +1,75 @@
+{
+  "name": "Disappointed Face",
+  "emoji": "😞",
+  "slug": "disappointed-face",
+  "category": "Sadness",
+  "meaning": "The Disappointed Face emoji represents feeling let down, discouraged, or unhappy due to unmet expectations. It conveys a stronger sense of dissatisfaction than quiet sadness, but without intense crying.",
+  "unicode_name": "DISAPPOINTED FACE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F61E",
+  "shortcodes": [":disappointed:"],
+  "usage_examples": [
+    "I really expected a different outcome 😞",
+    "That was disappointing 😞",
+    "Things didn’t go as planned 😞"
+  ],
+  "chat_examples": [
+    {
+      "context": "Unmet expectations",
+      "person_a": "The event got canceled last minute",
+      "person_b": "That’s really disappointing 😞"
+    },
+    {
+      "context": "Work setback",
+      "person_a": "They rejected the proposal",
+      "person_b": "I was hoping for better news 😞"
+    },
+    {
+      "context": "Personal letdown",
+      "person_a": "I thought they would show up",
+      "person_b": "That hurts 😞"
+    }
+  ],
+  "when_to_use": "Use this emoji when expressing disappointment, discouragement, or sadness caused by unmet expectations.",
+  "when_not_to_use": "Avoid using it in situations of intense grief or emotional breakdown where stronger expressions of sadness are needed.",
+  "related_emojis": [
+    "pensive-face",
+    "crying-face",
+    "confounded-face"
+  ],
+  "fun_fact": "😞 is commonly used to show dissatisfaction without escalating to visible crying, making it useful for everyday disappointments.",
+  "faqs": [
+    {
+      "q": "What does the 😞 Disappointed Face emoji mean?",
+      "a": "It represents disappointment, discouragement, or feeling let down."
+    },
+    {
+      "q": "Is 😞 stronger than 😔?",
+      "a": "Yes, 😞 usually conveys deeper disappointment than 😔."
+    },
+    {
+      "q": "Can 😞 be used for work-related setbacks?",
+      "a": "Yes, it is often used to express disappointment in informal work chats."
+    },
+    {
+      "q": "Does 😞 express sadness?",
+      "a": "Yes, it shows sadness caused by unmet expectations."
+    },
+    {
+      "q": "Is 😞 suitable for social media?",
+      "a": "Yes, it is commonly used in reflective or disappointed posts."
+    },
+    {
+      "q": "Is 😞 dramatic?",
+      "a": "No, it expresses moderate disappointment rather than intense emotion."
+    },
+    {
+      "q": "Can 😞 be used sarcastically?",
+      "a": "Rarely; it is usually interpreted as genuine disappointment."
+    },
+    {
+      "q": "Is 😞 universally understood?",
+      "a": "Yes, it is widely recognized as a symbol of disappointment."
+    }
+  ]
+}

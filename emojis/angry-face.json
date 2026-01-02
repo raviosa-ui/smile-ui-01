@@ -1,0 +1,75 @@
+{
+  "name": "Angry Face",
+  "emoji": "😠",
+  "slug": "angry-face",
+  "category": "Anger",
+  "meaning": "The Angry Face emoji represents irritation, annoyance, and controlled anger. It is used to express displeasure, frustration, or being upset without showing extreme rage or loss of control.",
+  "unicode_name": "ANGRY FACE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F620",
+  "shortcodes": [":angry:"],
+  "usage_examples": [
+    "That really annoyed me 😠",
+    "I’m not happy about this 😠",
+    "This situation is frustrating 😠"
+  ],
+  "chat_examples": [
+    {
+      "context": "Irritation",
+      "person_a": "They changed the plan again",
+      "person_b": "That’s really annoying 😠"
+    },
+    {
+      "context": "Boundary setting",
+      "person_a": "Please stop doing that",
+      "person_b": "I’m serious 😠"
+    },
+    {
+      "context": "Frustration",
+      "person_a": "Nothing is working today",
+      "person_b": "I can tell you’re upset 😠"
+    }
+  ],
+  "when_to_use": "Use this emoji when expressing irritation, frustration, or controlled anger in a direct but non-aggressive way.",
+  "when_not_to_use": "Avoid using it in lighthearted, professional, or sensitive conversations where anger may escalate conflict.",
+  "related_emojis": [
+    "pouting-face",
+    "face-with-steam-from-nose",
+    "confounded-face"
+  ],
+  "fun_fact": "😠 is often used to show displeasure or frustration without escalating to extreme anger or rage.",
+  "faqs": [
+    {
+      "q": "What does the 😠 Angry Face emoji mean?",
+      "a": "It represents irritation, annoyance, or controlled anger."
+    },
+    {
+      "q": "Is 😠 stronger than 😞?",
+      "a": "Yes, 😠 expresses anger, while 😞 expresses disappointment."
+    },
+    {
+      "q": "Can 😠 be used seriously?",
+      "a": "Yes, it often signals that someone is genuinely upset."
+    },
+    {
+      "q": "Is 😠 appropriate at work?",
+      "a": "Generally no, except in very informal internal communication."
+    },
+    {
+      "q": "Does 😠 express rage?",
+      "a": "No, it represents controlled anger rather than rage."
+    },
+    {
+      "q": "Is 😠 suitable for social media?",
+      "a": "Yes, it is commonly used to express frustration online."
+    },
+    {
+      "q": "Can 😠 be sarcastic?",
+      "a": "Sometimes, but it is usually interpreted as genuine anger."
+    },
+    {
+      "q": "Is 😠 universally understood?",
+      "a": "Yes, it is globally recognized as an angry expression."
+    }
+  ]
+}

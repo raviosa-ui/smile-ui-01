@@ -1,0 +1,75 @@
+{
+  "name": "Fearful Face",
+  "emoji": "😨",
+  "slug": "fearful-face",
+  "category": "Fear",
+  "meaning": "The Fearful Face emoji represents fear, anxiety, and feeling scared or threatened. It is commonly used to express nervousness, shock, or emotional distress caused by something frightening or uncertain.",
+  "unicode_name": "FEARFUL FACE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F628",
+  "shortcodes": [":fearful:"],
+  "usage_examples": [
+    "That situation really scared me 😨",
+    "I didn’t expect that at all 😨",
+    "This makes me nervous 😨"
+  ],
+  "chat_examples": [
+    {
+      "context": "Sudden fear",
+      "person_a": "Did you hear that noise?",
+      "person_b": "Yeah, that scared me 😨"
+    },
+    {
+      "context": "Anxiety",
+      "person_a": "I’m worried about the results",
+      "person_b": "I feel the same 😨"
+    },
+    {
+      "context": "Threat perception",
+      "person_a": "That didn’t feel safe",
+      "person_b": "I know, it was scary 😨"
+    }
+  ],
+  "when_to_use": "Use this emoji when expressing fear, nervousness, anxiety, or feeling threatened by a situation.",
+  "when_not_to_use": "Avoid using it in playful or celebratory conversations where fear would feel confusing or unnecessary.",
+  "related_emojis": [
+    "face-screaming-in-fear",
+    "anxious-face-with-sweat",
+    "worried-face"
+  ],
+  "fun_fact": "😨 is often used to show fear mixed with anxiety and is less extreme than screaming or panic emojis.",
+  "faqs": [
+    {
+      "q": "What does the 😨 Fearful Face emoji mean?",
+      "a": "It represents fear, nervousness, or feeling scared."
+    },
+    {
+      "q": "Is 😨 stronger than 😟?",
+      "a": "Yes, 😨 shows fear, while 😟 shows worry or concern."
+    },
+    {
+      "q": "Can 😨 express anxiety?",
+      "a": "Yes, it often represents anxious fear."
+    },
+    {
+      "q": "Is 😨 appropriate for work chats?",
+      "a": "It may be used in informal discussions, but not formal communication."
+    },
+    {
+      "q": "Does 😨 show panic?",
+      "a": "It shows fear, but not extreme panic."
+    },
+    {
+      "q": "Is 😨 suitable for social media?",
+      "a": "Yes, it is commonly used in reactions to scary or shocking content."
+    },
+    {
+      "q": "Can 😨 be exaggerated?",
+      "a": "Yes, it can be used dramatically depending on context."
+    },
+    {
+      "q": "Is 😨 universally understood?",
+      "a": "Yes, it is globally recognized as a fearful expression."
+    }
+  ]
+}

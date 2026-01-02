@@ -1,0 +1,76 @@
+{
+  "name": "Orange Heart",
+  "emoji": "🧡",
+  "slug": "orange-heart",
+  "category": "Orange Hearts",
+  "meaning": "The Orange Heart emoji represents warm affection, enthusiasm, encouragement, and friendly love that sits between romance and friendship.",
+  "unicode_name": "ORANGE HEART",
+  "unicode_version": "Unicode 10.0",
+  "codepoint": "U+1F9E1",
+  "shortcodes": [":orange_heart:"],
+  "usage_examples": [
+    "So proud of you 🧡",
+    "Sending lots of warmth and support 🧡",
+    "This made me really happy 🧡"
+  ],
+  "chat_examples": [
+    {
+      "context": "Encouragement",
+      "person_a": "I’m nervous about tomorrow",
+      "person_b": "You’ve got this 🧡"
+    },
+    {
+      "context": "Friendly affection",
+      "person_a": "Thanks for always cheering me up",
+      "person_b": "Anytime 🧡"
+    },
+    {
+      "context": "Positive vibes",
+      "person_a": "That was such a fun day",
+      "person_b": "It really was 🧡"
+    }
+  ],
+  "when_to_use": "Use this emoji to express warmth, encouragement, friendly love, positivity, or supportive affection.",
+  "when_not_to_use": "Avoid using it when expressing deep romantic passion or intense emotional pain.",
+  "related_emojis": [
+    "yellow-heart",
+    "red-heart",
+    "blue-heart",
+    "green-heart"
+  ],
+  "fun_fact": "🧡 was added to fill the emotional gap between romantic red hearts and friendly yellow hearts, making it ideal for supportive messages.",
+  "faqs": [
+    {
+      "q": "What does the 🧡 Orange Heart emoji mean?",
+      "a": "It represents warmth, encouragement, and friendly affection."
+    },
+    {
+      "q": "Is 🧡 romantic?",
+      "a": "Not usually; it’s more friendly and supportive than romantic."
+    },
+    {
+      "q": "Can 🧡 be used for motivation?",
+      "a": "Yes, it’s commonly used to encourage or uplift someone."
+    },
+    {
+      "q": "Is 🧡 different from 💛?",
+      "a": "Yes, 💛 is cheerful friendship, while 🧡 adds warmth and enthusiasm."
+    },
+    {
+      "q": "Is 🧡 widely supported?",
+      "a": "Yes, across all modern platforms."
+    },
+    {
+      "q": "Can 🧡 be used on social media?",
+      "a": "Yes, especially in positive and supportive posts."
+    },
+    {
+      "q": "Does 🧡 imply care?",
+      "a": "Yes, it often conveys genuine care and encouragement."
+    },
+    {
+      "q": "Is 🧡 suitable for appreciation messages?",
+      "a": "Yes, it works well for gratitude and positivity."
+    }
+  ]
+}
