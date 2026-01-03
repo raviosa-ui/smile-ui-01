@@ -153,3 +153,71 @@ a:hover {
 .footer-inner nav a {
   margin-left: 12px;
 }
+/* ALL EMOJIS PAGE */
+.all-emojis-page {
+  padding: 32px 16px;
+}
+
+.emoji-group {
+  margin: 40px 0;
+}
+
+.emoji-group h2 {
+  margin-bottom: 12px;
+}
+
+.emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
+  gap: 10px;
+}
+
+/* EMOJI ITEM */
+.emoji-item {
+  font-size: 26px;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.emoji-item:hover {
+  background: #f1f1f1;
+}
+
+/* TOOLTIP (emoji name) */
+.emoji-item::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.emoji-item:hover::after {
+  opacity: 1;
+}
+
+/* COPY TOAST */
+#copy-toast {
+  position: fixed;
+  background: #222;
+  color: #fff;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 9999;
+}
