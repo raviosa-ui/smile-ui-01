@@ -221,3 +221,21 @@ a:hover {
   transition: opacity 0.2s ease;
   z-index: 9999;
 }
+/* EMOJI SEARCH */
+.emoji-search {
+  margin: 20px 0 30px;
+}
+
+.emoji-search input {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.emoji-search input:focus {
+  outline: none;
+  border-color: #666;
+}
