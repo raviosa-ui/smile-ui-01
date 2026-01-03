@@ -2,9 +2,9 @@ const container = document.getElementById(emoji-container);
 const toast = document.getElementById(copy-toast);
 
  Load Unicode emoji JSON
-fetch(dataunicode17-emojis.json)
-  .then(res = res.json())
-  .then(data = {
+fetch("/data/unicode17-emojis.json")
+  .then(res => res.json())
+  .then(data => console.log(data));
     data.groups.forEach(group = {
       const section = document.createElement(section);
       section.className = emoji-group;
