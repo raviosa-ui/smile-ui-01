@@ -417,8 +417,9 @@ a:hover {
 
   /* --- HEADER FIXES --- */
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
 
+  /* Header structure */
   .header-inner {
     flex-direction: column;
     align-items: center;
@@ -429,12 +430,13 @@ a:hover {
     text-align: center;
   }
 
+  /* Navigation layout */
   .top-nav {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .top-nav a {
@@ -442,6 +444,11 @@ a:hover {
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+    padding: 6px 12px;
+    background: #f0f2f5;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+    font-size: 0.85rem;
   }
 }
 
