@@ -257,10 +257,10 @@ a:hover {
   }
 }
 /* =========================================
-   EMOJI MIXER TOOL STYLES
+   EMOJI MIXER TOOL STYLES (COMPLETE)
    ========================================= */
 
-/* Section Layout */
+/* --- 1. Section Layout --- */
 .mixer-section {
   padding: 4rem 0;
   background-color: #f9f9f9;
@@ -281,7 +281,7 @@ a:hover {
   align-items: start;
 }
 
-/* Left Side: Preview Area */
+/* --- 2. Left Side: Preview Area --- */
 .preview-area {
   display: flex;
   flex-direction: column;
@@ -291,7 +291,7 @@ a:hover {
   border: 2px dashed #e0e0e0;
   border-radius: 20px;
   padding: 2rem;
-  min-height: 400px; /* Ensures consistent height */
+  min-height: 400px;
 }
 
 #emoji-svg {
@@ -306,7 +306,7 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Buttons */
+/* --- 3. Buttons --- */
 .action-buttons {
   margin-top: 2rem;
   display: flex;
@@ -339,7 +339,7 @@ a:hover {
 }
 
 .btn-download {
-  background-color: #333; /* Matches your footer/dark theme */
+  background-color: #333;
   color: white;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -350,7 +350,7 @@ a:hover {
   box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
 
-/* Right Side: Controls */
+/* --- 4. Right Side: Controls --- */
 .controls-area h3 { 
   margin-top: 0; 
   margin-bottom: 1.5rem;
@@ -373,7 +373,42 @@ a:hover {
   letter-spacing: 0.5px;
 }
 
-/* Feature Selectors (Eyes, Mouth, etc) */
+/* --- 5. NEW: Emotion Dropdown Styling --- */
+.preset-select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease;
+  
+  /* Custom Arrow for premium look */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.2rem;
+}
+
+.preset-select:hover {
+  border-color: #bbb;
+}
+
+.preset-select:focus {
+  outline: none;
+  border-color: #333;
+  box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
+}
+
+/* --- 6. Feature Selectors (Eyes, Mouth, etc) --- */
 .feature-selector {
   display: flex;
   align-items: center;
@@ -412,7 +447,7 @@ a:hover {
   color: #333; 
 }
 
-/* Custom Range Slider Styling */
+/* --- 7. Range Sliders --- */
 .slider-container {
   display: flex;
   align-items: center;
@@ -429,7 +464,6 @@ input[type=range]:focus {
   outline: none; 
 }
 
-/* Slider Track */
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8px;
@@ -438,7 +472,6 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 5px;
 }
 
-/* Slider Thumb (The Handle) */
 input[type=range]::-webkit-slider-thumb {
   height: 24px;
   width: 24px;
@@ -446,7 +479,7 @@ input[type=range]::-webkit-slider-thumb {
   background: #333;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -8px; /* Centers thumb on track */
+  margin-top: -8px; 
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   transition: transform 0.1s;
 }
@@ -455,10 +488,10 @@ input[type=range]::-webkit-slider-thumb:hover {
   transform: scale(1.1);
 }
 
-/* Mobile Responsiveness */
+/* --- 8. Mobile Responsiveness --- */
 @media (max-width: 768px) {
   .mixer-container {
-    grid-template-columns: 1fr; /* Stack vertically on mobile */
+    grid-template-columns: 1fr;
     gap: 2rem;
     padding: 1.5rem;
   }
@@ -471,38 +504,4 @@ input[type=range]::-webkit-slider-thumb:hover {
     font-size: 1rem;
     padding: 0 1rem;
   }
-}
-/* --- NEW: Emotion Dropdown Styling --- */
-.preset-select {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  font-family: inherit; /* Inherits your site font */
-  border: 2px solid #e0e0e0;
-  border-radius: 12px;
-  background-color: white;
-  color: #333;
-  cursor: pointer;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  transition: all 0.2s ease;
-  
-  /* Custom Arrow for a premium look */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 1.2rem;
-}
-
-.preset-select:hover {
-  border-color: #bbb;
-}
-
-.preset-select:focus {
-  outline: none;
-  border-color: #333;
-  box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
 }
