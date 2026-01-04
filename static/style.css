@@ -413,49 +413,37 @@ a:hover {
    MOBILE (SINGLE SOURCE OF TRUTH)
    Corrected & Forced Layout
 ================================ */
-@media (max-width: 768px) {
+
 
   /* --- HEADER FIXES --- */
   
-  /* 1. Force Vertical Stacking */
+  @media (max-width: 768px) {
+
   .header-inner {
-    display: flex !important;
-    flex-direction: column !important; /* !important forces the stack */
-    align-items: center !important;
-    gap: 15px;
-    height: auto;
-    padding: 15px 0;
-  }
-
-  /* 2. Fix Logo Appearance (No Blue Text) */
-  .logo a {
-    color: #111 !important; /* Forces black text */
-    text-decoration: none !important;
-    font-size: 1.5rem;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 5px; /* Spacing between emoji and text */
+    gap: 12px;
   }
 
-  /* 3. Organize Menu as a "Cloud" of buttons */
+  .logo {
+    text-align: center;
+  }
+
   .top-nav {
-    display: flex;
-    flex-wrap: wrap;        /* Allows buttons to wrap to next line */
-    justify-content: center; /* Centers them */
-    gap: 10px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .top-nav a {
-    margin-left: 0;
-    padding: 8px 16px;      /* Bigger touch target */
-    background: #f0f2f5;
-    border-radius: 20px;
-    border: 1px solid #e0e0e0;
-    font-size: 0.9rem;
-    color: #333;            /* Ensures text is dark */
-    white-space: nowrap;    /* Prevents button text from breaking */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
   }
+}
 
   /* --- GENERAL FIXES --- */
   
