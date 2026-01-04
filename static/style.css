@@ -411,47 +411,85 @@ a:hover {
 }
 /* ================================
    MOBILE (SINGLE SOURCE OF TRUTH)
+   Corrected & Forced Layout
 ================================ */
 @media (max-width: 768px) {
 
-  /* Header */
+  /* --- HEADER FIXES --- */
+  
+  /* 1. Force Vertical Stacking */
   .header-inner {
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important; /* !important forces the stack */
+    align-items: center !important;
     gap: 15px;
+    height: auto;
+    padding: 15px 0;
   }
 
+  /* 2. Fix Logo Appearance (No Blue Text) */
+  .logo a {
+    color: #111 !important; /* Forces black text */
+    text-decoration: none !important;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Spacing between emoji and text */
+  }
+
+  /* 3. Organize Menu as a "Cloud" of buttons */
   .top-nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+    flex-wrap: wrap;        /* Allows buttons to wrap to next line */
+    justify-content: center; /* Centers them */
+    gap: 10px;
+    width: 100%;
   }
 
   .top-nav a {
     margin-left: 0;
-    padding: 6px 12px;
+    padding: 8px 16px;      /* Bigger touch target */
     background: #f0f2f5;
     border-radius: 20px;
     border: 1px solid #e0e0e0;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    color: #333;            /* Ensures text is dark */
+    white-space: nowrap;    /* Prevents button text from breaking */
   }
 
-  /* Hero */
+  /* --- GENERAL FIXES --- */
+  
+  /* Hero Text Adjustment */
   .hero h1 {
     font-size: 28px;
+    padding: 0 10px;
   }
 
   .hero-sub {
     padding: 0 1rem;
+    font-size: 1rem;
   }
 
-  /* Mixer */
+  /* --- MIXER TOOL FIXES --- */
+  
   .mixer-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column; /* Stack mixer vertically */
     padding: 1.5rem;
+    gap: 2rem;
+  }
+  
+  .preview-area {
+    min-height: auto;
   }
 
   .action-buttons {
     flex-direction: column;
+    gap: 10px;
+  }
+  
+  .btn-mix {
+    width: 100%;
+    padding: 14px; /* Easier to tap */
   }
 }
