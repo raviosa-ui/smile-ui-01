@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Emoji Brand-o-mizer 🎛️ | Create Custom Emojis | SmileyMeaning</title>
+  <meta name="description" content="Create unique, custom-colored emojis that match your brand or mood. Mix eyes, mouths, and accessories without limits." />
+
+  <link rel="canonical" href="https://smileymeaning.com/emoji-mixer/" />
+
+  <meta property="og:title" content="Emoji Brand-o-mizer | SmileyMeaning" />
+  <meta property="og:description" content="Design your own custom emojis. Change colors, mix features, and download unique icons." />
+  <meta property="og:url" content="https://smileymeaning.com/emoji-mixer/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Emoji Brand-o-mizer | SmileyMeaning" />
+  <meta name="twitter:description" content="Design your own custom emojis. Change colors, mix features, and download unique icons." />
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="/static/style.css" />
+
+  <style>
+    /* --- MIXER SPECIFIC STYLES --- */
+    .mixer-section {
+      padding: 4rem 0;
+      background-color: #f9f9f9;
+    }
+    
+    .mixer-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Left Side: Preview */
+    .preview-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border: 2px dashed #e0e0e0;
+      border-radius: 15px;
+      padding: 2rem;
+      position: relative;
+    }
+
+    #emoji-canvas {
+      width: 250px;
+      height: 250px;
+      /* The SVG will be injected here */
+    }
+
+    .action-buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .btn-mix {
+      flex: 1;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.1s;
+      font-size: 1rem;
+    }
+
+    .btn-download { background-color: #333; color: white; }
+    .btn-random { background-color: #FFD700; color: #333; }
+    .btn-mix:active { transform: scale(0.98); }
+
+    /* Right Side: Controls */
+    .controls-area h3 { margin-top: 0; margin-bottom: 1.5rem; }
+
+    .control-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .control-label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+
+    /* Sliders */
+    .slider-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    input[type=range] {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    /* Feature Selectors */
+    .feature-selector {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f0f0f0;
+      padding: 0.5rem;
+      border-radius: 8px;
+    }
+
+    .nav-arrow {
+      background: white;
+      border: 1px solid #ddd;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .feature-name { font-size: 0.9rem; color: #333; }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .mixer-container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="/">😊 SmileyMeaning</a>
+    </div>
+    <nav class="top-nav">
+      <a href="/all-emojis/">📋 All Emojis</a>
+      <a href="/quiz/">🧩 Quiz</a>
+      <a href="/emoji-mixer/" class="active">🎛️ Emoji Mixer</a>
+      <a href="/emoji-combo/">➕ Emoji Combo</a>
+      <a href="/emoji-stories/">📖 Emoji Stories</a>
+      <a href="/trending-emojis/">🔥 Trending Emojis</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding: 3rem 0; text-align: center;">
+    <div class="container">
+      <h1>The Brand-o-mizer 🎛️</h1>
+      <p class="hero-sub">
+        Don't settle for standard yellow. Create custom emojis that match your <strong>style, brand, or mood</strong>.
+      </p>
+    </div>
+  </section>
+
+  <section class="mixer-section">
+    <div class="container">
+      <div class="mixer-container">
+        
+        <div class="preview-area">
+          <svg id="emoji-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="250" height="250">
+            <defs>
+              <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="2" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
+            </defs>
+            
+            <g id="layer-base" fill="#FFD700" stroke="#d4a000" stroke-width="2">
+              <circle cx="100" cy="100" r="90" />
+            </g>
+
+            <g id="layer-mouth" transform="translate(100, 130)" fill="#664500">
+              </g>
+
+            <g id="layer-eyes" transform="translate(100, 75)" fill="#664500">
+               </g>
+            
+            <g id="layer-acc" transform="translate(100, 100)">
+               </g>
+          </svg>
+
+          <div class="action-buttons">
+            <button class="btn-mix btn-random" onclick="randomize()">🎲 Randomize</button>
+            <button class="btn-mix btn-download" onclick="downloadEmoji()">⬇️ Download PNG</button>
+          </div>
+        </div>
+
+        <div class="controls-area">
+          <h3>Customize Your Look</h3>
+
+          <div class="control-group">
+            <label class="control-label">Brand Color (Hue)</label>
+            <div class="slider-container">
+              <input type="range" id="hueRange" min="0" max="360" value="45" oninput="updateColor()">
+            </div>
+          </div>
+          
+          <div class="control-group">
+            <label class="control-label">Intensity (Saturation)</label>
+            <div class="slider-container">
+              <input type="range" id="satRange" min="0" max="300" value="100" oninput="updateColor()">
+            </div>
+          </div>
+
+          <hr style="border: 0; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+          <div class="control-group">
+            <label class="control-label">Eyes</label>
+            <div class="feature-selector">
+              <button class="nav-arrow" onclick="changeFeature('eyes', -1)">❮</button>
+              <span class="feature-name" id="label-eyes">Standard</span>
+              <button class="nav-arrow" onclick="changeFeature('eyes', 1)">❯</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Mouth</label>
+            <div class="feature-selector">
+              <button class="nav-arrow" onclick="changeFeature('mouth', -1)">❮</button>
+              <span class="feature-name" id="label-mouth">Smile</span>
+              <button class="nav-arrow" onclick="changeFeature('mouth', 1)">❯</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Accessory</label>
+            <div class="feature-selector">
+              <button class="nav-arrow" onclick="changeFeature('acc', -1)">❮</button>
+              <span class="feature-name" id="label-acc">None</span>
+              <button class="nav-arrow" onclick="changeFeature('acc', 1)">❯</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="education">
+    <div class="container">
+      <h2>Why use the Brand-o-mizer?</h2>
+      <p>
+        Standard emojis are great, but they don't always fit your aesthetic. 
+        Use this tool to create <strong>on-brand assets</strong> for your notion pages, 
+        website favicons, or social media posts.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2025 SmileyMeaning.com</p>
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // --- 1. THE ASSET LIBRARY (SVG PATHS) ---
+  // No external API needed. We draw with code.
+  const assets = {
+    eyes: [
+      { name: "Standard", path: '<circle cx="-35" cy="0" r="12"/><circle cx="35" cy="0" r="12"/>' },
+      { name: "Happy", path: '<path d="M-50 0 Q-35 -20 -20 0" stroke="#664500" stroke-width="5" fill="none"/><path d="M20 0 Q35 -20 50 0" stroke="#664500" stroke-width="5" fill="none"/>' },
+      { name: "Wink", path: '<circle cx="-35" cy="0" r="12"/><path d="M20 5 Q35 -15 50 5" stroke="#664500" stroke-width="5" fill="none"/>' },
+      { name: "Hearts", path: '<path d="M-35 10 l-10 -15 a10 10 0 0 1 20 0 z" fill="#d93025"/><path d="M35 10 l-10 -15 a10 10 0 0 1 20 0 z" fill="#d93025"/>' },
+      { name: "Stars", path: '<path d="M-35 -15 L-30 0 L-15 0 L-25 10 L-20 25 L-35 15 L-50 25 L-45 10 L-55 0 L-40 0 Z" fill="#FFD700" stroke="#d4a000"/><path d="M35 -15 L40 0 L55 0 L45 10 L50 25 L35 15 L20 25 L25 10 L15 0 L30 0 Z" fill="#FFD700" stroke="#d4a000"/>' },
+      { name: "Sus", path: '<rect x="-50" y="-5" width="30" height="10" rx="5"/><rect x="20" y="-5" width="30" height="10" rx="5"/>' },
+      { name: "Crying", path: '<path d="M-35 0 Q-20 0 -20 10 L-35 10 Z" fill="#664500"/><circle cx="35" cy="0" r="12"/><path d="M-35 25 Q-30 40 -35 55 Q-45 40 -35 25" fill="#5c97bf" />' }
+    ],
+    mouth: [
+      { name: "Smile", path: '<path d="M-40 -10 Q0 30 40 -10" stroke="#664500" stroke-width="5" fill="none" stroke-linecap="round"/>' },
+      { name: "Big Grin", path: '<path d="M-40 -10 Q0 40 40 -10 Z" fill="#FFFFFF" stroke="#664500" stroke-width="3"/>' },
+      { name: "Flat", path: '<line x1="-30" y1="10" x2="30" y2="10" stroke="#664500" stroke-width="5" stroke-linecap="round"/>' },
+      { name: "Ooh", path: '<circle cx="0" cy="10" r="15" fill="#664500"/>' },
+      { name: "Tongue", path: '<path d="M-30 0 Q0 10 30 0" stroke="#664500" stroke-width="3" fill="none"/><path d="M-10 5 Q0 35 10 5" fill="#FF6D6D" stroke="#d93025" stroke-width="2"/>' },
+      { name: "Zipper", path: '<line x1="-30" y1="10" x2="30" y2="10" stroke="#664500" stroke-width="2"/><line x1="-25" y1="5" x2="-25" y2="15" stroke="#664500" stroke-width="2"/><line x1="-15" y1="5" x2="-15" y2="15" stroke="#664500" stroke-width="2"/><line x1="-5" y1="5" x2="-5" y2="15" stroke="#664500" stroke-width="2"/><line x1="5" y1="5" x2="5" y2="15" stroke="#664500" stroke-width="2"/><line x1="15" y1="5" x2="15" y2="15" stroke="#664500" stroke-width="2"/><line x1="25" y1="5" x2="25" y2="15" stroke="#664500" stroke-width="2"/>' }
+    ],
+    acc: [
+      { name: "None", path: '' },
+      { name: "Glasses", path: '<g stroke="#000" stroke-width="4" fill="rgba(0,0,0,0.5)"><circle cx="-35" cy="-25" r="25"/><circle cx="35" cy="-25" r="25"/><line x1="-10" y1="-25" x2="10" y2="-25"/></g>' },
+      { name: "Halo", path: '<ellipse cx="0" cy="-90" rx="40" ry="10" fill="none" stroke="#FFD700" stroke-width="5"/>' },
+      { name: "Sweat Drop", path: '<path d="M50 -50 Q65 -30 65 -15 A10 10 0 1 1 45 -15 Q45 -30 50 -50" fill="#5c97bf" stroke="#4682b4"/>' },
+      { name: "Cowboy Hat", path: '<path d="M-80 -60 Q0 -100 80 -60 L80 -80 Q0 -120 -80 -80 Z" fill="#8B4513"/><rect x="-50" y="-90" width="100" height="40" rx="10" fill="#8B4513"/>' }
+    ]
+  };
+
+  // --- 2. STATE MANAGEMENT ---
+  let currentState = {
+    eyes: 0,
+    mouth: 0,
+    acc: 0
+  };
+
+  // --- 3. RENDER FUNCTION ---
+  function render() {
+    // Inject SVG paths
+    document.getElementById('layer-eyes').innerHTML = assets.eyes[currentState.eyes].path;
+    document.getElementById('layer-mouth').innerHTML = assets.mouth[currentState.mouth].path;
+    document.getElementById('layer-acc').innerHTML = assets.acc[currentState.acc].path;
+
+    // Update Labels
+    document.getElementById('label-eyes').textContent = assets.eyes[currentState.eyes].name;
+    document.getElementById('label-mouth').textContent = assets.mouth[currentState.mouth].name;
+    document.getElementById('label-acc').textContent = assets.acc[currentState.acc].name;
+  }
+
+  // --- 4. CONTROLS ---
+  function changeFeature(type, direction) {
+    const len = assets[type].length;
+    currentState[type] = (currentState[type] + direction + len) % len;
+    render();
+  }
+
+  function updateColor() {
+    const hue = document.getElementById('hueRange').value;
+    const sat = document.getElementById('satRange').value;
+    
+    // Apply CSS filter to the base face layer to shift color
+    const baseLayer = document.getElementById('layer-base');
+    
+    // Logic: Standard emoji yellow is roughly Hue 45-50.
+    // We use hue-rotate to shift it.
+    // We use saturate to change intensity.
+    baseLayer.style.filter = `hue-rotate(${hue - 45}deg) saturate(${sat}%)`;
+  }
+
+  function randomize() {
+    currentState.eyes = Math.floor(Math.random() * assets.eyes.length);
+    currentState.mouth = Math.floor(Math.random() * assets.mouth.length);
+    currentState.acc = Math.floor(Math.random() * assets.acc.length);
+    
+    // Random color
+    document.getElementById('hueRange').value = Math.floor(Math.random() * 360);
+    render();
+    updateColor();
+  }
+
+  // --- 5. DOWNLOAD LOGIC (Canvas) ---
+  function downloadEmoji() {
+    const svgElement = document.getElementById('emoji-svg');
+    const canvas = document.createElement('canvas');
+    canvas.width = 500; // High res
+    canvas.height = 500;
+    const ctx = canvas.getContext('2d');
+
+    // Serialize SVG
+    const serializer = new XMLSerializer();
+    let svgString = serializer.serializeToString(svgElement);
+
+    // Embed current styling (colors/filters) into the SVG string explicitly
+    // because canvas drawImage won't read external CSS classes easily
+    const hue = document.getElementById('hueRange').value;
+    const sat = document.getElementById('satRange').value;
+    // Replace the base group with inline style
+    svgString = svgString.replace('id="layer-base"', `id="layer-base" style="filter: hue-rotate(${hue - 45}deg) saturate(${sat}%)"`);
+
+    const img = new Image();
+    // Convert SVG string to Base64
+    const svgBlob = new Blob([svgString], {type: 'image/svg+xml;charset=utf-8'});
+    const url = URL.createObjectURL(svgBlob);
+
+    img.onload = function() {
+      ctx.drawImage(img, 0, 0, 500, 500);
+      const pngLink = document.createElement('a');
+      pngLink.download = 'my-custom-emoji.png';
+      pngLink.href = canvas.toDataURL('image/png');
+      pngLink.click();
+      URL.revokeObjectURL(url);
+    };
+
+    img.src = url;
+  }
+
+  // Init
+  render();
+  updateColor();
+</script>
+
+</body>
+</html>
