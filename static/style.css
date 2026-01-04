@@ -55,6 +55,11 @@ a:hover {
   white-space: nowrap;
 }
 
+.top-nav {
+  display: flex;
+  align-items: center;
+}
+
 .top-nav a {
   margin-left: 16px;
   font-weight: 500;
@@ -218,7 +223,6 @@ a:hover {
   background: #f1f1f1;
 }
 
-/* Tooltip */
 .emoji-item::after {
   content: attr(data-name);
   position: absolute;
@@ -319,7 +323,6 @@ a:hover {
   margin: 0 auto;
 }
 
-/* Preview */
 .preview-area {
   display: flex;
   align-items: center;
@@ -334,7 +337,6 @@ a:hover {
   width: 100%;
 }
 
-/* Buttons */
 .action-buttons {
   margin-top: 2rem;
   display: flex;
@@ -359,67 +361,12 @@ a:hover {
   color: #fff;
 }
 
-/* Controls */
-.controls-area h3 {
-  margin-top: 0;
-}
-
-.control-group {
-  margin-bottom: 1.5rem;
-}
-
-.feature-selector {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
-  border-radius: 12px;
-  background: #f4f6f8;
-}
-/* --- NEW: Emotion Dropdown Styling --- */
-.preset-select {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  font-family: inherit;
-  border: 2px solid #e0e0e0;
-  border-radius: 12px;
-  background-color: white;
-  color: #333;
-  cursor: pointer;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  transition: all 0.2s ease;
-  
-  /* Custom Arrow for premium look */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 1.2rem;
-}
-
-.preset-select:hover {
-  border-color: #bbb;
-}
-
-.preset-select:focus {
-  outline: none;
-  border-color: #333;
-  box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
-}
 /* ================================
-   MOBILE (SINGLE SOURCE OF TRUTH)
-   Corrected & Forced Layout
+   MOBILE (LOCKED & STABLE)
 ================================ */
-
-
-  /* --- HEADER FIXES --- */
-  
 @media (max-width: 768px) {
 
-  /* Header structure */
+  /* Header */
   .header-inner {
     flex-direction: column;
     align-items: center;
@@ -430,7 +377,6 @@ a:hover {
     text-align: center;
   }
 
-  /* Navigation layout */
   .top-nav {
     width: 100%;
     display: grid;
@@ -450,11 +396,8 @@ a:hover {
     border: 1px solid #e0e0e0;
     font-size: 0.85rem;
   }
-}
 
-  /* --- GENERAL FIXES --- */
-  
-  /* Hero Text Adjustment */
+  /* Hero */
   .hero h1 {
     font-size: 28px;
     padding: 0 10px;
@@ -465,26 +408,19 @@ a:hover {
     font-size: 1rem;
   }
 
-  /* --- MIXER TOOL FIXES --- */
-  
+  /* Mixer */
   .mixer-container {
-    display: flex;
-    flex-direction: column; /* Stack mixer vertically */
+    grid-template-columns: 1fr;
     padding: 1.5rem;
-    gap: 2rem;
-  }
-  
-  .preview-area {
-    min-height: auto;
   }
 
   .action-buttons {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .btn-mix {
     width: 100%;
-    padding: 14px; /* Easier to tap */
+    padding: 14px;
   }
 }
