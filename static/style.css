@@ -1,10 +1,14 @@
+/* ================================
+   GLOBAL RESET & BASE
+================================ */
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
   color: #111;
   background: #fff;
   line-height: 1.6;
@@ -25,7 +29,9 @@ a:hover {
   padding: 0 16px;
 }
 
-/* HEADER */
+/* ================================
+   HEADER
+================================ */
 .site-header {
   border-bottom: 1px solid #eee;
   background: #fff;
@@ -43,12 +49,25 @@ a:hover {
   font-size: 20px;
 }
 
+.logo a {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
 .top-nav a {
   margin-left: 16px;
   font-weight: 500;
 }
 
-/* HERO */
+.top-nav a:focus {
+  outline: 2px solid #0a58ca;
+  outline-offset: 2px;
+}
+
+/* ================================
+   HERO
+================================ */
 .hero {
   background: #f8f9fb;
   padding: 48px 0;
@@ -86,7 +105,9 @@ a:hover {
   font-weight: 500;
 }
 
-/* CATEGORIES */
+/* ================================
+   CATEGORIES
+================================ */
 .categories {
   padding: 48px 0;
 }
@@ -112,7 +133,9 @@ a:hover {
   margin: 10px 0 6px;
 }
 
-/* POPULAR */
+/* ================================
+   POPULAR
+================================ */
 .popular {
   background: #f8f9fb;
   padding: 40px 0;
@@ -127,7 +150,9 @@ a:hover {
   margin: 8px 0;
 }
 
-/* EDUCATION & WHY */
+/* ================================
+   EDUCATION / WHY
+================================ */
 .education,
 .why {
   padding: 40px 0;
@@ -137,7 +162,9 @@ a:hover {
   padding-left: 18px;
 }
 
-/* FOOTER */
+/* ================================
+   FOOTER
+================================ */
 .site-footer {
   border-top: 1px solid #eee;
   padding: 20px 0;
@@ -153,7 +180,10 @@ a:hover {
 .footer-inner nav a {
   margin-left: 12px;
 }
-/* ALL EMOJIS PAGE */
+
+/* ================================
+   ALL EMOJIS PAGE
+================================ */
 .all-emojis-page {
   padding: 32px 16px;
 }
@@ -172,7 +202,9 @@ a:hover {
   gap: 10px;
 }
 
-/* EMOJI ITEM */
+/* ================================
+   EMOJI ITEM
+================================ */
 .emoji-item {
   font-size: 26px;
   text-align: center;
@@ -186,7 +218,7 @@ a:hover {
   background: #f1f1f1;
 }
 
-/* TOOLTIP (emoji name) */
+/* Tooltip */
 .emoji-item::after {
   content: attr(data-name);
   position: absolute;
@@ -208,7 +240,9 @@ a:hover {
   opacity: 1;
 }
 
-/* COPY TOAST */
+/* ================================
+   COPY TOAST
+================================ */
 #copy-toast {
   position: fixed;
   background: #222;
@@ -221,7 +255,10 @@ a:hover {
   transition: opacity 0.2s ease;
   z-index: 9999;
 }
-/* EMOJI SEARCH */
+
+/* ================================
+   EMOJI SEARCH
+================================ */
 .emoji-search {
   margin: 20px 0 30px;
 }
@@ -239,7 +276,10 @@ a:hover {
   outline: none;
   border-color: #666;
 }
-/* CONFETTI */
+
+/* ================================
+   CONFETTI
+================================ */
 .confetti {
   position: fixed;
   top: -10px;
@@ -256,14 +296,13 @@ a:hover {
     transform: translateY(110vh) rotate(360deg);
   }
 }
-/* =========================================
-   EMOJI MIXER TOOL STYLES (COMPLETE)
-   ========================================= */
 
-/* --- 1. Section Layout --- */
+/* ================================
+   EMOJI MIXER TOOL
+================================ */
 .mixer-section {
   padding: 4rem 0;
-  background-color: #f9f9f9;
+  background: #f9f9f9;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
@@ -272,327 +311,114 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  background: white;
+  background: #fff;
   padding: 2.5rem;
   border-radius: 24px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.06);
   max-width: 900px;
   margin: 0 auto;
-  align-items: start;
 }
 
-/* --- 2. Left Side: Preview Area --- */
+/* Preview */
 .preview-area {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
   border: 2px dashed #e0e0e0;
   border-radius: 20px;
   padding: 2rem;
-  min-height: 400px;
 }
 
 #emoji-svg {
-  width: 100%;
   max-width: 280px;
-  height: auto;
-  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 100%;
 }
 
-#emoji-svg:hover {
-  transform: scale(1.05);
-}
-
-/* --- 3. Buttons --- */
+/* Buttons */
 .action-buttons {
   margin-top: 2rem;
   display: flex;
   gap: 1rem;
-  width: 100%;
 }
 
 .btn-mix {
   flex: 1;
   padding: 1rem;
-  border: none;
   border-radius: 12px;
+  border: none;
   font-weight: 700;
-  font-size: 1rem;
   cursor: pointer;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
 }
 
 .btn-random {
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-.btn-random:hover {
-  background-color: #e0e0e0;
+  background: #f0f0f0;
 }
 
 .btn-download {
-  background-color: #333;
-  color: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #333;
+  color: #fff;
 }
 
-.btn-download:hover {
-  background-color: #000;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
-}
-
-/* --- 4. Right Side: Controls --- */
-.controls-area h3 { 
-  margin-top: 0; 
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  color: #222;
+/* Controls */
+.controls-area h3 {
+  margin-top: 0;
 }
 
 .control-group {
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
 }
 
-.control-label {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
-  color: #555;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-/* --- 5. NEW: Emotion Dropdown Styling --- */
-.preset-select {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  font-family: inherit;
-  border: 2px solid #e0e0e0;
-  border-radius: 12px;
-  background-color: white;
-  color: #333;
-  cursor: pointer;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  transition: all 0.2s ease;
-  
-  /* Custom Arrow for premium look */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 1.2rem;
-}
-
-.preset-select:hover {
-  border-color: #bbb;
-}
-
-.preset-select:focus {
-  outline: none;
-  border-color: #333;
-  box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
-}
-
-/* --- 6. Feature Selectors (Eyes, Mouth, etc) --- */
 .feature-selector {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background: #f4f6f8;
   padding: 0.5rem;
   border-radius: 12px;
-  border: 1px solid #eee;
+  background: #f4f6f8;
 }
 
-.nav-arrow {
-  background: white;
-  border: 1px solid #ddd;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #555;
-  transition: background 0.2s;
-}
-
-.nav-arrow:hover {
-  background: #fff;
-  border-color: #bbb;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.feature-name { 
-  font-size: 1rem; 
-  font-weight: 600; 
-  color: #333; 
-}
-
-/* --- 7. Range Sliders --- */
-.slider-container {
-  display: flex;
-  align-items: center;
-  height: 30px;
-}
-
-input[type=range] {
-  -webkit-appearance: none; 
-  width: 100%; 
-  background: transparent; 
-}
-
-input[type=range]:focus {
-  outline: none; 
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8px;
-  cursor: pointer;
-  background: #e0e0e0;
-  border-radius: 5px;
-}
-
-input[type=range]::-webkit-slider-thumb {
-  height: 24px;
-  width: 24px;
-  border-radius: 50%;
-  background: #333;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -8px; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: transform 0.1s;
-}
-
-input[type=range]::-webkit-slider-thumb:hover {
-  transform: scale(1.1);
-}
-
-
- /* =========================================
-   8. MOBILE RESPONSIVENESS (MERGED FIXES)
-   ========================================= */
-
+/* ================================
+   MOBILE (SINGLE SOURCE OF TRUTH)
+================================ */
 @media (max-width: 768px) {
-  
-  /* --- MIXER TOOL FIXES --- */
-  
-  /* 1. Fix the Main Container Layout */
-  .mixer-container {
-    display: flex;          /* Use Flexbox for better mobile stacking */
-    flex-direction: column; /* Stack vertically */
-    align-items: center;    /* Center everything */
-    gap: 2rem;
-    padding: 1.5rem;
-    width: 95%;             /* Use full width */
-    margin: 0 auto;
-  }
 
-  /* 2. Fix the Preview Box */
-  .preview-area {
-    width: 100%;
-    min-height: auto;
-    padding: 1.5rem;
-  }
-
-  /* 3. Make Buttons Big and Tappable */
-  .action-buttons {
-    width: 100%;
-    gap: 10px;
-  }
-  
-  .btn-mix {
-    width: 48%; /* Split buttons evenly */
-    padding: 12px;
-  }
-
-  /* 4. Fix Control Area Alignment */
-  .controls-area {
-    width: 100%;
-    text-align: center;
-  }
-
-  .control-group {
-    width: 100%;
-    text-align: left; /* Keep labels readable */
-  }
-
-  /* 5. Fix Feature Selectors */
-  .feature-selector {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .nav-arrow {
-    width: 44px; /* Larger touch target */
-    height: 44px;
-  }
-
-  /* --- HEADER FIXES --- */
-
-  /* 1. Stack the Logo and Menu vertically */
+  /* Header */
   .header-inner {
     flex-direction: column;
-    align-items: center;
     gap: 15px;
-    padding-bottom: 10px;
   }
 
-  /* 2. Fix the Logo Splitting */
-  .logo a {
-    display: flex;          /* Keeps emoji and text together */
-    align-items: center;
-    white-space: nowrap;    /* Forces text to stay on one line */
-    font-size: 1.4rem;
-  }
-
-  /* 3. Organize the Menu Buttons */
   .top-nav {
     display: flex;
-    flex-wrap: wrap;        /* Allows links to create a second row if needed */
-    justify-content: center; 
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 8px;
-    width: 100%;
   }
 
-  /* 4. Make Links look like Buttons */
   .top-nav a {
     margin-left: 0;
-    font-size: 0.85rem;
     padding: 6px 12px;
     background: #f0f2f5;
     border-radius: 20px;
-    color: #333;
     border: 1px solid #e0e0e0;
-  }
-  
-  .top-nav a:active {
-    background-color: #e0e0e0;
+    font-size: 0.85rem;
   }
 
-  /* --- GENERAL FIXES --- */
+  /* Hero */
+  .hero h1 {
+    font-size: 28px;
+  }
+
   .hero-sub {
-    font-size: 1rem;
     padding: 0 1rem;
+  }
+
+  /* Mixer */
+  .mixer-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
   }
 }
