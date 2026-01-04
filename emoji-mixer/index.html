@@ -4,19 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Emoji Brand-o-mizer 🎛️ | Create Custom Emojis | SmileyMeaning</title>
-  <meta name="description" content="Create unique, custom-colored emojis that match your brand or mood. Mix eyes, mouths, and accessories without limits." />
+  <title>Emoji Brand-o-mizer 🎛️ | Custom Emoji Maker | SmileyMeaning</title>
+  <meta name="description" content="Create unique, custom-colored emojis. Choose from emotions like Happy, Sad, or Angry, and customize with brand colors." />
 
   <link rel="canonical" href="https://smileymeaning.com/emoji-mixer/" />
-
+  
   <meta property="og:title" content="Emoji Brand-o-mizer | SmileyMeaning" />
   <meta property="og:description" content="Design your own custom emojis. Change colors, mix features, and download unique icons." />
   <meta property="og:url" content="https://smileymeaning.com/emoji-mixer/" />
   <meta property="og:type" content="website" />
-
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Emoji Brand-o-mizer | SmileyMeaning" />
-  <meta name="twitter:description" content="Design your own custom emojis. Change colors, mix features, and download unique icons." />
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -25,119 +22,23 @@
   <link rel="stylesheet" href="/static/style.css" />
 
   <style>
-    /* --- MIXER SPECIFIC STYLES --- */
-    .mixer-section {
-      padding: 4rem 0;
-      background-color: #f9f9f9;
-    }
-    
-    .mixer-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      background: white;
-      padding: 2rem;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    /* Left Side: Preview */
-    .preview-area {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: #ffffff;
-      border: 2px dashed #e0e0e0;
-      border-radius: 15px;
-      padding: 2rem;
-      position: relative;
-    }
-
-    #emoji-canvas {
-      width: 250px;
-      height: 250px;
-      /* The SVG will be injected here */
-    }
-
-    .action-buttons {
-      margin-top: 1.5rem;
-      display: flex;
-      gap: 1rem;
+    /* Specific style for the new dropdown to make it pop */
+    .preset-select {
       width: 100%;
-    }
-
-    .btn-mix {
-      flex: 1;
-      padding: 0.8rem;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: transform 0.1s;
+      padding: 12px;
       font-size: 1rem;
-    }
-
-    .btn-download { background-color: #333; color: white; }
-    .btn-random { background-color: #FFD700; color: #333; }
-    .btn-mix:active { transform: scale(0.98); }
-
-    /* Right Side: Controls */
-    .controls-area h3 { margin-top: 0; margin-bottom: 1.5rem; }
-
-    .control-group {
-      margin-bottom: 1.5rem;
-    }
-
-    .control-label {
-      display: block;
+      border: 2px solid #ddd;
+      border-radius: 12px;
+      background-color: white;
+      color: #333;
+      cursor: pointer;
       font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: #555;
+      margin-bottom: 1rem;
+      transition: border-color 0.2s;
     }
-
-    /* Sliders */
-    .slider-container {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    
-    input[type=range] {
-      width: 100%;
-      cursor: pointer;
-    }
-
-    /* Feature Selectors */
-    .feature-selector {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: #f0f0f0;
-      padding: 0.5rem;
-      border-radius: 8px;
-    }
-
-    .nav-arrow {
-      background: white;
-      border: 1px solid #ddd;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-    }
-
-    .feature-name { font-size: 0.9rem; color: #333; }
-
-    /* Mobile Responsive */
-    @media (max-width: 768px) {
-      .mixer-container { grid-template-columns: 1fr; }
+    .preset-select:focus {
+      outline: none;
+      border-color: #333;
     }
   </style>
 </head>
@@ -166,7 +67,7 @@
     <div class="container">
       <h1>The Brand-o-mizer 🎛️</h1>
       <p class="hero-sub">
-        Don't settle for standard yellow. Create custom emojis that match your <strong>style, brand, or mood</strong>.
+        Pick an emotion, customize the colors to match your brand, and download your unique sticker.
       </p>
     </div>
   </section>
@@ -200,25 +101,26 @@
 
           <div class="action-buttons">
             <button class="btn-mix btn-random" onclick="randomize()">🎲 Randomize</button>
-            <button class="btn-mix btn-download" onclick="downloadEmoji()">⬇️ Download PNG</button>
+            <button class="btn-mix btn-download" onclick="downloadEmoji()">⬇️ Download</button>
           </div>
         </div>
 
         <div class="controls-area">
-          <h3>Customize Your Look</h3>
-
-          <div class="control-group">
-            <label class="control-label">Brand Color (Hue)</label>
-            <div class="slider-container">
-              <input type="range" id="hueRange" min="0" max="360" value="45" oninput="updateColor()">
-            </div>
-          </div>
           
           <div class="control-group">
-            <label class="control-label">Intensity (Saturation)</label>
-            <div class="slider-container">
-              <input type="range" id="satRange" min="0" max="300" value="100" oninput="updateColor()">
-            </div>
+            <label class="control-label">⚡ Quick Emotion</label>
+            <select id="emotionPreset" class="preset-select" onchange="applyPreset()">
+              <option value="custom">Custom / Select...</option>
+              <option value="happy">😊 Happiness</option>
+              <option value="sad">😢 Sadness</option>
+              <option value="angry">😠 Anger</option>
+              <option value="fear">😨 Fearful</option>
+              <option value="love">😍 In Love</option>
+              <option value="party">🥳 Celebrating</option>
+              <option value="cool">😎 Cool / Chill</option>
+              <option value="sick">😷 Sick / Unwell</option>
+              <option value="dead">😵 Confused / Dead</option>
+            </select>
           </div>
 
           <hr style="border: 0; border-top: 1px solid #eee; margin: 1.5rem 0;">
@@ -250,19 +152,24 @@
             </div>
           </div>
 
+          <hr style="border: 0; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+          <div class="control-group">
+            <label class="control-label">Brand Color (Hue)</label>
+            <div class="slider-container">
+              <input type="range" id="hueRange" min="0" max="360" value="45" oninput="updateColor()">
+            </div>
+          </div>
+          
+          <div class="control-group">
+            <label class="control-label">Intensity (Saturation)</label>
+            <div class="slider-container">
+              <input type="range" id="satRange" min="0" max="300" value="100" oninput="updateColor()">
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="education">
-    <div class="container">
-      <h2>Why use the Brand-o-mizer?</h2>
-      <p>
-        Standard emojis are great, but they don't always fit your aesthetic. 
-        Use this tool to create <strong>on-brand assets</strong> for your notion pages, 
-        website favicons, or social media posts.
-      </p>
     </div>
   </section>
 
@@ -270,19 +177,17 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>© 2025 SmileyMeaning.com</p>
+    <p>© 2026 SmileyMeaning.com</p>
     <nav>
       <a href="/about/">About</a>
       <a href="/privacy/">Privacy</a>
       <a href="/terms/">Terms</a>
-      <a href="/sitemap.xml">Sitemap</a>
     </nav>
   </div>
 </footer>
 
 <script>
-  // --- 1. THE ASSET LIBRARY (SVG PATHS) ---
-  // No external API needed. We draw with code.
+  // --- 1. EXPANDED ASSET LIBRARY ---
   const assets = {
     eyes: [
       { name: "Standard", path: '<circle cx="-35" cy="0" r="12"/><circle cx="35" cy="0" r="12"/>' },
@@ -290,64 +195,126 @@
       { name: "Wink", path: '<circle cx="-35" cy="0" r="12"/><path d="M20 5 Q35 -15 50 5" stroke="#664500" stroke-width="5" fill="none"/>' },
       { name: "Hearts", path: '<path d="M-35 10 l-10 -15 a10 10 0 0 1 20 0 z" fill="#d93025"/><path d="M35 10 l-10 -15 a10 10 0 0 1 20 0 z" fill="#d93025"/>' },
       { name: "Stars", path: '<path d="M-35 -15 L-30 0 L-15 0 L-25 10 L-20 25 L-35 15 L-50 25 L-45 10 L-55 0 L-40 0 Z" fill="#FFD700" stroke="#d4a000"/><path d="M35 -15 L40 0 L55 0 L45 10 L50 25 L35 15 L20 25 L25 10 L15 0 L30 0 Z" fill="#FFD700" stroke="#d4a000"/>' },
-      { name: "Sus", path: '<rect x="-50" y="-5" width="30" height="10" rx="5"/><rect x="20" y="-5" width="30" height="10" rx="5"/>' },
-      { name: "Crying", path: '<path d="M-35 0 Q-20 0 -20 10 L-35 10 Z" fill="#664500"/><circle cx="35" cy="0" r="12"/><path d="M-35 25 Q-30 40 -35 55 Q-45 40 -35 25" fill="#5c97bf" />' }
+      { name: "Angry", path: '<path d="M-50 -15 L-20 5" stroke="#664500" stroke-width="5"/><path d="M50 -15 L20 5" stroke="#664500" stroke-width="5"/><circle cx="-35" cy="5" r="10"/><circle cx="35" cy="5" r="10"/>' },
+      { name: "Fear/Shock", path: '<circle cx="-35" cy="0" r="15" fill="white" stroke="#664500" stroke-width="2"/><circle cx="-35" cy="0" r="5" fill="#664500"/><circle cx="35" cy="0" r="15" fill="white" stroke="#664500" stroke-width="2"/><circle cx="35" cy="0" r="5" fill="#664500"/>' },
+      { name: "Crying", path: '<path d="M-35 0 Q-20 0 -20 10 L-35 10 Z" fill="#664500"/><circle cx="35" cy="0" r="12"/><path d="M-35 25 Q-30 40 -35 55 Q-45 40 -35 25" fill="#5c97bf" />' },
+      { name: "X-Eyes", path: '<path d="M-45 -10 L-25 10 M-45 10 L-25 -10" stroke="#664500" stroke-width="5"/><path d="M25 -10 L45 10 M25 10 L45 -10" stroke="#664500" stroke-width="5"/>' },
+      { name: "Neutral", path: '<line x1="-45" y1="0" x2="-25" y2="0" stroke="#664500" stroke-width="5"/><line x1="25" y1="0" x2="45" y2="0" stroke="#664500" stroke-width="5"/>' }
     ],
     mouth: [
       { name: "Smile", path: '<path d="M-40 -10 Q0 30 40 -10" stroke="#664500" stroke-width="5" fill="none" stroke-linecap="round"/>' },
       { name: "Big Grin", path: '<path d="M-40 -10 Q0 40 40 -10 Z" fill="#FFFFFF" stroke="#664500" stroke-width="3"/>' },
+      { name: "Frown", path: '<path d="M-40 20 Q0 -10 40 20" stroke="#664500" stroke-width="5" fill="none" stroke-linecap="round"/>' },
       { name: "Flat", path: '<line x1="-30" y1="10" x2="30" y2="10" stroke="#664500" stroke-width="5" stroke-linecap="round"/>' },
-      { name: "Ooh", path: '<circle cx="0" cy="10" r="15" fill="#664500"/>' },
+      { name: "Ooh/Fear", path: '<ellipse cx="0" cy="10" rx="15" ry="20" fill="#664500"/>' },
       { name: "Tongue", path: '<path d="M-30 0 Q0 10 30 0" stroke="#664500" stroke-width="3" fill="none"/><path d="M-10 5 Q0 35 10 5" fill="#FF6D6D" stroke="#d93025" stroke-width="2"/>' },
-      { name: "Zipper", path: '<line x1="-30" y1="10" x2="30" y2="10" stroke="#664500" stroke-width="2"/><line x1="-25" y1="5" x2="-25" y2="15" stroke="#664500" stroke-width="2"/><line x1="-15" y1="5" x2="-15" y2="15" stroke="#664500" stroke-width="2"/><line x1="-5" y1="5" x2="-5" y2="15" stroke="#664500" stroke-width="2"/><line x1="5" y1="5" x2="5" y2="15" stroke="#664500" stroke-width="2"/><line x1="15" y1="5" x2="15" y2="15" stroke="#664500" stroke-width="2"/><line x1="25" y1="5" x2="25" y2="15" stroke="#664500" stroke-width="2"/>' }
+      { name: "Grimace", path: '<rect x="-40" y="-5" width="80" height="20" rx="5" fill="white" stroke="#664500" stroke-width="2"/><line x1="-40" y1="5" x2="40" y2="5" stroke="#664500" stroke-width="1"/><line x1="0" y1="-5" x2="0" y2="15" stroke="#664500" stroke-width="1"/><line x1="-20" y1="-5" x2="-20" y2="15" stroke="#664500" stroke-width="1"/><line x1="20" y1="-5" x2="20" y2="15" stroke="#664500" stroke-width="1"/>' }
     ],
     acc: [
       { name: "None", path: '' },
       { name: "Glasses", path: '<g stroke="#000" stroke-width="4" fill="rgba(0,0,0,0.5)"><circle cx="-35" cy="-25" r="25"/><circle cx="35" cy="-25" r="25"/><line x1="-10" y1="-25" x2="10" y2="-25"/></g>' },
+      { name: "Sunglasses", path: '<g fill="#222"><path d="M-65 -40 L-5 -40 L-10 -10 Q-35 0 -60 -10 Z"/><path d="M5 -40 L65 -40 L60 -10 Q35 0 10 -10 Z"/><line x1="-10" y1="-30" x2="10" y2="-30" stroke="#222" stroke-width="3"/></g>' },
       { name: "Halo", path: '<ellipse cx="0" cy="-90" rx="40" ry="10" fill="none" stroke="#FFD700" stroke-width="5"/>' },
       { name: "Sweat Drop", path: '<path d="M50 -50 Q65 -30 65 -15 A10 10 0 1 1 45 -15 Q45 -30 50 -50" fill="#5c97bf" stroke="#4682b4"/>' },
-      { name: "Cowboy Hat", path: '<path d="M-80 -60 Q0 -100 80 -60 L80 -80 Q0 -120 -80 -80 Z" fill="#8B4513"/><rect x="-50" y="-90" width="100" height="40" rx="10" fill="#8B4513"/>' }
+      { name: "Cowboy Hat", path: '<path d="M-80 -60 Q0 -100 80 -60 L80 -80 Q0 -120 -80 -80 Z" fill="#8B4513"/><rect x="-50" y="-90" width="100" height="40" rx="10" fill="#8B4513"/>' },
+      { name: "Party Hat", path: '<path d="M-20 -70 L0 -140 L20 -70 Z" fill="#FF4081" stroke="#C2185B" stroke-width="2"/><circle cx="0" cy="-140" r="5" fill="#FFD700"/>' },
+      { name: "Devil Horns", path: '<path d="M-40 -70 Q-50 -100 -20 -90" stroke="#D32F2F" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M40 -70 Q50 -100 20 -90" stroke="#D32F2F" stroke-width="6" fill="none" stroke-linecap="round"/>' },
+      { name: "Medical Mask", path: '<rect x="-50" y="0" width="100" height="60" rx="15" fill="white" stroke="#ccc" stroke-width="2"/><path d="M-50 10 L-80 0 M-50 50 L-80 60 M50 10 L80 0 M50 50 L80 60" stroke="#ccc" stroke-width="2"/>' }
     ]
   };
 
-  // --- 2. STATE MANAGEMENT ---
-  let currentState = {
-    eyes: 0,
-    mouth: 0,
-    acc: 0
-  };
+  let currentState = { eyes: 0, mouth: 0, acc: 0 };
 
-  // --- 3. RENDER FUNCTION ---
+  // --- 2. RENDER LOGIC ---
   function render() {
-    // Inject SVG paths
     document.getElementById('layer-eyes').innerHTML = assets.eyes[currentState.eyes].path;
     document.getElementById('layer-mouth').innerHTML = assets.mouth[currentState.mouth].path;
     document.getElementById('layer-acc').innerHTML = assets.acc[currentState.acc].path;
 
-    // Update Labels
     document.getElementById('label-eyes').textContent = assets.eyes[currentState.eyes].name;
     document.getElementById('label-mouth').textContent = assets.mouth[currentState.mouth].name;
     document.getElementById('label-acc').textContent = assets.acc[currentState.acc].name;
   }
 
-  // --- 4. CONTROLS ---
   function changeFeature(type, direction) {
     const len = assets[type].length;
     currentState[type] = (currentState[type] + direction + len) % len;
     render();
+    // If user manually changes something, set dropdown to custom
+    document.getElementById('emotionPreset').value = 'custom';
   }
 
   function updateColor() {
     const hue = document.getElementById('hueRange').value;
     const sat = document.getElementById('satRange').value;
-    
-    // Apply CSS filter to the base face layer to shift color
     const baseLayer = document.getElementById('layer-base');
-    
-    // Logic: Standard emoji yellow is roughly Hue 45-50.
-    // We use hue-rotate to shift it.
-    // We use saturate to change intensity.
     baseLayer.style.filter = `hue-rotate(${hue - 45}deg) saturate(${sat}%)`;
+  }
+
+  // --- 3. PRESET LOGIC (The New "Category" Feature) ---
+  function findIndex(type, namePart) {
+    return assets[type].findIndex(item => item.name.includes(namePart));
+  }
+
+  function applyPreset() {
+    const emotion = document.getElementById('emotionPreset').value;
+    
+    // Default to Standard/Smile if not found
+    let e = 0, m = 0, a = 0;
+
+    switch(emotion) {
+      case 'happy':
+        e = findIndex('eyes', 'Happy');
+        m = findIndex('mouth', 'Smile');
+        break;
+      case 'sad':
+        e = findIndex('eyes', 'Crying');
+        m = findIndex('mouth', 'Frown');
+        a = findIndex('acc', 'Sweat');
+        break;
+      case 'angry':
+        e = findIndex('eyes', 'Angry');
+        m = findIndex('mouth', 'Grimace'); // or Frown
+        a = findIndex('acc', 'Devil'); // optional
+        break;
+      case 'fear':
+        e = findIndex('eyes', 'Fear');
+        m = findIndex('mouth', 'Ooh');
+        break;
+      case 'love':
+        e = findIndex('eyes', 'Hearts');
+        m = findIndex('mouth', 'Smile');
+        break;
+      case 'party':
+        e = findIndex('eyes', 'Stars');
+        m = findIndex('mouth', 'Big Grin');
+        a = findIndex('acc', 'Party Hat');
+        break;
+      case 'cool':
+        // Sunglasses usually cover eyes, so any eye works, but let's use standard
+        e = 0; 
+        m = findIndex('mouth', 'Smile');
+        a = findIndex('acc', 'Sunglasses');
+        break;
+      case 'sick':
+        e = findIndex('eyes', 'Crying'); // looks tired
+        m = findIndex('mouth', 'Flat'); 
+        a = findIndex('acc', 'Medical Mask');
+        break;
+      case 'dead':
+        e = findIndex('eyes', 'X-Eyes');
+        m = findIndex('mouth', 'Flat');
+        break;
+      case 'custom':
+        return; // Do nothing
+    }
+
+    // Apply the found indices (fallback to 0 if not found)
+    currentState.eyes = e !== -1 ? e : 0;
+    currentState.mouth = m !== -1 ? m : 0;
+    currentState.acc = a !== -1 ? a : 0;
+    
+    render();
   }
 
   function randomize() {
@@ -355,45 +322,37 @@
     currentState.mouth = Math.floor(Math.random() * assets.mouth.length);
     currentState.acc = Math.floor(Math.random() * assets.acc.length);
     
-    // Random color
     document.getElementById('hueRange').value = Math.floor(Math.random() * 360);
+    document.getElementById('emotionPreset').value = 'custom';
     render();
     updateColor();
   }
 
-  // --- 5. DOWNLOAD LOGIC (Canvas) ---
   function downloadEmoji() {
     const svgElement = document.getElementById('emoji-svg');
     const canvas = document.createElement('canvas');
-    canvas.width = 500; // High res
+    canvas.width = 500;
     canvas.height = 500;
     const ctx = canvas.getContext('2d');
-
-    // Serialize SVG
     const serializer = new XMLSerializer();
     let svgString = serializer.serializeToString(svgElement);
-
-    // Embed current styling (colors/filters) into the SVG string explicitly
-    // because canvas drawImage won't read external CSS classes easily
+    
     const hue = document.getElementById('hueRange').value;
     const sat = document.getElementById('satRange').value;
-    // Replace the base group with inline style
     svgString = svgString.replace('id="layer-base"', `id="layer-base" style="filter: hue-rotate(${hue - 45}deg) saturate(${sat}%)"`);
 
     const img = new Image();
-    // Convert SVG string to Base64
     const svgBlob = new Blob([svgString], {type: 'image/svg+xml;charset=utf-8'});
     const url = URL.createObjectURL(svgBlob);
 
     img.onload = function() {
       ctx.drawImage(img, 0, 0, 500, 500);
       const pngLink = document.createElement('a');
-      pngLink.download = 'my-custom-emoji.png';
+      pngLink.download = `emoji-${document.getElementById('emotionPreset').value}.png`;
       pngLink.href = canvas.toDataURL('image/png');
       pngLink.click();
       URL.revokeObjectURL(url);
     };
-
     img.src = url;
   }
 
