@@ -488,17 +488,7 @@ input[type=range]::-webkit-slider-thumb:hover {
   transform: scale(1.1);
 }
 
-/* --- 8. Mobile Responsiveness --- */
-@media (max-width: 768px) {
-  .mixer-container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 1.5rem;
-  }
-  
-  .preview-area {
-    min-height: 300px;
-  }
+
  /* =========================================
    8. MOBILE RESPONSIVENESS (MERGED FIXES)
    ========================================= */
