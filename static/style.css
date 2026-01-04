@@ -499,9 +499,111 @@ input[type=range]::-webkit-slider-thumb:hover {
   .preview-area {
     min-height: 300px;
   }
+  /* =========================================
+   8. MOBILE RESPONSIVENESS (MERGED FIXES)
+   ========================================= */
+
+@media (max-width: 768px) {
   
+  /* --- MIXER TOOL FIXES --- */
+  
+  /* 1. Fix the Main Container Layout */
+  .mixer-container {
+    display: flex;          /* Use Flexbox for better mobile stacking */
+    flex-direction: column; /* Stack vertically */
+    align-items: center;    /* Center everything */
+    gap: 2rem;
+    padding: 1.5rem;
+    width: 95%;             /* Use full width */
+    margin: 0 auto;
+  }
+
+  /* 2. Fix the Preview Box */
+  .preview-area {
+    width: 100%;
+    min-height: auto;
+    padding: 1.5rem;
+  }
+
+  /* 3. Make Buttons Big and Tappable */
+  .action-buttons {
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .btn-mix {
+    width: 48%; /* Split buttons evenly */
+    padding: 12px;
+  }
+
+  /* 4. Fix Control Area Alignment */
+  .controls-area {
+    width: 100%;
+    text-align: center;
+  }
+
+  .control-group {
+    width: 100%;
+    text-align: left; /* Keep labels readable */
+  }
+
+  /* 5. Fix Feature Selectors */
+  .feature-selector {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-arrow {
+    width: 44px; /* Larger touch target */
+    height: 44px;
+  }
+
+  /* --- HEADER FIXES --- */
+
+  /* 1. Stack the Logo and Menu vertically */
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 10px;
+  }
+
+  /* 2. Fix the Logo Splitting */
+  .logo a {
+    display: flex;          /* Keeps emoji and text together */
+    align-items: center;
+    white-space: nowrap;    /* Forces text to stay on one line */
+    font-size: 1.4rem;
+  }
+
+  /* 3. Organize the Menu Buttons */
+  .top-nav {
+    display: flex;
+    flex-wrap: wrap;        /* Allows links to create a second row if needed */
+    justify-content: center; 
+    gap: 8px;
+    width: 100%;
+  }
+
+  /* 4. Make Links look like Buttons */
+  .top-nav a {
+    margin-left: 0;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    background: #f0f2f5;
+    border-radius: 20px;
+    color: #333;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .top-nav a:active {
+    background-color: #e0e0e0;
+  }
+
+  /* --- GENERAL FIXES --- */
   .hero-sub {
     font-size: 1rem;
     padding: 0 1rem;
   }
 }
+  
