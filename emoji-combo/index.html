@@ -21,12 +21,7 @@
   <link rel="stylesheet" href="/static/style.css" />
 
   <style>
-    /* --- HERO & SEARCH STYLES --- */
-    .hero {
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-
+    /* --- SEARCH BAR (Specific to this page) --- */
     .search-wrapper {
       max-width: 600px;
       margin: 2rem auto 0;
@@ -63,7 +58,7 @@
       pointer-events: none;
     }
 
-    /* --- PAGE SPECIFIC STYLES --- */
+    /* --- SECTION HEADERS --- */
     .section-header {
       margin-top: 2.5rem;
       margin-bottom: 1.5rem;
@@ -88,6 +83,7 @@
       font-weight: 600;
     }
 
+    /* --- GRID LAYOUT --- */
     .combo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -95,6 +91,7 @@
       min-height: 600px;
     }
 
+    /* --- COMBO CARD DESIGN --- */
     .combo-card {
       background: white;
       border: 1px solid #eee;
@@ -180,6 +177,14 @@
       color: #666;
       display: none;
     }
+    
+    /* Toast Notification Style */
+    #copy-toast {
+      position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px);
+      background: #333; color: #fff; padding: 12px 24px; border-radius: 30px; opacity: 0;
+      transition: all 0.3s; z-index: 9999; box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    #copy-toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
   </style>
 </head>
 
@@ -252,18 +257,9 @@
 </footer>
 
 <div id="copy-toast">Copied to clipboard!</div>
-<style>
-  #copy-toast {
-    position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px);
-    background: #333; color: #fff; padding: 12px 24px; border-radius: 30px; opacity: 0;
-    transition: all 0.3s; z-index: 9999; box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  }
-  #copy-toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
-</style>
 
 <script>
   // --- 1. THE DATA: 200 Items (SAFE & SEARCH OPTIMIZED) ---
-  // k = Hidden Keywords for search. Not displayed on the card.
   const comboData = [
     // --- TOP VIRAL (Safe) ---
     { e: "👉👈", t: "Shy / Nervous", s: "Fingers Touching", d: "Asking for a favor, feeling shy, or hesitating.", k: "nervous shy simp uwu" },
