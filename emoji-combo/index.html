@@ -21,8 +21,49 @@
   <link rel="stylesheet" href="/static/style.css" />
 
   <style>
+    /* --- HERO & SEARCH STYLES --- */
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .search-wrapper {
+      max-width: 600px;
+      margin: 2rem auto 0;
+      position: relative;
+    }
+
+    #comboSearch {
+      width: 100%;
+      padding: 18px 24px 18px 55px;
+      font-size: 1.1rem;
+      border: 2px solid #f0f0f0;
+      border-radius: 50px;
+      background: white;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      font-family: inherit;
+      color: #333;
+    }
+
+    #comboSearch:focus {
+      outline: none;
+      border-color: #333;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      transform: translateY(-2px);
+    }
+
+    .search-icon-overlay {
+      position: absolute;
+      left: 22px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.3rem;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
     /* --- PAGE SPECIFIC STYLES --- */
-    
     .section-header {
       margin-top: 2.5rem;
       margin-bottom: 1.5rem;
@@ -47,7 +88,6 @@
       font-weight: 600;
     }
 
-    /* Grid Layout */
     .combo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -55,7 +95,6 @@
       min-height: 600px;
     }
 
-    /* Card Design */
     .combo-card {
       background: white;
       border: 1px solid #eee;
@@ -134,9 +173,6 @@
       border-color: #333;
     }
 
-    /* Search & No Results */
-    .search-box { margin: 2rem 0; }
-    
     .no-results {
       grid-column: 1 / -1;
       text-align: center;
@@ -174,9 +210,11 @@
         Decode the hidden meaning of emoji strings. Search our library of 200+ viral combos, including complex 3-5 emoji stories.
       </p>
 
-      <div class="search-box">
-        <input type="text" id="comboSearch" placeholder="Search 200+ meanings (e.g. 'nervous', 'Harry Potter', 'gym')..." aria-label="Search Emojis">
+      <div class="search-wrapper">
+        <span class="search-icon-overlay">🔍</span>
+        <input type="text" id="comboSearch" placeholder="Search 200+ meanings (e.g. 'nervous', 'bait', 'Harry Potter')..." aria-label="Search Emojis">
       </div>
+
     </div>
   </section>
 
@@ -224,10 +262,11 @@
 </style>
 
 <script>
-  // --- 1. THE DATA: 200 Items (SAFE EDITION) ---
+  // --- 1. THE DATA: 200 Items (SAFE & SEARCH OPTIMIZED) ---
+  // k = Hidden Keywords for search. Not displayed on the card.
   const comboData = [
     // --- TOP VIRAL (Safe) ---
-    { e: "👉👈", t: "Shy / Nervous", s: "Fingers Touching", d: "Asking for a favor, feeling shy, or hesitating.", k: "nervous shy polite uwu" },
+    { e: "👉👈", t: "Shy / Nervous", s: "Fingers Touching", d: "Asking for a favor, feeling shy, or hesitating.", k: "nervous shy simp uwu" },
     { e: "👁️👄👁️", t: "It Is What It Is", s: "Eye Mouth Eye", d: "Staring in disbelief or helpless acceptance.", k: "shocked stare drama" },
     { e: "🚫🧢", t: "No Cap", s: "No Lie", d: "Telling the absolute truth. 'For real'.", k: "lie truth cap real" },
     { e: "🚩🚩", t: "Red Flags", s: "Warning Signs", d: "Toxic person or situation warning.", k: "warning danger toxic" },
