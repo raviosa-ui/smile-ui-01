@@ -167,9 +167,8 @@
     </nav>
   </div>
 </footer>
-
 <script>
-  // --- 1. EXPANDED ASSET LIBRARY ---
+  // --- 1. ASSET LIBRARY ---
   const assets = {
     eyes: [
       { name: "Standard", path: '<circle cx="-35" cy="0" r="12"/><circle cx="35" cy="0" r="12"/>' },
@@ -222,7 +221,6 @@
     const len = assets[type].length;
     currentState[type] = (currentState[type] + direction + len) % len;
     render();
-    // If user manually changes something, set dropdown to custom
     document.getElementById('emotionPreset').value = 'custom';
   }
 
@@ -233,69 +231,31 @@
     baseLayer.style.filter = `hue-rotate(${hue - 45}deg) saturate(${sat}%)`;
   }
 
-  // --- 3. PRESET LOGIC (The New "Category" Feature) ---
+  // --- 3. PRESET LOGIC ---
   function findIndex(type, namePart) {
     return assets[type].findIndex(item => item.name.includes(namePart));
   }
 
   function applyPreset() {
     const emotion = document.getElementById('emotionPreset').value;
-    
-    // Default to Standard/Smile if not found
     let e = 0, m = 0, a = 0;
 
     switch(emotion) {
-      case 'happy':
-        e = findIndex('eyes', 'Happy');
-        m = findIndex('mouth', 'Smile');
-        break;
-      case 'sad':
-        e = findIndex('eyes', 'Crying');
-        m = findIndex('mouth', 'Frown');
-        a = findIndex('acc', 'Sweat');
-        break;
-      case 'angry':
-        e = findIndex('eyes', 'Angry');
-        m = findIndex('mouth', 'Grimace'); // or Frown
-        a = findIndex('acc', 'Devil'); // optional
-        break;
-      case 'fear':
-        e = findIndex('eyes', 'Fear');
-        m = findIndex('mouth', 'Ooh');
-        break;
-      case 'love':
-        e = findIndex('eyes', 'Hearts');
-        m = findIndex('mouth', 'Smile');
-        break;
-      case 'party':
-        e = findIndex('eyes', 'Stars');
-        m = findIndex('mouth', 'Big Grin');
-        a = findIndex('acc', 'Party Hat');
-        break;
-      case 'cool':
-        // Sunglasses usually cover eyes, so any eye works, but let's use standard
-        e = 0; 
-        m = findIndex('mouth', 'Smile');
-        a = findIndex('acc', 'Sunglasses');
-        break;
-      case 'sick':
-        e = findIndex('eyes', 'Crying'); // looks tired
-        m = findIndex('mouth', 'Flat'); 
-        a = findIndex('acc', 'Medical Mask');
-        break;
-      case 'dead':
-        e = findIndex('eyes', 'X-Eyes');
-        m = findIndex('mouth', 'Flat');
-        break;
-      case 'custom':
-        return; // Do nothing
+      case 'happy':  e = findIndex('eyes', 'Happy'); m = findIndex('mouth', 'Smile'); break;
+      case 'sad':    e = findIndex('eyes', 'Crying'); m = findIndex('mouth', 'Frown'); a = findIndex('acc', 'Sweat'); break;
+      case 'angry':  e = findIndex('eyes', 'Angry'); m = findIndex('mouth', 'Grimace'); a = findIndex('acc', 'Devil'); break;
+      case 'fear':   e = findIndex('eyes', 'Fear'); m = findIndex('mouth', 'Ooh'); break;
+      case 'love':   e = findIndex('eyes', 'Hearts'); m = findIndex('mouth', 'Smile'); break;
+      case 'party':  e = findIndex('eyes', 'Stars'); m = findIndex('mouth', 'Big Grin'); a = findIndex('acc', 'Party Hat'); break;
+      case 'cool':   e = 0; m = findIndex('mouth', 'Smile'); a = findIndex('acc', 'Sunglasses'); break;
+      case 'sick':   e = findIndex('eyes', 'Crying'); m = findIndex('mouth', 'Flat'); a = findIndex('acc', 'Medical Mask'); break;
+      case 'dead':   e = findIndex('eyes', 'X-Eyes'); m = findIndex('mouth', 'Flat'); break;
+      case 'custom': return;
     }
 
-    // Apply the found indices (fallback to 0 if not found)
     currentState.eyes = e !== -1 ? e : 0;
     currentState.mouth = m !== -1 ? m : 0;
     currentState.acc = a !== -1 ? a : 0;
-    
     render();
   }
 
@@ -310,18 +270,17 @@
     updateColor();
   }
 
+  // --- 4. FIXED DOWNLOAD FUNCTION ---
   function downloadEmoji() {
     const svgElement = document.getElementById('emoji-svg');
     const canvas = document.createElement('canvas');
     canvas.width = 500;
     canvas.height = 500;
     const ctx = canvas.getContext('2d');
-    const serializer = new XMLSerializer();
-    let svgString = serializer.serializeToString(svgElement);
     
-    const hue = document.getElementById('hueRange').value;
-    const sat = document.getElementById('satRange').value;
-    svgString = svgString.replace('id="layer-base"', `id="layer-base" style="filter: hue-rotate(${hue - 45}deg) saturate(${sat}%)"`);
+    // Serialize current SVG state (includes inline styles from updateColor)
+    const serializer = new XMLSerializer();
+    const svgString = serializer.serializeToString(svgElement);
 
     const img = new Image();
     const svgBlob = new Blob([svgString], {type: 'image/svg+xml;charset=utf-8'});
@@ -330,11 +289,15 @@
     img.onload = function() {
       ctx.drawImage(img, 0, 0, 500, 500);
       const pngLink = document.createElement('a');
-      pngLink.download = `emoji-${document.getElementById('emotionPreset').value}.png`;
+      const preset = document.getElementById('emotionPreset').value;
+      const filename = preset === 'custom' ? 'my-emoji-brand.png' : `emoji-${preset}.png`;
+      
+      pngLink.download = filename;
       pngLink.href = canvas.toDataURL('image/png');
       pngLink.click();
       URL.revokeObjectURL(url);
     };
+
     img.src = url;
   }
 
@@ -342,6 +305,7 @@
   render();
   updateColor();
 </script>
+
 
 </body>
 </html>
