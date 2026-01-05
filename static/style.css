@@ -302,7 +302,7 @@ a:hover {
 }
 
 /* ================================
-   EMOJI MIXER TOOL
+   EMOJI MIXER TOOL (COMPLETE)
 ================================ */
 .mixer-section {
   padding: 4rem 0;
@@ -323,8 +323,10 @@ a:hover {
   margin: 0 auto;
 }
 
+/* --- Preview Area --- */
 .preview-area {
   display: flex;
+  flex-direction: column; /* Center content */
   align-items: center;
   justify-content: center;
   border: 2px dashed #e0e0e0;
@@ -337,10 +339,12 @@ a:hover {
   width: 100%;
 }
 
+/* --- Buttons --- */
 .action-buttons {
   margin-top: 2rem;
   display: flex;
   gap: 1rem;
+  width: 100%;
 }
 
 .btn-mix {
@@ -350,10 +354,12 @@ a:hover {
   border: none;
   font-weight: 700;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .btn-random {
   background: #f0f0f0;
+  color: #333;
 }
 
 .btn-download {
@@ -361,6 +367,137 @@ a:hover {
   color: #fff;
 }
 
+/* --- Controls & Labels --- */
+.controls-area h3 { 
+  margin-top: 0; 
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.control-group {
+  margin-bottom: 1.8rem;
+}
+
+.control-label {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #555;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- Feature Selectors (Arrows) --- */
+.feature-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4f6f8;
+  padding: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.nav-arrow {
+  background: white;
+  border: 1px solid #ddd;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #555;
+  transition: background 0.2s;
+}
+
+.nav-arrow:hover {
+  background: #fff;
+  border-color: #bbb;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.feature-name { 
+  font-size: 1rem; 
+  font-weight: 600; 
+  color: #333; 
+}
+
+/* --- Sliders --- */
+.slider-container {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+input[type=range] {
+  -webkit-appearance: none; 
+  width: 100%; 
+  background: transparent; 
+}
+
+input[type=range]:focus {
+  outline: none; 
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background: #e0e0e0;
+  border-radius: 5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #333;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.1s;
+}
+
+/* --- Dropdown Menu --- */
+.preset-select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.2rem;
+}
+
+.preset-select:hover {
+  border-color: #bbb;
+}
+
+.preset-select:focus {
+  outline: none;
+  border-color: #333;
+  box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
+}
 /* ================================
    MOBILE (LOCKED & STABLE)
 ================================ */
