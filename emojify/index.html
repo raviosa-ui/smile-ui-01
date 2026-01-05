@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/static/style.css" />
   
   <style>
-    /* Specific styles for the Translator Tool */
+    /* --- TRANSLATOR TOOL STYLES --- */
     .translator-box {
       background: #fff;
       border-radius: 20px;
@@ -105,6 +105,7 @@
       color: #666;
       font-style: italic;
       margin-top: 10px;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 768px) {
@@ -144,7 +145,7 @@
     <div class="container">
       <h1>Emojify Translator 📝➡️😎</h1>
       <p class="hero-sub">
-        Type a sentence below and watch it transform into emojis using our database of over 3,000 icons.
+        Type a sentence below and watch it transform into emojis using our database of icons.
       </p>
     </div>
   </section>
@@ -198,52 +199,66 @@
 
 <script>
   // --- 1. SETUP & LOADING ---
-  let emojiMap = {}; // Will hold word -> emoji pairs
+  let emojiMap = {}; 
   let isLoaded = false;
 
-  // Fetch the JSON file when page loads
+  // Load your specific file
   fetch('/data/unicode17-emojis.json')
     .then(response => response.json())
     .then(data => {
       buildDictionary(data);
-      document.getElementById('statusMsg').innerText = "✅ Database Loaded! Ready to type.";
+      
+      const count = Object.keys(emojiMap).length;
+      document.getElementById('statusMsg').innerText = `✅ Database Loaded! (${count} words mapped). Ready to type.`;
       isLoaded = true;
     })
     .catch(err => {
       console.error('Error loading JSON:', err);
-      document.getElementById('statusMsg').innerText = "❌ Error loading emoji database.";
+      document.getElementById('statusMsg').innerText = "❌ Error loading emoji database. Check console.";
     });
 
-  // --- 2. INDEXING THE JSON ---
+  // --- 2. INDEXING THE JSON (For Nested Groups) ---
   function buildDictionary(data) {
-    // This function assumes your JSON is an array of objects.
-    // Example object: { "emoji": "🥑", "name": "avocado", "keywords": ["food"] }
-    // If your keys are different (e.g. "char" instead of "emoji"), change them below.
+    // Check if the file has the 'groups' key as shown in your sample
+    if (!data || !data.groups) {
+      console.error("JSON format incorrect: 'groups' key missing.");
+      return;
+    }
 
-    data.forEach(item => {
-      const char = item.emoji || item.char || item.character; // Try common keys
-      const name = item.name || item.slug || "";
-      const keywords = item.keywords || item.annotations || [];
+    // Loop through every Group (e.g., "Smileys & Emotion")
+    data.groups.forEach(groupSection => {
+      
+      // Loop through emojis inside that group
+      if (groupSection.emojis) {
+        groupSection.emojis.forEach(item => {
+          
+          const char = item.emoji;
+          const name = item.name || "";
+          
+          if (!char || !name) return;
 
-      if (!char) return;
+          // Normalize name: "grinning face"
+          const cleanName = name.toLowerCase().trim();
 
-      // Map the name (e.g., "avocado" -> 🥑)
-      // Normalize: lowercase and remove colons/dashes if strictly needed
-      const cleanName = name.toLowerCase().replace(/[:_-]/g, ' ').trim();
-      addMapping(cleanName, char);
+          // A. Map the exact full name
+          // Example: "grinning face" -> 😀
+          addMapping(cleanName, char);
 
-      // Map keywords (e.g., "food" -> 🥑)
-      if (Array.isArray(keywords)) {
-        keywords.forEach(k => addMapping(k.toLowerCase(), char));
+          // B. Map individual words
+          // Example: "grinning" -> 😀, "face" -> 😀
+          const words = cleanName.split(/[\s-]+/); // Split by space or dash
+          words.forEach(word => {
+            addMapping(word, char);
+          });
+        });
       }
     });
   }
 
   function addMapping(word, emoji) {
-    // We only want to map simple words. 
-    // If multiple emojis map to "heart", the last one overwrites. 
-    // (A more advanced version could randomize them).
+    // Only map words with 3+ letters to avoid replacing common words like "a", "it", "in"
     if (word.length > 2) { 
+      // Simple overwrite strategy: last emoji found for a word wins.
       emojiMap[word] = emoji;
     }
   }
@@ -251,29 +266,28 @@
   // --- 3. TRANSLATION LOGIC ---
   function translateText() {
     if (!isLoaded) {
-      alert("Please wait for the database to load.");
+      alert("Database is still loading...");
       return;
     }
 
     const input = document.getElementById('inputText').value;
-    const mode = document.getElementById('density').value; // 'replace' or 'append'
+    const mode = document.getElementById('density').value;
     
-    // Split by spaces but preserve newlines
+    // Split text by spaces but keep delimiters (preserves newlines/punctuation)
     const words = input.split(/(\s+)/); 
 
     const translated = words.map(word => {
-      // Remove punctuation for matching (e.g., "Pizza," -> "pizza")
-      const cleanWord = word.toLowerCase().replace(/[.,!?;:()"]/g, '');
-      const punctuation = word.slice(cleanWord.length); // Rough way to keep punctuation
-
+      // Clean the word for lookup (remove punctuation like "Hello!" -> "hello")
+      const cleanWord = word.toLowerCase().replace(/[^\w\s]|_/g, ""); 
+      
       if (emojiMap[cleanWord]) {
+        // If we found an emoji match
         if (mode === 'replace') {
-          // Return just emoji + original punctuation if it existed
-          // (Simple logic: if exact match found, use it)
-          return emojiMap[cleanWord] + (word.match(/[.,!?;:()"]+$/) || "");
+           // Replace the word (Restore punctuation if needed)
+           return emojiMap[cleanWord] + (word.match(/[.,!?;:()"]+$/) || "");
         } else {
-          // Append mode: "Pizza 🍕"
-          return word + " " + emojiMap[cleanWord];
+           // Append the emoji
+           return word + " " + emojiMap[cleanWord];
         }
       }
       return word;
