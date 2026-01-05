@@ -4,19 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Emoji Combo Meanings & Slang 👁️👄👁️ | SmileyMeaning</title>
-  <meta name="description" content="The ultimate encyclopedia of 150+ emoji slang terms. Decode viral TikTok trends, text subtext, and hidden meanings like 👉👈, 🚩, and 🧢." />
+  <title>Viral Emoji Combinations & Slang Meanings | SmileyMeaning</title>
+  <meta name="description" content="The ultimate dictionary of 200+ emoji slang terms. Decode viral TikTok trends, text subtext, and hidden meanings like 👉👈, 🚩🚩, and 👁️👄👁️." />
 
   <link rel="canonical" href="https://smileymeaning.com/emoji-combo/" />
 
-  <meta property="og:title" content="Emoji Combo Meanings & Slang | SmileyMeaning" />
-  <meta property="og:description" content="Decode 150+ viral emoji combinations. Understand what strings like 👉👈, 🚩, and 🧢 really mean." />
+  <meta property="og:title" content="Viral Emoji Combinations & Slang Meanings" />
+  <meta property="og:description" content="Decode 200+ viral emoji combinations. Understand what strings like 👉👈, 🚩🚩, and 👁️👄👁️ really mean." />
   <meta property="og:url" content="https://smileymeaning.com/emoji-combo/" />
   <meta property="og:type" content="website" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Emoji Combo Meanings & Slang | SmileyMeaning" />
-  <meta name="twitter:description" content="Decode viral emoji combinations and text subtext." />
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -25,45 +21,41 @@
   <link rel="stylesheet" href="/static/style.css" />
 
   <style>
+    /* --- PAGE SPECIFIC STYLES --- */
+    
     .section-header {
-      margin-top: 3rem;
+      margin-top: 2.5rem;
       margin-bottom: 1.5rem;
       display: flex;
       align-items: center;
-      gap: 10px;
-      padding-bottom: 10px;
+      justify-content: space-between;
       border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 10px;
     }
-    
+
     .section-header h2 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
 
-    .badge {
-      background: #ff4757;
-      color: white;
-      padding: 4px 10px;
-      border-radius: 20px;
+    .refresh-badge {
       font-size: 0.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
+      color: #fff;
+      background: #333;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: 600;
     }
 
-    /* Grid Layouts */
-    .top-grid {
+    /* Grid Layout */
+    .combo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 20px;
+      min-height: 600px;
     }
 
-    .main-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 15px;
-    }
-
-    /* Card Styling */
+    /* Card Design */
     .combo-card {
       background: white;
       border: 1px solid #eee;
@@ -74,12 +66,11 @@
       align-items: center;
       text-align: center;
       transition: transform 0.2s, box-shadow 0.2s;
-      position: relative;
     }
 
     .combo-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
       border-color: #ddd;
     }
 
@@ -88,45 +79,53 @@
       background: #f8f9fb;
       width: 100%;
       border-radius: 12px;
-      padding: 0.8rem 0;
-      margin-bottom: 1rem;
+      padding: 1rem 0;
+      margin-bottom: 1.2rem;
       letter-spacing: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .combo-text h3 {
-      margin: 0 0 0.2rem 0;
-      font-size: 1.1rem;
+      margin: 0 0 0.4rem 0;
+      font-size: 1.2rem;
       color: #111;
     }
 
     .combo-text p {
-      margin: 0 0 0.5rem 0;
+      margin: 0 0 0.8rem 0;
       font-size: 0.85rem;
       color: #888;
-      font-weight: 600;
+      font-weight: 700;
       text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     .combo-text .desc {
-      font-size: 0.95rem; /* Increased font size for readability */
+      font-size: 0.95rem;
       color: #555;
       line-height: 1.5;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       display: block;
-      min-height: 3rem; /* Aligns cards better */
+      min-height: 3rem;
     }
 
     .copy-btn {
       margin-top: auto;
       width: 100%;
-      padding: 8px;
-      border-radius: 8px;
-      border: 1px solid #eee;
+      padding: 10px;
+      border-radius: 30px;
+      border: 1px solid #e0e0e0;
       background: white;
       color: #333;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
     }
 
     .copy-btn:hover {
@@ -135,18 +134,15 @@
       border-color: #333;
     }
 
-    /* Search Highlight & Messages */
+    /* Search & No Results */
+    .search-box { margin: 2rem 0; }
+    
     .no-results {
+      grid-column: 1 / -1;
       text-align: center;
       padding: 3rem;
       color: #666;
       display: none;
-      width: 100%;
-    }
-
-    /* Helper to hide section headers during search */
-    .hidden-header {
-      display: none !important;
     }
   </style>
 </head>
@@ -164,7 +160,7 @@
       <a href="/emoji-mixer/">🎛️ Emoji Mixer</a>
       <a href="/emoji-combo/" class="active">➕ Emoji Combo</a>
       <a href="/emoji-stories/">📖 Emoji Stories</a>
-      <a href="/trending-emojis/">🔥 Trending Emojis</a>
+      <a href="/trending-emojis/">🔥 Trending</a>
     </nav>
   </div>
 </header>
@@ -175,197 +171,31 @@
     <div class="container">
       <h1>Emoji Slang Dictionary 📖</h1>
       <p class="hero-sub">
-        Decode the secret language of the internet. Search 150+ viral emoji combinations used in chats, TikTok, and Gaming.
+        Decode the hidden meaning of emoji strings. Search our library of 200+ viral combos, including complex 3-5 emoji stories.
       </p>
 
       <div class="search-box">
-        <input type="text" id="comboSearch" placeholder="Search meanings (e.g. 'shy', 'lying', 'cool', 'crypto')...">
+        <input type="text" id="comboSearch" placeholder="Search 200+ meanings (e.g. 'nervous', 'Harry Potter', 'gym')..." aria-label="Search Emojis">
       </div>
     </div>
   </section>
 
-  <section style="padding-bottom: 4rem;">
+  <section style="padding-bottom: 5rem;">
     <div class="container">
 
-      <div class="section-header" id="header-top">
-        <h2>🔥 Top 20 Viral</h2>
-        <span class="badge">Most Popular</span>
+      <div class="section-header">
+        <h2 id="gridTitle">Featured This Week</h2>
+        <span class="refresh-badge" id="countBadge">25 / 200</span>
       </div>
       
-      <div class="top-grid" id="grid-top20">
-        
-        <div class="combo-card" data-keywords="shy nervous simp hesitate uwu"><div class="combo-visual">👉 👈</div><div class="combo-text"><h3>Shy / Nervous</h3><p>"Fingers Touching"</p><span class="desc">Used to express shyness, hesitation, or when asking for a favor nicely.</span></div><button class="copy-btn" onclick="copyToClipboard('👉👈')">Copy</button></div>
-        <div class="combo-card" data-keywords="shocked stare drama omg surprise"><div class="combo-visual">👁️ 👄 👁️</div><div class="combo-text"><h3>It Is What It Is</h3><p>"Eye Mouth Eye"</p><span class="desc">Staring in disbelief, shock, or helpless acceptance of a chaotic situation.</span></div><button class="copy-btn" onclick="copyToClipboard('👁️👄👁️')">Copy</button></div>
-        <div class="combo-card" data-keywords="lie lying fake truth cap"><div class="combo-visual">🧢</div><div class="combo-text"><h3>Cap / Capping</h3><p>"Blue Cap"</p><span class="desc">Slang for "Lying". 🚫🧢 means "No Lie" or "I am telling the truth".</span></div><button class="copy-btn" onclick="copyToClipboard('🧢')">Copy</button></div>
-        <div class="combo-card" data-keywords="warning danger toxic red flag"><div class="combo-visual">🚩 🚩 🚩</div><div class="combo-text"><h3>Red Flags</h3><p>"Warning Signs"</p><span class="desc">A warning that a person or relationship is toxic and should be avoided.</span></div><button class="copy-btn" onclick="copyToClipboard('🚩🚩🚩')">Copy</button></div>
-        <div class="combo-card" data-keywords="funny hilarious dying dead"><div class="combo-visual">💀 ⚰️</div><div class="combo-text"><h3>I'm Dead</h3><p>"Skull"</p><span class="desc">Indicates something is so funny it "killed" you. Replaces the old 😂 emoji.</span></div><button class="copy-btn" onclick="copyToClipboard('💀')">Copy</button></div>
-
-        <div class="combo-card" data-keywords="clown fool silly dumb"><div class="combo-visual">🤡</div><div class="combo-text"><h3>Clown</h3><p>"You played yourself"</p><span class="desc">Used when someone looks foolish, gets tricked, or has a bad opinion.</span></div><button class="copy-btn" onclick="copyToClipboard('🤡')">Copy</button></div>
-        <div class="combo-card" data-keywords="gossip tea drama listen"><div class="combo-visual">☕ 🐸</div><div class="combo-text"><h3>Spill The Tea</h3><p>"Tea / Kermit"</p><span class="desc">Gossiping or sipping tea while watching drama unfold from a distance.</span></div><button class="copy-btn" onclick="copyToClipboard('☕')">Copy</button></div>
-        <div class="combo-card" data-keywords="sass attitude nails unbothered"><div class="combo-visual">💅</div><div class="combo-text"><h3>Sass / Class</h3><p>"Painting Nails"</p><span class="desc">Being unbothered, feeling fancy, or showing a sassy attitude.</span></div><button class="copy-btn" onclick="copyToClipboard('💅')">Copy</button></div>
-        <div class="combo-card" data-keywords="cold drip ice cool outfit"><div class="combo-visual">🥶 ❄️</div><div class="combo-text"><h3>Ice / Drip</h3><p>"Freezing"</p><span class="desc">Refers to expensive jewelry (ice) or a very cool, stylish outfit.</span></div><button class="copy-btn" onclick="copyToClipboard('🥶')">Copy</button></div>
-        <div class="combo-card" data-keywords="greatest best goat sport"><div class="combo-visual">🐐</div><div class="combo-text"><h3>GOAT</h3><p>"Greatest of All Time"</p><span class="desc">Used to praise athletes or legends who are the best at what they do.</span></div><button class="copy-btn" onclick="copyToClipboard('🐐')">Copy</button></div>
-
-        <div class="combo-card" data-keywords="melt cringe dying"><div class="combo-visual">🫠</div><div class="combo-text"><h3>Melting</h3><p>"Face Melting"</p><span class="desc">Dying of embarrassment, cringe, or dealing with extreme heat.</span></div><button class="copy-btn" onclick="copyToClipboard('🫠')">Copy</button></div>
-        <div class="combo-card" data-keywords="mewing jawline shh quiet"><div class="combo-visual">🤫🧏</div><div class="combo-text"><h3>Mewing</h3><p>"Shush / Jawline"</p><span class="desc">Viral trend signaling you can't talk because you're exercising your jawline.</span></div><button class="copy-btn" onclick="copyToClipboard('🤫🧏')">Copy</button></div>
-        <div class="combo-card" data-keywords="respect salute soldier"><div class="combo-visual">🫡</div><div class="combo-text"><h3>Respect</h3><p>"Salute"</p><span class="desc">Paying respect to a legend, a friend, or accepting a tough task.</span></div><button class="copy-btn" onclick="copyToClipboard('🫡')">Copy</button></div>
-        <div class="combo-card" data-keywords="chad stoic stone sigma"><div class="combo-visual">🗿</div><div class="combo-text"><h3>Gigachad</h3><p>"Moai"</p><span class="desc">Represents a "Sigma male," someone who is stoic, emotionless, or "based."</span></div><button class="copy-btn" onclick="copyToClipboard('🗿')">Copy</button></div>
-        <div class="combo-card" data-keywords="love heart hands appreciate"><div class="combo-visual">🫶</div><div class="combo-text"><h3>Heart Hands</h3><p>"Love You"</p><span class="desc">Showing sincere appreciation, love, or support for a creator.</span></div><button class="copy-btn" onclick="copyToClipboard('🫶')">Copy</button></div>
-
-        <div class="combo-card" data-keywords="side eye judge criminal"><div class="combo-visual">💣 👀</div><div class="combo-text"><h3>Bombastic Side Eye</h3><p>"Judging Hard"</p><span class="desc">Giving someone a judgmental look for doing something weird or wrong.</span></div><button class="copy-btn" onclick="copyToClipboard('💣👀')">Copy</button></div>
-        <div class="combo-card" data-keywords="sus suspicious rock"><div class="combo-visual">🤨</div><div class="combo-text"><h3>Sus</h3><p>"The Rock Stare"</p><span class="desc">Used when something looks suspicious, untrustworthy, or you are skeptical.</span></div><button class="copy-btn" onclick="copyToClipboard('🤨')">Copy</button></div>
-        <div class="combo-card" data-keywords="loud crying laughing lol"><div class="combo-visual">😭</div><div class="combo-text"><h3>Sobbing</h3><p>"Loudly Crying"</p><span class="desc">Ironically used for "Uncontrollable Laughter" more than actual sadness.</span></div><button class="copy-btn" onclick="copyToClipboard('😭')">Copy</button></div>
-        <div class="combo-card" data-keywords="satire mean fairy comment"><div class="combo-visual">🧚‍♀️ ✨</div><div class="combo-text"><h3>Satire</h3><p>"Fairy Comments"</p><span class="desc">Used to sandwich a mean or sarcastic comment between innocent sparkles.</span></div><button class="copy-btn" onclick="copyToClipboard('🧚‍♀️✨')">Copy</button></div>
-        <div class="combo-card" data-keywords="bonk jail doge"><div class="combo-visual">🐕 🏏</div><div class="combo-text"><h3>Bonk!</h3><p>"Go to Jail"</p><span class="desc">Playfully hitting someone for having inappropriate or weird thoughts.</span></div><button class="copy-btn" onclick="copyToClipboard('🐕🏏')">Copy</button></div>
-
-      </div> 
-
-      <div class="section-header" id="header-lib">
-        <h2>📚 The Complete Slang Encyclopedia</h2>
-      </div>
-
-      <div class="main-grid" id="grid-library">
-        
-        <div class="combo-card" data-keywords="basic girl pumpkin"><div class="combo-visual">🥑</div><div class="combo-text"><h3>Basic</h3><span class="desc">Describes someone who only likes mainstream or trendy things.</span></div><button class="copy-btn" onclick="copyToClipboard('🥑')">Copy</button></div>
-        <div class="combo-card" data-keywords="snake traitor"><div class="combo-visual">🐍</div><div class="combo-text"><h3>Snake</h3><span class="desc">A person who is untrustworthy, a backstabber, or a fake friend.</span></div><button class="copy-btn" onclick="copyToClipboard('🐍')">Copy</button></div>
-        <div class="combo-card" data-keywords="ghost ignore"><div class="combo-visual">👻</div><div class="combo-text"><h3>Ghosting</h3><span class="desc">Suddenly ending communication with someone without explanation.</span></div><button class="copy-btn" onclick="copyToClipboard('👻')">Copy</button></div>
-        <div class="combo-card" data-keywords="money bread"><div class="combo-visual">🍞</div><div class="combo-text"><h3>Bread</h3><span class="desc">Slang for money. "Let's get this bread" means let's earn money.</span></div><button class="copy-btn" onclick="copyToClipboard('🍞')">Copy</button></div>
-        <div class="combo-card" data-keywords="fishing compliments"><div class="combo-visual">🎣</div><div class="combo-text"><h3>Fishing</h3><span class="desc">Posting something self-deprecating just to "fish" for compliments.</span></div><button class="copy-btn" onclick="copyToClipboard('🎣')">Copy</button></div>
-        <div class="combo-card" data-keywords="waffle indecisive"><div class="combo-visual">🥞</div><div class="combo-text"><h3>Waffling</h3><span class="desc">When someone keeps changing their mind or cannot make a decision.</span></div><button class="copy-btn" onclick="copyToClipboard('🥞')">Copy</button></div>
-        <div class="combo-card" data-keywords="brick fail"><div class="combo-visual">🧱</div><div class="combo-text"><h3>Brick</h3><span class="desc">Refers to extremely cold weather, or a complete failure in sports.</span></div><button class="copy-btn" onclick="copyToClipboard('🧱')">Copy</button></div>
-        <div class="combo-card" data-keywords="sleep underrated"><div class="combo-visual">🛌</div><div class="combo-text"><h3>Slept On</h3><span class="desc">Describes something amazing that everyone is ignoring or underestimating.</span></div><button class="copy-btn" onclick="copyToClipboard('🛌')">Copy</button></div>
-        <div class="combo-card" data-keywords="stonks money"><div class="combo-visual">📈</div><div class="combo-text"><h3>Stonks</h3><span class="desc">A deliberate misspelling of "Stocks" meaning a financial win.</span></div><button class="copy-btn" onclick="copyToClipboard('📈')">Copy</button></div>
-        <div class="combo-card" data-keywords="loss fail"><div class="combo-visual">📉</div><div class="combo-text"><h3>Not Stonks</h3><span class="desc">The opposite of Stonks; a bad financial decision or failure.</span></div><button class="copy-btn" onclick="copyToClipboard('📉')">Copy</button></div>
-        <div class="combo-card" data-keywords="trash bad"><div class="combo-visual">🗑️</div><div class="combo-text"><h3>Trash</h3><span class="desc">Describes a person, opinion, or object that is terrible quality.</span></div><button class="copy-btn" onclick="copyToClipboard('🗑️')">Copy</button></div>
-        <div class="combo-card" data-keywords="sick cool"><div class="combo-visual">🤧</div><div class="combo-text"><h3>Sick</h3><span class="desc">"That fit is sick." Means something is very cool or stylish.</span></div><button class="copy-btn" onclick="copyToClipboard('🤧')">Copy</button></div>
-        <div class="combo-card" data-keywords="hot thirsty"><div class="combo-visual">🥵</div><div class="combo-text"><h3>Thirsty</h3><span class="desc">Someone who is desperate for attention or approval from others.</span></div><button class="copy-btn" onclick="copyToClipboard('🥵')">Copy</button></div>
-        <div class="combo-card" data-keywords="baby naive"><div class="combo-visual">👶</div><div class="combo-text"><h3>Baby</h3><span class="desc">Describes someone acting childish, naive, or new to a game/topic.</span></div><button class="copy-btn" onclick="copyToClipboard('👶')">Copy</button></div>
-        <div class="combo-card" data-keywords="brain smart"><div class="combo-visual">🧠</div><div class="combo-text"><h3>Big Brain</h3><span class="desc">A genius moment, or used sarcastically for a dumb idea.</span></div><button class="copy-btn" onclick="copyToClipboard('🧠')">Copy</button></div>
-        <div class="combo-card" data-keywords="close small"><div class="combo-visual">🤏</div><div class="combo-text"><h3>So Close</h3><span class="desc">"You are this close to losing." Also implies something is tiny.</span></div><button class="copy-btn" onclick="copyToClipboard('🤏')">Copy</button></div>
-        <div class="combo-card" data-keywords="invisible hide"><div class="combo-visual">🫥</div><div class="combo-text"><h3>Invisible</h3><span class="desc">Feeling ignored, or wishing to disappear from a situation.</span></div><button class="copy-btn" onclick="copyToClipboard('🫥')">Copy</button></div>
-        <div class="combo-card" data-keywords="oops giggle"><div class="combo-visual">🤭</div><div class="combo-text"><h3>Oops</h3><span class="desc">Giggling at a mistake, or pretending to be innocent after drama.</span></div><button class="copy-btn" onclick="copyToClipboard('🤭')">Copy</button></div>
-        <div class="combo-card" data-keywords="roll eye"><div class="combo-visual">🙄</div><div class="combo-text"><h3>Eye Roll</h3><span class="desc">Expressing annoyance, sarcasm, or "I can't believe this."</span></div><button class="copy-btn" onclick="copyToClipboard('🙄')">Copy</button></div>
-        <div class="combo-card" data-keywords="secret zip"><div class="combo-visual">🤐</div><div class="combo-text"><h3>Zip It</h3><span class="desc">Promise to keep a secret, or telling someone to stay quiet.</span></div><button class="copy-btn" onclick="copyToClipboard('🤐')">Copy</button></div>
-
-        <div class="combo-card" data-keywords="peach butt"><div class="combo-visual">🍑</div><div class="combo-text"><h3>Peach</h3><span class="desc">Often refers to fitness, glutes, or simply a fruit in summer.</span></div><button class="copy-btn" onclick="copyToClipboard('🍑')">Copy</button></div>
-        <div class="combo-card" data-keywords="wet drip"><div class="combo-visual">💦</div><div class="combo-text"><h3>Drip/Sweat</h3><span class="desc">Can mean "Drip" (style), working hard (sweat), or water.</span></div><button class="copy-btn" onclick="copyToClipboard('💦')">Copy</button></div>
-        <div class="combo-card" data-keywords="spicy hot"><div class="combo-visual">🌶️</div><div class="combo-text"><h3>Spicy</h3><span class="desc">Describes a risky opinion, a hot debate, or attractive content.</span></div><button class="copy-btn" onclick="copyToClipboard('🌶️')">Copy</button></div>
-        <div class="combo-card" data-keywords="kitty cat"><div class="combo-visual">🐱</div><div class="combo-text"><h3>Kitty</h3><span class="desc">Just a cute cat, or referring to a pet. Context matters!</span></div><button class="copy-btn" onclick="copyToClipboard('🐱')">Copy</button></div>
-        <div class="combo-card" data-keywords="bear hairy"><div class="combo-visual">🐻</div><div class="combo-text"><h3>Bear</h3><span class="desc">Often refers to a big, strong man, or a protective hug.</span></div><button class="copy-btn" onclick="copyToClipboard('🐻')">Copy</button></div>
-        <div class="combo-card" data-keywords="flirty kiss"><div class="combo-visual">😘</div><div class="combo-text"><h3>Kiss</h3><span class="desc">Sending love, affection, or ending a friendly message.</span></div><button class="copy-btn" onclick="copyToClipboard('😘')">Copy</button></div>
-        <div class="combo-card" data-keywords="devil naughty"><div class="combo-visual">😈</div><div class="combo-text"><h3>Devil</h3><span class="desc">Feeling mischievous, naughty, or planning a prank.</span></div><button class="copy-btn" onclick="copyToClipboard('😈')">Copy</button></div>
-        <div class="combo-card" data-keywords="angel innocent"><div class="combo-visual">😇</div><div class="combo-text"><h3>Angel</h3><span class="desc">Acting innocent, often used sarcastically when not innocent.</span></div><button class="copy-btn" onclick="copyToClipboard('😇')">Copy</button></div>
-        <div class="combo-card" data-keywords="drool tasty"><div class="combo-visual">🤤</div><div class="combo-text"><h3>Drool</h3><span class="desc">Reacting to delicious food or an attractive person.</span></div><button class="copy-btn" onclick="copyToClipboard('🤤')">Copy</button></div>
-        <div class="combo-card" data-keywords="love heart"><div class="combo-visual">❤️</div><div class="combo-text"><h3>Love</h3><span class="desc">The universal symbol for love, romance, and deep friendship.</span></div><button class="copy-btn" onclick="copyToClipboard('❤️')">Copy</button></div>
-        <div class="combo-card" data-keywords="heartbreak sad"><div class="combo-visual">💔</div><div class="combo-text"><h3>Broken</h3><span class="desc">Represents heartbreak, sadness, or a breakup.</span></div><button class="copy-btn" onclick="copyToClipboard('💔')">Copy</button></div>
-        <div class="combo-card" data-keywords="fire hot"><div class="combo-visual">🔥</div><div class="combo-text"><h3>Lit</h3><span class="desc">Something is exciting, trendy, "hot," or "on fire."</span></div><button class="copy-btn" onclick="copyToClipboard('🔥')">Copy</button></div>
-        <div class="combo-card" data-keywords="ring marry"><div class="combo-visual">💍</div><div class="combo-text"><h3>Wifey</h3><span class="desc">Indicates someone is "Marriage Material" or a proposal.</span></div><button class="copy-btn" onclick="copyToClipboard('💍')">Copy</button></div>
-
-        <div class="combo-card" data-keywords="bot npc"><div class="combo-visual">🤖</div><div class="combo-text"><h3>NPC</h3><span class="desc">"Non-Player Character." Someone who acts scripted or lacks independent thought.</span></div><button class="copy-btn" onclick="copyToClipboard('🤖')">Copy</button></div>
-        <div class="combo-card" data-keywords="gamer game"><div class="combo-visual">👾</div><div class="combo-text"><h3>Gamer</h3><span class="desc">Refers to gaming culture, retro games, or 8-bit style.</span></div><button class="copy-btn" onclick="copyToClipboard('👾')">Copy</button></div>
-        <div class="combo-card" data-keywords="controller play"><div class="combo-visual">🎮</div><div class="combo-text"><h3>Console</h3><span class="desc">"Let's play." The universal sign for video games.</span></div><button class="copy-btn" onclick="copyToClipboard('🎮')">Copy</button></div>
-        <div class="combo-card" data-keywords="target aim"><div class="combo-visual">🎯</div><div class="combo-text"><h3>Target</h3><span class="desc">"You hit the target." Accurate, on point, or achieving a goal.</span></div><button class="copy-btn" onclick="copyToClipboard('🎯')">Copy</button></div>
-        <div class="combo-card" data-keywords="win trophy"><div class="combo-visual">🏆</div><div class="combo-text"><h3>W</h3><span class="desc">Short for "Win." Used to celebrate a victory.</span></div><button class="copy-btn" onclick="copyToClipboard('🏆')">Copy</button></div>
-        <div class="combo-card" data-keywords="loss loser"><div class="combo-visual">🇱</div><div class="combo-text"><h3>L</h3><span class="desc">Short for "Loss." Used when someone fails or takes an "L."</span></div><button class="copy-btn" onclick="copyToClipboard('🇱')">Copy</button></div>
-        <div class="combo-card" data-keywords="salt salty"><div class="combo-visual">🧂</div><div class="combo-text"><h3>Salty</h3><span class="desc">Being upset, bitter, or angry over a game or loss.</span></div><button class="copy-btn" onclick="copyToClipboard('🧂')">Copy</button></div>
-        <div class="combo-card" data-keywords="potato aim"><div class="combo-visual">🥔</div><div class="combo-text"><h3>Potato</h3><span class="desc">Describes a bad computer, bad aim, or low video quality.</span></div><button class="copy-btn" onclick="copyToClipboard('🥔')">Copy</button></div>
-        <div class="combo-card" data-keywords="luck pray"><div class="combo-visual">🙏</div><div class="combo-text"><h3>Bless</h3><span class="desc">High five, praying, or thanking someone. "Papa bless."</span></div><button class="copy-btn" onclick="copyToClipboard('🙏')">Copy</button></div>
-        <div class="combo-card" data-keywords="rocket moon"><div class="combo-visual">🚀</div><div class="combo-text"><h3>Moon</h3><span class="desc">Crypto slang. "To the moon!" means price is going up.</span></div><button class="copy-btn" onclick="copyToClipboard('🚀')">Copy</button></div>
-        <div class="combo-card" data-keywords="diamond hands"><div class="combo-visual">💎🙌</div><div class="combo-text"><h3>HODL</h3><span class="desc">"Diamond Hands." Holding an investment despite drops.</span></div><button class="copy-btn" onclick="copyToClipboard('💎🙌')">Copy</button></div>
-        <div class="combo-card" data-keywords="paper hands"><div class="combo-visual">🧻🙌</div><div class="combo-text"><h3>Weak</h3><span class="desc">"Paper Hands." Selling too early because of fear.</span></div><button class="copy-btn" onclick="copyToClipboard('🧻🙌')">Copy</button></div>
-        <div class="combo-card" data-keywords="whale rich"><div class="combo-visual">🐋</div><div class="combo-text"><h3>Whale</h3><span class="desc">Someone who owns a massive amount of crypto or money.</span></div><button class="copy-btn" onclick="copyToClipboard('🐋')">Copy</button></div>
-        <div class="combo-card" data-keywords="bull market"><div class="combo-visual">🐂</div><div class="combo-text"><h3>Bullish</h3><span class="desc">Optimistic that the market is going up.</span></div><button class="copy-btn" onclick="copyToClipboard('🐂')">Copy</button></div>
-        <div class="combo-card" data-keywords="bear market"><div class="combo-visual">🐻📉</div><div class="combo-text"><h3>Bearish</h3><span class="desc">Pessimistic; expecting the market to go down.</span></div><button class="copy-btn" onclick="copyToClipboard('🐻📉')">Copy</button></div>
-
-        <div class="combo-card" data-keywords="liar fake"><div class="combo-visual">🤥</div><div class="combo-text"><h3>Liar</h3><span class="desc">"Pinocchio." Calling someone out for telling a lie.</span></div><button class="copy-btn" onclick="copyToClipboard('🤥')">Copy</button></div>
-        <div class="combo-card" data-keywords="mind blown"><div class="combo-visual">🤯</div><div class="combo-text"><h3>Wow</h3><span class="desc">Mind blown. Shocked by a new fact or realization.</span></div><button class="copy-btn" onclick="copyToClipboard('🤯')">Copy</button></div>
-        <div class="combo-card" data-keywords="cowboy yeehaw"><div class="combo-visual">🤠</div><div class="combo-text"><h3>Yeehaw</h3><span class="desc">Feeling energetic, wild, or having a "YOLO" moment.</span></div><button class="copy-btn" onclick="copyToClipboard('🤠')">Copy</button></div>
-        <div class="combo-card" data-keywords="disguise hide"><div class="combo-visual">🥸</div><div class="combo-text"><h3>Hidden</h3><span class="desc">Incognito mode. Trying to be anonymous or blend in.</span></div><button class="copy-btn" onclick="copyToClipboard('🥸')">Copy</button></div>
-        <div class="combo-card" data-keywords="alien weird"><div class="combo-visual">👽</div><div class="combo-text"><h3>Alien</h3><span class="desc">A weirdo, or something that is "out of this world."</span></div><button class="copy-btn" onclick="copyToClipboard('👽')">Copy</button></div>
-        <div class="combo-card" data-keywords="see no evil"><div class="combo-visual">🙈</div><div class="combo-text"><h3>Hide</h3><span class="desc">"I can't watch." Hiding from a cringe or scary moment.</span></div><button class="copy-btn" onclick="copyToClipboard('🙈')">Copy</button></div>
-        <div class="combo-card" data-keywords="cheesy cringe"><div class="combo-visual">🧀</div><div class="combo-text"><h3>Cheesy</h3><span class="desc">Something that is corny, cliché, or tries too hard.</span></div><button class="copy-btn" onclick="copyToClipboard('🧀')">Copy</button></div>
-        <div class="combo-card" data-keywords="king crown"><div class="combo-visual">👑</div><div class="combo-text"><h3>King</h3><span class="desc">"You dropped this." Calling someone a legend or leader.</span></div><button class="copy-btn" onclick="copyToClipboard('👑')">Copy</button></div>
-        <div class="combo-card" data-keywords="queen slay"><div class="combo-visual">👸</div><div class="combo-text"><h3>Queen</h3><span class="desc">"Slay." Empowering a woman who is doing great.</span></div><button class="copy-btn" onclick="copyToClipboard('👸')">Copy</button></div>
-        <div class="combo-card" data-keywords="poop crap"><div class="combo-visual">💩</div><div class="combo-text"><h3>Poop</h3><span class="desc">Use when something goes wrong, or is just "crap."</span></div><button class="copy-btn" onclick="copyToClipboard('💩')">Copy</button></div>
-        <div class="combo-card" data-keywords="shady dark"><div class="combo-visual">🌚</div><div class="combo-text"><h3>Shady</h3><span class="desc">Something seems suspicious, dark, or socially awkward.</span></div><button class="copy-btn" onclick="copyToClipboard('🌚')">Copy</button></div>
-        <div class="combo-card" data-keywords="smug happy"><div class="combo-visual">🌝</div><div class="combo-text"><h3>Smug</h3><span class="desc">A knowing smile. "I told you so" or awkward silence.</span></div><button class="copy-btn" onclick="copyToClipboard('🌝')">Copy</button></div>
-        <div class="combo-card" data-keywords="bomb explosive"><div class="combo-visual">💣</div><div class="combo-text"><h3>Bomb</h3><span class="desc">Can mean "Amazing" (The Bomb) or an explosive argument.</span></div><button class="copy-btn" onclick="copyToClipboard('💣')">Copy</button></div>
-        <div class="combo-card" data-keywords="gaslight torch"><div class="combo-visual">🔦</div><div class="combo-text"><h3>Gaslight</h3><span class="desc">Manipulating someone into questioning their reality.</span></div><button class="copy-btn" onclick="copyToClipboard('🔦')">Copy</button></div>
-        <div class="combo-card" data-keywords="drama mess"><div class="combo-visual">🧶</div><div class="combo-text"><h3>Messy</h3><span class="desc">A tangled situation, or someone who loves drama.</span></div><button class="copy-btn" onclick="copyToClipboard('🧶')">Copy</button></div>
-
-        <div class="combo-card" data-keywords="cool shades"><div class="combo-visual">🕶️</div><div class="combo-text"><h3>Shades</h3><span class="desc">Acting cool, or "Throwing Shade" (insulting someone).</span></div><button class="copy-btn" onclick="copyToClipboard('🕶️')">Copy</button></div>
-        <div class="combo-card" data-keywords="unicorn rare"><div class="combo-visual">🦄</div><div class="combo-text"><h3>Unicorn</h3><span class="desc">Something that is extremely rare or one-of-a-kind.</span></div><button class="copy-btn" onclick="copyToClipboard('🦄')">Copy</button></div>
-        <div class="combo-card" data-keywords="pride rainbow"><div class="combo-visual">🌈</div><div class="combo-text"><h3>Pride</h3><span class="desc">Represents happiness, or LGBTQ+ Pride and support.</span></div><button class="copy-btn" onclick="copyToClipboard('🌈')">Copy</button></div>
-        <div class="combo-card" data-keywords="zen calm"><div class="combo-visual">🧘</div><div class="combo-text"><h3>Zen</h3><span class="desc">Being unbothered, meditating, or focusing on mental health.</span></div><button class="copy-btn" onclick="copyToClipboard('🧘')">Copy</button></div>
-        <div class="combo-card" data-keywords="clean soap"><div class="combo-visual">🧼</div><div class="combo-text"><h3>Clean</h3><span class="desc">"Clean." Describes a fresh outfit or a smooth play in a game.</span></div><button class="copy-btn" onclick="copyToClipboard('🧼')">Copy</button></div>
-        <div class="combo-card" data-keywords="pill based"><div class="combo-visual">💊</div><div class="combo-text"><h3>Based</h3><span class="desc">Often refers to a "Hard to swallow pill" or truth.</span></div><button class="copy-btn" onclick="copyToClipboard('💊')">Copy</button></div>
-        <div class="combo-card" data-keywords="zombie tired"><div class="combo-visual">🧟</div><div class="combo-text"><h3>Zombie</h3><span class="desc">Feeling dead tired, exhausted, or functioning on autopilot.</span></div><button class="copy-btn" onclick="copyToClipboard('🧟')">Copy</button></div>
-        <div class="combo-card" data-keywords="vampire night"><div class="combo-visual">🧛</div><div class="combo-text"><h3>Vamp</h3><span class="desc">A night owl who stays up late, or a Goth aesthetic.</span></div><button class="copy-btn" onclick="copyToClipboard('🧛')">Copy</button></div>
-        <div class="combo-card" data-keywords="gymnastics mental"><div class="combo-visual">🤸</div><div class="combo-text"><h3>Stretch</h3><span class="desc">"Mental Gymnastics." Making a huge reach in an argument.</span></div><button class="copy-btn" onclick="copyToClipboard('🤸')">Copy</button></div>
-        <div class="combo-card" data-keywords="bin trash"><div class="combo-visual">🚮</div><div class="combo-text"><h3>Bin It</h3><span class="desc">Telling someone to throw their bad opinion in the trash.</span></div><button class="copy-btn" onclick="copyToClipboard('🚮')">Copy</button></div>
-        <div class="combo-card" data-keywords="mixed signals"><div class="combo-visual">🚦</div><div class="combo-text"><h3>Signals</h3><span class="desc">Mixed signals. The lights are changing and it's confusing.</span></div><button class="copy-btn" onclick="copyToClipboard('🚦')">Copy</button></div>
-        <div class="combo-card" data-keywords="stop sign"><div class="combo-visual">🛑</div><div class="combo-text"><h3>Stop</h3><span class="desc">"Just stop." Used when someone needs to quit talking.</span></div><button class="copy-btn" onclick="copyToClipboard('🛑')">Copy</button></div>
-        <div class="combo-card" data-keywords="friends besties"><div class="combo-visual">👯</div><div class="combo-text"><h3>Besties</h3><span class="desc">Best friends, usually girls having fun or twinning.</span></div><button class="copy-btn" onclick="copyToClipboard('👯')">Copy</button></div>
-        <div class="combo-card" data-keywords="party dance"><div class="combo-visual">💃</div><div class="combo-text"><h3>Party</h3><span class="desc">Excited, dancing, or celebrating a Friday night.</span></div><button class="copy-btn" onclick="copyToClipboard('💃')">Copy</button></div>
-        <div class="combo-card" data-keywords="cut hair"><div class="combo-visual">💇</div><div class="combo-text"><h3>Cut Off</h3><span class="desc">"I'm cutting you off." Removing toxic people from life.</span></div><button class="copy-btn" onclick="copyToClipboard('💇')">Copy</button></div>
-        <div class="combo-card" data-keywords="chef kiss"><div class="combo-visual">🤌</div><div class="combo-text"><h3>Chef</h3><span class="desc">"Chef's Kiss." Signifies that something is absolutely perfect.</span></div><button class="copy-btn" onclick="copyToClipboard('🤌')">Copy</button></div>
-        <div class="combo-card" data-keywords="rock metal"><div class="combo-visual">🤘</div><div class="combo-text"><h3>Rock</h3><span class="desc">"Rock on." Heavy metal vibes or just being cool.</span></div><button class="copy-btn" onclick="copyToClipboard('🤘')">Copy</button></div>
-        <div class="combo-card" data-keywords="call chill"><div class="combo-visual">🤙</div><div class="combo-text"><h3>Hang</h3><span class="desc">"Call me" or "Hang loose." A chill, relaxed vibe.</span></div><button class="copy-btn" onclick="copyToClipboard('🤙')">Copy</button></div>
-        <div class="combo-card" data-keywords="bro fist"><div class="combo-visual">🤜🤛</div><div class="combo-text"><h3>Bro</h3><span class="desc">"Bro code." A fist bump of respect between friends.</span></div><button class="copy-btn" onclick="copyToClipboard('🤜🤛')">Copy</button></div>
-        <div class="combo-card" data-keywords="shake deal"><div class="combo-visual">🤝</div><div class="combo-text"><h3>Deal</h3><span class="desc">Agreement made. "It's a deal" or professional respect.</span></div><button class="copy-btn" onclick="copyToClipboard('🤝')">Copy</button></div>
-        <div class="combo-card" data-keywords="luck fingers"><div class="combo-visual">🤞</div><div class="combo-text"><h3>Luck</h3><span class="desc">"Fingers crossed." Hoping for a good outcome.</span></div><button class="copy-btn" onclick="copyToClipboard('🤞')">Copy</button></div>
-        <div class="combo-card" data-keywords="real heart"><div class="combo-visual">🫀</div><div class="combo-text"><h3>Real</h3><span class="desc">Represents raw, anatomical, deep, and real emotion.</span></div><button class="copy-btn" onclick="copyToClipboard('🫀')">Copy</button></div>
-        <div class="combo-card" data-keywords="flirty bite"><div class="combo-visual">🫦</div><div class="combo-text"><h3>Bite</h3><span class="desc">Biting the lip. A sign of nervousness or attraction.</span></div><button class="copy-btn" onclick="copyToClipboard('🫦')">Copy</button></div>
-        <div class="combo-card" data-keywords="angry shout"><div class="combo-visual">🗯️</div><div class="combo-text"><h3>Mad</h3><span class="desc">Shouting or cursing. Expressing sudden anger.</span></div><button class="copy-btn" onclick="copyToClipboard('🗯️')">Copy</button></div>
-        <div class="combo-card" data-keywords="sleep zzz"><div class="combo-visual">💤</div><div class="combo-text"><h3>Zzz</h3><span class="desc">Sleeping, or implying that a topic is extremely boring.</span></div><button class="copy-btn" onclick="copyToClipboard('💤')">Copy</button></div>
-        <div class="combo-card" data-keywords="vein angry"><div class="combo-visual">💢</div><div class="combo-text"><h3>Vein</h3><span class="desc">Anime symbol for a popping vein. Getting annoyed.</span></div><button class="copy-btn" onclick="copyToClipboard('💢')">Copy</button></div>
-        <div class="combo-card" data-keywords="dizzy star"><div class="combo-visual">💫</div><div class="combo-text"><h3>Stars</h3><span class="desc">Feeling dizzy, starstruck, or getting hit on the head.</span></div><button class="copy-btn" onclick="copyToClipboard('💫')">Copy</button></div>
-        <div class="combo-card" data-keywords="fast dash"><div class="combo-visual">💨</div><div class="combo-text"><h3>Dash</h3><span class="desc">Leaving quickly. "I'm out of here."</span></div><button class="copy-btn" onclick="copyToClipboard('💨')">Copy</button></div>
-        <div class="combo-card" data-keywords="hole deep"><div class="combo-visual">🕳️</div><div class="combo-text"><h3>Hole</h3><span class="desc">"I want to crawl into a hole." Embarrassment or deep topic.</span></div><button class="copy-btn" onclick="copyToClipboard('🕳️')">Copy</button></div>
-        <div class="combo-card" data-keywords="cracker fire"><div class="combo-visual">🧨</div><div class="combo-text"><h3>Pop</h3><span class="desc">A firecracker. Someone with a short temper or loud personality.</span></div><button class="copy-btn" onclick="copyToClipboard('🧨')">Copy</button></div>
-        <div class="combo-card" data-keywords="balloon float"><div class="combo-visual">🎈</div><div class="combo-text"><h3>Float</h3><span class="desc">Feeling high, light, or celebrating a birthday.</span></div><button class="copy-btn" onclick="copyToClipboard('🎈')">Copy</button></div>
-        <div class="combo-card" data-keywords="hug comfort"><div class="combo-visual">🫂</div><div class="combo-text"><h3>Hug</h3><span class="desc">A digital hug. Offering support and comfort to a friend.</span></div><button class="copy-btn" onclick="copyToClipboard('🫂')">Copy</button></div>
-        <div class="combo-card" data-keywords="foot steps"><div class="combo-visual">👣</div><div class="combo-text"><h3>Steps</h3><span class="desc">Following someone's footsteps, or creeping/stalking.</span></div><button class="copy-btn" onclick="copyToClipboard('👣')">Copy</button></div>
-        <div class="combo-card" data-keywords="shout speak"><div class="combo-visual">🗣️</div><div class="combo-text"><h3>Speak</h3><span class="desc">Speaking facts, shouting an opinion, or a silhouette.</span></div><button class="copy-btn" onclick="copyToClipboard('🗣️')">Copy</button></div>
-        <div class="combo-card" data-keywords="shadow lurk"><div class="combo-visual">👤</div><div class="combo-text"><h3>Lurk</h3><span class="desc">A silhouette. Often means lurking, shadow banning, or anonymity.</span></div><button class="copy-btn" onclick="copyToClipboard('👤')">Copy</button></div>
-        <div class="combo-card" data-keywords="people crowd"><div class="combo-visual">👥</div><div class="combo-text"><h3>Crowd</h3><span class="desc">Refers to "The Crowd," "Normies," or general society.</span></div><button class="copy-btn" onclick="copyToClipboard('👥')">Copy</button></div>
-        <div class="combo-card" data-keywords="luck rng"><div class="combo-visual">🥬🙏</div><div class="combo-text"><h3>RNG</h3><span class="desc">"RNG God." Gamers praying to lettuce (meme) for luck.</span></div><button class="copy-btn" onclick="copyToClipboard('🥬🙏')">Copy</button></div>
-        <div class="combo-card" data-keywords="dead tired"><div class="combo-visual">🧟‍♂️</div><div class="combo-text"><h3>Dead</h3><span class="desc">"Dead inside." Overworked, tired, or emotionally drained.</span></div><button class="copy-btn" onclick="copyToClipboard('🧟‍♂️')">Copy</button></div>
-        <div class="combo-card" data-keywords="siren simp"><div class="combo-visual">🧜‍♀️</div><div class="combo-text"><h3>Siren</h3><span class="desc">Someone alluring or charming who might be dangerous.</span></div><button class="copy-btn" onclick="copyToClipboard('🧜‍♀️')">Copy</button></div>
-        <div class="combo-card" data-keywords="wizard virgin"><div class="combo-visual">🧙‍♂️</div><div class="combo-text"><h3>Wizard</h3><span class="desc">Old internet meme: "If you are single at 30, you become a wizard."</span></div><button class="copy-btn" onclick="copyToClipboard('🧙‍♂️')">Copy</button></div>
-        <div class="combo-card" data-keywords="lock locked"><div class="combo-visual">🔒</div><div class="combo-text"><h3>Locked</h3><span class="desc">Topic is locked, secure, or "Gatekeeping" a secret.</span></div><button class="copy-btn" onclick="copyToClipboard('🔒')">Copy</button></div>
-        <div class="combo-card" data-keywords="key access"><div class="combo-visual">🔑</div><div class="combo-text"><h3>Key</h3><span class="desc">"Major Key." The secret to success or unlocking a door.</span></div><button class="copy-btn" onclick="copyToClipboard('🔑')">Copy</button></div>
-        <div class="combo-card" data-keywords="pin location"><div class="combo-visual">📍</div><div class="combo-text"><h3>Pin</h3><span class="desc">"Pin drop." Current location or where the event is happening.</span></div><button class="copy-btn" onclick="copyToClipboard('📍')">Copy</button></div>
-        <div class="combo-card" data-keywords="chart up"><div class="combo-visual">📊</div><div class="combo-text"><h3>Stats</h3><span class="desc">Looking at the data or analytics. "Stonks" analysis.</span></div><button class="copy-btn" onclick="copyToClipboard('📊')">Copy</button></div>
-        <div class="combo-card" data-keywords="email contact"><div class="combo-visual">📧</div><div class="combo-text"><h3>Mail</h3><span class="desc">"Send me the details." Contact or professional email.</span></div><button class="copy-btn" onclick="copyToClipboard('📧')">Copy</button></div>
-        <div class="combo-card" data-keywords="mobile phone"><div class="combo-visual">📱</div><div class="combo-text"><h3>Phone</h3><span class="desc">"Check your phone" or referring to social media addiction.</span></div><button class="copy-btn" onclick="copyToClipboard('📱')">Copy</button></div>
-        <div class="combo-card" data-keywords="laptop work"><div class="combo-visual">💻</div><div class="combo-text"><h3>Work</h3><span class="desc">Grinding, coding, or working from home.</span></div><button class="copy-btn" onclick="copyToClipboard('💻')">Copy</button></div>
-        <div class="combo-card" data-keywords="camera pic"><div class="combo-visual">📸</div><div class="combo-text"><h3>Pic</h3><span class="desc">"Caught in 4k." Taking a screenshot of proof.</span></div><button class="copy-btn" onclick="copyToClipboard('📸')">Copy</button></div>
-        <div class="combo-card" data-keywords="video movie"><div class="combo-visual">🎥</div><div class="combo-text"><h3>Film</h3><span class="desc">"Movie night" or recording a video for content.</span></div><button class="copy-btn" onclick="copyToClipboard('🎥')">Copy</button></div>
-        <div class="combo-card" data-keywords="popcorn watch"><div class="combo-visual">🍿</div><div class="combo-text"><h3>Popcorn</h3><span class="desc">"I'm just here for the comments." Watching drama unfold.</span></div><button class="copy-btn" onclick="copyToClipboard('🍿')">Copy</button></div>
-        <div class="combo-card" data-keywords="ticket entry"><div class="combo-visual">🎫</div><div class="combo-text"><h3>Ticket</h3><span class="desc">Admit one. Can mean "The ticket to success."</span></div><button class="copy-btn" onclick="copyToClipboard('🎫')">Copy</button></div>
-        <div class="combo-card" data-keywords="clown circus"><div class="combo-visual">🎪</div><div class="combo-text"><h3>Circus</h3><span class="desc">Describes a chaotic situation or a group of "clowns."</span></div><button class="copy-btn" onclick="copyToClipboard('🎪')">Copy</button></div>
-        <div class="combo-card" data-keywords="dice gamble"><div class="combo-visual">🎲</div><div class="combo-text"><h3>Dice</h3><span class="desc">Taking a gamble or risk. "Roll the dice."</span></div><button class="copy-btn" onclick="copyToClipboard('🎲')">Copy</button></div>
-        <div class="combo-card" data-keywords="magic trick"><div class="combo-visual">🪄</div><div class="combo-text"><h3>Magic</h3><span class="desc">"And just like that, it's fixed." Magic wand tool.</span></div><button class="copy-btn" onclick="copyToClipboard('🪄')">Copy</button></div>
-        <div class="combo-card" data-keywords="pill blue"><div class="combo-visual">🔵</div><div class="combo-text"><h3>Blue</h3><span class="desc">"Blue pill." Choosing blissful ignorance over hard truth.</span></div><button class="copy-btn" onclick="copyToClipboard('🔵')">Copy</button></div>
-        <div class="combo-card" data-keywords="pill red"><div class="combo-visual">🔴</div><div class="combo-text"><h3>Red</h3><span class="desc">"Red pill." Waking up to an unpleasant reality.</span></div><button class="copy-btn" onclick="copyToClipboard('🔴')">Copy</button></div>
-        <div class="combo-card" data-keywords="check verify"><div class="combo-visual">✅</div><div class="combo-text"><h3>Done</h3><span class="desc">Verified, correct, or task completed successfully.</span></div><button class="copy-btn" onclick="copyToClipboard('✅')">Copy</button></div>
-        <div class="combo-card" data-keywords="cross wrong"><div class="combo-visual">❌</div><div class="combo-text"><h3>No</h3><span class="desc">Incorrect, banned, or rejected. "X marks the spot."</span></div><button class="copy-btn" onclick="copyToClipboard('❌')">Copy</button></div>
-        <div class="combo-card" data-keywords="warning alert"><div class="combo-visual">⚠️</div><div class="combo-text"><h3>Alert</h3><span class="desc">Proceed with caution. Something is risky ahead.</span></div><button class="copy-btn" onclick="copyToClipboard('⚠️')">Copy</button></div>
-        <div class="combo-card" data-keywords="radioactive toxic"><div class="combo-visual">☢️</div><div class="combo-text"><h3>Toxic</h3><span class="desc">Radioactive. Extremely toxic personality or community.</span></div><button class="copy-btn" onclick="copyToClipboard('☢️')">Copy</button></div>
-        <div class="combo-card" data-keywords="biohazard danger"><div class="combo-visual">☣️</div><div class="combo-text"><h3>Hazard</h3><span class="desc">Biohazard. Stay away, this environment is dangerous.</span></div><button class="copy-btn" onclick="copyToClipboard('☣️')">Copy</button></div>
-        <div class="combo-card" data-keywords="up top"><div class="combo-visual">🔝</div><div class="combo-text"><h3>Top</h3><span class="desc">"Top tier." The very best or highest priority.</span></div><button class="copy-btn" onclick="copyToClipboard('🔝')">Copy</button></div>
-        <div class="combo-card" data-keywords="soon time"><div class="combo-visual">🔜</div><div class="combo-text"><h3>Soon</h3><span class="desc">Coming soon. Hype for a release.</span></div><button class="copy-btn" onclick="copyToClipboard('🔜')">Copy</button></div>
-        <div class="combo-card" data-keywords="free no cost"><div class="combo-visual">🆓</div><div class="combo-text"><h3>Free</h3><span class="desc">Gratis. Available for free.</span></div><button class="copy-btn" onclick="copyToClipboard('🆓')">Copy</button></div>
-        <div class="combo-card" data-keywords="new fresh"><div class="combo-visual">🆕</div><div class="combo-text"><h3>New</h3><span class="desc">Brand new update or fresh content.</span></div><button class="copy-btn" onclick="copyToClipboard('🆕')">Copy</button></div>
-        <div class="combo-card" data-keywords="cool ok"><div class="combo-visual">🆒</div><div class="combo-text"><h3>Cool</h3><span class="desc">"Cool." Acceptance or agreement with a chill vibe.</span></div><button class="copy-btn" onclick="copyToClipboard('🆒')">Copy</button></div>
-
-        <div class="no-results" id="noResultsMsg">
-          <h3>🤷‍♂️ No results found</h3>
-          <p>Try searching for "shy", "cool", or "love"</p>
+      <div class="combo-grid" id="mainGrid">
         </div>
-
+      
+      <div class="no-results" id="noResultsMsg">
+        <h3>🤷‍♂️ No results found</h3>
+        <p>Try searching for different keywords like "cool", "sad", or "movie".</p>
       </div>
+
     </div>
   </section>
 
@@ -373,7 +203,7 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>© 2025 SmileyMeaning.com</p>
+    <p>© 2026 SmileyMeaning.com</p>
     <nav>
       <a href="/about/">About</a>
       <a href="/privacy/">Privacy</a>
@@ -384,9 +214,331 @@
 </footer>
 
 <div id="copy-toast">Copied to clipboard!</div>
+<style>
+  #copy-toast {
+    position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px);
+    background: #333; color: #fff; padding: 12px 24px; border-radius: 30px; opacity: 0;
+    transition: all 0.3s; z-index: 9999; box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  #copy-toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+</style>
 
 <script>
-  // 1. COPY FUNCTION
+  // --- 1. THE DATA: 200 Items (SAFE EDITION) ---
+  const comboData = [
+    // --- TOP VIRAL (Safe) ---
+    { e: "👉👈", t: "Shy / Nervous", s: "Fingers Touching", d: "Asking for a favor, feeling shy, or hesitating.", k: "nervous shy polite uwu" },
+    { e: "👁️👄👁️", t: "It Is What It Is", s: "Eye Mouth Eye", d: "Staring in disbelief or helpless acceptance.", k: "shocked stare drama" },
+    { e: "🚫🧢", t: "No Cap", s: "No Lie", d: "Telling the absolute truth. 'For real'.", k: "lie truth cap real" },
+    { e: "🚩🚩", t: "Red Flags", s: "Warning Signs", d: "Toxic person or situation warning.", k: "warning danger toxic" },
+    { e: "💀⚰️", t: "I'm Dead", s: "Dying of Laughter", d: "Something is extremely funny.", k: "funny dead laugh lol" },
+    { e: "🤡🎪", t: "Clownery", s: "The Circus", d: "Looking foolish or getting tricked.", k: "clown fool silly" },
+    { e: "☕🐸", t: "Spill The Tea", s: "Gossip", d: "Watching drama unfold or sharing gossip.", k: "gossip tea drama" },
+    { e: "💅✨", t: "Unbothered", s: "Sass / Class", d: "Feeling fancy or ignoring haters.", k: "sass attitude nails" },
+    { e: "🥶❄️", t: "Ice Cold", s: "Drip / Style", d: "Expensive jewelry or cool outfit.", k: "cool ice drip fashion" },
+    { e: "🐐👑", t: "The GOAT", s: "Greatest of All Time", d: "Praising a legend or athlete.", k: "goat best legend sport" },
+    { e: "🫠🫠", t: "Melting", s: "Face Melting", d: "Dying of embarrassment or heat.", k: "melt cringe embarrassment" },
+    { e: "🤫🧏", t: "Mewing", s: "Jawline Check", d: "Signaling silence to focus on jawline.", k: "mewing jawline shh" },
+    { e: "🫡🇺🇸", t: "Respect", s: "Salute", d: "Paying respect to a legend or friend.", k: "respect salute soldier" },
+    { e: "🗿🍷", t: "Fine Gentleman", s: "Gigachad", d: "Sophisticated, stoic, or strong opinion.", k: "chad stoic stone sigma" },
+    { e: "🫶🥹", t: "So Sweet", s: "Heart Hands", d: "Overwhelmed by cuteness or love.", k: "love heart cute appreciate" },
+    { e: "💣👀", t: "Side Eye", s: "Bombastic Side Eye", d: "Judging someone very hard.", k: "judge side eye criminal" },
+    { e: "🤨📸", t: "Caught in 4K", s: "Sus + Camera", d: "Caught doing something suspicious.", k: "sus camera caught photo" },
+    { e: "😭💀", t: "Sobbing", s: "Loud Crying", d: "Uncontrollable laughter.", k: "cry laugh funny" },
+    { e: "🧚‍♀️✨", t: "Satire", s: "Fairy Comments", d: "Sarcastic comment between sparkles.", k: "satire mean sarcasm" },
+    { e: "🐕🏏", t: "Bonk!", s: "Go to Jail", d: "Stopping someone from being weird.", k: "bonk jail doge" },
+    { e: "🥬🙏", t: "RNG God", s: "Lettuce Pray", d: "Gamers praying for luck.", k: "luck rng game pray" },
+    { e: "💎🙌", t: "Diamond Hands", s: "HODL", d: "Holding an investment forever.", k: "crypto money hold" },
+    { e: "🧠🌌", t: "Galaxy Brain", s: "Big Brain", d: "Having a genius idea.", k: "smart brain genius" },
+    { e: "🗑️🔥", t: "Dumpster Fire", s: "Disaster", d: "A chaotic, terrible situation.", k: "trash bad chaos" },
+    { e: "🛌💤", t: "Slept On", s: "Underrated", d: "Something amazing that is ignored.", k: "sleep underrated bored" },
+    
+    // --- RELATIONSHIPS & EMOTIONS ---
+    { e: "❤️🔥", t: "Burning Love", s: "Passion", d: "Intense love or passion.", k: "love fire hot" },
+    { e: "💔🩹", t: "Healing", s: "Mending Heart", d: "Recovering from a breakup.", k: "sad break healing" },
+    { e: "💍👰", t: "Wifey Material", s: "Marriage", d: "Someone you want to marry.", k: "marry ring wife" },
+    { e: "👻📵", t: "Ghosting", s: "Disappeared", d: "Ignoring messages suddenly.", k: "ghost ignore text" },
+    { e: "🎣👀", t: "Fishing", s: "Attention", d: "Looking for compliments.", k: "fishing bait attention" },
+    { e: "🐂💩", t: "Bullcrap", s: "Lies", d: "Calling out nonsense.", k: "lie poop fake" },
+    { e: "📸💅", t: "Glamour Shot", s: "Selfie", d: "Posting photos for attention.", k: "photo selfie attention" },
+    { e: "🥞🤔", t: "Waffling", s: "Undecided", d: "Can't make up their mind.", k: "waffle indecisive" },
+    { e: "🧱🥶", t: "Brick", s: "Cold / Fail", d: "Something useless or cold.", k: "brick cold fail" },
+    { e: "👶🍼", t: "Baby", s: "Naive", d: "Acting childish or new.", k: "baby naive new" },
+    { e: "🤏🎻", t: "Tiny Violin", s: "Sad Story", d: "Mocking a sad complaint.", k: "sad cry sarcastic" },
+    { e: "🫥☁️", t: "Invisible", s: "Disappear", d: "Wanting to vanish.", k: "hide invisible" },
+    { e: "🤭🙊", t: "Oops", s: "Giggle", d: "Laughing at a mistake.", k: "oops laugh secret" },
+    { e: "🙄💅", t: "Whatever", s: "Eye Roll", d: "Showing attitude.", k: "annoyed roll sass" },
+    { e: "🤐🔑", t: "Locked", s: "Secret", d: "My lips are sealed.", k: "secret quiet zip" },
+    { e: "🍑💪", t: "Gains", s: "Fitness", d: "Working on fitness/glutes.", k: "fitness gym peach" },
+    { e: "🫂❤️", t: "Comfort", s: "Hug", d: "Sending a supportive hug.", k: "hug love support" },
+    { e: "🧸💤", t: "Comfy", s: "Cozy", d: "Feeling safe and sleepy.", k: "sleep cozy cute" },
+    { e: "⚡🔋", t: "Recharge", s: "Energy", d: "Getting energy back.", k: "energy power" },
+    { e: "🤝💼", t: "Deal", s: "Business", d: "Agreement made.", k: "deal shake business" },
+    
+    // --- GAMING & TECH ---
+    { e: "🎮🕹️", t: "Gaming", s: "Console", d: "Time to play games.", k: "game play console" },
+    { e: "👾🕹️", t: "Retro", s: "Arcade", d: "Old school gaming.", k: "retro game 8bit" },
+    { e: "🤖⛔", t: "NPC", s: "Robot", d: "Acting scripted.", k: "npc fake bot" },
+    { e: "🎯🔥", t: "On Point", s: "Target", d: "Perfect accuracy.", k: "aim target perfect" },
+    { e: "🏆🥇", t: "Winner", s: "Champion", d: "Taking the win.", k: "win gold trophy" },
+    { e: "📉😭", t: "Loss", s: "Taking an L", d: "Losing a game.", k: "loss fail sad" },
+    { e: "🧂😤", t: "Salty", s: "Bitter", d: "Mad about losing.", k: "salty mad angry" },
+    { e: "🥔💻", t: "Potato PC", s: "Lag", d: "Bad computer/connection.", k: "lag slow bad" },
+    { e: "🚀🌕", t: "To The Moon", s: "Crypto", d: "Price going up.", k: "crypto money rich" },
+    { e: "🐋💰", t: "Whale", s: "Rich", d: "Big investor.", k: "money rich whale" },
+    { e: "🐂📈", t: "Bullish", s: "Market Up", d: "Optimistic market.", k: "money up stock" },
+    { e: "🐻📉", t: "Bearish", s: "Market Down", d: "Pessimistic market.", k: "money down stock" },
+    { e: "💾💾", t: "Saved", s: "Backup", d: "Keeping data safe.", k: "save tech" },
+    { e: "🔋🪫", t: "Low Batt", s: "Draining", d: "Running out of energy.", k: "tired battery" },
+    { e: "📡📶", t: "Online", s: "Signal", d: "Connected.", k: "wifi tech" },
+    
+    // --- RANDOM & ABSTRACT ---
+    { e: "🤥🤥", t: "Liar", s: "Pinocchio", d: "Calling out a lie.", k: "lie fake" },
+    { e: "🤯💥", t: "Mind Blown", s: "Explosion", d: "Shocked by facts.", k: "wow shock" },
+    { e: "🤠🐴", t: "Yeehaw", s: "Wild", d: "Feeling energetic.", k: "wild cowboy" },
+    { e: "🥸🕵️", t: "Incognito", s: "Spy", d: "Hiding identity.", k: "hide spy secret" },
+    { e: "👽🛸", t: "Aliens", s: "Weird", d: "Something strange.", k: "weird space" },
+    { e: "🙈🙉", t: "Ignore", s: "Monkeys", d: "Pretending not to see.", k: "hide ignore" },
+    { e: "🧀😬", t: "Cheesy", s: "Cringe", d: "Trying too hard.", k: "cringe cheese" },
+    { e: "👑🤴", t: "King", s: "Leader", d: "Respecting a man.", k: "king respect" },
+    { e: "👸💅", t: "Queen", s: "Slay", d: "Respecting a woman.", k: "queen slay" },
+    { e: "💩🌪️", t: "Sh*tstorm", s: "Mess", d: "A chaotic mess.", k: "bad mess chaos" },
+    { e: "🌚🌝", t: "Shady", s: "Faces", d: "Something suspicious.", k: "sus weird" },
+    { e: "💣💥", t: "Boom", s: "Explosive", d: "Big impact.", k: "fire loud" },
+    { e: "🔦🤔", t: "Gaslight", s: "Manipulation", d: "Questioning reality.", k: "fake lie" },
+    { e: "🧶🐈", t: "Messy", s: "Tangled", d: "Drama situation.", k: "drama mess" },
+    { e: "🕶️🤏", t: "Cool", s: "Shades", d: "Looking closer.", k: "cool look" },
+    { e: "🦄🌈", t: "Unicorn", s: "Rare", d: "One of a kind.", k: "rare magic" },
+    { e: "🧘🍃", t: "Zen", s: "Peace", d: "Staying calm.", k: "calm peace" },
+    { e: "🧼🚿", t: "Clean", s: "Fresh", d: "Fresh start/look.", k: "clean fresh" },
+    { e: "🧠💡", t: "Epiphany", s: "Idea", d: "Sudden realization.", k: "truth real" },
+    { e: "🧟‍♂️🧠", t: "Zombie", s: "Dead Tired", d: "Need sleep.", k: "tired sleep" },
+    { e: "🧛‍♂️🩸", t: "Vamp", s: "Night Owl", d: "Up all night.", k: "night dark" },
+    { e: "🤸‍♀️🧠", t: "Reach", s: "Gymnastics", d: "Mental reach.", k: "dumb stretch" },
+    { e: "🚮🗑️", t: "Bin It", s: "Trash", d: "Throw it away.", k: "trash bad" },
+    { e: "🚦🛑", t: "Signals", s: "Mixed", d: "Confusing signs.", k: "stop wait" },
+    { e: "👯‍♀️✨", t: "Besties", s: "Twinning", d: "Best friends.", k: "friend girl" },
+    { e: "💃🪩", t: "Party", s: "Dance", d: "Celebrating.", k: "party dance" },
+    { e: "💇‍♀️🚫", t: "Cut Off", s: "Blocked", d: "Removing someone.", k: "block bye" },
+    { e: "🤌🍝", t: "Chef's Kiss", s: "Perfect", d: "Excellent.", k: "good perfect" },
+    { e: "🤘🎸", t: "Rock On", s: "Metal", d: "Cool vibe.", k: "cool music" },
+    { e: "🤙🌊", t: "Hang Loose", s: "Chill", d: "Relaxed.", k: "chill cool" },
+    { e: "🤜🤛", t: "Bro Fist", s: "Respect", d: "Bro code.", k: "friend bro" },
+    { e: "🤞🍀", t: "Luck", s: "Hoping", d: "Fingers crossed.", k: "luck hope" },
+    { e: "🫀🔪", t: "Deep", s: "Raw", d: "Deep emotion.", k: "love hurt" },
+    { e: "🫦👀", t: "Bite", s: "Flirty", d: "Attraction.", k: "flirt love" },
+    { e: "🗯️🤬", t: "Mad", s: "Shouting", d: "Angry words.", k: "angry mad" },
+    { e: "💤😴", t: "Boring", s: "Sleep", d: "Not interested.", k: "bored sleep" },
+    { e: "💢😤", t: "Vein", s: "Annoyed", d: "Getting mad.", k: "angry mad" },
+    { e: "💫😵", t: "Dizzy", s: "Stars", d: "Confused.", k: "confused star" },
+    { e: "💨🏃", t: "Dash", s: "Fast", d: "Running away.", k: "run fast" },
+    { e: "🕳️🚶", t: "Hole", s: "Deep", d: "Digging deep.", k: "deep sad" },
+    { e: "🧨🎇", t: "Pop", s: "Firecracker", d: "Short temper.", k: "angry loud" },
+    { e: "🎈☁️", t: "Float", s: "High", d: "Feeling light.", k: "happy high" },
+    { e: "👣🕵️", t: "Stalking", s: "Steps", d: "Following.", k: "follow creep" },
+    { e: "🗣️📢", t: "Speak", s: "Shout", d: "Loud opinion.", k: "loud talk" },
+    { e: "👤🌑", t: "Lurk", s: "Shadow", d: "Watching silently.", k: "creep stalk" },
+    { e: "👥😐", t: "Crowd", s: "Normies", d: "Regular people.", k: "people group" },
+    { e: "🧟‍♂️⚰️", t: "Dead", s: "Tired", d: "Exhausted.", k: "tired sleep" },
+    { e: "🧜‍♀️🌊", t: "Siren", s: "Trap", d: "Alluring trap.", k: "trap sexy" },
+    { e: "🧙‍♂️🪄", t: "Wizard", s: "Magic", d: "Magic powers.", k: "magic spell" },
+    { e: "🔒🔑", t: "Locked", s: "Secure", d: "Safe.", k: "safe lock" },
+    { e: "📍🗺️", t: "Pin", s: "Location", d: "Where you are.", k: "map here" },
+    { e: "📊📈", t: "Stats", s: "Data", d: "Analysis.", k: "math smart" },
+    { e: "📧📨", t: "Mail", s: "Contact", d: "Send info.", k: "email text" },
+    { e: "📱📵", t: "Phone", s: "Addict", d: "Always online.", k: "phone tech" },
+    { e: "💻☕", t: "Work", s: "Grind", d: "Working hard.", k: "work job" },
+    { e: "📸🤨", t: "Caught", s: "Pic", d: "Evidence.", k: "photo cam" },
+    { e: "🎥🍿", t: "Movie", s: "Cinema", d: "Watching.", k: "film watch" },
+    { e: "🎫🎟️", t: "Ticket", s: "Entry", d: "Access.", k: "pass enter" },
+    { e: "🎲🎰", t: "Gamble", s: "Chance", d: "Taking a risk.", k: "luck risk" },
+    { e: "🪄✨", t: "Magic", s: "Fixed", d: "Problem solved.", k: "fix good" },
+    { e: "👀🙈", t: "Blind Eye", s: "Ignorance", d: "Choosing not to see.", k: "happy fake" },
+    { e: "🧠💡", t: "Realization", s: "Truth", d: "Waking up to facts.", k: "truth real" },
+    { e: "✅🆗", t: "Done", s: "Verified", d: "Completed.", k: "good yes" },
+    { e: "❌🚫", t: "No", s: "Banned", d: "Rejected.", k: "bad stop" },
+    { e: "⚠️🚧", t: "Alert", s: "Caution", d: "Be careful.", k: "stop wait" },
+    { e: "☢️☣️", t: "Toxic", s: "Hazard", d: "Bad environment.", k: "bad toxic" },
+    { e: "🔝🆙", t: "Top", s: "Level Up", d: "The best.", k: "good best" },
+    { e: "🔜🕒", t: "Soon", s: "Waiting", d: "Coming up.", k: "wait time" },
+    { e: "🆓🎁", t: "Free", s: "Gift", d: "No cost.", k: "gift money" },
+    { e: "🆕✨", t: "New", s: "Fresh", d: "Just released.", k: "new fresh" },
+    { e: "🆒😎", t: "Cool", s: "Okay", d: "Acceptable.", k: "cool ok" },
+    { e: "🦁👑", t: "Lion", s: "King", d: "Brave leader.", k: "king brave" },
+    { e: "🐼🎋", t: "Panda", s: "Lazy", d: "Cute and lazy.", k: "cute lazy" },
+    { e: "🐨🌿", t: "Koala", s: "Chill", d: "Hanging out.", k: "chill lazy" },
+    { e: "🐷🐽", t: "Pig", s: "Greedy", d: "Hungry.", k: "food hungry" },
+    { e: "🐙🧠", t: "Octopus", s: "Multitask", d: "Doing everything.", k: "busy work" },
+    { e: "🦋✨", t: "Change", s: "Butterfly", d: "Transformation.", k: "new pretty" },
+    { e: "🐝🍯", t: "Busy", s: "Bee", d: "Working hard.", k: "work busy" },
+    { e: "🐞🍀", t: "Luck", s: "Bug", d: "Good luck.", k: "luck good" },
+    { e: "🕷️🕸️", t: "Web", s: "Trap", d: "Stuck.", k: "stuck trap" },
+    { e: "🦂🌵", t: "Sting", s: "Pain", d: "Watch out.", k: "hurt danger" },
+    { e: "🐢🏁", t: "Slow", s: "Steady", d: "Taking time.", k: "slow chill" },
+    { e: "🦖☄️", t: "Dino", s: "Extinct", d: "Old school.", k: "old retro" },
+    { e: "🐬🌊", t: "Free", s: "Swim", d: "Freedom.", k: "free happy" },
+    { e: "🌴🥥", t: "Vacation", s: "Island", d: "Holiday.", k: "travel chill" },
+    { e: "🌵☀️", t: "Dry", s: "Desert", d: "Thirsty/Boring.", k: "hot boring" },
+    { e: "🍁🍂", t: "Fall", s: "Change", d: "Season change.", k: "cold cozy" },
+    { e: "🍄😵", t: "Trip", s: "Mushroom", d: "Confusing.", k: "weird trip" },
+    { e: "🌹🥀", t: "Faded", s: "Rose", d: "Love lost.", k: "sad love" },
+    { e: "🌻☀️", t: "Bright", s: "Happy", d: "Good vibes.", k: "happy good" },
+    { e: "🌙⭐", t: "Dream", s: "Night", d: "Sleeping.", k: "sleep dream" },
+    { e: "⚡🌩️", t: "Storm", s: "Chaos", d: "Trouble coming.", k: "bad trouble" },
+    { e: "🔥🚒", t: "Help", s: "Fire", d: "Emergency.", k: "help bad" },
+    { e: "💧🚿", t: "Wash", s: "Clean", d: "Start over.", k: "clean fresh" },
+    { e: "🎤🎶", t: "Sing", s: "Karaoke", d: "Having fun.", k: "music fun" },
+    { e: "🎨🖌️", t: "Art", s: "Create", d: "Making something.", k: "art make" },
+    { e: "🎭🎪", t: "Act", s: "Drama", d: "Faking it.", k: "fake drama" },
+    { e: "🎪🤹", t: "Juggling", s: "Busy", d: "Too much work.", k: "busy work" },
+    { e: "🎢🤮", t: "Sick", s: "Ride", d: "Ups and downs.", k: "dizzy crazy" },
+    { e: "🚦🚗", t: "Traffic", s: "Stuck", d: "Waiting.", k: "wait slow" },
+    { e: "🛳️⚓", t: "Ship", s: "Sailing", d: "Moving on.", k: "travel move" },
+    { e: "🚨🚔", t: "Police", s: "Trouble", d: "Caught.", k: "bad jail" },
+    { e: "💊🏥", t: "Sick", s: "Meds", d: "Not feeling well.", k: "sick hurt" },
+    { e: "💸💸", t: "Spent", s: "Broke", d: "No money.", k: "poor money" },
+    { e: "🗓️📅", t: "Date", s: "Plan", d: "Schedule.", k: "time plan" },
+    { e: "🔒🔓", t: "Open", s: "Unlock", d: "Access granted.", k: "open yes" },
+    { e: "🔎🕵️", t: "Search", s: "Find", d: "Looking for.", k: "find look" },
+
+    // --- NEW: 50 COMPLEX 3-5 EMOJI COMBOS ---
+    { e: "👦⚡👓🪄", t: "Harry Potter", s: "Wizard Boy", d: "The boy who lived, wizardry, and magic.", k: "movie harry potter wizard" },
+    { e: "🕷️🕸️🏙️", t: "Spiderman", s: "Web Slinger", d: "Your friendly neighborhood superhero.", k: "movie spiderman hero" },
+    { e: "🦇🦸‍♂️🏎️", t: "Batman", s: "Dark Knight", d: "The bat, the car, the hero of Gotham.", k: "movie batman hero" },
+    { e: "🦖☄️🌋", t: "Extinction", s: "Dino End", d: "Dinosaurs meeting their fiery end.", k: "dino space history" },
+    { e: "☕💻🎧", t: "Remote Work", s: "Grinding", d: "Coffee, laptop, and music. The work vibe.", k: "work job grind" },
+    { e: "🍕📺🛋️", t: "Netflix Night", s: "Relaxing", d: "Movies, pizza, and relaxing on the couch.", k: "relax movie food" },
+    { e: "🛫🌍🛬", t: "Travel", s: "World Tour", d: "Taking a trip around the world.", k: "travel plane trip" },
+    { e: "📅📉😭", t: "Bad Year", s: "Struggle", d: "A timeline of unfortunate events.", k: "sad bad year" },
+    { e: "🌧️🌱🌹", t: "Growth", s: "Nature", d: "Rain brings growth and beauty.", k: "nature flower growth" },
+    { e: "💍👰🤵💒", t: "Wedding", s: "Just Married", d: "The full marriage ceremony sequence.", k: "wedding love marry" },
+    { e: "🍣🍱🍵", t: "Sushi Date", s: "Japanese Food", d: "A delicious Japanese meal.", k: "food sushi date" },
+    { e: "🏋️‍♂️💪🥤", t: "Gym Life", s: "Workout", d: "Lifting weights and drinking protein.", k: "gym fitness health" },
+    { e: "🚗💨🚓", t: "Police Chase", s: "Speeding", d: "Running from the law.", k: "car police fast" },
+    { e: "🧛‍♂️⚰️🦇", t: "Dracula", s: "Vampire Life", d: "Sleeping in coffins and flying as bats.", k: "vampire scary halloween" },
+    { e: "🔎🕵️‍♂️👣", t: "Detective", s: "Mystery", d: "Following footprints and looking for clues.", k: "detective spy mystery" },
+    { e: "🎤🎸🥁", t: "Rock Band", s: "Concert", d: "Live music performance.", k: "music band rock" },
+    { e: "🍔🍟🥤", t: "Fast Food", s: "Combo Meal", d: "Burger, fries, and a drink.", k: "food junk burger" },
+    { e: "🚫🚭🚯", t: "Strict Rules", s: "Prohibited", d: "No smoking, no littering, strictly rules.", k: "rules stop warning" },
+    { e: "👶➡️👴", t: "Life Cycle", s: "Aging", d: "From baby to old age.", k: "life age time" },
+    { e: "🥚🐣🐥", t: "Hatching", s: "New Life", d: "The birth of a chick.", k: "animal cute baby" },
+    { e: "🎓📜🎉", t: "Graduation", s: "Success", d: "Getting the degree and celebrating.", k: "school study success" },
+    { e: "💼👔🤝", t: "Business Deal", s: "Corporate", d: "Suit up and shake hands.", k: "work business job" },
+    { e: "📱🔋🔌", t: "Charging", s: "Low Battery", d: "Plugging in the phone just in time.", k: "tech phone battery" },
+    { e: "🛒💳🛍️", t: "Shopping Spree", s: "Spending", d: "Filling the cart and swiping the card.", k: "shop money buy" },
+    { e: "🤒🌡️💊", t: "Sick Day", s: "Flu", d: "Fever, thermometer, and medicine.", k: "sick health hurt" },
+    { e: "🏖️🍹☀️", t: "Beach Day", s: "Summer", d: "Sun, drinks, and sand.", k: "travel beach summer" },
+    { e: "⛷️❄️🏔️", t: "Ski Trip", s: "Winter", d: "Skiing down the mountain.", k: "winter snow sport" },
+    { e: "🎃👻🍬", t: "Halloween", s: "Spooky", d: "Ghosts and candy.", k: "halloween scary holiday" },
+    { e: "🎄🎅🎁", t: "Christmas", s: "Xmas", d: "Santa and gifts.", k: "holiday christmas gift" },
+    { e: "🎆🍾🥂", t: "New Year", s: "Celebration", d: "Fireworks and champagne.", k: "party new year" },
+    { e: "🏹💘💌", t: "Valentine's", s: "Romance", d: "Cupid's arrow and love letters.", k: "love holiday romance" },
+    { e: "🧼🚿🛁", t: "Self Care", s: "Bath Time", d: "Relaxing and getting clean.", k: "relax clean bath" },
+    { e: "📚☕🌧️", t: "Cozy Reading", s: "Study", d: "Reading inside on a rainy day.", k: "book study relax" },
+    { e: "🎬🍿🥤", t: "Cinema", s: "Movie Time", d: "Popcorn and a movie.", k: "movie film watch" },
+    { e: "🚀🪐👽", t: "Space Travel", s: "Sci-Fi", d: "Visiting other planets.", k: "space alien sci-fi" },
+    { e: "🤠🐎🌵", t: "Wild West", s: "Cowboy", d: "Riding horses in the desert.", k: "cowboy horse west" },
+    { e: "🏴‍☠️🦜⚓", t: "Pirate Life", s: "Adventure", d: "Sailing the seas.", k: "pirate sea boat" },
+    { e: "👮‍♂️🛑✋", t: "Stop Police", s: "Halt", d: "Police ordering a stop.", k: "police stop law" },
+    { e: "🚒🔥💦", t: "Firefighter", s: "Rescue", d: "Putting out the fire.", k: "fire hero help" },
+    { e: "🚑🏥💉", t: "Hospital", s: "Emergency", d: "Ambulance to the ER.", k: "health sick doctor" },
+    { e: "📉💸😰", t: "Market Crash", s: "Broke", d: "Losing money fast.", k: "money sad loss" },
+    { e: "📈🚀🤑", t: "Market Boom", s: "Rich", d: "Making tons of money.", k: "money rich win" },
+    { e: "🗳️📝✅", t: "Vote", s: "Election", d: "Casting your ballot.", k: "vote politics choice" },
+    { e: "🥇🥈🥉", t: "Podium", s: "Winners", d: "First, second, and third place.", k: "win sport competition" },
+    { e: "🍳🥓🥞", t: "Breakfast", s: "Morning", d: "Eggs, bacon, and pancakes.", k: "food morning eat" },
+    { e: "🍺🍕⚽", t: "Match Day", s: "Football", d: "Beer, pizza, and the game.", k: "sport food fun" },
+    { e: "📵😴💤", t: "Digital Detox", s: "Offline", d: "Turning off phone to sleep.", k: "sleep health off" },
+    { e: "🧘‍♀️🕯️🕉️", t: "Meditation", s: "Peace", d: "Candles and mindfulness.", k: "peace calm relax" },
+    { e: "👁️👄👁️💅", t: "Unbothered Stare", s: "Sassy", d: "Shocked but staying fabulous.", k: "sass stare drama" },
+    { e: "🚩🏃‍♀️💨", t: "Run Away", s: "Red Flag", d: "Seeing a red flag and running fast.", k: "warning run dating" }
+  ];
+
+  // --- 2. WEEKLY SHUFFLE LOGIC ---
+  function getWeeklySeed() {
+    const now = new Date();
+    // Calculate week number (simple version)
+    const oneJan = new Date(now.getFullYear(), 0, 1);
+    const numberOfDays = Math.floor((now - oneJan) / (24 * 60 * 60 * 1000));
+    return Math.ceil((now.getDay() + 1 + numberOfDays) / 7);
+  }
+
+  function shuffleWithSeed(array, seed) {
+    let m = array.length, t, i;
+    // Simple seeded random generator
+    const random = () => {
+      var x = Math.sin(seed++) * 10000;
+      return x - Math.floor(x);
+    };
+
+    while (m) {
+      i = Math.floor(random() * m--);
+      t = array[m];
+      array[m] = array[i];
+      array[i] = t;
+    }
+    return array;
+  }
+
+  // --- 3. RENDER FUNCTION ---
+  function renderCards(filterText = "") {
+    const container = document.getElementById('mainGrid');
+    const badge = document.getElementById('countBadge');
+    const title = document.getElementById('gridTitle');
+    const noResults = document.getElementById('noResultsMsg');
+
+    // Case 1: Searching (Show ALL matches)
+    if (filterText.length > 0) {
+      const filtered = comboData.filter(item => 
+        item.k.includes(filterText) || 
+        item.t.toLowerCase().includes(filterText)
+      );
+      
+      title.innerText = "Search Results";
+      badge.innerText = `${filtered.length} Found`;
+      badge.style.background = "#000";
+
+      if (filtered.length === 0) {
+        container.innerHTML = "";
+        noResults.style.display = "block";
+        return;
+      }
+      
+      noResults.style.display = "none";
+      container.innerHTML = filtered.map(item => createCardHTML(item)).join('');
+      return;
+    }
+
+    // Case 2: Default View (Show 25 Random, Shuffled Weekly)
+    const seed = getWeeklySeed(); // Gets a number that changes only once every 7 days
+    const shuffled = shuffleWithSeed([...comboData], seed);
+    const weeklySet = shuffled.slice(0, 25); // Take first 25
+    
+    title.innerText = "Featured This Week";
+    badge.innerText = "25 / 200";
+    badge.style.background = "#333";
+    noResults.style.display = "none";
+    
+    container.innerHTML = weeklySet.map(item => createCardHTML(item)).join('');
+  }
+
+  function createCardHTML(item) {
+    return `
+      <div class="combo-card">
+        <div class="combo-visual">${item.e}</div>
+        <div class="combo-text">
+          <h3>${item.t}</h3>
+          <p>${item.s}</p>
+          <span class="desc">${item.d}</span>
+        </div>
+        <button class="copy-btn" onclick="copyToClipboard('${item.e}')">
+          Copy Combo
+        </button>
+      </div>
+    `;
+  }
+
+  // --- 4. UTILITIES ---
   function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
       const toast = document.getElementById("copy-toast");
@@ -395,77 +547,15 @@
     });
   }
 
-  // 2. SEARCH FUNCTION (Search Both Grids)
+  // Event Listener
   document.getElementById('comboSearch').addEventListener('input', function() {
-    let input = this.value.toLowerCase().trim();
-    
-    // Select all cards from BOTH grids
-    let cardsTop = document.querySelectorAll('#grid-top20 .combo-card');
-    let cardsMain = document.querySelectorAll('#grid-library .combo-card');
-    let allCards = [...cardsTop, ...cardsMain];
-    
-    let visibleCount = 0;
-
-    // Headers
-    let headerTop = document.getElementById('header-top');
-    let headerLib = document.getElementById('header-lib');
-
-    allCards.forEach(card => {
-      let keywords = card.getAttribute('data-keywords') || "";
-      let title = card.querySelector('h3').innerText.toLowerCase();
-      
-      if (keywords.includes(input) || title.includes(input)) {
-        card.style.display = "flex";
-        visibleCount++;
-      } else {
-        card.style.display = "none";
-      }
-    });
-
-    // Toggle No Results Message & Headers
-    let msg = document.getElementById('noResultsMsg');
-    
-    if (visibleCount === 0) {
-      msg.style.display = "block";
-      headerTop.classList.add('hidden-header');
-      headerLib.classList.add('hidden-header');
-    } else {
-      msg.style.display = "none";
-      if (input.length > 0) {
-        // Hide headers during search for cleaner list
-        headerTop.classList.add('hidden-header');
-        headerLib.classList.add('hidden-header');
-      } else {
-        // Show headers when input is empty
-        headerTop.classList.remove('hidden-header');
-        headerLib.classList.remove('hidden-header');
-      }
-    }
+    renderCards(this.value.toLowerCase().trim());
   });
+
+  // Init
+  renderCards();
+
 </script>
-
-<style>
-  #copy-toast {
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%) translateY(100px); /* Hidden down */
-    background: #333;
-    color: #fff;
-    font-size: 14px;
-    padding: 12px 24px;
-    border-radius: 30px;
-    opacity: 0;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    z-index: 9999;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  }
-
-  #copy-toast.show {
-    transform: translateX(-50%) translateY(0);
-    opacity: 1;
-  }
-</style>
 
 </body>
 </html>
