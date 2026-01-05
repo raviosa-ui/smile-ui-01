@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Emoji Combo Meanings & Slang 👁️👄👁️ | SmileyMeaning</title>
-  <meta name="description" content="Decode viral emoji combinations. Understand what strings like 👉👈, 🚩🚩, and 🧢🚫 really mean in text and social media." />
+  <meta name="description" content="The ultimate dictionary of 150+ emoji slang terms. Decode viral TikTok trends, text subtext, and hidden meanings like 👉👈, 🚩, and 🧢." />
 
   <link rel="canonical" href="https://smileymeaning.com/emoji-combo/" />
 
   <meta property="og:title" content="Emoji Combo Meanings & Slang | SmileyMeaning" />
-  <meta property="og:description" content="Decode viral emoji combinations. Understand what strings like 👉👈, 🚩, and 🧢 really mean." />
+  <meta property="og:description" content="Decode 150+ viral emoji combinations. Understand what strings like 👉👈, 🚩, and 🧢 really mean." />
   <meta property="og:url" content="https://smileymeaning.com/emoji-combo/" />
   <meta property="og:type" content="website" />
 
@@ -134,13 +134,18 @@
       border-color: #333;
     }
 
-    /* Search Highlight */
+    /* Search Highlight & Messages */
     .no-results {
       text-align: center;
-      padding: 2rem;
+      padding: 3rem;
       color: #666;
       display: none;
-      grid-column: 1 / -1;
+      width: 100%;
+    }
+
+    /* Helper to hide section headers during search */
+    .hidden-header {
+      display: none !important;
     }
   </style>
 </head>
@@ -169,11 +174,11 @@
     <div class="container">
       <h1>Emoji Slang Dictionary 📖</h1>
       <p class="hero-sub">
-        Decode the secret language of the internet. Search 100+ viral emoji combinations used in chats and TikTok.
+        Decode the secret language of the internet. Search 150+ viral emoji combinations used in chats, TikTok, and Gaming.
       </p>
 
       <div class="search-box">
-        <input type="text" id="comboSearch" placeholder="Search meanings (e.g. 'shy', 'lying', 'cool')..." onkeyup="filterCombos()">
+        <input type="text" id="comboSearch" placeholder="Search meanings (e.g. 'shy', 'lying', 'cool', 'crypto')...">
       </div>
     </div>
   </section>
@@ -181,125 +186,287 @@
   <section style="padding-bottom: 4rem;">
     <div class="container">
 
-      <div class="section-header">
-        <h2>🔥 Top 10 Viral</h2>
+      <div class="section-header" id="header-top">
+        <h2>🔥 Top 20 Viral</h2>
         <span class="badge">Most Popular</span>
       </div>
       
-      <div class="top-grid" id="grid-top10">
+      <div class="top-grid" id="grid-top20">
         
-        <div class="combo-card" data-keywords="shy nervous simp hesitate uwu">
-          <div class="combo-visual">👉 👈</div>
-          <div class="combo-text">
-            <h3>Shy / Nervous</h3>
-            <p>"Fingers Touching"</p>
-            <span class="desc">Acting shy, hesitant, or asking for a favor nicely.</span>
-          </div>
-          <button class="copy-btn" onclick="copyToClipboard('👉👈')">Copy</button>
-        </div>
+        <div class="combo-card" data-keywords="shy nervous simp hesitate uwu"><div class="combo-visual">👉 👈</div><div class="combo-text"><h3>Shy / Nervous</h3><p>"Fingers Touching"</p><span class="desc">Acting shy, hesitant, or asking for a favor nicely.</span></div><button class="copy-btn" onclick="copyToClipboard('👉👈')">Copy</button></div>
+        <div class="combo-card" data-keywords="shocked stare drama omg surprise"><div class="combo-visual">👁️ 👄 👁️</div><div class="combo-text"><h3>It Is What It Is</h3><p>"Eye Mouth Eye"</p><span class="desc">Staring in disbelief, shock, or helpless acceptance.</span></div><button class="copy-btn" onclick="copyToClipboard('👁️👄👁️')">Copy</button></div>
+        <div class="combo-card" data-keywords="lie lying fake truth cap"><div class="combo-visual">🧢</div><div class="combo-text"><h3>Cap / Capping</h3><p>"Blue Cap"</p><span class="desc">Slang for "Lying". 🚫🧢 means "No Lie".</span></div><button class="copy-btn" onclick="copyToClipboard('🧢')">Copy</button></div>
+        <div class="combo-card" data-keywords="warning danger toxic red flag"><div class="combo-visual">🚩 🚩 🚩</div><div class="combo-text"><h3>Red Flags</h3><p>"Warning Signs"</p><span class="desc">Warning that a person or dating situation is toxic.</span></div><button class="copy-btn" onclick="copyToClipboard('🚩🚩🚩')">Copy</button></div>
+        <div class="combo-card" data-keywords="funny hilarious dying dead"><div class="combo-visual">💀 ⚰️</div><div class="combo-text"><h3>I'm Dead</h3><p>"Skull"</p><span class="desc">Something is so funny it "killed" you. Replaces 😂.</span></div><button class="copy-btn" onclick="copyToClipboard('💀')">Copy</button></div>
 
-        <div class="combo-card" data-keywords="shocked stare drama omg surprise">
-          <div class="combo-visual">👁️ 👄 👁️</div>
-          <div class="combo-text">
-            <h3>It Is What It Is</h3>
-            <p>"Eye Mouth Eye"</p>
-            <span class="desc">Staring in disbelief, shock, or helpless acceptance.</span>
-          </div>
-          <button class="copy-btn" onclick="copyToClipboard('👁️👄👁️')">Copy</button>
-        </div>
+        <div class="combo-card" data-keywords="clown fool silly dumb"><div class="combo-visual">🤡</div><div class="combo-text"><h3>Clown</h3><p>"You played yourself"</p><span class="desc">Used when someone looks foolish or gets tricked.</span></div><button class="copy-btn" onclick="copyToClipboard('🤡')">Copy</button></div>
+        <div class="combo-card" data-keywords="gossip tea drama listen"><div class="combo-visual">☕ 🐸</div><div class="combo-text"><h3>Spill The Tea</h3><p>"Tea / Kermit"</p><span class="desc">Gossiping or sipping tea while watching drama.</span></div><button class="copy-btn" onclick="copyToClipboard('☕')">Copy</button></div>
+        <div class="combo-card" data-keywords="sass attitude nails unbothered"><div class="combo-visual">💅</div><div class="combo-text"><h3>Sass / Class</h3><p>"Painting Nails"</p><span class="desc">Being unbothered, feeling fancy, or showing attitude.</span></div><button class="copy-btn" onclick="copyToClipboard('💅')">Copy</button></div>
+        <div class="combo-card" data-keywords="cold drip ice cool outfit"><div class="combo-visual">🥶 ❄️</div><div class="combo-text"><h3>Ice / Drip</h3><p>"Freezing"</p><span class="desc">Referring to expensive jewelry (ice) or a cool outfit.</span></div><button class="copy-btn" onclick="copyToClipboard('🥶')">Copy</button></div>
+        <div class="combo-card" data-keywords="greatest best goat sport"><div class="combo-visual">🐐</div><div class="combo-text"><h3>GOAT</h3><p>"Greatest of All Time"</p><span class="desc">Used to praise athletes or legends.</span></div><button class="copy-btn" onclick="copyToClipboard('🐐')">Copy</button></div>
 
-        <div class="combo-card" data-keywords="lie lying fake truth cap">
-          <div class="combo-visual">🧢</div>
-          <div class="combo-text">
-            <h3>Cap / Capping</h3>
-            <p>"Blue Cap"</p>
-            <span class="desc">Slang for "Lying". 🚫🧢 means "No Lie" or "For real".</span>
-          </div>
-          <button class="copy-btn" onclick="copyToClipboard('🧢')">Copy</button>
-        </div>
+        <div class="combo-card" data-keywords="melt cringe dying"><div class="combo-visual">🫠</div><div class="combo-text"><h3>Melting</h3><p>"Face Melting"</p><span class="desc">Dying of embarrassment, cringe, or extreme heat.</span></div><button class="copy-btn" onclick="copyToClipboard('🫠')">Copy</button></div>
+        <div class="combo-card" data-keywords="mewing jawline shh quiet"><div class="combo-visual">🤫🧏</div><div class="combo-text"><h3>Mewing</h3><p>"Shush / Jawline"</p><span class="desc">Viral trend: Signaling you can't talk because you're exercising your jaw.</span></div><button class="copy-btn" onclick="copyToClipboard('🤫🧏')">Copy</button></div>
+        <div class="combo-card" data-keywords="respect salute soldier"><div class="combo-visual">🫡</div><div class="combo-text"><h3>Respect</h3><p>"Salute"</p><span class="desc">Paying respect to a legend or accepting a tough task.</span></div><button class="copy-btn" onclick="copyToClipboard('🫡')">Copy</button></div>
+        <div class="combo-card" data-keywords="chad stoic stone sigma"><div class="combo-visual">🗿</div><div class="combo-text"><h3>Gigachad</h3><p>"Moai"</p><span class="desc">Sigma male, stoic, emotionless, or "based" opinion.</span></div><button class="copy-btn" onclick="copyToClipboard('🗿')">Copy</button></div>
+        <div class="combo-card" data-keywords="love heart hands appreciate"><div class="combo-visual">🫶</div><div class="combo-text"><h3>Heart Hands</h3><p>"Love You"</p><span class="desc">Showing appreciation, love, or support.</span></div><button class="copy-btn" onclick="copyToClipboard('🫶')">Copy</button></div>
 
-        <div class="combo-card" data-keywords="warning danger toxic red flag">
-          <div class="combo-visual">🚩 🚩 🚩</div>
-          <div class="combo-text">
-            <h3>Red Flags</h3>
-            <p>"Warning Signs"</p>
-            <span class="desc">Warning that a person or dating situation is toxic.</span>
-          </div>
-          <button class="copy-btn" onclick="copyToClipboard('🚩🚩🚩')">Copy</button>
-        </div>
-
-        <div class="combo-card" data-keywords="funny hilarious dying dead">
-          <div class="combo-visual">💀 ⚰️</div>
-          <div class="combo-text">
-            <h3>I'm Dead</h3>
-            <p>"Skull"</p>
-            <span class="desc">Something is so funny it "killed" you. Replaces 😂.</span>
-          </div>
-          <button class="copy-btn" onclick="copyToClipboard('💀')">Copy</button>
-        </div>
-
-        <div class="combo-card" data-keywords="clown fool silly dumb">
-          <div class="combo-visual">🤡</div>
-          <div class="combo-text">
-            <h3>Clown</h3>
-            <p>"You played yourself"</p>
-            <span class="desc">Used when someone looks foolish or gets tricked.</span>
-          </div>
-          <button class="copy-btn" onclick="copyToClipboard('🤡')">Copy</button>
-        </div>
-
-        <div class="combo-card" data-keywords="gossip tea drama listen">
-          <div class="combo-visual">☕ 🐸</div>
-          <div class="combo-text">
-            <h3>Spill The Tea</h3>
-            <p>"Tea / Kermit"</p>
-            <span class="desc">Gossiping or sipping tea while watching drama.</span>
-          </div>
-          <button class="copy-btn" onclick="copyToClipboard('☕')">Copy</button>
-        </div>
-
-        <div class="combo-card" data-keywords="sass attitude nails unbothered">
-          <div class="combo-visual">💅</div>
-          <div class="combo-text">
-            <h3>Sass / Class</h3>
-            <p>"Painting Nails"</p>
-            <span class="desc">Being unbothered, feeling fancy, or showing attitude.</span>
-          </div>
-          <button class="copy-btn" onclick="copyToClipboard('💅')">Copy</button>
-        </div>
-
-        <div class="combo-card" data-keywords="cold drip ice cool outfit">
-          <div class="combo-visual">🥶 ❄️</div>
-          <div class="combo-text">
-            <h3>Ice / Drip</h3>
-            <p>"Freezing"</p>
-            <span class="desc">Referring to expensive jewelry (ice) or a cool outfit.</span>
-          </div>
-          <button class="copy-btn" onclick="copyToClipboard('🥶')">Copy</button>
-        </div>
-
-        <div class="combo-card" data-keywords="greatest best goat sport">
-          <div class="combo-visual">🐐</div>
-          <div class="combo-text">
-            <h3>GOAT</h3>
-            <p>"Greatest of All Time"</p>
-            <span class="desc">Used to praise athletes or legends.</span>
-          </div>
-          <button class="copy-btn" onclick="copyToClipboard('🐐')">Copy</button>
-        </div>
+        <div class="combo-card" data-keywords="side eye judge criminal"><div class="combo-visual">💣 👀</div><div class="combo-text"><h3>Bombastic Side Eye</h3><p>"Judging Hard"</p><span class="desc">Criminal offensive side eye. Judging someone heavily.</span></div><button class="copy-btn" onclick="copyToClipboard('💣👀')">Copy</button></div>
+        <div class="combo-card" data-keywords="sus suspicious rock"><div class="combo-visual">🤨</div><div class="combo-text"><h3>Sus</h3><p>"The Rock Stare"</p><span class="desc">Something is suspicious or you are skeptical.</span></div><button class="copy-btn" onclick="copyToClipboard('🤨')">Copy</button></div>
+        <div class="combo-card" data-keywords="loud crying laughing lol"><div class="combo-visual">😭</div><div class="combo-text"><h3>Sobbing</h3><p>"Loudly Crying"</p><span class="desc">Ironically used for "Uncontrollable Laughter" more than sadness.</span></div><button class="copy-btn" onclick="copyToClipboard('😭')">Copy</button></div>
+        <div class="combo-card" data-keywords="satire mean fairy comment"><div class="combo-visual">🧚‍♀️ ✨</div><div class="combo-text"><h3>Satire</h3><p>"Fairy Comments"</p><span class="desc">Used to sandwich a mean or sarcastic comment between sparkles.</span></div><button class="copy-btn" onclick="copyToClipboard('🧚‍♀️✨')">Copy</button></div>
+        <div class="combo-card" data-keywords="horny jail bonk doge"><div class="combo-visual">🐕 🏏</div><div class="combo-text"><h3>Horny Jail</h3><p>"Bonk"</p><span class="desc">Sending someone to horny jail for being inappropriate.</span></div><button class="copy-btn" onclick="copyToClipboard('🐕🏏')">Copy</button></div>
 
       </div> 
 
-
-      <div class="section-header">
+      <div class="section-header" id="header-lib">
         <h2>📚 The Dictionary (A-Z)</h2>
       </div>
 
       <div class="main-grid" id="grid-library">
         
-        <div class="combo-card" data-keywords="snake traitor fake"><div class="combo-visual">🐍</div><div class="combo-text"><h3>Snake</h3><span class="desc">A traitor or fake friend.</span></div><button class="copy-btn" onclick="copyToClipboard('🐍')">Copy</button></div>
-        <div class="combo-card" data-keywords="butt peach fitness"><div class="combo-visual">🍑</div><div class="combo-text"><h3>Peach</h3><span class="desc">Refers to buttocks or fitness.</span></div><button class="copy-btn" onclick="copyToClipboard('🍑')">Copy</button></div>
-        <div class="combo-card" data-keywords="ghost ignore dating"><div class="combo-visual">👻</div><div class="combo-text"><h3>Ghosting</h3><span class="desc">Ignoring someone suddenly.</span></div><button class="copy-btn" onclick="copyToClipboard('👻')">Copy</button></div>
-        <div class="combo-card" data-keywords="money rich bread"><div class="combo-visual">🍞</div><div class="combo-text"><h3>Bread</h3><span class="desc">Slang for money or cash.</span></div><button class="copy-btn" onclick="copyToClipboard('🍞')">Copy</button></div>
-        <div class="combo-card" data-keywords="bait fishing attention"><div class="combo-visual">🎣</div><div class="combo-text"><h3>Fishing</h3><span class="desc">Fishing for compliments.</span></div><button class="copy-btn" onclick="copyToClipboard('🎣')">Copy</button></div>
-        <div class="combo-card" data-keywords="trap sexy hot"><div class="combo-visual">🍯</div><div class="combo-text"><h3>Honey Trap</h3><span class="desc">A thirst trap photo.</span></div><button class="copy-
+        <div class="combo-card" data-keywords="basic girl pumpkin"><div class="combo-visual">🥑</div><div class="combo-text"><h3>Basic</h3><span class="desc">Trendy/Mainstream.</span></div><button class="copy-btn" onclick="copyToClipboard('🥑')">Copy</button></div>
+        <div class="combo-card" data-keywords="snake traitor"><div class="combo-visual">🐍</div><div class="combo-text"><h3>Snake</h3><span class="desc">Fake friend.</span></div><button class="copy-btn" onclick="copyToClipboard('🐍')">Copy</button></div>
+        <div class="combo-card" data-keywords="ghost ignore"><div class="combo-visual">👻</div><div class="combo-text"><h3>Ghosting</h3><span class="desc">Disappearing.</span></div><button class="copy-btn" onclick="copyToClipboard('👻')">Copy</button></div>
+        <div class="combo-card" data-keywords="money bread"><div class="combo-visual">🍞</div><div class="combo-text"><h3>Bread</h3><span class="desc">Cash/Money.</span></div><button class="copy-btn" onclick="copyToClipboard('🍞')">Copy</button></div>
+        <div class="combo-card" data-keywords="fishing compliments"><div class="combo-visual">🎣</div><div class="combo-text"><h3>Fishing</h3><span class="desc">For compliments.</span></div><button class="copy-btn" onclick="copyToClipboard('🎣')">Copy</button></div>
+        <div class="combo-card" data-keywords="waffle indecisive"><div class="combo-visual">🥞</div><div class="combo-text"><h3>Waffling</h3><span class="desc">Undecided.</span></div><button class="copy-btn" onclick="copyToClipboard('🥞')">Copy</button></div>
+        <div class="combo-card" data-keywords="brick fail"><div class="combo-visual">🧱</div><div class="combo-text"><h3>Brick</h3><span class="desc">Fail/Cold.</span></div><button class="copy-btn" onclick="copyToClipboard('🧱')">Copy</button></div>
+        <div class="combo-card" data-keywords="sleep underrated"><div class="combo-visual">🛌</div><div class="combo-text"><h3>Slept On</h3><span class="desc">Underrated.</span></div><button class="copy-btn" onclick="copyToClipboard('🛌')">Copy</button></div>
+        <div class="combo-card" data-keywords="stonks money"><div class="combo-visual">📈</div><div class="combo-text"><h3>Stonks</h3><span class="desc">Profit/Win.</span></div><button class="copy-btn" onclick="copyToClipboard('📈')">Copy</button></div>
+        <div class="combo-card" data-keywords="loss fail"><div class="combo-visual">📉</div><div class="combo-text"><h3>Not Stonks</h3><span class="desc">Loss/Fail.</span></div><button class="copy-btn" onclick="copyToClipboard('📉')">Copy</button></div>
+        <div class="combo-card" data-keywords="trash bad"><div class="combo-visual">🗑️</div><div class="combo-text"><h3>Trash</h3><span class="desc">Terrible.</span></div><button class="copy-btn" onclick="copyToClipboard('🗑️')">Copy</button></div>
+        <div class="combo-card" data-keywords="sick cool"><div class="combo-visual">🤧</div><div class="combo-text"><h3>Sick</h3><span class="desc">Cool outfit.</span></div><button class="copy-btn" onclick="copyToClipboard('🤧')">Copy</button></div>
+        <div class="combo-card" data-keywords="hot thirsty"><div class="combo-visual">🥵</div><div class="combo-text"><h3>Thirsty</h3><span class="desc">Desperate.</span></div><button class="copy-btn" onclick="copyToClipboard('🥵')">Copy</button></div>
+        <div class="combo-card" data-keywords="baby naive"><div class="combo-visual">👶</div><div class="combo-text"><h3>Baby</h3><span class="desc">Naive/New.</span></div><button class="copy-btn" onclick="copyToClipboard('👶')">Copy</button></div>
+        <div class="combo-card" data-keywords="brain smart"><div class="combo-visual">🧠</div><div class="combo-text"><h3>Big Brain</h3><span class="desc">Genius.</span></div><button class="copy-btn" onclick="copyToClipboard('🧠')">Copy</button></div>
+        <div class="combo-card" data-keywords="close small"><div class="combo-visual">🤏</div><div class="combo-text"><h3>So Close</h3><span class="desc">Tiny amount.</span></div><button class="copy-btn" onclick="copyToClipboard('🤏')">Copy</button></div>
+        <div class="combo-card" data-keywords="invisible hide"><div class="combo-visual">🫥</div><div class="combo-text"><h3>Invisible</h3><span class="desc">Disappearing.</span></div><button class="copy-btn" onclick="copyToClipboard('🫥')">Copy</button></div>
+        <div class="combo-card" data-keywords="oops giggle"><div class="combo-visual">🤭</div><div class="combo-text"><h3>Oops</h3><span class="desc">My bad.</span></div><button class="copy-btn" onclick="copyToClipboard('🤭')">Copy</button></div>
+        <div class="combo-card" data-keywords="roll eye"><div class="combo-visual">🙄</div><div class="combo-text"><h3>Eye Roll</h3><span class="desc">Whatever.</span></div><button class="copy-btn" onclick="copyToClipboard('🙄')">Copy</button></div>
+        <div class="combo-card" data-keywords="secret zip"><div class="combo-visual">🤐</div><div class="combo-text"><h3>Zip It</h3><span class="desc">Secret.</span></div><button class="copy-btn" onclick="copyToClipboard('🤐')">Copy</button></div>
+
+        <div class="combo-card" data-keywords="peach butt"><div class="combo-visual">🍑</div><div class="combo-text"><h3>Peach</h3><span class="desc">Fitness/Glutes.</span></div><button class="copy-btn" onclick="copyToClipboard('🍑')">Copy</button></div>
+        <div class="combo-card" data-keywords="eggplant"><div class="combo-visual">🍆</div><div class="combo-text"><h3>Eggplant</h3><span class="desc">You know what.</span></div><button class="copy-btn" onclick="copyToClipboard('🍆')">Copy</button></div>
+        <div class="combo-card" data-keywords="wet drip"><div class="combo-visual">💦</div><div class="combo-text"><h3>Drip/Sweat</h3><span class="desc">Style or...</span></div><button class="copy-btn" onclick="copyToClipboard('💦')">Copy</button></div>
+        <div class="combo-card" data-keywords="spicy hot"><div class="combo-visual">🌶️</div><div class="combo-text"><h3>Spicy</h3><span class="desc">Risky/Hot.</span></div><button class="copy-btn" onclick="copyToClipboard('🌶️')">Copy</button></div>
+        <div class="combo-card" data-keywords="cherries couple"><div class="combo-visual">🍒</div><div class="combo-text"><h3>Cherries</h3><span class="desc">A Pair/Virginity.</span></div><button class="copy-btn" onclick="copyToClipboard('🍒')">Copy</button></div>
+        <div class="combo-card" data-keywords="kitty cat"><div class="combo-visual">🐱</div><div class="combo-text"><h3>Kitty</h3><span class="desc">Cute/Cat.</span></div><button class="copy-btn" onclick="copyToClipboard('🐱')">Copy</button></div>
+        <div class="combo-card" data-keywords="bear hairy"><div class="combo-visual">🐻</div><div class="combo-text"><h3>Bear</h3><span class="desc">Big man.</span></div><button class="copy-btn" onclick="copyToClipboard('🐻')">Copy</button></div>
+        <div class="combo-card" data-keywords="flirty kiss"><div class="combo-visual">😘</div><div class="combo-text"><h3>Kiss</h3><span class="desc">Flirting.</span></div><button class="copy-btn" onclick="copyToClipboard('😘')">Copy</button></div>
+        <div class="combo-card" data-keywords="devil naughty"><div class="combo-visual">😈</div><div class="combo-text"><h3>Devil</h3><span class="desc">Naughty mood.</span></div><button class="copy-btn" onclick="copyToClipboard('😈')">Copy</button></div>
+        <div class="combo-card" data-keywords="angel innocent"><div class="combo-visual">😇</div><div class="combo-text"><h3>Angel</h3><span class="desc">Innocent (fake).</span></div><button class="copy-btn" onclick="copyToClipboard('😇')">Copy</button></div>
+        <div class="combo-card" data-keywords="drool tasty"><div class="combo-visual">🤤</div><div class="combo-text"><h3>Drool</h3><span class="desc">Hungry/Thirsty.</span></div><button class="copy-btn" onclick="copyToClipboard('🤤')">Copy</button></div>
+        <div class="combo-card" data-keywords="love heart"><div class="combo-visual">❤️</div><div class="combo-text"><h3>Love</h3><span class="desc">Classic love.</span></div><button class="copy-btn" onclick="copyToClipboard('❤️')">Copy</button></div>
+        <div class="combo-card" data-keywords="heartbreak sad"><div class="combo-visual">💔</div><div class="combo-text"><h3>Broken</h3><span class="desc">Heartbreak.</span></div><button class="copy-btn" onclick="copyToClipboard('💔')">Copy</button></div>
+        <div class="combo-card" data-keywords="fire hot"><div class="combo-visual">🔥</div><div class="combo-text"><h3>Lit</h3><span class="desc">Hot/Trendy.</span></div><button class="copy-btn" onclick="copyToClipboard('🔥')">Copy</button></div>
+        <div class="combo-card" data-keywords="ring marry"><div class="combo-visual">💍</div><div class="combo-text"><h3>Wifey</h3><span class="desc">Marriage material.</span></div><button class="copy-btn" onclick="copyToClipboard('💍')">Copy</button></div>
+
+        <div class="combo-card" data-keywords="bot npc"><div class="combo-visual">🤖</div><div class="combo-text"><h3>NPC</h3><span class="desc">Scripted person.</span></div><button class="copy-btn" onclick="copyToClipboard('🤖')">Copy</button></div>
+        <div class="combo-card" data-keywords="gamer game"><div class="combo-visual">👾</div><div class="combo-text"><h3>Gamer</h3><span class="desc">Gaming.</span></div><button class="copy-btn" onclick="copyToClipboard('👾')">Copy</button></div>
+        <div class="combo-card" data-keywords="controller play"><div class="combo-visual">🎮</div><div class="combo-text"><h3>Console</h3><span class="desc">Let's play.</span></div><button class="copy-btn" onclick="copyToClipboard('🎮')">Copy</button></div>
+        <div class="combo-card" data-keywords="target aim"><div class="combo-visual">🎯</div><div class="combo-text"><h3>Target</h3><span class="desc">Accurate/On point.</span></div><button class="copy-btn" onclick="copyToClipboard('🎯')">Copy</button></div>
+        <div class="combo-card" data-keywords="win trophy"><div class="combo-visual">🏆</div><div class="combo-text"><h3>W</h3><span class="desc">Big Win.</span></div><button class="copy-btn" onclick="copyToClipboard('🏆')">Copy</button></div>
+        <div class="combo-card" data-keywords="loss loser"><div class="combo-visual">🇱</div><div class="combo-text"><h3>L</h3><span class="desc">Taking a Loss.</span></div><button class="copy-btn" onclick="copyToClipboard('🇱')">Copy</button></div>
+        <div class="combo-card" data-keywords="salt salty"><div class="combo-visual">🧂</div><div class="combo-text"><h3>Salty</h3><span class="desc">Bitter/Mad.</span></div><button class="copy-btn" onclick="copyToClipboard('🧂')">Copy</button></div>
+        <div class="combo-card" data-keywords="potato aim"><div class="combo-visual">🥔</div><div class="combo-text"><h3>Potato</h3><span class="desc">Bad aim/PC.</span></div><button class="copy-btn" onclick="copyToClipboard('🥔')">Copy</button></div>
+        <div class="combo-card" data-keywords="luck pray"><div class="combo-visual">🙏</div><div class="combo-text"><h3>Bless</h3><span class="desc">Thank you.</span></div><button class="copy-btn" onclick="copyToClipboard('🙏')">Copy</button></div>
+        <div class="combo-card" data-keywords="rocket moon"><div class="combo-visual">🚀</div><div class="combo-text"><h3>Moon</h3><span class="desc">Price going up.</span></div><button class="copy-btn" onclick="copyToClipboard('🚀')">Copy</button></div>
+        <div class="combo-card" data-keywords="diamond hands"><div class="combo-visual">💎🙌</div><div class="combo-text"><h3>HODL</h3><span class="desc">Diamond Hands.</span></div><button class="copy-btn" onclick="copyToClipboard('💎🙌')">Copy</button></div>
+        <div class="combo-card" data-keywords="paper hands"><div class="combo-visual">🧻🙌</div><div class="combo-text"><h3>Weak</h3><span class="desc">Paper Hands.</span></div><button class="copy-btn" onclick="copyToClipboard('🧻🙌')">Copy</button></div>
+        <div class="combo-card" data-keywords="whale rich"><div class="combo-visual">🐋</div><div class="combo-text"><h3>Whale</h3><span class="desc">Rich investor.</span></div><button class="copy-btn" onclick="copyToClipboard('🐋')">Copy</button></div>
+        <div class="combo-card" data-keywords="bull market"><div class="combo-visual">🐂</div><div class="combo-text"><h3>Bullish</h3><span class="desc">Market up.</span></div><button class="copy-btn" onclick="copyToClipboard('🐂')">Copy</button></div>
+        <div class="combo-card" data-keywords="bear market"><div class="combo-visual">🐻📉</div><div class="combo-text"><h3>Bearish</h3><span class="desc">Market down.</span></div><button class="copy-btn" onclick="copyToClipboard('🐻📉')">Copy</button></div>
+
+        <div class="combo-card" data-keywords="liar fake"><div class="combo-visual">🤥</div><div class="combo-text"><h3>Liar</h3><span class="desc">Pinocchio.</span></div><button class="copy-btn" onclick="copyToClipboard('🤥')">Copy</button></div>
+        <div class="combo-card" data-keywords="mind blown"><div class="combo-visual">🤯</div><div class="combo-text"><h3>Wow</h3><span class="desc">Mind blown.</span></div><button class="copy-btn" onclick="copyToClipboard('🤯')">Copy</button></div>
+        <div class="combo-card" data-keywords="cowboy yeehaw"><div class="combo-visual">🤠</div><div class="combo-text"><h3>Yeehaw</h3><span class="desc">Excited.</span></div><button class="copy-btn" onclick="copyToClipboard('🤠')">Copy</button></div>
+        <div class="combo-card" data-keywords="disguise hide"><div class="combo-visual">🥸</div><div class="combo-text"><h3>Hidden</h3><span class="desc">Incognito.</span></div><button class="copy-btn" onclick="copyToClipboard('🥸')">Copy</button></div>
+        <div class="combo-card" data-keywords="alien weird"><div class="combo-visual">👽</div><div class="combo-text"><h3>Alien</h3><span class="desc">Weirdo.</span></div><button class="copy-btn" onclick="copyToClipboard('👽')">Copy</button></div>
+        <div class="combo-card" data-keywords="see no evil"><div class="combo-visual">🙈</div><div class="combo-text"><h3>Hide</h3><span class="desc">Can't watch.</span></div><button class="copy-btn" onclick="copyToClipboard('🙈')">Copy</button></div>
+        <div class="combo-card" data-keywords="cheesy cringe"><div class="combo-visual">🧀</div><div class="combo-text"><h3>Cheesy</h3><span class="desc">Corny/Cringe.</span></div><button class="copy-btn" onclick="copyToClipboard('🧀')">Copy</button></div>
+        <div class="combo-card" data-keywords="king crown"><div class="combo-visual">👑</div><div class="combo-text"><h3>King</h3><span class="desc">Legend.</span></div><button class="copy-btn" onclick="copyToClipboard('👑')">Copy</button></div>
+        <div class="combo-card" data-keywords="queen slay"><div class="combo-visual">👸</div><div class="combo-text"><h3>Queen</h3><span class="desc">Slay.</span></div><button class="copy-btn" onclick="copyToClipboard('👸')">Copy</button></div>
+        <div class="combo-card" data-keywords="poop crap"><div class="combo-visual">💩</div><div class="combo-text"><h3>Poop</h3><span class="desc">Bad/Crap.</span></div><button class="copy-btn" onclick="copyToClipboard('💩')">Copy</button></div>
+        <div class="combo-card" data-keywords="shady dark"><div class="combo-visual">🌚</div><div class="combo-text"><h3>Shady</h3><span class="desc">Sus/Dark.</span></div><button class="copy-btn" onclick="copyToClipboard('🌚')">Copy</button></div>
+        <div class="combo-card" data-keywords="smug happy"><div class="combo-visual">🌝</div><div class="combo-text"><h3>Smug</h3><span class="desc">I told you so.</span></div><button class="copy-btn" onclick="copyToClipboard('🌝')">Copy</button></div>
+        <div class="combo-card" data-keywords="bomb explosive"><div class="combo-visual">💣</div><div class="combo-text"><h3>Bomb</h3><span class="desc">Explosive.</span></div><button class="copy-btn" onclick="copyToClipboard('💣')">Copy</button></div>
+        <div class="combo-card" data-keywords="gaslight torch"><div class="combo-visual">🔦</div><div class="combo-text"><h3>Gaslight</h3><span class="desc">Manipulate.</span></div><button class="copy-btn" onclick="copyToClipboard('🔦')">Copy</button></div>
+        <div class="combo-card" data-keywords="drama mess"><div class="combo-visual">🧶</div><div class="combo-text"><h3>Messy</h3><span class="desc">Tangled drama.</span></div><button class="copy-btn" onclick="copyToClipboard('🧶')">Copy</button></div>
+
+        <div class="combo-card" data-keywords="cool shades"><div class="combo-visual">🕶️</div><div class="combo-text"><h3>Shades</h3><span class="desc">Cool.</span></div><button class="copy-btn" onclick="copyToClipboard('🕶️')">Copy</button></div>
+        <div class="combo-card" data-keywords="unicorn rare"><div class="combo-visual">🦄</div><div class="combo-text"><h3>Unicorn</h3><span class="desc">Rare/Unique.</span></div><button class="copy-btn" onclick="copyToClipboard('🦄')">Copy</button></div>
+        <div class="combo-card" data-keywords="pride rainbow"><div class="combo-visual">🌈</div><div class="combo-text"><h3>Pride</h3><span class="desc">LGBTQ+.</span></div><button class="copy-btn" onclick="copyToClipboard('🌈')">Copy</button></div>
+        <div class="combo-card" data-keywords="zen calm"><div class="combo-visual">🧘</div><div class="combo-text"><h3>Zen</h3><span class="desc">Peaceful.</span></div><button class="copy-btn" onclick="copyToClipboard('🧘')">Copy</button></div>
+        <div class="combo-card" data-keywords="clean soap"><div class="combo-visual">🧼</div><div class="combo-text"><h3>Clean</h3><span class="desc">Fresh.</span></div><button class="copy-btn" onclick="copyToClipboard('🧼')">Copy</button></div>
+        <div class="combo-card" data-keywords="pill based"><div class="combo-visual">💊</div><div class="combo-text"><h3>Based</h3><span class="desc">Redpilled.</span></div><button class="copy-btn" onclick="copyToClipboard('💊')">Copy</button></div>
+        <div class="combo-card" data-keywords="zombie tired"><div class="combo-visual">🧟</div><div class="combo-text"><h3>Zombie</h3><span class="desc">Exhausted.</span></div><button class="copy-btn" onclick="copyToClipboard('🧟')">Copy</button></div>
+        <div class="combo-card" data-keywords="vampire night"><div class="combo-visual">🧛</div><div class="combo-text"><h3>Vamp</h3><span class="desc">Night owl.</span></div><button class="copy-btn" onclick="copyToClipboard('🧛')">Copy</button></div>
+        <div class="combo-card" data-keywords="gymnastics mental"><div class="combo-visual">🤸</div><div class="combo-text"><h3>Stretch</h3><span class="desc">Mental reach.</span></div><button class="copy-btn" onclick="copyToClipboard('🤸')">Copy</button></div>
+        <div class="combo-card" data-keywords="bin trash"><div class="combo-visual">🚮</div><div class="combo-text"><h3>Bin It</h3><span class="desc">Throw away.</span></div><button class="copy-btn" onclick="copyToClipboard('🚮')">Copy</button></div>
+        <div class="combo-card" data-keywords="mixed signals"><div class="combo-visual">🚦</div><div class="combo-text"><h3>Signals</h3><span class="desc">Mixed messages.</span></div><button class="copy-btn" onclick="copyToClipboard('🚦')">Copy</button></div>
+        <div class="combo-card" data-keywords="stop sign"><div class="combo-visual">🛑</div><div class="combo-text"><h3>Stop</h3><span class="desc">Halt.</span></div><button class="copy-btn" onclick="copyToClipboard('🛑')">Copy</button></div>
+        <div class="combo-card" data-keywords="friends besties"><div class="combo-visual">👯</div><div class="combo-text"><h3>Besties</h3><span class="desc">Friends.</span></div><button class="copy-btn" onclick="copyToClipboard('👯')">Copy</button></div>
+        <div class="combo-card" data-keywords="party dance"><div class="combo-visual">💃</div><div class="combo-text"><h3>Party</h3><span class="desc">Dancing.</span></div><button class="copy-btn" onclick="copyToClipboard('💃')">Copy</button></div>
+        <div class="combo-card" data-keywords="cut hair"><div class="combo-visual">💇</div><div class="combo-text"><h3>Cut Off</h3><span class="desc">Blocked.</span></div><button class="copy-btn" onclick="copyToClipboard('💇')">Copy</button></div>
+        <div class="combo-card" data-keywords="chef kiss"><div class="combo-visual">🤌</div><div class="combo-text"><h3>Chef</h3><span class="desc">Perfect.</span></div><button class="copy-btn" onclick="copyToClipboard('🤌')">Copy</button></div>
+        <div class="combo-card" data-keywords="rock metal"><div class="combo-visual">🤘</div><div class="combo-text"><h3>Rock</h3><span class="desc">Metal.</span></div><button class="copy-btn" onclick="copyToClipboard('🤘')">Copy</button></div>
+        <div class="combo-card" data-keywords="call chill"><div class="combo-visual">🤙</div><div class="combo-text"><h3>Hang</h3><span class="desc">Chill.</span></div><button class="copy-btn" onclick="copyToClipboard('🤙')">Copy</button></div>
+        <div class="combo-card" data-keywords="bro fist"><div class="combo-visual">🤜🤛</div><div class="combo-text"><h3>Bro</h3><span class="desc">Respect.</span></div><button class="copy-btn" onclick="copyToClipboard('🤜🤛')">Copy</button></div>
+        <div class="combo-card" data-keywords="shake deal"><div class="combo-visual">🤝</div><div class="combo-text"><h3>Deal</h3><span class="desc">Agreed.</span></div><button class="copy-btn" onclick="copyToClipboard('🤝')">Copy</button></div>
+        <div class="combo-card" data-keywords="luck fingers"><div class="combo-visual">🤞</div><div class="combo-text"><h3>Luck</h3><span class="desc">Hoping.</span></div><button class="copy-btn" onclick="copyToClipboard('🤞')">Copy</button></div>
+        <div class="combo-card" data-keywords="real heart"><div class="combo-visual">🫀</div><div class="combo-text"><h3>Real</h3><span class="desc">Deep love.</span></div><button class="copy-btn" onclick="copyToClipboard('🫀')">Copy</button></div>
+        <div class="combo-card" data-keywords="flirty bite"><div class="combo-visual">🫦</div><div class="combo-text"><h3>Bite</h3><span class="desc">Flirty/Sexy.</span></div><button class="copy-btn" onclick="copyToClipboard('🫦')">Copy</button></div>
+        <div class="combo-card" data-keywords="angry shout"><div class="combo-visual">🗯️</div><div class="combo-text"><h3>Mad</h3><span class="desc">Shouting.</span></div><button class="copy-btn" onclick="copyToClipboard('🗯️')">Copy</button></div>
+        <div class="combo-card" data-keywords="sleep zzz"><div class="combo-visual">💤</div><div class="combo-text"><h3>Zzz</h3><span class="desc">Boring/Sleep.</span></div><button class="copy-btn" onclick="copyToClipboard('💤')">Copy</button></div>
+        <div class="combo-card" data-keywords="vein angry"><div class="combo-visual">💢</div><div class="combo-text"><h3>Vein</h3><span class="desc">Popping vein.</span></div><button class="copy-btn" onclick="copyToClipboard('💢')">Copy</button></div>
+        <div class="combo-card" data-keywords="dizzy star"><div class="combo-visual">💫</div><div class="combo-text"><h3>Stars</h3><span class="desc">Dizzy/Hit.</span></div><button class="copy-btn" onclick="copyToClipboard('💫')">Copy</button></div>
+        <div class="combo-card" data-keywords="fast dash"><div class="combo-visual">💨</div><div class="combo-text"><h3>Dash</h3><span class="desc">Fast exit.</span></div><button class="copy-btn" onclick="copyToClipboard('💨')">Copy</button></div>
+        <div class="combo-card" data-keywords="hole deep"><div class="combo-visual">🕳️</div><div class="combo-text"><h3>Hole</h3><span class="desc">Digging deep.</span></div><button class="copy-btn" onclick="copyToClipboard('🕳️')">Copy</button></div>
+        <div class="combo-card" data-keywords="cracker fire"><div class="combo-visual">🧨</div><div class="combo-text"><h3>Pop</h3><span class="desc">Explosive.</span></div><button class="copy-btn" onclick="copyToClipboard('🧨')">Copy</button></div>
+        <div class="combo-card" data-keywords="balloon float"><div class="combo-visual">🎈</div><div class="combo-text"><h3>Float</h3><span class="desc">High.</span></div><button class="copy-btn" onclick="copyToClipboard('🎈')">Copy</button></div>
+        <div class="combo-card" data-keywords="hug comfort"><div class="combo-visual">🫂</div><div class="combo-text"><h3>Hug</h3><span class="desc">Support.</span></div><button class="copy-btn" onclick="copyToClipboard('🫂')">Copy</button></div>
+        <div class="combo-card" data-keywords="foot steps"><div class="combo-visual">👣</div><div class="combo-text"><h3>Steps</h3><span class="desc">Stalking.</span></div><button class="copy-btn" onclick="copyToClipboard('👣')">Copy</button></div>
+        <div class="combo-card" data-keywords="shout speak"><div class="combo-visual">🗣️</div><div class="combo-text"><h3>Speak</h3><span class="desc">Say it.</span></div><button class="copy-btn" onclick="copyToClipboard('🗣️')">Copy</button></div>
+        <div class="combo-card" data-keywords="shadow lurk"><div class="combo-visual">👤</div><div class="combo-text"><h3>Lurk</h3><span class="desc">Shadow.</span></div><button class="copy-btn" onclick="copyToClipboard('👤')">Copy</button></div>
+        <div class="combo-card" data-keywords="people crowd"><div class="combo-visual">👥</div><div class="combo-text"><h3>Crowd</h3><span class="desc">Everyone.</span></div><button class="copy-btn" onclick="copyToClipboard('👥')">Copy</button></div>
+        <div class="combo-card" data-keywords="luck rng"><div class="combo-visual">🥬🙏</div><div class="combo-text"><h3>RNG</h3><span class="desc">Luck God.</span></div><button class="copy-btn" onclick="copyToClipboard('🥬🙏')">Copy</button></div>
+        <div class="combo-card" data-keywords="dead tired"><div class="combo-visual">🧟‍♂️</div><div class="combo-text"><h3>Dead</h3><span class="desc">So tired.</span></div><button class="copy-btn" onclick="copyToClipboard('🧟‍♂️')">Copy</button></div>
+        <div class="combo-card" data-keywords="siren simp"><div class="combo-visual">🧜‍♀️</div><div class="combo-text"><h3>Siren</h3><span class="desc">Trap.</span></div><button class="copy-btn" onclick="copyToClipboard('🧜‍♀️')">Copy</button></div>
+        <div class="combo-card" data-keywords="wizard virgin"><div class="combo-visual">🧙‍♂️</div><div class="combo-text"><h3>Wizard</h3><span class="desc">30y Virgin.</span></div><button class="copy-btn" onclick="copyToClipboard('🧙‍♂️')">Copy</button></div>
+        <div class="combo-card" data-keywords="lock locked"><div class="combo-visual">🔒</div><div class="combo-text"><h3>Locked</h3><span class="desc">Secure.</span></div><button class="copy-btn" onclick="copyToClipboard('🔒')">Copy</button></div>
+        <div class="combo-card" data-keywords="key access"><div class="combo-visual">🔑</div><div class="combo-text"><h3>Key</h3><span class="desc">Major key.</span></div><button class="copy-btn" onclick="copyToClipboard('🔑')">Copy</button></div>
+        <div class="combo-card" data-keywords="pin location"><div class="combo-visual">📍</div><div class="combo-text"><h3>Pin</h3><span class="desc">Location.</span></div><button class="copy-btn" onclick="copyToClipboard('📍')">Copy</button></div>
+        <div class="combo-card" data-keywords="chart up"><div class="combo-visual">📊</div><div class="combo-text"><h3>Stats</h3><span class="desc">Data.</span></div><button class="copy-btn" onclick="copyToClipboard('📊')">Copy</button></div>
+        <div class="combo-card" data-keywords="email contact"><div class="combo-visual">📧</div><div class="combo-text"><h3>Mail</h3><span class="desc">Contact me.</span></div><button class="copy-btn" onclick="copyToClipboard('📧')">Copy</button></div>
+        <div class="combo-card" data-keywords="mobile phone"><div class="combo-visual">📱</div><div class="combo-text"><h3>Phone</h3><span class="desc">Call me.</span></div><button class="copy-btn" onclick="copyToClipboard('📱')">Copy</button></div>
+        <div class="combo-card" data-keywords="laptop work"><div class="combo-visual">💻</div><div class="combo-text"><h3>Work</h3><span class="desc">Coding/Job.</span></div><button class="copy-btn" onclick="copyToClipboard('💻')">Copy</button></div>
+        <div class="combo-card" data-keywords="camera pic"><div class="combo-visual">📸</div><div class="combo-text"><h3>Pic</h3><span class="desc">Caught in 4k.</span></div><button class="copy-btn" onclick="copyToClipboard('📸')">Copy</button></div>
+        <div class="combo-card" data-keywords="video movie"><div class="combo-visual">🎥</div><div class="combo-text"><h3>Film</h3><span class="desc">Movie/Video.</span></div><button class="copy-btn" onclick="copyToClipboard('🎥')">Copy</button></div>
+        <div class="combo-card" data-keywords="popcorn watch"><div class="combo-visual">🍿</div><div class="combo-text"><h3>Popcorn</h3><span class="desc">Watching drama.</span></div><button class="copy-btn" onclick="copyToClipboard('🍿')">Copy</button></div>
+        <div class="combo-card" data-keywords="ticket entry"><div class="combo-visual">🎫</div><div class="combo-text"><h3>Ticket</h3><span class="desc">Admit one.</span></div><button class="copy-btn" onclick="copyToClipboard('🎫')">Copy</button></div>
+        <div class="combo-card" data-keywords="clown circus"><div class="combo-visual">🎪</div><div class="combo-text"><h3>Circus</h3><span class="desc">Chaos.</span></div><button class="copy-btn" onclick="copyToClipboard('🎪')">Copy</button></div>
+        <div class="combo-card" data-keywords="dice gamble"><div class="combo-visual">🎲</div><div class="combo-text"><h3>Dice</h3><span class="desc">Gamble/Risk.</span></div><button class="copy-btn" onclick="copyToClipboard('🎲')">Copy</button></div>
+        <div class="combo-card" data-keywords="magic trick"><div class="combo-visual">🪄</div><div class="combo-text"><h3>Magic</h3><span class="desc">Fixed it.</span></div><button class="copy-btn" onclick="copyToClipboard('🪄')">Copy</button></div>
+        <div class="combo-card" data-keywords="pill blue"><div class="combo-visual">🔵</div><div class="combo-text"><h3>Blue</h3><span class="desc">Blue pill.</span></div><button class="copy-btn" onclick="copyToClipboard('🔵')">Copy</button></div>
+        <div class="combo-card" data-keywords="pill red"><div class="combo-visual">🔴</div><div class="combo-text"><h3>Red</h3><span class="desc">Red pill.</span></div><button class="copy-btn" onclick="copyToClipboard('🔴')">Copy</button></div>
+        <div class="combo-card" data-keywords="check verify"><div class="combo-visual">✅</div><div class="combo-text"><h3>Done</h3><span class="desc">Verified.</span></div><button class="copy-btn" onclick="copyToClipboard('✅')">Copy</button></div>
+        <div class="combo-card" data-keywords="cross wrong"><div class="combo-visual">❌</div><div class="combo-text"><h3>No</h3><span class="desc">Wrong/Bad.</span></div><button class="copy-btn" onclick="copyToClipboard('❌')">Copy</button></div>
+        <div class="combo-card" data-keywords="warning alert"><div class="combo-visual">⚠️</div><div class="combo-text"><h3>Alert</h3><span class="desc">Caution.</span></div><button class="copy-btn" onclick="copyToClipboard('⚠️')">Copy</button></div>
+        <div class="combo-card" data-keywords="radioactive toxic"><div class="combo-visual">☢️</div><div class="combo-text"><h3>Toxic</h3><span class="desc">Radioactive.</span></div><button class="copy-btn" onclick="copyToClipboard('☢️')">Copy</button></div>
+        <div class="combo-card" data-keywords="biohazard danger"><div class="combo-visual">☣️</div><div class="combo-text"><h3>Hazard</h3><span class="desc">Dangerous.</span></div><button class="copy-btn" onclick="copyToClipboard('☣️')">Copy</button></div>
+        <div class="combo-card" data-keywords="up top"><div class="combo-visual">🔝</div><div class="combo-text"><h3>Top</h3><span class="desc">Top tier.</span></div><button class="copy-btn" onclick="copyToClipboard('🔝')">Copy</button></div>
+        <div class="combo-card" data-keywords="soon time"><div class="combo-visual">🔜</div><div class="combo-text"><h3>Soon</h3><span class="desc">Coming soon.</span></div><button class="copy-btn" onclick="copyToClipboard('🔜')">Copy</button></div>
+        <div class="combo-card" data-keywords="free no cost"><div class="combo-visual">🆓</div><div class="combo-text"><h3>Free</h3><span class="desc">Gratis.</span></div><button class="copy-btn" onclick="copyToClipboard('🆓')">Copy</button></div>
+        <div class="combo-card" data-keywords="new fresh"><div class="combo-visual">🆕</div><div class="combo-text"><h3>New</h3><span class="desc">Brand new.</span></div><button class="copy-btn" onclick="copyToClipboard('🆕')">Copy</button></div>
+        <div class="combo-card" data-keywords="cool ok"><div class="combo-visual">🆒</div><div class="combo-text"><h3>Cool</h3><span class="desc">Okay cool.</span></div><button class="copy-btn" onclick="copyToClipboard('🆒')">Copy</button></div>
+
+        <div class="no-results" id="noResultsMsg">
+          <h3>🤷‍♂️ No results found</h3>
+          <p>Try searching for "shy", "cool", or "love"</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2025 SmileyMeaning.com</p>
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </nav>
+  </div>
+</footer>
+
+<div id="copy-toast">Copied to clipboard!</div>
+
+<script>
+  // 1. COPY FUNCTION
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      const toast = document.getElementById("copy-toast");
+      toast.classList.add("show");
+      setTimeout(() => { toast.classList.remove("show"); }, 2000);
+    });
+  }
+
+  // 2. SEARCH FUNCTION (Search Both Grids)
+  document.getElementById('comboSearch').addEventListener('input', function() {
+    let input = this.value.toLowerCase().trim();
+    
+    // Select all cards from BOTH grids
+    let cardsTop = document.querySelectorAll('#grid-top20 .combo-card');
+    let cardsMain = document.querySelectorAll('#grid-library .combo-card');
+    let allCards = [...cardsTop, ...cardsMain];
+    
+    let visibleCount = 0;
+
+    // Headers
+    let headerTop = document.getElementById('header-top');
+    let headerLib = document.getElementById('header-lib');
+
+    allCards.forEach(card => {
+      let keywords = card.getAttribute('data-keywords') || "";
+      let title = card.querySelector('h3').innerText.toLowerCase();
+      
+      if (keywords.includes(input) || title.includes(input)) {
+        card.style.display = "flex";
+        visibleCount++;
+      } else {
+        card.style.display = "none";
+      }
+    });
+
+    // Toggle No Results Message & Headers
+    let msg = document.getElementById('noResultsMsg');
+    
+    if (visibleCount === 0) {
+      msg.style.display = "block";
+      headerTop.classList.add('hidden-header');
+      headerLib.classList.add('hidden-header');
+    } else {
+      msg.style.display = "none";
+      if (input.length > 0) {
+        // Hide headers during search for cleaner list
+        headerTop.classList.add('hidden-header');
+        headerLib.classList.add('hidden-header');
+      } else {
+        // Show headers when input is empty
+        headerTop.classList.remove('hidden-header');
+        headerLib.classList.remove('hidden-header');
+      }
+    }
+  });
+</script>
+
+<style>
+  #copy-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px); /* Hidden down */
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 9999;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  #copy-toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+</style>
+
+</body>
+</html>
