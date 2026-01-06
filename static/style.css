@@ -1,3 +1,12 @@
+:root {
+  --primary: #FFD93D;       /* Classic Smiley Yellow */
+  --accent: #FF6B6B;        /* Attention Red */
+  --vintage-bg: #FDFBF7;    /* Old Paper Cream */
+  --text-dark: #2C3E50;     /* Dark Blue-Grey */
+  --border: #E0E0E0;
+  --shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
 /* ================================
    GLOBAL RESET & BASE
 ================================ */
@@ -7,13 +16,15 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, sans-serif;
-  color: #111;
-  background: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text-dark);      /* Changed from #111 */
+  background: var(--vintage-bg); /* Changed from #fff to Cream */
   line-height: 1.6;
 }
-
+h1, h2, h3, h4, .logo {
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, serif;
+  color: var(--text-dark);
+}
 a {
   color: #0a58ca;
   text-decoration: none;
@@ -74,9 +85,11 @@ a:hover {
    HERO
 ================================ */
 .hero {
-  background: #f8f9fb;
+  /* Remove background: #f8f9fb; */
+  background: linear-gradient(180deg, #fff 0%, var(--vintage-bg) 100%);
   padding: 48px 0;
   text-align: center;
+  border-bottom: 1px dashed var(--border); /* Optional: Adds a nice vintage divider */
 }
 
 .hero h1 {
@@ -124,10 +137,18 @@ a:hover {
 }
 
 .category-card {
-  border: 1px solid #eee;
-  padding: 20px;
-  border-radius: 8px;
   background: #fff;
+  border: 1px solid rgba(0,0,0,0.05); /* Softer border */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow); /* Adds the floaty shadow */
+  transition: transform 0.2s ease;
+}
+
+/* Optional: Adds a hover effect */
+.category-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary);
 }
 
 .category-card span {
