@@ -1,5 +1,22 @@
 /* ================================
-   GLOBAL RESET & BASE
+   1. VARIABLES & THEME (Vintage System)
+  ================================ */
+:root {
+  /* Vintage Palette */
+  --primary: #FFD93D;       /* Classic Smiley Yellow */
+  --accent: #FF6B6B;        /* Attention Red */
+  --vintage-bg: #FDFBF7;    /* Old Paper Cream */
+  --vintage-card: #FFFFFF;  /* White Cards */
+  --text-dark: #2C3E50;     /* Dark Blue-Grey */
+  --text-light: #595959;    /* Soft Grey */
+  --link-blue: #0a58ca;
+  --border: #E0E0E0;
+  --shadow: 0 4px 15px rgba(0,0,0,0.05); /* Soft Modern Shadow */
+  --radius: 12px;           /* Consistent rounding */
+}
+
+/* ================================
+   2. GLOBAL RESET & TYPOGRAPHY
 ================================ */
 * {
   box-sizing: border-box;
@@ -7,52 +24,65 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, sans-serif;
-  color: #111;
-  background: #fff;
+  /* FASTEST STACK: Uses San Francisco (Mac), Segoe UI (Win), Roboto (Android) */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-dark);
+  background: var(--vintage-bg);
   line-height: 1.6;
 }
 
+/* VINTAGE HEADINGS: Uses Charter (iOS/Mac) or Georgia (Win) for that "History" look without downloading fonts */
+h1, h2, h3, h4, .logo {
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, serif;
+  color: var(--text-dark);
+}
+
 a {
-  color: #0a58ca;
+  color: var(--link-blue);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--accent); /* Hover turns Red */
 }
 
 .container {
   max-width: 1100px;
   margin: auto;
-  padding: 0 16px;
+  padding: 0 20px;
 }
 
 /* ================================
-   HEADER
+   3. HEADER
 ================================ */
 .site-header {
-  border-bottom: 1px solid #eee;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.95); /* Slight transparency */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 14px 0;
 }
 
 .logo {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
 }
 
 .logo a {
   display: inline-flex;
   align-items: center;
-  white-space: nowrap;
+  color: var(--text-dark);
 }
 
 .top-nav {
@@ -61,119 +91,169 @@ a:hover {
 }
 
 .top-nav a {
-  margin-left: 16px;
+  margin-left: 20px;
   font-weight: 500;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.top-nav a:hover {
+  color: var(--accent);
 }
 
 .top-nav a:focus {
-  outline: 2px solid #0a58ca;
+  outline: 2px solid var(--link-blue);
   outline-offset: 2px;
 }
 
 /* ================================
-   HERO
+   4. HERO SECTION
 ================================ */
 .hero {
-  background: #f8f9fb;
-  padding: 48px 0;
+  /* Vintage Gradient: White to Cream */
+  background: linear-gradient(180deg, #fff 0%, var(--vintage-bg) 100%);
+  padding: 60px 0;
   text-align: center;
+  border-bottom: 1px dashed var(--border);
 }
 
 .hero h1 {
-  font-size: 36px;
-  margin-bottom: 12px;
+  font-size: 3rem; /* Larger, bolder heading */
+  margin-bottom: 16px;
+  letter-spacing: -1px;
 }
 
 .hero-sub {
   max-width: 720px;
   margin: auto;
-  color: #555;
+  color: var(--text-light);
+  font-size: 1.15rem;
 }
 
+/* Search Box */
 .search-box {
-  margin: 24px auto;
+  margin: 30px auto;
   max-width: 420px;
 }
 
 .search-box input {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   font-size: 16px;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  transition: all 0.2s ease;
 }
 
-.quick-links {
-  margin-top: 16px;
+.search-box input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(255, 217, 61, 0.2);
 }
 
-.quick-links a {
-  margin: 0 6px;
-  font-weight: 500;
+/* Quick Links */
+.quick-links { margin-top: 16px; }
+.quick-links a { margin: 0 8px; font-weight: 500; font-size: 0.9rem; }
+
+/* Buttons in Hero (If used) */
+.primary-btn {
+  background: var(--primary);
+  color: var(--text-dark);
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  margin: 0 8px;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+}
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+.secondary-btn {
+  background: #fff;
+  border: 2px solid var(--border);
+  color: var(--text-dark);
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  display: inline-block;
 }
 
 /* ================================
-   CATEGORIES
+   5. CATEGORIES & CARDS
 ================================ */
-.categories {
-  padding: 48px 0;
-}
+.categories { padding: 60px 0; }
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
 }
 
 .category-card {
-  border: 1px solid #eee;
-  padding: 20px;
-  border-radius: 8px;
-  background: #fff;
+  background: var(--vintage-card);
+  padding: 30px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  border-color: var(--primary);
 }
 
 .category-card span {
-  font-size: 28px;
+  font-size: 42px;
+  display: block;
+  margin-bottom: 12px;
 }
 
 .category-card h3 {
-  margin: 10px 0 6px;
+  margin: 10px 0 8px;
+  font-size: 1.3rem;
+}
+
+.category-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
 }
 
 /* ================================
-   POPULAR
+   6. SECTIONS (Popular & Education)
 ================================ */
 .popular {
-  background: #f8f9fb;
-  padding: 40px 0;
+  background: #fff; /* White strip to break up cream bg */
+  padding: 50px 0;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
 }
 
 .popular-list {
   list-style: none;
   padding: 0;
+  font-size: 1.1rem;
 }
 
-.popular-list li {
-  margin: 8px 0;
-}
+.popular-list li { margin: 12px 0; }
 
-/* ================================
-   EDUCATION / WHY
-================================ */
-.education,
-.why {
-  padding: 40px 0;
-}
-
-.why ul {
-  padding-left: 18px;
-}
+.education, .why { padding: 60px 0; }
+.why ul { padding-left: 18px; }
 
 /* ================================
-   FOOTER
+   7. FOOTER
 ================================ */
 .site-footer {
-  border-top: 1px solid #eee;
-  padding: 20px 0;
-  margin-top: 40px;
+  background: #222;
+  color: #fff;
+  padding: 50px 0;
+  margin-top: 60px;
+  border-top: none;
 }
 
 .footer-inner {
@@ -183,24 +263,19 @@ a:hover {
 }
 
 .footer-inner nav a {
-  margin-left: 12px;
+  margin-left: 20px;
+  color: #ccc;
+  font-size: 0.9rem;
 }
+
+.footer-inner nav a:hover { color: var(--primary); }
 
 /* ================================
-   ALL EMOJIS PAGE
+   8. ALL EMOJIS PAGE (PRESERVED)
 ================================ */
-.all-emojis-page {
-  padding: 32px 16px;
-}
-
-.emoji-group {
-  margin: 40px 0;
-}
-
-.emoji-group h2 {
-  margin-bottom: 12px;
-}
-
+.all-emojis-page { padding: 32px 16px; }
+.emoji-group { margin: 40px 0; }
+.emoji-group h2 { margin-bottom: 12px; }
 .emoji-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
@@ -208,19 +283,25 @@ a:hover {
 }
 
 /* ================================
-   EMOJI ITEM
+   9. EMOJI ITEM & TOOLTIPS (PRESERVED)
 ================================ */
 .emoji-item {
   font-size: 26px;
   text-align: center;
   cursor: pointer;
-  padding: 6px;
-  border-radius: 6px;
+  padding: 8px;
+  border-radius: 8px;
   position: relative;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  transition: transform 0.1s ease;
 }
 
 .emoji-item:hover {
-  background: #f1f1f1;
+  transform: scale(1.15);
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: #fff;
 }
 
 .emoji-item::after {
@@ -238,52 +319,38 @@ a:hover {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.15s ease;
+  z-index: 10;
 }
 
-.emoji-item:hover::after {
-  opacity: 1;
-}
+.emoji-item:hover::after { opacity: 1; }
 
 /* ================================
-   COPY TOAST
+   10. MIXER & TOOLS (PRESERVED)
 ================================ */
 #copy-toast {
   position: fixed;
   background: #222;
   color: #fff;
   font-size: 13px;
-  padding: 6px 10px;
-  border-radius: 4px;
+  padding: 8px 12px;
+  border-radius: 6px;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.2s ease;
   z-index: 9999;
 }
 
-/* ================================
-   EMOJI SEARCH
-================================ */
-.emoji-search {
-  margin: 20px 0 30px;
-}
-
+.emoji-search { margin: 20px 0 30px; }
 .emoji-search input {
   width: 100%;
   max-width: 420px;
-  padding: 10px 14px;
-  font-size: 14px;
+  padding: 12px 16px;
+  font-size: 15px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
 }
+.emoji-search input:focus { outline: none; border-color: #666; }
 
-.emoji-search input:focus {
-  outline: none;
-  border-color: #666;
-}
-
-/* ================================
-   CONFETTI
-================================ */
 .confetti {
   position: fixed;
   top: -10px;
@@ -294,270 +361,15 @@ a:hover {
   z-index: 9999;
   animation: confetti-fall linear forwards;
 }
+@keyframes confetti-fall { to { transform: translateY(110vh) rotate(360deg); } }
 
-@keyframes confetti-fall {
-  to {
-    transform: translateY(110vh) rotate(360deg);
-  }
-}
-
-/* ================================
-   EMOJI MIXER TOOL (COMPLETE)
-================================ */
-.mixer-section {
-  padding: 4rem 0;
-  background: #f9f9f9;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-}
-
+/* Mixer Styles */
+.mixer-section { padding: 4rem 0; background: #f9f9f9; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
 .mixer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  background: #fff;
-  padding: 2.5rem;
-  border-radius: 24px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;
+  background: #fff; padding: 2.5rem; border-radius: 24px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.06);
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 900px; margin: 0 auto;
 }
-
-/* --- Preview Area --- */
 .preview-area {
-  display: flex;
-  flex-direction: column; /* Center content */
-  align-items: center;
-  justify-content: center;
-  border: 2px dashed #e0e0e0;
-  border-radius: 20px;
-  padding: 2rem;
-}
-
-#emoji-svg {
-  max-width: 280px;
-  width: 100%;
-}
-
-/* --- Buttons --- */
-.action-buttons {
-  margin-top: 2rem;
-  display: flex;
-  gap: 1rem;
-  width: 100%;
-}
-
-.btn-mix {
-  flex: 1;
-  padding: 1rem;
-  border-radius: 12px;
-  border: none;
-  font-weight: 700;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.btn-random {
-  background: #f0f0f0;
-  color: #333;
-}
-
-.btn-download {
-  background: #333;
-  color: #fff;
-}
-
-/* --- Controls & Labels --- */
-.controls-area h3 { 
-  margin-top: 0; 
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  color: #222;
-}
-
-.control-group {
-  margin-bottom: 1.8rem;
-}
-
-.control-label {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
-  color: #555;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-/* --- Feature Selectors (Arrows) --- */
-.feature-selector {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #f4f6f8;
-  padding: 0.5rem;
-  border-radius: 12px;
-  border: 1px solid #eee;
-}
-
-.nav-arrow {
-  background: white;
-  border: 1px solid #ddd;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #555;
-  transition: background 0.2s;
-}
-
-.nav-arrow:hover {
-  background: #fff;
-  border-color: #bbb;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.feature-name { 
-  font-size: 1rem; 
-  font-weight: 600; 
-  color: #333; 
-}
-
-/* --- Sliders --- */
-.slider-container {
-  display: flex;
-  align-items: center;
-  height: 30px;
-}
-
-input[type=range] {
-  -webkit-appearance: none; 
-  width: 100%; 
-  background: transparent; 
-}
-
-input[type=range]:focus {
-  outline: none; 
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8px;
-  cursor: pointer;
-  background: #e0e0e0;
-  border-radius: 5px;
-}
-
-input[type=range]::-webkit-slider-thumb {
-  height: 24px;
-  width: 24px;
-  border-radius: 50%;
-  background: #333;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -8px; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: transform 0.1s;
-}
-
-/* --- Dropdown Menu --- */
-.preset-select {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  font-family: inherit;
-  border: 2px solid #e0e0e0;
-  border-radius: 12px;
-  background-color: white;
-  color: #333;
-  cursor: pointer;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  transition: all 0.2s ease;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 1.2rem;
-}
-
-.preset-select:hover {
-  border-color: #bbb;
-}
-
-.preset-select:focus {
-  outline: none;
-  border-color: #333;
-  box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
-}
-/* ================================
-   MOBILE (LOCKED & STABLE)
-================================ */
-@media (max-width: 768px) {
-
-  /* Header */
-  .header-inner {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .logo {
-    text-align: center;
-  }
-
-  .top-nav {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .top-nav a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    padding: 6px 12px;
-    background: #f0f2f5;
-    border-radius: 20px;
-    border: 1px solid #e0e0e0;
-    font-size: 0.85rem;
-  }
-
-  /* Hero */
-  .hero h1 {
-    font-size: 28px;
-    padding: 0 10px;
-  }
-
-  .hero-sub {
-    padding: 0 1rem;
-    font-size: 1rem;
-  }
-
-  /* Mixer */
-  .mixer-container {
-    grid-template-columns: 1fr;
-    padding: 1.5rem;
-  }
-
-  .action-buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .btn-mix {
-    width: 100%;
-    padding: 14px;
-  }
-}
+  display: flex; flex-direction: column; align-items: center;
