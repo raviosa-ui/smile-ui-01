@@ -746,3 +746,25 @@ input[type=range]::-webkit-slider-thumb {
   align-self: center;
   font-weight: 600;
 }
+/* ================================
+   SPECIAL MIXER BUTTON (Colorful)
+================================ */
+.mixer-promo-btn {
+  /* Vibrant Red-to-Orange Gradient */
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+  color: #fff !important; /* Force white text */
+  padding: 16px 40px;     /* Big and blocky */
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 50px;    /* Rounded pill shape */
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4); /* Glowing shadow */
+  display: inline-block;
+  margin-top: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mixer-promo-btn:hover {
+  transform: translateY(-3px); /* Floats up on hover */
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.6);
+  text-decoration: none;
+}
