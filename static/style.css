@@ -64,6 +64,8 @@ a:hover {
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
+  color: var(--text-dark) !important; /* Forces it to be Dark Grey, not Blue */
+  text-decoration: none;
 }
 
 .top-nav {
@@ -200,9 +202,11 @@ a:hover {
    FOOTER
 ================================ */
 .site-footer {
-  border-top: 1px solid #eee;
-  padding: 20px 0;
-  margin-top: 40px;
+  background: #222;       /* Dark Background */
+  color: #fff;            /* White Text */
+  padding: 40px 0;        /* Taller, better spacing */
+  margin-top: 60px;
+  border-top: none;
 }
 
 .footer-inner {
@@ -211,10 +215,16 @@ a:hover {
   align-items: center;
 }
 
+/* Also update the footer links so they look good on dark background */
 .footer-inner nav a {
-  margin-left: 12px;
+  margin-left: 20px;
+  color: #bbb;           /* Light Grey links */
+  text-decoration: none;
 }
 
+.footer-inner nav a:hover {
+  color: var(--primary); /* Turns Yellow on hover */
+}
 /* ================================
    ALL EMOJIS PAGE
 ================================ */
