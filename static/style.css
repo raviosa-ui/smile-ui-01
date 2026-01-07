@@ -683,3 +683,66 @@ input[type=range]::-webkit-slider-thumb {
 
 /* Mobile fix for options */
 @media (max-width: 600px) { .options-grid { grid-template-columns: 1fr; } }
+/* ================================
+   QUIZ CAROUSEL STYLES
+   (Add to bottom of style.css)
+================================ */
+.quiz-carousel-container {
+  background: #fff8e1;
+  border: 2px dashed var(--primary);
+  border-radius: 12px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.quiz-slide {
+  display: none; /* Hidden by default */
+  animation: fadeIn 0.4s ease;
+}
+
+.quiz-slide.active {
+  display: block; /* Show only active question */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.quiz-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 15px;
+}
+
+.nav-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background: #555;
+}
+
+.question-counter {
+  font-size: 0.9rem;
+  color: #666;
+  align-self: center;
+  font-weight: 600;
+}
