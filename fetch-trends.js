@@ -2,22 +2,61 @@ const googleTrends = require('google-trends-api');
 const fs = require('fs');
 const path = require('path');
 
-// 1. Fetch data from Google
-googleTrends.relatedQueries({
-  keyword: 'emoji',
-  geo: 'US',
-})
-.then((results) => {
-  const data = JSON.parse(results);
-  const risingQueries = data.default.rankedList.find(l => l.title === 'Rising');
+// --- THE BACKUP LIST ---
+// If Google blocks us, we use these "Evergreen" trending emojis so the site never breaks.
+const BACKUP_KEYWORDS = [
+  "skull emoji", "melting face", "red heart", "fire emoji", 
+  "tear emoji", "saluting face", "moai", "thumbs up", 
+  "heart hands", "eyes emoji", "sweat droplet", "clown face",
+  "folded hands", "sparkles", "rolling on the floor laughing",
+  "face holding back tears", "check mark", "thinking face",
+  "shushing face", "pleading face"
+];
 
-  if (!risingQueries) throw new Error("No trends found");
-
-  // 2. Process the top 20 trends
-  const cleanTrends = risingQueries.rankedKeyword.slice(0, 20).map(item => {
+// Main Function
+(async () => {
+  try {
+    console.log('🤖 Asking Google for trends...');
     
-    // Clean the name exactly like we do on the frontend
-    // "Red Heart emoji meaning" -> "red-heart"
+    // 1. Try to fetch from Google
+    const results = await googleTrends.relatedQueries({
+      keyword: 'emoji',
+      geo: 'US',
+    });
+
+    // 2. Check if Google sent garbage (HTML error page)
+    if (results.trim().startsWith('<')) {
+      throw new Error("Google returned HTML (Rate Limit/Block)");
+    }
+
+    // 3. Parse valid JSON
+    const data = JSON.parse(results);
+    const risingQueries = data.default.rankedList.find(l => l.title === 'Rising');
+    
+    if (!risingQueries) throw new Error("No rising trends found");
+
+    const liveTrends = risingQueries.rankedKeyword.slice(0, 20);
+    console.log('✅ Google allowed us! Using LIVE data.');
+    processAndSave(liveTrends.map(item => ({ query: item.query, value: item.value })));
+
+  } catch (err) {
+    // 4. THE SAFETY NET
+    console.error(`⚠️ Fetch failed (${err.message}). Switching to BACKUP list.`);
+    
+    // Map backup keywords to the same format as Google data
+    const backupData = BACKUP_KEYWORDS.map(kw => ({
+      query: kw,
+      value: "Popular" // Placeholder text since we don't have live %
+    }));
+    
+    processAndSave(backupData);
+  }
+})();
+
+// Helper to check folders and save file
+function processAndSave(items) {
+  const cleanTrends = items.map(item => {
+    // Clean name logic
     const cleanName = item.query
       .toLowerCase()
       .replace(/ emoji/g, '')
@@ -27,25 +66,18 @@ googleTrends.relatedQueries({
       
     const slug = cleanName.replace(/\s+/g, '-');
 
-    // 3. THE MAGIC CHECK
-    // We check if a folder exists at: ./emoji/red-heart/
-    // (Assumes your emoji folders are inside an 'emoji' folder in the root)
+    // Check if folder exists
     const folderPath = path.join(__dirname, 'emoji', slug);
     const pageExists = fs.existsSync(folderPath);
 
     return {
-      query: cleanName, // We save the clean name now to save frontend work
+      query: cleanName,
       value: item.value,
       slug: slug,
-      hasPage: pageExists // true or false
+      hasPage: pageExists
     };
   });
 
-  // 4. Save to file
   fs.writeFileSync('daily-emoji-trends.json', JSON.stringify(cleanTrends, null, 2));
-  console.log('✅ Trends updated. Checked ' + cleanTrends.length + ' folders.');
-})
-.catch((err) => {
-  console.error('❌ Error:', err);
-  process.exit(1);
-});
+  console.log(`💾 Saved ${cleanTrends.length} items to daily-emoji-trends.json`);
+}
