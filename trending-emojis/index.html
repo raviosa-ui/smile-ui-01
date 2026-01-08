@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>🔥 Trending Emojis Today | Viral Meanings on SmileyMeaning</title>
+  <meta name="description" content="See which emojis are going viral on Google right now. Updated daily with the top 10 most searched emoji meanings." />
+
+  <link rel="canonical" href="https://smileymeaning.com/trending-emojis/" />
+
+  <meta property="og:title" content="🔥 Trending Emojis Today | SmileyMeaning" />
+  <meta property="og:description" content="See which emojis are going viral on Google right now. Updated daily." />
+  <meta property="og:url" content="https://smileymeaning.com/trending-emojis/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="🔥 Trending Emojis Today | SmileyMeaning" />
+  <meta name="twitter:description" content="See which emojis are going viral on Google right now." />
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="/static/style.css" />
+
+  <style>
+    /* Hero Adjustment for this page */
+    .hero-small {
+      background: linear-gradient(180deg, #fff 0%, var(--vintage-bg) 100%);
+      padding: 40px 0;
+      text-align: center;
+      border-bottom: 1px dashed var(--border);
+    }
+    
+    .hero-small h1 { margin-bottom: 10px; font-size: 2.5rem; }
+    .hero-small p { color: #666; max-width: 600px; margin: 0 auto; }
+
+    /* The List Container */
+    .trending-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      min-height: 400px; /* Prevents layout shift (CLS) while loading */
+    }
+
+    .trend-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.05);
+      overflow: hidden; 
+    }
+
+    /* Individual Items */
+    .trend-item {
+      display: flex;
+      align-items: center;
+      padding: 20px 25px;
+      border-bottom: 1px solid #f0f0f0;
+      transition: background 0.2s;
+      text-decoration: none;
+      color: var(--text-dark);
+      position: relative;
+    }
+
+    .trend-item:last-child { border-bottom: none; }
+    
+    .trend-item:hover {
+      background: #fafafa; 
+      text-decoration: none;
+    }
+
+    /* Rank Numbers (#1, #2...) */
+    .rank-num {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #e0e0e0;
+      width: 50px;
+      flex-shrink: 0;
+      font-family: Charter, Georgia, serif;
+    }
+    
+    /* Medal Colors */
+    .trend-item:nth-child(1) .rank-num { color: #FFD93D; text-shadow: 1px 1px 0 #d4b01e; } 
+    .trend-item:nth-child(2) .rank-num { color: #bdc3c7; } 
+    .trend-item:nth-child(3) .rank-num { color: #cd7f32; } 
+
+    .trend-info { flex-grow: 1; padding: 0 15px; }
+
+    .trend-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 4px;
+      text-transform: capitalize;
+    }
+
+    .trend-meta {
+      font-size: 0.85rem;
+      color: #888;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .trend-badge {
+      background: #eefbf0;
+      color: #1b5e20;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .arrow-icon {
+      color: #ddd;
+      font-size: 1.2rem;
+      transition: transform 0.2s, color 0.2s;
+    }
+
+    .trend-item:hover .arrow-icon {
+      color: var(--primary); /* Yellow */
+      transform: translateX(5px);
+    }
+
+    /* Loading State */
+    .loading-state {
+      padding: 60px;
+      text-align: center;
+      color: #999;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container">
+    <div class="header-inner">
+    <div class="logo">
+      <a href="/">😊 SmileyMeaning</a>
+    </div>
+    <nav class="top-nav">
+      <a href="/all-emojis/">📋 All Emojis</a>
+      <a href="/quiz/">🧩 Quiz</a>
+      <a href="/emoji-mixer/">🎛️ Emoji Mixer</a>
+      <a href="/emoji-combo/">➕ Emoji Combo</a>
+      <a href="/emoji-history/">📖 History</a>
+      <a href="/trending-emojis/" style="color: var(--accent);">🔥 Trending Emojis</a>
+    </nav>
+  </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero-small">
+    <div class="container">
+      <h1>What's Viral Today? 📈</h1>
+      <p>
+        The top searched emoji meanings on Google in the last 24 hours.
+        Data updated daily.
+      </p>
+    </div>
+  </section>
+
+  <section class="trending-container">
+    <div class="trend-card" id="trend-list-wrapper">
+      
+      <div class="loading-state">
+        Loading today's trends... 🤖
+      </div>
+
+    </div>
+    
+    <p style="text-align: center; margin-top: 20px; color: #888; font-size: 0.9rem;">
+      *Trends are automatically fetched from Google Search Data.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2025 SmileyMeaning.com</p>
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const listWrapper = document.getElementById('trend-list-wrapper');
+
+    // 1. Fetch the JSON file generated by your GitHub Action
+    fetch('/daily-emoji-trends.json')
+      .then(res => {
+        // If file is missing (404), return null so we can use fallback
+        if (!res.ok) return null;
+        return res.json();
+      })
+      .then(data => {
+        // 2. Decide: Use Real Data or Fallback Data?
+        if (!data || data.length === 0) {
+          console.warn("Trends file missing or empty. Using fallback.");
+          data = getFallbackData();
+        }
+        renderList(data);
+      })
+      .catch(err => {
+        console.error("Error fetching trends:", err);
+        renderList(getFallbackData());
+      });
+
+    // --- Helper Functions ---
+
+    function getFallbackData() {
+      return [
+        { query: "skull emoji meaning", value: "High" },
+        { query: "melting face", value: "High" },
+        { query: "saluting face", value: "Trending" },
+        { query: "holding back tears", value: "Trending" },
+        { query: "moai stone", value: "Rising" },
+        { query: "white heart", value: "Steady" },
+        { query: "dotted line face", value: "New" }
+      ];
+    }
+
+    function renderList(items) {
+      let htmlContent = '';
+
+      // Limit to Top 15 items to keep page fast
+      items.slice(0, 15).forEach((item, index) => {
+        
+        // CLEANING THE NAME
+        // 1. Lowercase
+        // 2. Remove "emoji", "meaning"
+        // 3. Remove special chars
+        let cleanName = item.query
+          .toLowerCase()
+          .replace(/ emoji/g, '')
+          .replace(/ meaning/g, '')
+          .replace(/[^a-z0-9\s-]/g, '')
+          .trim();
+
+        // GENERATING THE LINK (SLUG)
+        // "blue cap hat" -> "blue-cap-hat"
+        const slug = cleanName.replace(/\s+/g, '-');
+
+        // BUILDING HTML
+        htmlContent += `
+          <a href="/emoji/${slug}/" class="trend-item">
+            <div class="rank-num">${index + 1}</div>
+            <div class="trend-info">
+              <span class="trend-name">${cleanName}</span>
+              <span class="trend-meta">
+                <span class="trend-badge">🔥 Trending</span>
+                Google Search Volume
+              </span>
+            </div>
+            <div class="arrow-icon">➜</div>
+          </a>
+        `;
+      });
+
+      listWrapper.innerHTML = htmlContent;
+    }
+  });
+</script>
+
+</body>
+</html>
