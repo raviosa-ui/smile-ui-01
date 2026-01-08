@@ -1,0 +1,30 @@
+name: Daily Emoji Trend Fetcher
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # Runs every day at 8:00 AM UTC
+  workflow_dispatch: # Allows manual trigger button
+
+permissions:
+  contents: write
+
+jobs:
+  update-trends:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: npm install
+      - name: Run Fetch Script
+        run: node fetch-trends.js
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'EmojiBot'
+          git config --global user.email 'bot@smileymeaning.com'
+          git add daily-emoji-trends.json
+          git commit -m "Daily trend update" || exit 0
+          git push
