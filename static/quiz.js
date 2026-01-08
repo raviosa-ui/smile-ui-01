@@ -40,6 +40,18 @@ const QUIZ_DATA = {
     { q: "Meaning of 🤟 vs 🤘?", options: ["Rock on", "I Love You (ASL)", "Spider-Man"], correct: 1, hint: "Thumb out = Love." },
     { q: "The 🏩 is specifically a...", options: ["School", "Love Hotel", "Bank"], correct: 1, hint: "Hotel for couples." },
     { q: "What does 🔰 mean?", options: ["Beginner", "Recycle", "Shield"], correct: 0, hint: "Japanese Shoshinsha mark." }
+  ],
+   expert: [
+    { q: "What is the official Unicode name of 🕴️?", options: ["Spy", "Man in Business Suit Levitating", "Ska Dancer"], correct: 1, hint: "It's absurdly descriptive." },
+    { q: "The 〽️ symbol represents...", options: ["Stock Market Crash", "Part Alternation Mark", "Mountain"], correct: 1, hint: "Used in traditional Japanese singing." },
+    { q: "What distinguishes 😪 from 😴?", options: ["The snot bubble", "The mouth", "The angle"], correct: 0, hint: "😪 is 'Sleepy Face', 😴 is 'Sleeping Face'." },
+    { q: "The 📠 emoji depicts a...", options: ["Printer", "Fax Machine", "Radio"], correct: 1, hint: "Technology from the 1980s." },
+    { q: "What is the 💠 symbol?", options: ["Diamond with a Dot", "Flower", "Ice Crystal"], correct: 0, hint: "Used to signify 'kawaii' or cuteness." },
+    { q: "The 🤳 emoji was created to represent...", options: ["Looking in mirror", "A Selfie", "FaceTiming"], correct: 1, hint: "Arm extended, phone in hand." },
+    { q: "What does the 😽 (Kissing Cat) differ from 😗?", options: ["It has closed eyes", "It has ears", "It implies sarcasm"], correct: 0, hint: "The cat's eyes are smiling lines." },
+    { q: "The 🗓️ Spiral Calendar usually shows which date?", options: ["July 17", "Jan 1", "No date"], correct: 0, hint: "World Emoji Day." },
+    { q: "What is the 🏤 emoji?", options: ["European Post Office", "City Hall", "Bank"], correct: 0, hint: "Has a horn symbol on the front." },
+    { q: "The 🌫️ emoji represents...", options: ["Fog", "Wind", "Dust"], correct: 0, hint: "Low visibility weather." }
   ]
 };
 
