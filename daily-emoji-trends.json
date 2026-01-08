@@ -1,0 +1,122 @@
+[
+  {
+    "query": "skull",
+    "value": "Popular",
+    "slug": "skull",
+    "hasPage": false
+  },
+  {
+    "query": "melting face",
+    "value": "Popular",
+    "slug": "melting-face",
+    "hasPage": false
+  },
+  {
+    "query": "red heart",
+    "value": "Popular",
+    "slug": "red-heart",
+    "hasPage": true
+  },
+  {
+    "query": "fire",
+    "value": "Popular",
+    "slug": "fire",
+    "hasPage": false
+  },
+  {
+    "query": "tear",
+    "value": "Popular",
+    "slug": "tear",
+    "hasPage": false
+  },
+  {
+    "query": "saluting face",
+    "value": "Popular",
+    "slug": "saluting-face",
+    "hasPage": false
+  },
+  {
+    "query": "moai",
+    "value": "Popular",
+    "slug": "moai",
+    "hasPage": false
+  },
+  {
+    "query": "thumbs up",
+    "value": "Popular",
+    "slug": "thumbs-up",
+    "hasPage": false
+  },
+  {
+    "query": "heart hands",
+    "value": "Popular",
+    "slug": "heart-hands",
+    "hasPage": true
+  },
+  {
+    "query": "eyes",
+    "value": "Popular",
+    "slug": "eyes",
+    "hasPage": false
+  },
+  {
+    "query": "sweat droplet",
+    "value": "Popular",
+    "slug": "sweat-droplet",
+    "hasPage": false
+  },
+  {
+    "query": "clown face",
+    "value": "Popular",
+    "slug": "clown-face",
+    "hasPage": false
+  },
+  {
+    "query": "folded hands",
+    "value": "Popular",
+    "slug": "folded-hands",
+    "hasPage": false
+  },
+  {
+    "query": "sparkles",
+    "value": "Popular",
+    "slug": "sparkles",
+    "hasPage": false
+  },
+  {
+    "query": "rolling on the floor laughing",
+    "value": "Popular",
+    "slug": "rolling-on-the-floor-laughing",
+    "hasPage": false
+  },
+  {
+    "query": "face holding back tears",
+    "value": "Popular",
+    "slug": "face-holding-back-tears",
+    "hasPage": false
+  },
+  {
+    "query": "check mark",
+    "value": "Popular",
+    "slug": "check-mark",
+    "hasPage": false
+  },
+  {
+    "query": "thinking face",
+    "value": "Popular",
+    "slug": "thinking-face",
+    "hasPage": false
+  },
+  {
+    "query": "shushing face",
+    "value": "Popular",
+    "slug": "shushing-face",
+    "hasPage": false
+  },
+  {
+    "query": "pleading face",
+    "value": "Popular",
+    "slug": "pleading-face",
+    "hasPage": false
+  }
+]
