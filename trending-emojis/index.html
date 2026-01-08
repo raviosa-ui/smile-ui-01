@@ -208,11 +208,25 @@
       })
       .catch(() => renderList(getFallbackData()));
 
-    function getFallbackData() {
-      // Fallback data assumes page exists (or you can set false)
+ function getFallbackData() {
+      // This list appears if the JSON file is missing or loading fails.
+      // We are featuring your BEST existing pages here.
       return [
+        // --- Love Emojis ---
+        { query: "red heart", slug: "red-heart", hasPage: true },
+        { query: "broken heart", slug: "broken-heart", hasPage: true },
+        { query: "two hearts", slug: "two-hearts", hasPage: true },
+        { query: "heart hands", slug: "heart-hands", hasPage: true },
+        
+        // --- Celebration Emojis ---
+        { query: "partying face", slug: "partying-face", hasPage: true },
+        { query: "party popper", slug: "party-popper", hasPage: true },
+        { query: "balloon", slug: "balloon", hasPage: true },
+        { query: "clinking glasses", slug: "clinking-glasses", hasPage: true },
+        
+        // --- Viral / High Traffic ---
         { query: "skull", slug: "skull", hasPage: true },
-        { query: "melting face", slug: "melting-face", hasPage: false }
+        { query: "melting face", slug: "melting-face", hasPage: true }
       ];
     }
 
