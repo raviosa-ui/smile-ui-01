@@ -1,0 +1,11 @@
+{
+  "name": "smileymeaning-bot",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "google-trends-api": "^4.9.2"
+  },
+  "scripts": {
+    "start": "node fetch-trends.js"
+  }
+}
