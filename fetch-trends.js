@@ -1,83 +1,70 @@
-const googleTrends = require('google-trends-api');
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 const fs = require('fs');
 const path = require('path');
 
-// --- THE BACKUP LIST ---
-// If Google blocks us, we use these "Evergreen" trending emojis so the site never breaks.
-const BACKUP_KEYWORDS = [
-  "skull emoji", "melting face", "red heart", "fire emoji", 
-  "tear emoji", "saluting face", "moai", "thumbs up", 
-  "heart hands", "eyes emoji", "sweat droplet", "clown face",
-  "folded hands", "sparkles", "rolling on the floor laughing",
-  "face holding back tears", "check mark", "thinking face",
-  "shushing face", "pleading face"
-];
+// 1. Get the Key from GitHub Secrets
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-// Main Function
-(async () => {
+async function run() {
   try {
-    console.log('🤖 Asking Google for trends...');
-    
-    // 1. Try to fetch from Google
-    const results = await googleTrends.relatedQueries({
-      keyword: 'emoji',
-      geo: 'US',
+    // 2. Use a fast model (Gemini 1.5 Flash is great for this)
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+    // 3. The Prompt: We ask for JSON specifically
+    const prompt = `
+      Generate a JSON list of 20 "trending" and popular emoji search terms for today.
+      Mix viral trends, seasonal emojis (based on the current month), and evergreen popular ones.
+      
+      Strictly follow this JSON format:
+      [
+        { "query": "skull emoji", "value": "Viral" },
+        { "query": "melting face", "value": "High" }
+      ]
+      
+      Do not include markdown formatting like \`\`\`json. Just raw JSON.
+    `;
+
+    console.log("🤖 Asking Gemini for today's vibe...");
+    const result = await model.generateContent(prompt);
+    const response = await result.response;
+    const text = response.text();
+
+    // Clean up if Gemini accidentally adds markdown code blocks
+    const cleanJson = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    const trends = JSON.parse(cleanJson);
+
+    // 4. Process and Check Folders (Your "Smart Link" Logic)
+    const processedTrends = trends.map(item => {
+      // Clean name
+      const cleanName = item.query
+        .toLowerCase()
+        .replace(/ emoji/g, '')
+        .replace(/ meaning/g, '')
+        .replace(/[^a-z0-9\s-]/g, '')
+        .trim();
+        
+      const slug = cleanName.replace(/\s+/g, '-');
+
+      // Check if folder exists
+      const folderPath = path.join(__dirname, 'emoji', slug);
+      const pageExists = fs.existsSync(folderPath);
+
+      return {
+        query: cleanName,
+        value: item.value,
+        slug: slug,
+        hasPage: pageExists
+      };
     });
 
-    // 2. Check if Google sent garbage (HTML error page)
-    if (results.trim().startsWith('<')) {
-      throw new Error("Google returned HTML (Rate Limit/Block)");
-    }
+    // 5. Save the file
+    fs.writeFileSync('daily-emoji-trends.json', JSON.stringify(processedTrends, null, 2));
+    console.log(`✅ Success! Gemini generated ${processedTrends.length} trends.`);
 
-    // 3. Parse valid JSON
-    const data = JSON.parse(results);
-    const risingQueries = data.default.rankedList.find(l => l.title === 'Rising');
-    
-    if (!risingQueries) throw new Error("No rising trends found");
-
-    const liveTrends = risingQueries.rankedKeyword.slice(0, 20);
-    console.log('✅ Google allowed us! Using LIVE data.');
-    processAndSave(liveTrends.map(item => ({ query: item.query, value: item.value })));
-
-  } catch (err) {
-    // 4. THE SAFETY NET
-    console.error(`⚠️ Fetch failed (${err.message}). Switching to BACKUP list.`);
-    
-    // Map backup keywords to the same format as Google data
-    const backupData = BACKUP_KEYWORDS.map(kw => ({
-      query: kw,
-      value: "Popular" // Placeholder text since we don't have live %
-    }));
-    
-    processAndSave(backupData);
+  } catch (error) {
+    console.error("❌ Gemini Error:", error);
+    process.exit(1);
   }
-})();
-
-// Helper to check folders and save file
-function processAndSave(items) {
-  const cleanTrends = items.map(item => {
-    // Clean name logic
-    const cleanName = item.query
-      .toLowerCase()
-      .replace(/ emoji/g, '')
-      .replace(/ meaning/g, '')
-      .replace(/[^a-z0-9\s-]/g, '')
-      .trim();
-      
-    const slug = cleanName.replace(/\s+/g, '-');
-
-    // Check if folder exists
-    const folderPath = path.join(__dirname, 'emoji', slug);
-    const pageExists = fs.existsSync(folderPath);
-
-    return {
-      query: cleanName,
-      value: item.value,
-      slug: slug,
-      hasPage: pageExists
-    };
-  });
-
-  fs.writeFileSync('daily-emoji-trends.json', JSON.stringify(cleanTrends, null, 2));
-  console.log(`💾 Saved ${cleanTrends.length} items to daily-emoji-trends.json`);
 }
+
+run();
