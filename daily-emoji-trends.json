@@ -1,122 +1,122 @@
 [
   {
-    "query": "skull",
-    "value": "Popular",
-    "slug": "skull",
-    "hasPage": false
-  },
-  {
     "query": "melting face",
-    "value": "Popular",
+    "value": "High",
     "slug": "melting-face",
     "hasPage": false
   },
   {
+    "query": "face with spiral eyes",
+    "value": "Viral",
+    "slug": "face-with-spiral-eyes",
+    "hasPage": false
+  },
+  {
+    "query": "typewriter",
+    "value": "Viral",
+    "slug": "typewriter",
+    "hasPage": false
+  },
+  {
+    "query": "black heart",
+    "value": "High",
+    "slug": "black-heart",
+    "hasPage": true
+  },
+  {
+    "query": "face holding back tears",
+    "value": "High",
+    "slug": "face-holding-back-tears",
+    "hasPage": false
+  },
+  {
+    "query": "sparkles",
+    "value": "High",
+    "slug": "sparkles",
+    "hasPage": false
+  },
+  {
+    "query": "star-struck",
+    "value": "High",
+    "slug": "star-struck",
+    "hasPage": true
+  },
+  {
+    "query": "crying laughing",
+    "value": "High",
+    "slug": "crying-laughing",
+    "hasPage": false
+  },
+  {
+    "query": "skull",
+    "value": "High",
+    "slug": "skull",
+    "hasPage": false
+  },
+  {
+    "query": "ghost",
+    "value": "Viral",
+    "slug": "ghost",
+    "hasPage": false
+  },
+  {
+    "query": "sun with face",
+    "value": "High",
+    "slug": "sun-with-face",
+    "hasPage": false
+  },
+  {
+    "query": "flower bouquet",
+    "value": "High",
+    "slug": "flower-bouquet",
+    "hasPage": false
+  },
+  {
+    "query": "graduation cap",
+    "value": "High",
+    "slug": "graduation-cap",
+    "hasPage": false
+  },
+  {
+    "query": "butterfly",
+    "value": "High",
+    "slug": "butterfly",
+    "hasPage": false
+  },
+  {
+    "query": "beach",
+    "value": "High",
+    "slug": "beach",
+    "hasPage": false
+  },
+  {
     "query": "red heart",
-    "value": "Popular",
+    "value": "High",
     "slug": "red-heart",
     "hasPage": true
   },
   {
     "query": "fire",
-    "value": "Popular",
+    "value": "High",
     "slug": "fire",
     "hasPage": false
   },
   {
-    "query": "tear",
-    "value": "Popular",
-    "slug": "tear",
-    "hasPage": false
-  },
-  {
-    "query": "saluting face",
-    "value": "Popular",
-    "slug": "saluting-face",
-    "hasPage": false
-  },
-  {
-    "query": "moai",
-    "value": "Popular",
-    "slug": "moai",
-    "hasPage": false
-  },
-  {
-    "query": "thumbs up",
-    "value": "Popular",
-    "slug": "thumbs-up",
-    "hasPage": false
-  },
-  {
-    "query": "heart hands",
-    "value": "Popular",
-    "slug": "heart-hands",
-    "hasPage": true
-  },
-  {
-    "query": "eyes",
-    "value": "Popular",
-    "slug": "eyes",
-    "hasPage": false
-  },
-  {
-    "query": "sweat droplet",
-    "value": "Popular",
-    "slug": "sweat-droplet",
-    "hasPage": false
-  },
-  {
-    "query": "clown face",
-    "value": "Popular",
-    "slug": "clown-face",
-    "hasPage": false
-  },
-  {
-    "query": "folded hands",
-    "value": "Popular",
-    "slug": "folded-hands",
-    "hasPage": false
-  },
-  {
-    "query": "sparkles",
-    "value": "Popular",
-    "slug": "sparkles",
-    "hasPage": false
-  },
-  {
-    "query": "rolling on the floor laughing",
-    "value": "Popular",
-    "slug": "rolling-on-the-floor-laughing",
-    "hasPage": false
-  },
-  {
-    "query": "face holding back tears",
-    "value": "Popular",
-    "slug": "face-holding-back-tears",
-    "hasPage": false
-  },
-  {
-    "query": "check mark",
-    "value": "Popular",
-    "slug": "check-mark",
-    "hasPage": false
-  },
-  {
     "query": "thinking face",
-    "value": "Popular",
+    "value": "High",
     "slug": "thinking-face",
     "hasPage": false
   },
   {
-    "query": "shushing face",
-    "value": "Popular",
-    "slug": "shushing-face",
+    "query": "thumbs up",
+    "value": "High",
+    "slug": "thumbs-up",
     "hasPage": false
   },
   {
-    "query": "pleading face",
-    "value": "Popular",
-    "slug": "pleading-face",
-    "hasPage": false
+    "query": "party popper",
+    "value": "High",
+    "slug": "party-popper",
+    "hasPage": true
   }
 ]
