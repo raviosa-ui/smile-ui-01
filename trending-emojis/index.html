@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>🔥 Trending Emojis Today | Viral Meanings on SmileyMeaning</title>
-  <meta name="description" content="See which emojis are going viral on Google right now. Updated daily with the top 10 most searched emoji meanings." />
+<meta name="description" content="See which emojis are trending today based on what people are actively searching for across the internet. Updated daily." />
+
 
   <link rel="canonical" href="https://smileymeaning.com/trending-emojis/" />
 
   <meta property="og:title" content="🔥 Trending Emojis Today | SmileyMeaning" />
-  <meta property="og:description" content="See which emojis are going viral on Google right now. Updated daily." />
+ <meta property="og:description" content="See which emojis are trending today based on real search-interest data. Updated daily." />
   <meta property="og:url" content="https://smileymeaning.com/trending-emojis/" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="🔥 Trending Emojis Today | SmileyMeaning" />
-  <meta name="twitter:description" content="See which emojis are going viral on Google right now." />
+ <meta name="twitter:description" content="See which emojis are trending today based on real search-interest data." />
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -162,15 +163,31 @@
     <div class="container">
       <h1>What's Viral Today? 📈</h1>
       <p>
-        The top searched emoji meanings on Google in the last 24 hours.
-        Data updated daily.
+        The most searched emoji meanings from the last 24 hours,
+based on real search-interest trends.
       </p>
     </div>
   </section>
 
   <section class="trending-container">
     <div class="trend-card" id="trend-list-wrapper">
-      
+     <noscript>
+  <div style="padding:20px; text-align:center; color:#666; max-width:700px; margin:0 auto;">
+    <p>
+      This page shows <strong>today’s trending emojis</strong> based on what people
+      are actively searching for across the internet.
+    </p>
+    <p>
+      Trends are updated automatically once every day using real search-interest
+      and popularity signals.
+    </p>
+    <p>
+      Only emojis with existing meaning pages are clickable; others are marked as
+      coming soon.
+    </p>
+  </div>
+</noscript>
+ 
       <div class="loading-state">
         Loading today's trends... 🤖
       </div>
@@ -178,7 +195,8 @@
     </div>
     
     <p style="text-align: center; margin-top: 20px; color: #888; font-size: 0.9rem;">
-      *Trends are automatically fetched from Google Search Data.
+      Trends are automatically updated daily based on real search-interest data.
+
     </p>
   </section>
 
@@ -200,17 +218,20 @@
   document.addEventListener("DOMContentLoaded", function() {
     const listWrapper = document.getElementById('trend-list-wrapper');
 
-    fetch('/daily-emoji-trends.json')
-      .then(res => res.ok ? res.json() : [])
-      .then(data => {
-        if (!data || data.length === 0) data = getFallbackData();
-        renderList(data);
-      })
-      .catch(() => renderList(getFallbackData()));
+  const dataPromise = fetch('/daily-emoji-trends.json').then(r => r.json());
+
+
+    dataPromise
+  .then(data => {
+    if (!data || data.length === 0) data = getFallbackData();
+    renderList(data);
+  })
+  .catch(() => renderList(getFallbackData()));
 
  function getFallbackData() {
       // This list appears if the JSON file is missing or loading fails.
-      // We are featuring your BEST existing pages here.
+     // Fallback list used only if daily trend data fails to load.
+
       return [
         // --- Love Emojis ---
         { query: "red heart", slug: "red-heart", hasPage: true },
