@@ -833,3 +833,51 @@ input[type=range]::-webkit-slider-thumb {
   .daily-left { flex-direction: column; }
   .daily-btn { width: 100%; }
 }
+/* ================================
+   TRENDING FAQ
+================================ */
+.trending-faq {
+  margin: 80px 0;
+}
+
+.trending-faq h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.faq-item {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+}
+
+.faq-item h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.faq-item p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .trending-faq {
+    margin: 60px 0;
+  }
+
+  .trending-faq h2 {
+    font-size: 24px;
+  }
+
+  .faq-item {
+    padding: 18px;
+  }
+}
