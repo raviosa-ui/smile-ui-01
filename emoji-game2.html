@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Movie Quiz</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #1a1a2e; /* Deep cinema blue */
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            overflow: hidden;
+        }
+
+        /* The Level Label */
+        #level {
+            font-size: 2.5vw;
+            background: #e94560;
+            padding: 10px 30px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+            transition: background 0.3s;
+        }
+
+        /* The Emoji Puzzle */
+        #puzzle {
+            font-size: 10vw; /* HUGE emojis */
+            margin: 10px 0;
+            line-height: 1.3;
+            text-shadow: 0 0 30px rgba(0,0,0,0.7);
+        }
+
+        /* Container for Answer + Logic */
+        #answer-container {
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        /* The Main Answer */
+        #answer {
+            font-size: 5vw;
+            color: #4cd137; /* Bright Green */
+            font-weight: 800;
+            text-shadow: 2px 2px 0px #000;
+            margin-bottom: 10px;
+        }
+
+        /* The Explanation/Logic */
+        #explanation {
+            font-size: 2vw;
+            color: #a4b0be; /* Soft Grey */
+            font-style: italic;
+            max-width: 80%;
+        }
+
+        .hint {
+            position: absolute;
+            bottom: 30px;
+            font-size: 1.2rem;
+            color: #6a6a8a;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="level">GET READY</div>
+    <div id="puzzle">🎬</div>
+    
+    <div id="answer-container">
+        <div id="answer">Start Game</div>
+        <div id="explanation"></div>
+    </div>
+    
+    <div class="hint">(Tap screen to Reveal / Next)</div>
+
+    <script>
+        const questions = [
+            // --- EASY ROUND ---
+            { lvl: "Round 1: Easy", puzzle: "🤪 🤪 🤪 📚", ans: "3 Idiots", note: "3 Crazy Faces + Books" },
+            { lvl: "Round 1: Easy", puzzle: "👽 📻 🌍", ans: "PK", note: "Alien + Radio + Earth" },
+            { lvl: "Round 1: Easy", puzzle: "🚂 👓 🥥", ans: "Chennai Express", note: "Train + Glasses + Coconut" },
+            { lvl: "Round 1: Easy", puzzle: "🚢 🧊 💔", ans: "Titanic", note: "Ship + Iceberg + Heartbreak" },
+            { lvl: "Round 1: Easy", puzzle: "🦕 🦖 🚙", ans: "Jurassic Park", note: "Dinosaurs + Jeep" },
+            { lvl: "Round 1: Easy", puzzle: "🦁 👑", ans: "The Lion King", note: "Lion + King's Crown" },
+            { lvl: "Round 1: Easy", puzzle: "🏰 🏹 💪", ans: "Baahubali", note: "Kingdom + Bow & Arrow + Strong" },
+
+            // --- MEDIUM ROUND ---
+            { lvl: "Round 2: Medium", puzzle: "🇪🇸 🍅 🤿 ✈️", ans: "ZNMD", note: "Spain + Tomatoes + Scuba + Skydiving" },
+            { lvl: "Round 2: Medium", puzzle: "🖐️ 🪙 🐴", ans: "Sholay", note: "Thakur's Hand + Coin + Dhanno" },
+            { lvl: "Round 2: Medium", puzzle: "🤼‍♀️ 🏅 🇮🇳", ans: "Dangal", note: "Wrestling + Gold Medal + India" },
+            { lvl: "Round 2: Medium", puzzle: "🏏 🇬🇧 🌧️", ans: "Lagaan", note: "Cricket + British Flag + Rain" },
+            { lvl: "Round 2: Medium", puzzle: "🕶️ 🎹 🐱", ans: "Andhadhun", note: "Blind Glasses + Piano + The Cat" },
+            { lvl: "Round 2: Medium", puzzle: "💍 🚂 🕊️", ans: "DDLJ", note: "Engagement Ring + Train + Pigeons" },
+            { lvl: "Round 2: Medium", puzzle: "🕵️‍♂️ 🐅 💣", ans: "Ek Tha Tiger", note: "Spy + Tiger + Bomb" },
+
+            // --- TOUGH ROUND ---
+            { lvl: "Round 3: Tough", puzzle: "🏃 ➕ 🥛 ➕ 🏃", ans: "Bhaag Milkha Bhaag", note: "Run + Milk + Run" },
+            { lvl: "Round 3: Tough", puzzle: "🔑 ➕ 🚗", ans: "Ki & Ka", note: "Key + Car" },
+            { lvl: "Round 3: Tough", puzzle: "🔇 📻 🍰", ans: "Barfi", note: "Mute + Radio + Sweet" },
+            { lvl: "Round 3: Tough", puzzle: "🕉️ ☮️ 🕉️", ans: "Om Shanti Om", note: "Om Symbol x3" },
+            { lvl: "Round 3: Tough", puzzle: "🗓️ 🚌 👮‍♂️", ans: "Drishyam", note: "2nd Oct Calendar + Bus + Police" },
+            { lvl: "Round 3: Tough", puzzle: "🔥 🤝 🌊", ans: "RRR", note: "Fire + Friendship + Water" }
+        ];
+
+        let currentIndex = -1; // Start before first question
+        let state = 1; // 0=Puzzle, 1=Answer
+
+        const lvlEl = document.getElementById('level');
+        const puzEl = document.getElementById('puzzle');
+        const ansContainer = document.getElementById('answer-container');
+        const ansEl = document.getElementById('answer');
+        const expEl = document.getElementById('explanation');
+
+        function updateScreen() {
+            // Check Game Over
+            if (currentIndex >= questions.length) {
+                lvlEl.innerText = "THE END";
+                lvlEl.style.background = "#2ecc71";
+                puzEl.innerText = "🏆";
+                ansEl.innerText = "Well Played!";
+                expEl.innerText = "Thanks for playing";
+                ansContainer.style.opacity = 1;
+                return;
+            }
+
+            const q = questions[currentIndex];
+            lvlEl.innerText = q.lvl;
+            
+            // Color Coding for Rounds
+            if(q.lvl.includes("Easy")) lvlEl.style.background = "#2ecc71"; // Green
+            if(q.lvl.includes("Medium")) lvlEl.style.background = "#f1c40f"; // Yellow/Gold
+            if(q.lvl.includes("Tough")) lvlEl.style.background = "#e74c3c"; // Red
+
+            puzEl.innerText = q.puzzle;
+            ansEl.innerText = q.ans;
+            expEl.innerText = "(" + q.note + ")"; // Add logic in brackets
+            
+            if (state === 0) {
+                ansContainer.style.opacity = 0; // Hide answer
+            } else {
+                ansContainer.style.opacity = 1; // Show answer
+            }
+        }
+
+        document.body.addEventListener('click', () => {
+            if (currentIndex >= questions.length) return;
+
+            // First click ever starts the game
+            if (currentIndex === -1) {
+                currentIndex = 0;
+                state = 0;
+                updateScreen();
+                return;
+            }
+
+            if (state === 0) {
+                // REVEAL ANSWER
+                state = 1;
+                updateScreen();
+            } else {
+                // NEXT QUESTION
+                state = 0;
+                currentIndex++;
+                updateScreen();
+            }
+        });
+
+    </script>
+</body>
+</html>
