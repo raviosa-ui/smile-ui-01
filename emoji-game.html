@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Party Game</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #222; /* Dark background for cinema feel */
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            cursor: pointer; /* Shows it is clickable */
+            user-select: none;
+            overflow: hidden;
+        }
+
+        /* The Topic (Chocolate, Country, Movie) */
+        #category {
+            font-size: 3vw; /* Responsive text size */
+            color: #f1c40f; /* Gold color */
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* The Emoji Puzzle */
+        #puzzle {
+            font-size: 12vw; /* HUGE emojis */
+            margin: 10px 0;
+            line-height: 1.2;
+            text-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        /* The Answer text */
+        #answer {
+            font-size: 5vw;
+            color: #2ecc71; /* Green for success */
+            font-weight: bold;
+            opacity: 0; /* Hidden initially */
+            transition: opacity 0.3s ease;
+            min-height: 100px;
+            margin-top: 20px;
+        }
+
+        .hint {
+            position: absolute;
+            bottom: 20px;
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="category">TOPIC</div>
+    <div id="puzzle">❓</div>
+    <div id="answer">ANSWER</div>
+    
+    <div class="hint">(Tap screen to Reveal / Next)</div>
+
+    <script>
+        // --- YOUR CUSTOM QUESTIONS ---
+        const questions = [
+            // --- CHOCOLATE CATEGORY ---
+            { cat: "🍫 Guess the Chocolate", puzzle: "🪁 ➕ 🐈", ans: "KitKat" },           // Kite + Cat
+            { cat: "🍫 Guess the Chocolate", puzzle: "5️⃣ ➕ ⭐️", ans: "5 Star" },           // 5 + Star
+            { cat: "🍫 Guess the Chocolate", puzzle: "📔 ➕ 🥛", ans: "Dairy Milk" },       // Diary + Milk
+            { cat: "🍫 Guess the Chocolate", puzzle: "🥛 ➕ 🔑 ➕ 🛣️", ans: "Milky Way" }, // Milk + Key + Road
+            { cat: "🍫 Guess the Chocolate", puzzle: "🐍 ➕ 🚗", ans: "Snickers" },         // Snake + Car (Sneaker/Snickers)
+            { cat: "🍫 Guess the Chocolate", puzzle: "🎀 ➕ 🇳 ➕ ☕", ans: "Bounty" },      // Bow + N + Tea
+
+            // --- COUNTRY CATEGORY ---
+            { cat: "🏳️ Guess the Country", puzzle: "🇯 ➕ 🍳", ans: "Japan" },              // J + Pan
+            { cat: "🏳️ Guess the Country", puzzle: "⛓️ ➕ 🅰️", ans: "China" },             // Chain + A
+            { cat: "🏳️ Guess the Country", puzzle: "2️⃣ ➕ 🇷 ➕ 🔑", ans: "Turkey" },       // 2 + R + Key
+
+            // --- MOVIE CATEGORY ---
+            { cat: "🎬 Guess the Movie", puzzle: "❄️ ➕ 👸🏼", ans: "Frozen" },
+            { cat: "🎬 Guess the Movie", puzzle: "🦁 ➕ 👑", ans: "The Lion King" },
+            { cat: "🎬 Guess the Movie", puzzle: "🚢 ➕ 🧊 ➕ 💔", ans: "Titanic" }      // Ship + Iceberg + Heart
+        ];
+
+        let currentIndex = 0;
+        let state = 0; // 0 = Show Puzzle, 1 = Show Answer
+
+        const catEl = document.getElementById('category');
+        const puzEl = document.getElementById('puzzle');
+        const ansEl = document.getElementById('answer');
+
+        function updateScreen() {
+            // Check if game is over
+            if (currentIndex >= questions.length) {
+                catEl.innerText = "GAME OVER";
+                puzEl.innerText = "🎉";
+                ansEl.innerText = "Thanks for playing!";
+                ansEl.style.opacity = 1;
+                return;
+            }
+
+            const q = questions[currentIndex];
+            catEl.innerText = q.cat;
+            puzEl.innerText = q.puzzle;
+            ansEl.innerText = q.ans;
+            
+            // Manage visibility based on state
+            if (state === 0) {
+                ansEl.style.opacity = 0; // Hide answer
+            } else {
+                ansEl.style.opacity = 1; // Show answer
+            }
+        }
+
+        // Handle Clicks (Tap anywhere on screen)
+        document.body.addEventListener('click', () => {
+            if (currentIndex >= questions.length) return;
+
+            if (state === 0) {
+                // Reveal Answer
+                state = 1;
+                updateScreen();
+            } else {
+                // Next Question
+                state = 0;
+                currentIndex++;
+                updateScreen();
+            }
+        });
+
+        // Initialize the first slide
+        updateScreen();
+    </script>
+</body>
+</html>
