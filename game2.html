@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultimate Movie Quiz (Fixed)</title>
+    <title>Ultimate Movie Quiz (Final)</title>
     <style>
         body {
             margin: 0;
@@ -42,12 +42,12 @@
 
         #answer-container {
             opacity: 0;
-            transition: opacity 0.3s ease; /* Faster transition */
+            transition: opacity 0.3s ease;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 10px;
-            min-height: 100px; /* Keeps layout stable */
+            min-height: 100px;
         }
 
         #answer {
@@ -80,7 +80,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 10;
+            z-index: 100; /* Ensure it is on top */
         }
         #start-btn {
             padding: 20px 50px;
@@ -157,27 +157,29 @@
         const startOverlay = document.getElementById('start-overlay');
         const startBtn = document.getElementById('start-btn');
 
-        // FORCE AUDIO UNLOCK
+        // --- NEW LOGIC: INSTANT START ---
         startBtn.addEventListener('click', () => {
+            // 1. Hide Overlay Immediately (Don't wait for audio)
+            startOverlay.style.display = 'none';
+            
+            // 2. Start the Game Logic
+            currentIndex = 0;
+            state = 0;
+            updateScreen();
+
+            // 3. Try to load audio in background (Fire and forget)
             soundEffect.play().then(() => {
                 soundEffect.pause();
                 soundEffect.currentTime = 0;
-                startOverlay.style.display = 'none';
-                currentIndex = 0;
-                state = 0;
-                updateScreen();
             }).catch(e => {
-                console.error(e);
-                startOverlay.style.display = 'none'; // Continue even if audio fails
-                currentIndex = 0;
-                state = 0;
-                updateScreen();
+                console.log("Audio loading... game continues.");
             });
         });
 
         function playClapping() {
             soundEffect.currentTime = 0;
-            soundEffect.play().catch(e => console.log("Audio failed:", e));
+            // Only play if ready
+            soundEffect.play().catch(e => console.log("Audio not ready yet"));
         }
 
         function updateScreen() {
@@ -201,19 +203,17 @@
 
             puzEl.innerText = q.puzzle;
             
-            // --- FIX START ---
             if (state === 0) {
-                // QUESTION MODE: Hide Answer & Clear Text IMMEDIATELY
+                // HIDE ANSWER
                 ansContainer.style.opacity = 0;
-                ansEl.innerText = "";  // Clear text so no glimpse occurs
+                ansEl.innerText = "";  // Clear text
                 expEl.innerText = "";
             } else {
-                // REVEAL MODE: Set Text & Show
+                // REVEAL ANSWER
                 ansEl.innerText = q.ans;
                 expEl.innerText = "(" + q.note + ")"; 
                 ansContainer.style.opacity = 1; 
             }
-            // --- FIX END ---
         }
 
         document.body.addEventListener('click', (e) => {
