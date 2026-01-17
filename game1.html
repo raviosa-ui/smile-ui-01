@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Party Game</title>
+    <title>Family Party Game (Fixed)</title>
     <style>
         body {
             margin: 0;
@@ -62,9 +62,7 @@
 
     <div id="category">TOPIC</div>
     <div id="puzzle">❓</div>
-    <div id="answer">ANSWER</div>
-    
-    <div class="hint">(Tap screen to Reveal / Next)</div>
+    <div id="answer"></div> <div class="hint">(Tap screen to Reveal / Next)</div>
 
     <script>
         // --- YOUR CUSTOM QUESTIONS ---
@@ -108,14 +106,18 @@
             const q = questions[currentIndex];
             catEl.innerText = q.cat;
             puzEl.innerText = q.puzzle;
-            ansEl.innerText = q.ans;
             
-            // Manage visibility based on state
+            // --- FIX START: Control Text & Opacity Together ---
             if (state === 0) {
-                ansEl.style.opacity = 0; // Hide answer
+                // QUESTION MODE: Hide Answer & DELETE Text
+                ansEl.style.opacity = 0; 
+                ansEl.innerText = ""; // Wipe text so no glimpse occurs
             } else {
-                ansEl.style.opacity = 1; // Show answer
+                // REVEAL MODE: Set Text & Show
+                ansEl.innerText = q.ans;
+                ansEl.style.opacity = 1; 
             }
+            // --- FIX END ---
         }
 
         // Handle Clicks (Tap anywhere on screen)
