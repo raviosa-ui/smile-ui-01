@@ -1,7 +1,73 @@
 [
   {
-    "query": "graduation cap",
+    "query": "melting face",
     "value": "Viral",
+    "slug": "melting-face",
+    "hasPage": false
+  },
+  {
+    "query": "skull",
+    "value": "Viral",
+    "slug": "skull",
+    "hasPage": false
+  },
+  {
+    "query": "shaking face",
+    "value": "Viral",
+    "slug": "shaking-face",
+    "hasPage": false
+  },
+  {
+    "query": "pleading face",
+    "value": "High",
+    "slug": "pleading-face",
+    "hasPage": false
+  },
+  {
+    "query": "eyes",
+    "value": "High",
+    "slug": "eyes",
+    "hasPage": false
+  },
+  {
+    "query": "clown face",
+    "value": "Viral",
+    "slug": "clown-face",
+    "hasPage": false
+  },
+  {
+    "query": "pinched fingers",
+    "value": "Viral",
+    "slug": "pinched-fingers",
+    "hasPage": false
+  },
+  {
+    "query": "upside-down face",
+    "value": "High",
+    "slug": "upside-down-face",
+    "hasPage": false
+  },
+  {
+    "query": "face with hand over mouth",
+    "value": "High",
+    "slug": "face-with-hand-over-mouth",
+    "hasPage": false
+  },
+  {
+    "query": "heart hands",
+    "value": "High",
+    "slug": "heart-hands",
+    "hasPage": true
+  },
+  {
+    "query": "rainbow flag",
+    "value": "High",
+    "slug": "rainbow-flag",
+    "hasPage": false
+  },
+  {
+    "query": "graduation cap",
+    "value": "High",
     "slug": "graduation-cap",
     "hasPage": false
   },
@@ -12,111 +78,45 @@
     "hasPage": false
   },
   {
-    "query": "airplane",
+    "query": "watermelon",
     "value": "High",
-    "slug": "airplane",
+    "slug": "watermelon",
     "hasPage": false
   },
   {
-    "query": "basketball",
-    "value": "Viral",
-    "slug": "basketball",
-    "hasPage": false
-  },
-  {
-    "query": "hockey stick and puck",
-    "value": "Viral",
-    "slug": "hockey-stick-and-puck",
-    "hasPage": false
-  },
-  {
-    "query": "melting face",
+    "query": "wedding ring",
     "value": "High",
-    "slug": "melting-face",
-    "hasPage": false
-  },
-  {
-    "query": "face with peeking eye",
-    "value": "High",
-    "slug": "face-with-peeking-eye",
-    "hasPage": false
-  },
-  {
-    "query": "money with wings",
-    "value": "High",
-    "slug": "money-with-wings",
-    "hasPage": false
-  },
-  {
-    "query": "grinning face with sweat",
-    "value": "High",
-    "slug": "grinning-face-with-sweat",
-    "hasPage": false
-  },
-  {
-    "query": "ice cream cone",
-    "value": "High",
-    "slug": "ice-cream-cone",
+    "slug": "wedding-ring",
     "hasPage": false
   },
   {
     "query": "red heart",
-    "value": "Evergreen",
+    "value": "High",
     "slug": "red-heart",
     "hasPage": true
   },
   {
     "query": "laughing crying face",
-    "value": "Evergreen",
+    "value": "High",
     "slug": "laughing-crying-face",
     "hasPage": false
   },
   {
     "query": "fire",
-    "value": "Evergreen",
+    "value": "High",
     "slug": "fire",
     "hasPage": false
   },
   {
-    "query": "sparkles",
-    "value": "Evergreen",
-    "slug": "sparkles",
-    "hasPage": false
-  },
-  {
     "query": "thinking face",
-    "value": "Evergreen",
+    "value": "High",
     "slug": "thinking-face",
     "hasPage": false
   },
   {
     "query": "party popper",
-    "value": "Evergreen",
+    "value": "High",
     "slug": "party-popper",
     "hasPage": true
-  },
-  {
-    "query": "flower bouquet",
-    "value": "High",
-    "slug": "flower-bouquet",
-    "hasPage": false
-  },
-  {
-    "query": "butterfly",
-    "value": "High",
-    "slug": "butterfly",
-    "hasPage": false
-  },
-  {
-    "query": "brain",
-    "value": "High",
-    "slug": "brain",
-    "hasPage": false
-  },
-  {
-    "query": "shushing face",
-    "value": "High",
-    "slug": "shushing-face",
-    "hasPage": false
   }
 ]
