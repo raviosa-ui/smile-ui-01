@@ -12,9 +12,21 @@
     "hasPage": false
   },
   {
-    "query": "shaking face",
-    "value": "Viral",
-    "slug": "shaking-face",
+    "query": "laughing crying",
+    "value": "Evergreen",
+    "slug": "laughing-crying",
+    "hasPage": false
+  },
+  {
+    "query": "red heart",
+    "value": "Evergreen",
+    "slug": "red-heart",
+    "hasPage": true
+  },
+  {
+    "query": "fire",
+    "value": "High",
+    "slug": "fire",
     "hasPage": false
   },
   {
@@ -24,87 +36,27 @@
     "hasPage": false
   },
   {
-    "query": "eyes",
-    "value": "High",
-    "slug": "eyes",
-    "hasPage": false
-  },
-  {
-    "query": "clown face",
-    "value": "Viral",
-    "slug": "clown-face",
-    "hasPage": false
-  },
-  {
-    "query": "pinched fingers",
-    "value": "Viral",
-    "slug": "pinched-fingers",
-    "hasPage": false
-  },
-  {
-    "query": "upside-down face",
-    "value": "High",
-    "slug": "upside-down-face",
-    "hasPage": false
-  },
-  {
-    "query": "face with hand over mouth",
-    "value": "High",
-    "slug": "face-with-hand-over-mouth",
-    "hasPage": false
-  },
-  {
-    "query": "heart hands",
-    "value": "High",
-    "slug": "heart-hands",
-    "hasPage": true
-  },
-  {
     "query": "rainbow flag",
-    "value": "High",
+    "value": "Seasonal",
     "slug": "rainbow-flag",
     "hasPage": false
   },
   {
     "query": "graduation cap",
-    "value": "High",
+    "value": "Seasonal",
     "slug": "graduation-cap",
     "hasPage": false
   },
   {
     "query": "sun",
-    "value": "High",
+    "value": "Seasonal",
     "slug": "sun",
     "hasPage": false
   },
   {
-    "query": "watermelon",
-    "value": "High",
-    "slug": "watermelon",
-    "hasPage": false
-  },
-  {
-    "query": "wedding ring",
-    "value": "High",
-    "slug": "wedding-ring",
-    "hasPage": false
-  },
-  {
-    "query": "red heart",
-    "value": "High",
-    "slug": "red-heart",
-    "hasPage": true
-  },
-  {
-    "query": "laughing crying face",
-    "value": "High",
-    "slug": "laughing-crying-face",
-    "hasPage": false
-  },
-  {
-    "query": "fire",
-    "value": "High",
-    "slug": "fire",
+    "query": "ice cream",
+    "value": "Seasonal",
+    "slug": "ice-cream",
     "hasPage": false
   },
   {
@@ -114,9 +66,57 @@
     "hasPage": false
   },
   {
-    "query": "party popper",
+    "query": "sparkles",
+    "value": "Evergreen",
+    "slug": "sparkles",
+    "hasPage": false
+  },
+  {
+    "query": "eyes",
     "value": "High",
+    "slug": "eyes",
+    "hasPage": false
+  },
+  {
+    "query": "shushing face",
+    "value": "Viral",
+    "slug": "shushing-face",
+    "hasPage": false
+  },
+  {
+    "query": "party popper",
+    "value": "Evergreen",
     "slug": "party-popper",
     "hasPage": true
+  },
+  {
+    "query": "palm tree",
+    "value": "Seasonal",
+    "slug": "palm-tree",
+    "hasPage": false
+  },
+  {
+    "query": "money bag",
+    "value": "High",
+    "slug": "money-bag",
+    "hasPage": false
+  },
+  {
+    "query": "crying face",
+    "value": "Evergreen",
+    "slug": "crying-face",
+    "hasPage": true
+  },
+  {
+    "query": "swimming",
+    "value": "Seasonal",
+    "slug": "swimming",
+    "hasPage": false
+  },
+  {
+    "query": "index pointing up",
+    "value": "High",
+    "slug": "index-pointing-up",
+    "hasPage": false
   }
 ]
