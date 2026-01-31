@@ -1,104 +1,14 @@
 [
   {
     "query": "melting face",
-    "value": "Viral",
+    "value": "High",
     "slug": "melting-face",
     "hasPage": false
   },
   {
-    "query": "pleading face",
-    "value": "Viral",
-    "slug": "pleading-face",
-    "hasPage": false
-  },
-  {
     "query": "skull",
-    "value": "High",
+    "value": "Viral",
     "slug": "skull",
-    "hasPage": false
-  },
-  {
-    "query": "crying laughing",
-    "value": "Evergreen",
-    "slug": "crying-laughing",
-    "hasPage": false
-  },
-  {
-    "query": "red heart",
-    "value": "Evergreen",
-    "slug": "red-heart",
-    "hasPage": true
-  },
-  {
-    "query": "fire",
-    "value": "High",
-    "slug": "fire",
-    "hasPage": false
-  },
-  {
-    "query": "sparkles",
-    "value": "Evergreen",
-    "slug": "sparkles",
-    "hasPage": false
-  },
-  {
-    "query": "graduation cap",
-    "value": "Seasonal",
-    "slug": "graduation-cap",
-    "hasPage": false
-  },
-  {
-    "query": "sunflower",
-    "value": "Seasonal",
-    "slug": "sunflower",
-    "hasPage": false
-  },
-  {
-    "query": "sun",
-    "value": "Seasonal",
-    "slug": "sun",
-    "hasPage": false
-  },
-  {
-    "query": "ice cream",
-    "value": "Seasonal",
-    "slug": "ice-cream",
-    "hasPage": false
-  },
-  {
-    "query": "strawberry",
-    "value": "Seasonal",
-    "slug": "strawberry",
-    "hasPage": false
-  },
-  {
-    "query": "airplane",
-    "value": "Seasonal",
-    "slug": "airplane",
-    "hasPage": false
-  },
-  {
-    "query": "palm tree island",
-    "value": "Seasonal",
-    "slug": "palm-tree-island",
-    "hasPage": false
-  },
-  {
-    "query": "flexed biceps",
-    "value": "Evergreen",
-    "slug": "flexed-biceps",
-    "hasPage": false
-  },
-  {
-    "query": "thumbs up",
-    "value": "Evergreen",
-    "slug": "thumbs-up",
-    "hasPage": false
-  },
-  {
-    "query": "eyes",
-    "value": "High",
-    "slug": "eyes",
     "hasPage": false
   },
   {
@@ -108,15 +18,105 @@
     "hasPage": true
   },
   {
+    "query": "smiling face with sweat",
+    "value": "High",
+    "slug": "smiling-face-with-sweat",
+    "hasPage": false
+  },
+  {
+    "query": "face with hand over mouth",
+    "value": "High",
+    "slug": "face-with-hand-over-mouth",
+    "hasPage": false
+  },
+  {
+    "query": "fire",
+    "value": "High",
+    "slug": "fire",
+    "hasPage": false
+  },
+  {
+    "query": "pleading face",
+    "value": "High",
+    "slug": "pleading-face",
+    "hasPage": false
+  },
+  {
+    "query": "hot face",
+    "value": "High",
+    "slug": "hot-face",
+    "hasPage": false
+  },
+  {
+    "query": "red heart",
+    "value": "Evergreen",
+    "slug": "red-heart",
+    "hasPage": true
+  },
+  {
+    "query": "face with tears of joy",
+    "value": "Evergreen",
+    "slug": "face-with-tears-of-joy",
+    "hasPage": false
+  },
+  {
+    "query": "loudly crying face",
+    "value": "Evergreen",
+    "slug": "loudly-crying-face",
+    "hasPage": true
+  },
+  {
     "query": "thinking face",
     "value": "Evergreen",
     "slug": "thinking-face",
     "hasPage": false
   },
   {
-    "query": "ghost",
-    "value": "High",
-    "slug": "ghost",
+    "query": "flexed biceps",
+    "value": "Evergreen",
+    "slug": "flexed-biceps",
+    "hasPage": false
+  },
+  {
+    "query": "sparkles",
+    "value": "Evergreen",
+    "slug": "sparkles",
+    "hasPage": false
+  },
+  {
+    "query": "sun",
+    "value": "Seasonal",
+    "slug": "sun",
+    "hasPage": false
+  },
+  {
+    "query": "beach",
+    "value": "Seasonal",
+    "slug": "beach",
+    "hasPage": false
+  },
+  {
+    "query": "ice cream",
+    "value": "Seasonal",
+    "slug": "ice-cream",
+    "hasPage": false
+  },
+  {
+    "query": "rainbow flag",
+    "value": "Seasonal",
+    "slug": "rainbow-flag",
+    "hasPage": false
+  },
+  {
+    "query": "graduation cap",
+    "value": "Seasonal",
+    "slug": "graduation-cap",
+    "hasPage": false
+  },
+  {
+    "query": "watermelon",
+    "value": "Seasonal",
+    "slug": "watermelon",
     "hasPage": false
   }
 ]
