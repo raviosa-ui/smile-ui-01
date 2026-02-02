@@ -1,23 +1,5 @@
 [
   {
-    "query": "melting face",
-    "value": "Viral",
-    "slug": "melting-face",
-    "hasPage": false
-  },
-  {
-    "query": "shushing face",
-    "value": "Viral",
-    "slug": "shushing-face",
-    "hasPage": false
-  },
-  {
-    "query": "face with peeking eye",
-    "value": "Viral",
-    "slug": "face-with-peeking-eye",
-    "hasPage": false
-  },
-  {
     "query": "rainbow flag",
     "value": "Seasonal",
     "slug": "rainbow-flag",
@@ -30,9 +12,9 @@
     "hasPage": false
   },
   {
-    "query": "sun",
+    "query": "sun with face",
     "value": "Seasonal",
-    "slug": "sun",
+    "slug": "sun-with-face",
     "hasPage": false
   },
   {
@@ -42,10 +24,28 @@
     "hasPage": false
   },
   {
-    "query": "ice cream",
-    "value": "Seasonal",
-    "slug": "ice-cream",
+    "query": "melting face",
+    "value": "Viral",
+    "slug": "melting-face",
     "hasPage": false
+  },
+  {
+    "query": "shaking face",
+    "value": "High",
+    "slug": "shaking-face",
+    "hasPage": false
+  },
+  {
+    "query": "skull",
+    "value": "Viral",
+    "slug": "skull",
+    "hasPage": false
+  },
+  {
+    "query": "heart hands",
+    "value": "High",
+    "slug": "heart-hands",
+    "hasPage": true
   },
   {
     "query": "red heart",
@@ -54,39 +54,9 @@
     "hasPage": true
   },
   {
-    "query": "fire",
-    "value": "High",
-    "slug": "fire",
-    "hasPage": false
-  },
-  {
-    "query": "skull",
-    "value": "High",
-    "slug": "skull",
-    "hasPage": false
-  },
-  {
-    "query": "sparkles",
+    "query": "face with tears of joy",
     "value": "Evergreen",
-    "slug": "sparkles",
-    "hasPage": false
-  },
-  {
-    "query": "crying laughing face",
-    "value": "Evergreen",
-    "slug": "crying-laughing-face",
-    "hasPage": false
-  },
-  {
-    "query": "pleading face",
-    "value": "High",
-    "slug": "pleading-face",
-    "hasPage": false
-  },
-  {
-    "query": "thinking face",
-    "value": "Evergreen",
-    "slug": "thinking-face",
+    "slug": "face-with-tears-of-joy",
     "hasPage": false
   },
   {
@@ -96,10 +66,40 @@
     "hasPage": false
   },
   {
-    "query": "heart hands",
-    "value": "Viral",
-    "slug": "heart-hands",
-    "hasPage": true
+    "query": "fire",
+    "value": "Evergreen",
+    "slug": "fire",
+    "hasPage": false
+  },
+  {
+    "query": "thinking face",
+    "value": "Evergreen",
+    "slug": "thinking-face",
+    "hasPage": false
+  },
+  {
+    "query": "sparkles",
+    "value": "Evergreen",
+    "slug": "sparkles",
+    "hasPage": false
+  },
+  {
+    "query": "pizza slice",
+    "value": "Evergreen",
+    "slug": "pizza-slice",
+    "hasPage": false
+  },
+  {
+    "query": "ice cream",
+    "value": "Seasonal",
+    "slug": "ice-cream",
+    "hasPage": false
+  },
+  {
+    "query": "grinning face with sweat",
+    "value": "High",
+    "slug": "grinning-face-with-sweat",
+    "hasPage": false
   },
   {
     "query": "party popper",
@@ -108,15 +108,15 @@
     "hasPage": true
   },
   {
-    "query": "wedding ring",
+    "query": "bride with veil",
     "value": "Seasonal",
-    "slug": "wedding-ring",
+    "slug": "bride-with-veil",
     "hasPage": false
   },
   {
-    "query": "star-struck",
+    "query": "confetti ball",
     "value": "High",
-    "slug": "star-struck",
+    "slug": "confetti-ball",
     "hasPage": true
   }
 ]
