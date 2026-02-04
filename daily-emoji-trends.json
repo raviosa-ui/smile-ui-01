@@ -1,122 +1,122 @@
 [
   {
-    "query": "melting face",
-    "value": "Viral",
-    "slug": "melting-face",
-    "hasPage": false
-  },
-  {
     "query": "skull",
     "value": "Viral",
     "slug": "skull",
     "hasPage": false
   },
   {
-    "query": "pleading face",
+    "query": "melting face",
     "value": "Viral",
-    "slug": "pleading-face",
+    "slug": "melting-face",
     "hasPage": false
   },
   {
-    "query": "red flag",
+    "query": "rainbow flag",
     "value": "Viral",
-    "slug": "red-flag",
+    "slug": "rainbow-flag",
     "hasPage": false
   },
   {
-    "query": "neutral face",
+    "query": "saluting face",
     "value": "Viral",
-    "slug": "neutral-face",
+    "slug": "saluting-face",
     "hasPage": false
   },
   {
-    "query": "eyes",
+    "query": "shaking face",
+    "value": "High",
+    "slug": "shaking-face",
+    "hasPage": false
+  },
+  {
+    "query": "face with peeking eye",
+    "value": "High",
+    "slug": "face-with-peeking-eye",
+    "hasPage": false
+  },
+  {
+    "query": "clown face",
+    "value": "High",
+    "slug": "clown-face",
+    "hasPage": false
+  },
+  {
+    "query": "fire",
     "value": "Viral",
-    "slug": "eyes",
+    "slug": "fire",
+    "hasPage": false
+  },
+  {
+    "query": "red heart",
+    "value": "High",
+    "slug": "red-heart",
+    "hasPage": true
+  },
+  {
+    "query": "crying laughing face",
+    "value": "High",
+    "slug": "crying-laughing-face",
+    "hasPage": false
+  },
+  {
+    "query": "thumbs up",
+    "value": "High",
+    "slug": "thumbs-up",
+    "hasPage": false
+  },
+  {
+    "query": "sparkles",
+    "value": "High",
+    "slug": "sparkles",
+    "hasPage": false
+  },
+  {
+    "query": "thinking face",
+    "value": "High",
+    "slug": "thinking-face",
+    "hasPage": false
+  },
+  {
+    "query": "prayer hands",
+    "value": "High",
+    "slug": "prayer-hands",
     "hasPage": false
   },
   {
     "query": "sun",
-    "value": "Seasonal",
+    "value": "High",
     "slug": "sun",
     "hasPage": false
   },
   {
-    "query": "beach",
-    "value": "Seasonal",
-    "slug": "beach",
-    "hasPage": false
-  },
-  {
     "query": "ice cream",
-    "value": "Seasonal",
+    "value": "High",
     "slug": "ice-cream",
     "hasPage": false
   },
   {
     "query": "graduation cap",
-    "value": "Seasonal",
+    "value": "High",
     "slug": "graduation-cap",
     "hasPage": false
   },
   {
-    "query": "watermelon",
-    "value": "Seasonal",
-    "slug": "watermelon",
-    "hasPage": false
-  },
-  {
-    "query": "airplane",
-    "value": "Seasonal",
-    "slug": "airplane",
-    "hasPage": false
-  },
-  {
-    "query": "wedding ring",
-    "value": "Seasonal",
-    "slug": "wedding-ring",
-    "hasPage": false
-  },
-  {
-    "query": "red heart",
-    "value": "Evergreen",
-    "slug": "red-heart",
-    "hasPage": true
-  },
-  {
-    "query": "fire",
-    "value": "Evergreen",
-    "slug": "fire",
-    "hasPage": false
-  },
-  {
-    "query": "thinking face",
-    "value": "Evergreen",
-    "slug": "thinking-face",
-    "hasPage": false
-  },
-  {
-    "query": "sparkles",
-    "value": "Evergreen",
-    "slug": "sparkles",
-    "hasPage": false
-  },
-  {
-    "query": "thumbs up",
-    "value": "Evergreen",
-    "slug": "thumbs-up",
-    "hasPage": false
-  },
-  {
-    "query": "folded hands",
-    "value": "Evergreen",
-    "slug": "folded-hands",
-    "hasPage": false
-  },
-  {
-    "query": "crying laughing",
+    "query": "beach",
     "value": "High",
-    "slug": "crying-laughing",
+    "slug": "beach",
+    "hasPage": false
+  },
+  {
+    "query": "woozy face",
+    "value": "Viral",
+    "slug": "woozy-face",
+    "hasPage": false
+  },
+  {
+    "query": "money bag",
+    "value": "High",
+    "slug": "money-bag",
     "hasPage": false
   }
 ]
