@@ -6,69 +6,111 @@
     "hasPage": false
   },
   {
-    "query": "shushing face",
+    "query": "face with peeking eye",
     "value": "Viral",
-    "slug": "shushing-face",
+    "slug": "face-with-peeking-eye",
     "hasPage": false
   },
   {
-    "query": "skull",
-    "value": "High",
-    "slug": "skull",
+    "query": "hands forming heart",
+    "value": "Viral",
+    "slug": "hands-forming-heart",
     "hasPage": false
   },
   {
-    "query": "red heart",
-    "value": "High",
-    "slug": "red-heart",
-    "hasPage": true
+    "query": "brain",
+    "value": "Viral",
+    "slug": "brain",
+    "hasPage": false
+  },
+  {
+    "query": "face with spiral eyes",
+    "value": "Viral",
+    "slug": "face-with-spiral-eyes",
+    "hasPage": false
   },
   {
     "query": "rainbow flag",
-    "value": "High",
+    "value": "Seasonal",
     "slug": "rainbow-flag",
     "hasPage": false
   },
   {
     "query": "sun",
-    "value": "High",
+    "value": "Seasonal",
     "slug": "sun",
     "hasPage": false
   },
   {
-    "query": "ice cream",
-    "value": "High",
-    "slug": "ice-cream",
-    "hasPage": false
-  },
-  {
     "query": "graduation cap",
-    "value": "Medium",
+    "value": "Seasonal",
     "slug": "graduation-cap",
     "hasPage": false
   },
   {
-    "query": "thinking face",
-    "value": "High",
-    "slug": "thinking-face",
+    "query": "beach with umbrella",
+    "value": "Seasonal",
+    "slug": "beach-with-umbrella",
     "hasPage": false
   },
   {
-    "query": "sparkles",
-    "value": "High",
-    "slug": "sparkles",
+    "query": "flower bouquet",
+    "value": "Seasonal",
+    "slug": "flower-bouquet",
+    "hasPage": false
+  },
+  {
+    "query": "red heart",
+    "value": "Evergreen",
+    "slug": "red-heart",
+    "hasPage": true
+  },
+  {
+    "query": "tears of joy",
+    "value": "Evergreen",
+    "slug": "tears-of-joy",
     "hasPage": false
   },
   {
     "query": "fire",
-    "value": "High",
+    "value": "Evergreen",
     "slug": "fire",
     "hasPage": false
   },
   {
-    "query": "crying laughing face",
-    "value": "High",
-    "slug": "crying-laughing-face",
+    "query": "sparkles",
+    "value": "Evergreen",
+    "slug": "sparkles",
+    "hasPage": false
+  },
+  {
+    "query": "skull",
+    "value": "Evergreen",
+    "slug": "skull",
+    "hasPage": false
+  },
+  {
+    "query": "thumbs up",
+    "value": "Evergreen",
+    "slug": "thumbs-up",
+    "hasPage": false
+  },
+  {
+    "query": "money bag",
+    "value": "Evergreen",
+    "slug": "money-bag",
+    "hasPage": false
+  },
+  {
+    "query": "waving hand",
+    "value": "Evergreen",
+    "slug": "waving-hand",
+    "hasPage": false
+  },
+  {
+    "query": "thinking face",
+    "value": "Evergreen",
+    "slug": "thinking-face",
     "hasPage": false
   },
   {
@@ -76,47 +118,5 @@
     "value": "High",
     "slug": "pleading-face",
     "hasPage": false
-  },
-  {
-    "query": "pink bow",
-    "value": "Medium",
-    "slug": "pink-bow",
-    "hasPage": false
-  },
-  {
-    "query": "watermelon",
-    "value": "Medium",
-    "slug": "watermelon",
-    "hasPage": false
-  },
-  {
-    "query": "hot face",
-    "value": "Medium",
-    "slug": "hot-face",
-    "hasPage": false
-  },
-  {
-    "query": "money mouth face",
-    "value": "High",
-    "slug": "money-mouth-face",
-    "hasPage": false
-  },
-  {
-    "query": "brain",
-    "value": "Medium",
-    "slug": "brain",
-    "hasPage": false
-  },
-  {
-    "query": "palm tree",
-    "value": "Medium",
-    "slug": "palm-tree",
-    "hasPage": false
-  },
-  {
-    "query": "black heart",
-    "value": "High",
-    "slug": "black-heart",
-    "hasPage": true
   }
 ]
