@@ -12,27 +12,21 @@
     "hasPage": false
   },
   {
-    "query": "pleading face",
-    "value": "High",
-    "slug": "pleading-face",
-    "hasPage": false
-  },
-  {
-    "query": "shaking face",
-    "value": "High",
-    "slug": "shaking-face",
-    "hasPage": false
-  },
-  {
-    "query": "point right",
+    "query": "face with peeking eye",
     "value": "Viral",
-    "slug": "point-right",
+    "slug": "face-with-peeking-eye",
     "hasPage": false
   },
   {
-    "query": "face with hand over mouth",
-    "value": "High",
-    "slug": "face-with-hand-over-mouth",
+    "query": "shushing face",
+    "value": "Viral",
+    "slug": "shushing-face",
+    "hasPage": false
+  },
+  {
+    "query": "thinking face",
+    "value": "Viral",
+    "slug": "thinking-face",
     "hasPage": false
   },
   {
@@ -42,21 +36,21 @@
     "hasPage": false
   },
   {
+    "query": "sun",
+    "value": "Seasonal",
+    "slug": "sun",
+    "hasPage": false
+  },
+  {
     "query": "graduation cap",
     "value": "Seasonal",
     "slug": "graduation-cap",
     "hasPage": false
   },
   {
-    "query": "sun with face",
+    "query": "ice cream",
     "value": "Seasonal",
-    "slug": "sun-with-face",
-    "hasPage": false
-  },
-  {
-    "query": "beach with umbrella",
-    "value": "Seasonal",
-    "slug": "beach-with-umbrella",
+    "slug": "ice-cream",
     "hasPage": false
   },
   {
@@ -66,16 +60,22 @@
     "hasPage": false
   },
   {
+    "query": "beach umbrella",
+    "value": "Seasonal",
+    "slug": "beach-umbrella",
+    "hasPage": false
+  },
+  {
+    "query": "barbecue",
+    "value": "Seasonal",
+    "slug": "barbecue",
+    "hasPage": false
+  },
+  {
     "query": "red heart",
     "value": "Evergreen",
     "slug": "red-heart",
     "hasPage": true
-  },
-  {
-    "query": "thumbs up",
-    "value": "Evergreen",
-    "slug": "thumbs-up",
-    "hasPage": false
   },
   {
     "query": "face with tears of joy",
@@ -84,21 +84,27 @@
     "hasPage": false
   },
   {
-    "query": "smiling face with hearts",
-    "value": "Evergreen",
-    "slug": "smiling-face-with-hearts",
-    "hasPage": true
-  },
-  {
     "query": "fire",
-    "value": "Evergreen",
+    "value": "High",
     "slug": "fire",
     "hasPage": false
   },
   {
-    "query": "thinking face",
-    "value": "Evergreen",
-    "slug": "thinking-face",
+    "query": "sparkles",
+    "value": "High",
+    "slug": "sparkles",
+    "hasPage": false
+  },
+  {
+    "query": "pleading face",
+    "value": "High",
+    "slug": "pleading-face",
+    "hasPage": false
+  },
+  {
+    "query": "thumbs up",
+    "value": "High",
+    "slug": "thumbs-up",
     "hasPage": false
   },
   {
@@ -108,15 +114,9 @@
     "hasPage": false
   },
   {
-    "query": "star",
-    "value": "Evergreen",
-    "slug": "star",
-    "hasPage": false
-  },
-  {
-    "query": "clapping hands",
-    "value": "Evergreen",
-    "slug": "clapping-hands",
-    "hasPage": false
+    "query": "star-struck",
+    "value": "High",
+    "slug": "star-struck",
+    "hasPage": true
   }
 ]
