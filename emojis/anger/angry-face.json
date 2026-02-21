@@ -1,0 +1,113 @@
+{
+  "slug": "angry-face",
+  "emoji": "😠",
+  "name": "Angry Face",
+  "category": "Anger",
+  
+  "meaning": "The Angry Face emoji represents irritation, annoyance, and controlled anger. It is used to express displeasure, frustration, or being upset without showing extreme rage or loss of control.",
+  
+  "usage_examples": [
+    "That really annoyed me 😠",
+    "I’m not happy about this 😠",
+    "This situation is frustrating 😠"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Irritation",
+      "person_a": "They changed the plan again",
+      "person_b": "That’s really annoying 😠"
+    },
+    {
+      "context": "Boundary setting",
+      "person_a": "Please stop doing that",
+      "person_b": "I’m serious 😠"
+    },
+    {
+      "context": "Frustration",
+      "person_a": "Nothing is working today",
+      "person_b": "I can tell you’re upset 😠"
+    }
+  ],
+  
+  "fun_fact": "Despite being named 'Angry Face', this emoji is most frequently used to show mild, everyday annoyance—like getting stuck in traffic or dealing with a slow Wi-Fi connection—rather than full-blown rage.",
+  
+  "faqs": [
+    {
+      "q": "What does the 😠 Angry Face emoji mean?",
+      "a": "It represents irritation, annoyance, or controlled anger."
+    },
+    {
+      "q": "Is 😠 stronger than 😞?",
+      "a": "Yes, 😠 expresses anger and frustration, while 😞 expresses quiet disappointment."
+    },
+    {
+      "q": "Can 😠 be used seriously?",
+      "a": "Yes, it often signals that someone is genuinely upset about a situation."
+    },
+    {
+      "q": "Is 😠 appropriate at work?",
+      "a": "Generally no, except in very informal internal communication to express frustration with software or an abstract problem."
+    },
+    {
+      "q": "Does 😠 express rage?",
+      "a": "No, it represents controlled anger rather than explosive rage."
+    },
+    {
+      "q": "Is 😠 suitable for social media?",
+      "a": "Yes, it is commonly used to express frustration online over relatable inconveniences."
+    },
+    {
+      "q": "Can 😠 be sarcastic?",
+      "a": "Sometimes, but it is usually interpreted as genuine annoyance."
+    },
+    {
+      "q": "Is 😠 universally understood?",
+      "a": "Yes, it is globally recognized as an unhappy or stern expression."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when expressing irritation, frustration, or controlled anger in a direct but non-aggressive way.",
+  "when_not_to_use": "Avoid using it in lighthearted or sensitive conversations where a stern face may unnecessarily escalate conflict.",
+
+  "unicode_name": "ANGRY FACE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F620",
+  "shortcodes": [":angry:"],
+
+  "related_emojis": [
+    "pouting-face",
+    "face-with-steam-from-nose",
+    "confounded-face"
+  ],
+
+  "detailed_meaning": [
+    "The Angry Face emoji 😠 is characterized by its furrowed eyebrows and a straight, downturned mouth. It communicates a stern warning or a clear boundary being crossed.",
+    "Unlike the bright red 'Pouting Face' (😡), this yellow face implies that the sender is upset but still retaining their composure. It is the digital equivalent of a sharp, disapproving glare."
+  ],
+
+  "real_life_usage": [
+    "It is incredibly common when venting to a friend about a minor inconvenience, such as a delayed package or someone cutting in line.",
+    "Parents and older relatives sometimes use it in text messages to express a stern warning or to indicate that they are not pleased with a situation."
+  ],
+
+  "tone_impact": [
+    "Adding this emoji to a message instantly shifts the tone to serious and stern.",
+    "It removes any playful ambiguity, clearly signaling to the reader that the sender is genuinely annoyed and is not joking around."
+  ],
+
+  "misuse": [
+    "Using it to respond to a lighthearted tease can accidentally make the sender seem overly sensitive or lacking a sense of humor.",
+    "Sending it as a reaction to major, deeply serious news can sometimes feel like an under-reaction."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a healthy, clear way to express everyday frustration to friends.",
+    "In professional settings, it should be avoided. Expressing visual anger toward coworkers or clients via emoji is considered highly unprofessional."
+  ],
+
+  "platform_appearance": [
+    "All platforms display a yellow face with deeply furrowed eyebrows pointing downward.",
+    "Apple's design features a very strict, straight-line mouth, while Google's version has a slight frown, adding to the feeling of grumpy displeasure."
+  ]
+}

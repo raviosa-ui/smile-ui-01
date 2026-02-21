@@ -1,0 +1,114 @@
+{
+  "slug": "thinking-face",
+  "emoji": "🤔",
+  "name": "Thinking Face",
+  "category": "Thinking",
+  
+  "meaning": "The Thinking Face emoji represents deep thought, curiosity, doubt, or questioning a statement.",
+  
+  "usage_examples": [
+    "Are you serious? 🤔",
+    "That sounds interesting 🤔",
+    "Let me think about it 🤔"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Questioning a claim",
+      "person_a": "I ran 10 miles without training",
+      "person_b": "Without training? 🤔"
+    },
+    {
+      "context": "Suspicious situation",
+      "person_a": "Trust me, nothing happened",
+      "person_b": "Hmm… nothing at all? 🤔"
+    },
+    {
+      "context": "Making a decision",
+      "person_a": "Should I accept the offer?",
+      "person_b": "Give it some thought 🤔"
+    }
+  ],
+  
+  "fun_fact": "The 🤔 emoji became widely popular on social media as a reaction to questionable statements. It is heavily associated with the 'thinking' meme, where users humorously analyze flawed internet logic!",
+  
+  "faqs": [
+    {
+      "q": "What does 🤔 mean?",
+      "a": "It usually expresses thinking, doubt, or questioning something."
+    },
+    {
+      "q": "Is 🤔 sarcastic?",
+      "a": "It can be sarcastic depending on context, but often just signals curiosity."
+    },
+    {
+      "q": "Can 🤔 be flirty?",
+      "a": "Sometimes. It can imply intrigue or playful suspicion."
+    },
+    {
+      "q": "What does 🤔 mean from a girl?",
+      "a": "From a girl, 🤔 often signals curiosity, mild skepticism, or that she is thinking carefully about what you said. The exact meaning depends on the conversation tone."
+    },
+    {
+      "q": "What does 🤔 mean from a guy?",
+      "a": "From a guy, 🤔 usually suggests doubt, analysis, or playful questioning. It can also indicate that he is not fully convinced by a statement."
+    },
+    {
+      "q": "Is 🤔 rude?",
+      "a": "It is not inherently rude, but in serious conversations it may come across as sarcastic or dismissive if used carelessly."
+    },
+    {
+      "q": "What is the difference between 🤔 and 🤨?",
+      "a": "🤔 shows thoughtful consideration or curiosity, while 🤨 (Face with Raised Eyebrow) often expresses stronger suspicion or disbelief."
+    },
+    {
+      "q": "Can 🤔 be used in professional messages?",
+      "a": "It can be used cautiously in informal workplace chats, but in formal emails it may imply doubt or challenge and is usually best avoided."
+    }
+  ],
+
+  "when_to_use": "Use when expressing doubt, curiosity, analysis, or considering something.",
+  "when_not_to_use": "Avoid in serious emotional conversations where it may appear dismissive.",
+
+  "unicode_name": "THINKING FACE",
+  "unicode_version": "Unicode 8.0",
+  "codepoint": "U+1F914",
+  "shortcodes": [":thinking:"],
+
+  "related_emojis": [
+    "face-with-raised-eyebrow",
+    "neutral-face",
+    "smirking-face"
+  ],
+
+  "detailed_meaning": [
+    "The Thinking Face emoji 🤔 portrays a face with a furrowed brow resting its chin on a single hand. It perfectly mimics the classic body language of a person deep in contemplation.",
+    "It is a highly dynamic emoji, representing everything from genuine philosophical pondering to sarcastic, side-eye skepticism."
+  ],
+
+  "real_life_usage": [
+    "It is frequently used when making decisions, such as picking a restaurant for dinner or deciding what movie to watch.",
+    "On social media, it is heavily used to humorously call out hypocrisies, plot holes in movies, or questionable life advice given by influencers.",
+    "People also use it to stall for time when they don't know the answer to a question right away."
+  ],
+
+  "tone_impact": [
+    "It introduces a tone of pause, curiosity, and analysis.",
+    "When used earnestly, it shows engagement and active listening. When used sarcastically, it carries a tone of sharp, witty judgment."
+  ],
+
+  "misuse": [
+    "Replying to a direct, emotionally sensitive statement (like 'I am feeling really sad today') with a thinking face looks confusing, robotic, and highly dismissive.",
+    "Using it to respond to absolute, undeniable facts can make the sender appear stubborn or contrarian."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a masterclass in meme-culture communication.",
+    "In professional settings, it is surprisingly versatile! It is one of the few face emojis that can be safely used in internal Slack channels to show you are 'brainstorming' or 'looking into an issue' for a colleague."
+  ],
+
+  "platform_appearance": [
+    "All platforms display a yellow face looking upward or to the side, with a thumb and index finger resting thoughtfully on the chin.",
+    "The furrowed eyebrows vary slightly, but the universal 'hmmm' expression translates perfectly regardless of the device."
+  ]
+}

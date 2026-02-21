@@ -1,0 +1,106 @@
+{
+  "slug": "broken-heart",
+  "emoji": "💔",
+  "name": "Broken Heart",
+  "category": "Hearts",
+  
+  "meaning": "The Broken Heart emoji represents heartbreak, emotional pain, profound loss, sadness in love, or the end of a relationship.",
+  
+  "usage_examples": [
+    "Feeling really sad today 💔",
+    "That breakup hurt more than I expected 💔",
+    "Some wounds take time to heal 💔"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Breakup",
+      "person_a": "I didn’t think it would end like this",
+      "person_b": "I know… it hurts 💔"
+    },
+    {
+      "context": "Emotional pain",
+      "person_a": "I trusted them completely",
+      "person_b": "I’m so sorry you have to go through this 💔"
+    },
+    {
+      "context": "Sarcastic disappointment",
+      "person_a": "The coffee shop is closed today",
+      "person_b": "My day is officially ruined 💔"
+    }
+  ],
+  
+  "fun_fact": "While 💔 is universally known as the ultimate symbol of a romantic breakup, it is heavily used by internet users to exaggerate very minor inconveniences—like dropping a slice of pizza or seeing a favorite character leave a TV show!",
+  
+  "faqs": [
+    {
+      "q": "What does the 💔 Broken Heart emoji mean?",
+      "a": "It represents heartbreak, profound sadness, grief, or emotional pain."
+    },
+    {
+      "q": "Is 💔 always about romantic love?",
+      "a": "Mostly yes, but it can also express deep emotional disappointment in friendships or family matters."
+    },
+    {
+      "q": "Can 💔 be used after a breakup?",
+      "a": "Yes, it is the most common emoji used to signify a relationship ending."
+    },
+    {
+      "q": "Is 💔 stronger than 😢?",
+      "a": "Yes, 💔 conveys a much deeper, more specific emotional pain related to love and loss."
+    },
+    {
+      "q": "Can 💔 be used sarcastically?",
+      "a": "Absolutely! It is frequently used to playfully exaggerate devastation over something trivial."
+    },
+    {
+      "q": "Does 💔 imply permanent loss?",
+      "a": "Not always; it can express temporary heartbreak or feeling deeply let down by an action."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when expressing true heartbreak, emotional loss, severe disappointment, or playfully exaggerating a minor sad event.",
+  "when_not_to_use": "Avoid using it when someone is seeking positive reassurance, or in professional contexts where displaying emotional distress is inappropriate.",
+
+  "unicode_name": "BROKEN HEART",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F494",
+  "shortcodes": [":broken_heart:"],
+
+  "related_emojis": [
+    "red-heart",
+    "mending-heart",
+    "loudly-crying-face"
+  ],
+
+  "detailed_meaning": [
+    "The Broken Heart emoji 💔 is the universal symbol of love gone wrong. Visually cracked down the middle, it represents the severing of a bond, emotional trauma, or profound disappointment.",
+    "It perfectly captures the sensation of feeling emotionally crushed, betraying the trust and affection represented by the solid Red Heart."
+  ],
+
+  "real_life_usage": [
+    "It is primarily used to announce or mourn the end of a romantic relationship, or to express sympathy to a friend going through a tough breakup.",
+    "Fans heavily use it when a beloved celebrity passes away or a band announces they are breaking up.",
+    "In a more lighthearted context, people use it to dramatic effect when they drop their food or their favorite sports team loses a game."
+  ],
+
+  "tone_impact": [
+    "When used sincerely, it carries a tone of devastation, vulnerability, and heavy grief.",
+    "When used playfully, it adds a tone of melodramatic, theatrical humor to a minor complaint."
+  ],
+
+  "misuse": [
+    "Sending this to a partner during a minor, easily fixable argument can unnecessarily escalate the conflict by implying the relationship is over.",
+    "Using it to react to good news is entirely contradictory and confusing."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a crucial tool for both venting genuine emotional pain and engaging in dramatic humor.",
+    "In professional settings, it is completely inappropriate. Expressing heartbreak or severe emotional distress to coworkers or clients crosses the boundaries of workplace decorum."
+  ],
+
+  "platform_appearance": [
+    "Universally displays as a bright red heart split in two by a jagged, lightning-bolt style crack down the center.",
+    "The pieces are usually slightly separated, emphasizing the fact that the bond has been broken."
+  ]
+}

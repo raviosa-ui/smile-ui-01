@@ -1,0 +1,114 @@
+{
+  "slug": "neutral-face",
+  "emoji": "😐",
+  "name": "Neutral Face",
+  "category": "Thinking",
+  
+  "meaning": "The Neutral Face emoji represents indifference, awkwardness, mild annoyance, or emotional neutrality depending on context.",
+  
+  "usage_examples": [
+    "Okay… 😐",
+    "That was unexpected 😐",
+    "I don’t know how to respond to that 😐"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Awkward moment",
+      "person_a": "I told everyone your secret",
+      "person_b": "You did what? 😐"
+    },
+    {
+      "context": "Mild annoyance",
+      "person_a": "We have to redo everything",
+      "person_b": "Of course we do 😐"
+    },
+    {
+      "context": "Emotionless response",
+      "person_a": "Did you like the movie?",
+      "person_b": "It was fine 😐"
+    }
+  ],
+  
+  "fun_fact": "😐 is often used to express awkward silence or emotional flatness when words feel unnecessary. It is the ultimate digital 'deadpan' reaction!",
+  
+  "faqs": [
+    {
+      "q": "What does 😐 mean?",
+      "a": "It usually expresses neutrality, awkwardness, or a lack of strong emotion."
+    },
+    {
+      "q": "Is 😐 rude?",
+      "a": "It can feel dismissive or passive-aggressive depending on the context of the conversation."
+    },
+    {
+      "q": "What does 😐 mean from a girl?",
+      "a": "From a girl, 😐 often signals awkwardness, mild annoyance, or emotional uncertainty."
+    },
+    {
+      "q": "What does 😐 mean from a guy?",
+      "a": "From a guy, 😐 typically indicates indifference, awkward silence, or that he is not impressed."
+    },
+    {
+      "q": "Is 😐 passive-aggressive?",
+      "a": "It can come across as passive-aggressive if used after criticism or conflict."
+    },
+    {
+      "q": "What is the difference between 😐 and 😑?",
+      "a": "😐 shows emotional neutrality, while 😑 (Expressionless Face) often conveys stronger boredom or frustration."
+    },
+    {
+      "q": "Can 😐 mean someone is upset?",
+      "a": "Yes, it can subtly indicate hidden frustration or disappointment."
+    },
+    {
+      "q": "Is 😐 appropriate in professional messages?",
+      "a": "It is generally best avoided in formal communication because it may appear unenthusiastic or dismissive."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when expressing indifference, awkwardness, or mild dissatisfaction without strong emotion.",
+  "when_not_to_use": "Avoid using it in emotionally sensitive conversations where it may seem dismissive or cold.",
+
+  "unicode_name": "NEUTRAL FACE",
+  "unicode_version": "Unicode 6.1",
+  "codepoint": "U+1F610",
+  "shortcodes": [":neutral_face:"],
+
+  "related_emojis": [
+    "slightly-smiling-face",
+    "face-with-raised-eyebrow",
+    "thinking-face"
+  ],
+
+  "detailed_meaning": [
+    "The Neutral Face emoji 😐 is characterized by its perfectly straight, horizontal line for a mouth and open eyes. It represents a total absence of emotion.",
+    "This 'blank stare' is frequently used to convey deadpan humor, absolute apathy, or the awkward silence that follows a terrible joke."
+  ],
+
+  "real_life_usage": [
+    "It is highly popular for reacting to mildly disappointing news, like finding out your favorite snack is sold out.",
+    "Friends use it to express absolute speechlessness after someone shares an uncomfortably weird or awkward story.",
+    "It is also used to deliver a flat 'it is what it is' sentiment when facing a minor daily inconvenience."
+  ],
+
+  "tone_impact": [
+    "This emoji acts as an emotional void. It strips a message of any excitement, anger, or joy, leaving a completely dry, deadpan tone.",
+    "It forces the recipient to read between the lines, often signifying that the sender is thoroughly unimpressed."
+  ],
+
+  "misuse": [
+    "Replying to someone's exciting good news (like 'I just got engaged!') with this emoji will make you look incredibly bitter or unsupportive.",
+    "Using it to respond to a serious apology can be viewed as highly passive-aggressive."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a staple of modern, dry internet humor.",
+    "In professional settings, it is a very dangerous emoji to use. Sending a blank, emotionless face to a colleague or client comes across as intensely cold, unenthusiastic, and slightly hostile."
+  ],
+
+  "platform_appearance": [
+    "Universally, it displays a yellow circle with two simple dots for eyes and a straight, flat line for a mouth.",
+    "The minimalist design is intentional, ensuring the absolute lack of emotion is flawlessly translated across Apple, Google, and Microsoft devices."
+  ]
+}

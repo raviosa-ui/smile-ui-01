@@ -1,0 +1,104 @@
+{
+  "slug": "party-popper",
+  "emoji": "🎉",
+  "name": "Party Popper",
+  "category": "Celebration",
+  
+  "meaning": "The Party Popper emoji represents celebration, congratulations, excitement, and special occasions. It is the universal digital symbol for 'Yay!'",
+  
+  "usage_examples": [
+    "We finished the project today 🎉",
+    "Happy New Year 🎉",
+    "Guess who got promoted? 🎉"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Project completion",
+      "person_a": "We officially launched the site 🎉",
+      "person_b": "Great job, well done everyone!"
+    },
+    {
+      "context": "New announcement",
+      "person_a": "Guess who got promoted? 🎉",
+      "person_b": "That’s awesome news! Congratulations!"
+    },
+    {
+      "context": "Surprise",
+      "person_a": "Are you ready for the big reveal?",
+      "person_b": "Yes, show me!",
+      "person_a_2": "Here is the new design 🎉",
+      "person_b_2": "It looks incredible!"
+    }
+  ],
+  
+  "fun_fact": "The 🎉 Party Popper is one of the most widely used emojis on the internet! On many platforms like iOS and Twitter, sending this emoji actually triggers a full-screen animation of confetti raining down.",
+  
+  "faqs": [
+    {
+      "q": "What does the 🎉 Party Popper emoji mean?",
+      "a": "It stands for celebration, congratulations, excitement, and happy events."
+    },
+    {
+      "q": "Is 🎉 appropriate for work chats?",
+      "a": "Yes, it is the most widely accepted celebration emoji in the workplace for marking wins or milestones."
+    },
+    {
+      "q": "How is 🎉 different from 🎊?",
+      "a": "🎉 is a handheld popper shooting confetti, while 🎊 is a hanging ball splitting open. Both mean celebration!"
+    },
+    {
+      "q": "Can 🎉 be used for birthdays?",
+      "a": "Absolutely, it is a staple for birthday messages and wishes."
+    },
+    {
+      "q": "Can 🎉 be used sarcastically?",
+      "a": "Sometimes, to playfully celebrate doing the bare minimum (e.g., 'I finally did my laundry 🎉'), but it is mainly intended for genuine celebration."
+    }
+  ],
+
+  "when_to_use": "Use it to celebrate achievements, good news, birthdays, holidays, or any festive moment.",
+  "when_not_to_use": "Avoid using it during serious discussions, bad news, or formal complaints.",
+
+  "unicode_name": "PARTY POPPER",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F389",
+  "shortcodes": [":tada:"],
+
+  "related_emojis": [
+    "confetti-ball",
+    "partying-face",
+    "balloon"
+  ],
+
+  "detailed_meaning": [
+    "The Party Popper emoji 🎉 captures the exact second a celebration begins. Bursting with confetti and streamers, it is the ultimate visual shorthand for 'Congratulations!' or 'We did it!'",
+    "Because of its dynamic, exploding design, it carries a high level of energy and instant gratification."
+  ],
+
+  "real_life_usage": [
+    "This emoji is used daily across the globe to congratulate friends on engagements, new babies, graduations, and new jobs.",
+    "It is heavily utilized in marketing emails to announce a big sale, a new product launch, or a milestone number of customers.",
+    "People use it at exactly midnight on New Year's Eve to celebrate the changing of the year."
+  ],
+
+  "tone_impact": [
+    "It adds an explosive, highly enthusiastic, and supportive tone to any message.",
+    "It acts as a digital cheer, making the recipient feel celebrated and recognized for their good news."
+  ],
+
+  "misuse": [
+    "Using a party popper in response to a serious personal issue or a stressful situation is highly inappropriate and will be viewed as mocking.",
+    "Putting too many in a single professional email can look a bit spammy."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is perfect for celebrating your friends' life updates.",
+    "In professional settings, it is arguably the most acceptable celebration emoji. Managers use it frequently to announce hitting a quarterly goal, and coworkers use it to congratulate each other on promotions."
+  ],
+
+  "platform_appearance": [
+    "Universally, it displays a party popper—usually blue or red—pointing upward at an angle, shooting out a colorful burst of confetti and streamers.",
+    "The burst is highly energetic across all platforms, perfectly translating the excitement of a real-life party."
+  ]
+}

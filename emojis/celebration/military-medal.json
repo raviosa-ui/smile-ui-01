@@ -1,0 +1,115 @@
+{
+  "slug": "military-medal",
+  "emoji": "🎖️",
+  "name": "Military Medal",
+  "category": "Celebration",
+
+  "meaning": "The Military Medal emoji represents honor, recognition, achievement, and formal awards. It is commonly used to celebrate accomplishments, excellence, and moments of earned recognition.",
+
+  "usage_examples": [
+    "Well deserved recognition 🎖️",
+    "Proud moment 🎖️",
+    "Achievement unlocked 🎖️"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Achievement",
+      "person_a": "They recognized my contribution today",
+      "person_b": "That’s amazing 🎖️"
+    },
+    {
+      "context": "Award",
+      "person_a": "I received an award at work",
+      "person_b": "Congratulations 🎖️"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "Guess what happened?",
+      "person_b": "What’s the news?",
+      "person_a_2": "I got officially honored",
+      "person_b_2": "So proud of you 🎖️"
+    }
+  ],
+
+  "fun_fact": "The 🎖️ Military Medal emoji is visually distinct from the sports medals (🥇, 🥈, 🥉). It features a colorful ribbon bar pinned to a uniform, making it the go-to emoji for honoring veterans, heroism, and acts of bravery.",
+
+  "faqs": [
+    {
+      "q": "What does the 🎖️ Military Medal emoji mean?",
+      "a": "It represents honor, awards, bravery, and formal recognition."
+    },
+    {
+      "q": "Is 🎖️ only for military use?",
+      "a": "No, while it represents military honors, it is commonly used for general achievements and heroic acts."
+    },
+    {
+      "q": "Can 🎖️ be used professionally?",
+      "a": "Yes, especially in formal recognition contexts or when discussing company awards."
+    },
+    {
+      "q": "Is 🎖️ a positive emoji?",
+      "a": "Yes, it deeply conveys respect, honor, and accomplishment."
+    },
+    {
+      "q": "Does 🎖️ imply winning a race?",
+      "a": "No, it implies formal recognition or valor rather than a sports competition."
+    },
+    {
+      "q": "Is 🎖️ different from 🥇?",
+      "a": "Yes, 🎖️ focuses on honor and service, while 🥇 focuses on coming in first place."
+    },
+    {
+      "q": "Is 🎖️ widely understood?",
+      "a": "Yes, its meaning of official recognition is broadly recognized."
+    },
+    {
+      "q": "When should 🎖️ be avoided?",
+      "a": "Avoid it in overly casual or inappropriate contexts where mocking an award could be seen as disrespectful."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when celebrating formal recognition, awards, honors, acts of bravery, or significant professional achievements.",
+  "when_not_to_use": "Avoid using it in sarcastic jokes or emotionally sensitive discussions where honoring someone is out of place.",
+
+  "unicode_name": "MILITARY MEDAL",
+  "unicode_version": "Unicode 7.0",
+  "codepoint": "U+1F396",
+  "shortcodes": [":medal_military:"],
+
+  "related_emojis": [
+    "trophy",
+    "first-place-medal",
+    "party-popper"
+  ],
+
+  "detailed_meaning": [
+    "The Military Medal emoji 🎖️ represents a decoration of honor. Unlike sports medals given for winning a game, this medal signifies valor, long-term service, or a highly distinguished achievement.",
+    "It is a symbol of profound respect, often used to digitally commend someone for going above and beyond the call of duty."
+  ],
+
+  "real_life_usage": [
+    "It is heavily used on holidays like Veterans Day, Memorial Day, and Remembrance Day to honor those who have served in the armed forces.",
+    "Outside of the military, it is frequently used to congratulate someone on receiving a prestigious academic grant, a lifelong achievement award, or a knighthood."
+  ],
+
+  "tone_impact": [
+    "This emoji carries a highly dignified, respectful, and proud tone.",
+    "It treats the recipient's achievement with utmost seriousness, elevating a simple 'good job' into an official commendation."
+  ],
+
+  "misuse": [
+    "Using it to celebrate incredibly minor or silly things (like finally doing the dishes) is often done ironically, but can be viewed as disrespectful to the actual symbol of military honor in certain circles.",
+    "It should not be used to represent finishing a marathon or winning a tennis match; the standard medals (🥇, 🥈, 🥉) are much better suited for that."
+  ],
+
+  "professional_vs_casual": [
+    "In personal messages, it is a great way to tell a friend they deserve a medal for putting up with a difficult situation.",
+    "In professional settings, it is fantastic for company-wide newsletters acknowledging a retiring employee's decades of service or a major industry award."
+  ],
+
+  "platform_appearance": [
+    "The emoji features a colorful striped ribbon bar from which a gold medallion or star hangs.",
+    "Apple and Google use a star-shaped medallion, while Microsoft uses a traditional circular coin. The ribbon colors vary, but often include red, white, and blue."
+  ]
+}

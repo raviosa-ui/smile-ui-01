@@ -1,0 +1,116 @@
+{
+  "slug": "wrapped-gift",
+  "emoji": "🎁",
+  "name": "Wrapped Gift",
+  "category": "Celebration",
+
+  "meaning": "The wrapped gift emoji represents surprises, celebrations, special occasions, generosity, and the joy of giving or receiving presents.",
+
+  "usage_examples": [
+    "I have a surprise for you 🎁",
+    "Happy Birthday 🎁",
+    "Something special is coming 🎁"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Surprise",
+      "person_a": "I got you something",
+      "person_b": "Really? What is it? 🎁"
+    },
+    {
+      "context": "Birthday",
+      "person_a": "Happy Birthday!",
+      "person_b": "Thank you! Did you bring a present? 🎁"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "Guess what arrived today?",
+      "person_b": "What is it?",
+      "person_a_2": "Your gift!",
+      "person_b_2": "I’m so excited 🎁"
+    }
+  ],
+
+  "fun_fact": "The 🎁 Wrapped Gift emoji is a massive staple during the month of December! In fact, its usage skyrockets globally every year on Christmas morning as people share what they found under the tree.",
+
+  "faqs": [
+    {
+      "q": "What does the 🎁 emoji mean?",
+      "a": "It represents gifts, surprises, holidays, and celebratory occasions."
+    },
+    {
+      "q": "Is 🎁 only for birthdays?",
+      "a": "No, it is widely used for Christmas, anniversaries, weddings, and unexpected surprises."
+    },
+    {
+      "q": "Can 🎁 be used professionally?",
+      "a": "Yes, in informal or congratulatory workplace messages, or when discussing employee bonuses."
+    },
+    {
+      "q": "Is 🎁 a positive emoji?",
+      "a": "Yes, it conveys excitement, generosity, and anticipation."
+    },
+    {
+      "q": "When should 🎁 be avoided?",
+      "a": "Avoid using it in serious or sensitive conversations, or in cold-emails where it might look like a phishing scam."
+    },
+    {
+      "q": "Does 🎁 imply an actual physical gift?",
+      "a": "Not always; it can also symbolize a metaphorical gift, like 'the gift of your friendship.'"
+    },
+    {
+      "q": "Is 🎁 popular on social media?",
+      "a": "Yes, especially around holidays, birthdays, and giveaway announcements."
+    },
+    {
+      "q": "Why is 🎁 associated with celebrations?",
+      "a": "Because exchanging gifts is a universal human tradition to mark special milestones."
+    }
+  ],
+
+  "when_to_use": "Use this emoji for birthdays, anniversaries, holidays, surprises, giveaways, or when talking about giving and receiving.",
+  "when_not_to_use": "Avoid using it in formal, serious discussions, or in spammy marketing emails where it may trigger a user's suspicion.",
+
+  "unicode_name": "WRAPPED GIFT",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F381",
+  "shortcodes": [":gift:"],
+
+  "related_emojis": [
+    "party-popper",
+    "balloon",
+    "birthday-cake"
+  ],
+
+  "detailed_meaning": [
+    "The Wrapped Gift emoji 🎁 universally symbolizes the act of giving. It represents the excitement of the unknown, the thoughtfulness of the sender, and the joy of a celebration.",
+    "It is a cornerstone emoji for holidays and milestones, visually capturing the tradition of wrapping something special for someone you care about."
+  ],
+
+  "real_life_usage": [
+    "It is heavily used during the winter holidays to represent Christmas shopping, Secret Santa events, and holiday cheer.",
+    "On social media, influencers and brands rely on this emoji to draw attention to contests and 'Giveaways'.",
+    "Friends use it to tease each other when they have bought a surprise but haven't delivered it yet."
+  ],
+
+  "tone_impact": [
+    "This emoji carries a tone of generosity, excitement, and delightful suspense.",
+    "It immediately sparks curiosity and joy, letting the recipient know that a treat or pleasant surprise is coming their way."
+  ],
+
+  "misuse": [
+    "Because 'free gift' scams are prevalent online, using this emoji excessively in cold outreach emails or DMs can cause the message to look like spam or a phishing attempt.",
+    "It should obviously be avoided when discussing serious or tragic news."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a fun, warm way to hype up a birthday or holiday.",
+    "In professional settings, it is perfectly fine when HR is announcing holiday bonuses, or when organizing a team gift for a colleague who is retiring or going on maternity leave."
+  ],
+
+  "platform_appearance": [
+    "It generally features a square box wrapped in bright paper and tied with a neat ribbon and bow.",
+    "Apple and Google use a classic yellow/gold box wrapped with a red ribbon, while some other platforms use a red box with a yellow ribbon. Both convey the exact same festive message."
+  ]
+}

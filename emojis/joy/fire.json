@@ -1,0 +1,97 @@
+{
+  "slug": "fire",
+  "emoji": "🔥",
+  "name": "Fire",
+  "category": "Joy",
+
+  "meaning": "The Fire emoji represents that something is 'lit,' excellent, attractive, or performing exceptionally well. It is a symbol of peak performance and trendiness.",
+
+  "usage_examples": [
+    "That new track is straight fire 🔥",
+    "You look incredible in that photo 🔥",
+    "Our team is on a winning streak 🔥"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Complimenting a look",
+      "person_a": "Just posted my outfit for the party.",
+      "person_b": "Honestly, you look 🔥"
+    },
+    {
+      "context": "Excitement over news",
+      "person_a": "We just got a 50% bonus!",
+      "person_b": "Let's go! That's 🔥"
+    },
+    {
+      "context": "Peak performance",
+      "person_a": "Did you see that goal?",
+      "person_b": "He is on fire today 🔥"
+    }
+  ],
+
+  "fun_fact": "On Snapchat, the 🔥 emoji appears next to a friend's name when you have a 'Snapstreak'—meaning you have messaged each other every single day for at least three days!",
+
+  "faqs": [
+    {
+      "q": "What does the 🔥 Fire emoji mean?",
+      "a": "It means something is excellent, 'cool,' or that someone looks very attractive."
+    },
+    {
+      "q": "Is 🔥 a romantic emoji?",
+      "a": "It can be flirty, as it often refers to someone being 'hot' or attractive, but it is also used for general success."
+    },
+    {
+      "q": "What does it mean when someone says 'That's fire'?",
+      "a": "It means they think the thing is high-quality, trendy, or impressive."
+    },
+    {
+      "q": "Can I use 🔥 for actual heat?",
+      "a": "Yes, it can be used for a literal fire or hot weather, but its 'slang' meaning is more common today."
+    }
+  ],
+
+  "when_to_use": "Use this to hype up a friend, react to a great piece of music or art, or celebrate a winning streak.",
+  "when_not_to_use": "Avoid using it in any situation involving actual danger, accidents, or house fires, as it can be easily misunderstood as being insensitive.",
+
+  "unicode_name": "FIRE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F525",
+  "shortcodes": [":fire:"],
+
+  "related_emojis": [
+    "smiling-face-with-sunglasses",
+    "heart-on-fire",
+    "party-popper"
+  ],
+
+  "detailed_meaning": [
+    "The Fire emoji 🔥 depicts a stylized flame, usually yellow at the core and red/orange at the tips. It symbolizes energy, intensity, and passion.",
+    "In the digital age, it has transitioned from a literal symbol of combustion to a powerful metaphor for greatness and trendiness."
+  ],
+
+  "real_life_usage": [
+    "Used constantly in the comment sections of celebrities and influencers to show admiration.",
+    "A staple in sports culture to describe an athlete who cannot stop scoring or winning.",
+    "Used by gamers to describe a match where they are playing perfectly."
+  ],
+
+  "tone_impact": [
+    "This emoji adds a high-energy, confident, and 'hype' tone to a conversation.",
+    "It acts as a strong validator, telling the recipient that their work or appearance is at a top-tier level."
+  ],
+
+  "misuse": [
+    "Using it to respond to a serious argument ('This debate is 🔥') can make you look like you are enjoying the conflict rather than trying to solve it.",
+    "Never use it when discussing actual fires or emergencies."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is the ultimate way to 'hype' up your friends.",
+    "In professional settings, it is great for high-energy teams (like sales or marketing) celebrating a major win, but is too informal for client communication."
+  ],
+
+  "platform_appearance": [
+    "Apple and Google use a realistic, billowing flame design. Microsoft’s version is a bit more 'iconic' and flat, but the fiery energy is consistent across all."
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "slug": "saluting-face",
+  "emoji": "🫡",
+  "name": "Saluting Face",
+  "category": "Joy",
+
+  "meaning": "The Saluting Face emoji represents respect, obedience, and acknowledging an order. It is a digital way of saying 'Yes, boss,' 'Understood,' or 'I am on the job.'",
+
+  "usage_examples": [
+    "I will get those files to you by 5 PM 🫡",
+    "Understood, captain! 🫡",
+    "Mad respect for that play 🫡"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Acknowledging a task",
+      "person_a": "Don't forget to pick up the milk.",
+      "person_b": "Consider it done 🫡"
+    },
+    {
+      "context": "Showing respect",
+      "person_a": "I just finished my first marathon!",
+      "person_b": "That is incredible work 🫡"
+    },
+    {
+      "context": "Playful loyalty",
+      "person_a": "You need to stop talking and go to sleep.",
+      "person_b": "Yes, ma'am 🫡"
+    }
+  ],
+
+  "fun_fact": "The 🫡 emoji became a 'viral' way to show loyalty to online communities. It is often used to 'salute' a fellow internet user who makes a very good point or wins a difficult argument.",
+
+  "faqs": [
+    { "q": "What does 🫡 mean?", "a": "It means respect, acknowledgment, or a sign of being ready to follow an instruction." },
+    { "q": "Is 🫡 a military-only emoji?", "a": "No, it is used by everyone to show respect or agreement in daily chats." },
+    { "q": "Can 🫡 be sarcastic?", "a": "Yes, it is often used sarcastically to mock someone who is being too bossy." }
+  ],
+
+  "when_to_use": "Use this to show respect, acknowledge a task, or playfully show 'loyalty' to a friend.",
+  "when_not_to_use": "Avoid in serious or tragic situations where a casual salute could be seen as mocking.",
+
+  "unicode_name": "SALUTING FACE",
+  "unicode_version": "Unicode 14.0",
+  "codepoint": "U+1FAE1",
+  "shortcodes": [":saluting_face:"],
+
+  "related_emojis": [
+    "smiling-face-with-sunglasses",
+    "slightly-smiling-face",
+    "grinning-face"
+  ],
+
+  "detailed_meaning": [
+    "The Saluting Face emoji 🫡 depicts a face with a flat expression and a hand held to the forehead. It represents the joyful pride of duty and respect.",
+    "It bridges the gap between a formal military sign of respect and a casual digital 'thumbs up,' making it much more versatile for workplace communication."
+  ],
+
+  "real_life_usage": [
+    "Extremely popular in workplace apps like Slack or Teams to quickly acknowledge a request.",
+    "Commonly used by sports fans to 'salute' an athlete after a legendary performance.",
+    "Used in gaming to show respect to a teammate who played well."
+  ],
+
+  "tone_impact": [
+    "This emoji adds a tone of discipline, readiness, and cooperative energy.",
+    "It makes a response feel proactive and definite, proving that the sender is focused."
+  ],
+
+  "misuse": [
+    "Using it to respond to a serious, sad announcement can seem robotic or insensitive.",
+    "Overusing it can make you seem like a 'yes-man' who doesn't have their own opinion."
+  ],
+
+  "professional_vs_casual": [
+    "In professional settings, it is a brilliant 'shortcut' for showing you are on task.",
+    "In casual settings, it is a fun way to treat your friends with ironic obedience."
+  ],
+
+  "platform_appearance": [
+    "The design is highly consistent across Apple, Google, and Samsung, always featuring the right hand raised to the brow.",
+    "The neutral eyes are what allow it to work in both serious and funny contexts."
+  ]
+}

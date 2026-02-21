@@ -1,0 +1,114 @@
+{
+  "slug": "smirking-face",
+  "emoji": "😏",
+  "name": "Smirking Face",
+  "category": "Thinking",
+  
+  "meaning": "The Smirking Face emoji represents confidence, smugness, flirtation, or suggestive intent depending on context.",
+  
+  "usage_examples": [
+    "Oh really? 😏",
+    "I knew you would say that 😏",
+    "We’ll see about that 😏"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Playful flirting",
+      "person_a": "I bet you miss me",
+      "person_b": "Maybe a little 😏"
+    },
+    {
+      "context": "Confident teasing",
+      "person_a": "You think you can win?",
+      "person_b": "Watch me 😏"
+    },
+    {
+      "context": "Suggestive tone",
+      "person_a": "What are you doing later?",
+      "person_b": "Something interesting 😏"
+    }
+  ],
+  
+  "fun_fact": "😏 is one of the most misunderstood emojis because it can shift from playful confidence to heavy, suggestive flirting depending entirely on tone and context!",
+  
+  "faqs": [
+    {
+      "q": "What does 😏 mean?",
+      "a": "It usually expresses confidence, smugness, or subtle flirtation."
+    },
+    {
+      "q": "Is 😏 flirty?",
+      "a": "Yes, it is commonly used in flirty or suggestive conversations."
+    },
+    {
+      "q": "What does 😏 mean from a guy?",
+      "a": "From a guy, 😏 often implies flirting, confidence, or playful teasing."
+    },
+    {
+      "q": "What does 😏 mean from a girl?",
+      "a": "From a girl, 😏 can suggest teasing, flirtation, or playful confidence."
+    },
+    {
+      "q": "Is 😏 inappropriate?",
+      "a": "It can feel inappropriate in professional or serious conversations because it often carries a suggestive tone."
+    },
+    {
+      "q": "Is 😏 sarcastic?",
+      "a": "Sometimes. It can signal smug sarcasm or playful superiority."
+    },
+    {
+      "q": "What is the difference between 😏 and 😉?",
+      "a": "😏 suggests confidence or subtle smugness, while 😉 usually indicates a friendly wink or obvious joke."
+    },
+    {
+      "q": "Can 😏 be used professionally?",
+      "a": "It is generally not recommended in formal settings because it may appear flirtatious or arrogant."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when expressing playful confidence, teasing, or flirtation.",
+  "when_not_to_use": "Avoid using it in formal, professional, or emotionally sensitive conversations where it may be misinterpreted.",
+
+  "unicode_name": "SMIRKING FACE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F60F",
+  "shortcodes": [":smirk:"],
+
+  "related_emojis": [
+    "face-with-raised-eyebrow",
+    "thinking-face",
+    "smiling-face-with-sunglasses"
+  ],
+
+  "detailed_meaning": [
+    "The Smirking Face emoji 😏 features a half-smile turned up at the corner, with eyes looking to the side. It conveys a sense of knowing something that others don't.",
+    "It dances on the line between sheer self-confidence and mischievous flirtation, making it an incredibly versatile, if somewhat ambiguous, expression."
+  ],
+
+  "real_life_usage": [
+    "It is extensively used in dating apps and late-night texts to add a suggestive, flirty tone to an otherwise innocent message.",
+    "Friends use it to drop a sarcastic 'I told you so' after winning a bet or proving someone wrong.",
+    "It is also used to playfully brag about a personal achievement, like acing a test without studying."
+  ],
+
+  "tone_impact": [
+    "This emoji injects a high level of cheekiness, confidence, and edge into a conversation.",
+    "It removes the innocence from a statement, making the recipient read the text with a slightly suspicious or flirty inner voice."
+  ],
+
+  "misuse": [
+    "Using it after making a serious mistake or apologizing will make you look incredibly arrogant and insincere.",
+    "Sending this to an angry partner will likely infuriate them, as the smirk implies you do not take their frustration seriously."
+  ],
+
+  "professional_vs_casual": [
+    "In personal and dating contexts, it is a staple for witty banter and building chemistry.",
+    "In professional contexts, it is an absolute red flag. The heavy association with flirting and smugness means it has no place in workplace communication, even as a joke."
+  ],
+
+  "platform_appearance": [
+    "The core design is a yellow face with a sly, asymmetrical smile and eyes glancing to the left.",
+    "Apple's version looks distinctly sassy and flirty, while Google's version has slightly softer features, making it look a bit more gently amused than arrogant."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "slug": "love-letter",
+  "emoji": "💌",
+  "name": "Love Letter",
+  "category": "Love",
+  
+  "meaning": "The Love Letter emoji represents romantic messages, heartfelt confessions, and expressions of deep affection shared through written words.",
+  
+  "usage_examples": [
+    "I wrote you something special 💌",
+    "Check your inbox tonight 💌",
+    "Sending all my love 💌"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Romantic message",
+      "person_a": "I couldn’t say this out loud, so I wrote it",
+      "person_b": "Now I’m smiling 💌"
+    },
+    {
+      "context": "Long-distance love",
+      "person_a": "I miss you so much",
+      "person_b": "Read what I sent you 💌"
+    },
+    {
+      "context": "Anniversary note",
+      "person_a": "Did you see the letter?",
+      "person_b": "Yes, it was beautiful 💌"
+    }
+  ],
+  
+  "fun_fact": "Before digital messaging, handwritten love letters were one of the most meaningful ways to express romance. This emoji serves as a nostalgic, digital nod to the timeless tradition of sealing a heartfelt letter with a kiss!",
+  
+  "faqs": [
+    {
+      "q": "What does the 💌 Love Letter emoji mean?",
+      "a": "It represents romantic messages, love notes, and heartfelt written expressions of affection."
+    },
+    {
+      "q": "Is the 💌 emoji romantic?",
+      "a": "Yes, it strongly conveys romance, intimacy, and emotional connection."
+    },
+    {
+      "q": "Can 💌 be used for friendship?",
+      "a": "It is mainly romantic, but can occasionally be used to show deep appreciation for a best friend."
+    },
+    {
+      "q": "Is 💌 suitable for professional messages?",
+      "a": "No, it is best avoided in professional or formal contexts."
+    },
+    {
+      "q": "When is 💌 commonly used?",
+      "a": "It is often used for love confessions, anniversaries, long-distance relationships, and romantic notes."
+    },
+    {
+      "q": "Does 💌 imply secrecy?",
+      "a": "Sometimes, as it can suggest a private, personal message meant only for the recipient."
+    },
+    {
+      "q": "Is 💌 different from ❤️?",
+      "a": "Yes, 💌 focuses specifically on the act of sharing love through words or gifts, while ❤️ represents love more generally."
+    },
+    {
+      "q": "Is 💌 used globally?",
+      "a": "Yes, it is widely understood across cultures as a symbol of romantic messaging."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when sending romantic messages, love notes, confessions, or heartfelt written expressions of affection.",
+  "when_not_to_use": "Avoid using it in professional communication or casual conversations where romantic intent would be inappropriate.",
+
+  "unicode_name": "LOVE LETTER",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F48C",
+  "shortcodes": [":love_letter:"],
+
+  "related_emojis": [
+    "red-heart",
+    "heart-with-arrow",
+    "heart-with-ribbon"
+  ],
+
+  "detailed_meaning": [
+    "The Love Letter emoji 💌 represents a message infused with deep affection, romance, or heartfelt sincerity. It visually bridges the gap between traditional handwritten love notes and modern digital communication.",
+    "Unlike a simple heart, this emoji implies an action—someone has taken the time to compose their thoughts and send a meaningful message specifically to you."
+  ],
+
+  "real_life_usage": [
+    "It is widely used when sending long, thoughtful texts to a partner, or when expressing feelings in a long-distance relationship.",
+    "People frequently use it on Valentine's Day or anniversaries to accompany a digital gift card or a sweet paragraph of appreciation.",
+    "It is also popular in social media captions when thanking followers for an outpouring of support, treating the caption itself as a 'letter' to the fans."
+  ],
+
+  "tone_impact": [
+    "Adding this emoji gives a message a sense of thoughtful intention and nostalgic romance.",
+    "It makes the text feel significantly more special and intimate, indicating that the words should be read with care."
+  ],
+
+  "misuse": [
+    "Using it to deliver purely logistical news or mundane updates can confuse the recipient, as the symbol sets an expectation for emotional depth.",
+    "Sending it to a casual acquaintance might be interpreted as an unwanted romantic advance."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a wonderfully sincere way to package a compliment or romantic thought.",
+    "In professional settings, it should be strictly avoided. Using an icon of a sealed love letter in corporate communication crosses clear professional boundaries."
+  ],
+
+  "platform_appearance": [
+    "This emoji universally displays as the back of a standard white envelope, sealed with a prominent red or pink heart.",
+    "The design is incredibly consistent across Apple, Google, and Samsung, ensuring the romantic sentiment is never lost in translation."
+  ]
+}

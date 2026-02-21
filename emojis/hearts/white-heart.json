@@ -1,0 +1,102 @@
+{
+  "slug": "white-heart",
+  "emoji": "🤍",
+  "name": "White Heart",
+  "category": "Hearts",
+  
+  "meaning": "The White Heart emoji represents pure love, sincerity, peace, emotional clarity, and gentle affection without intense passion or heartbreak.",
+  
+  "usage_examples": [
+    "Sending you pure love 🤍",
+    "Grateful for you 🤍",
+    "Love and peace always 🤍"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Pure affection",
+      "person_a": "I really appreciate your kindness",
+      "person_b": "That means a lot 🤍"
+    },
+    {
+      "context": "Emotional support",
+      "person_a": "Thank you for being so understanding",
+      "person_b": "Always here 🤍"
+    },
+    {
+      "context": "Calm love",
+      "person_a": "This feels peaceful and right",
+      "person_b": "It really does 🤍"
+    }
+  ],
+  
+  "fun_fact": "The 🤍 White Heart is frequently used as a symbol of sympathy and remembrance. It is the most common heart emoji used to honor someone who has passed away, representing peace and a pure soul.",
+  
+  "faqs": [
+    {
+      "q": "What does the 🤍 White Heart emoji mean?",
+      "a": "It represents pure, gentle, and sincere love."
+    },
+    {
+      "q": "Is 🤍 romantic?",
+      "a": "It can be, but it often represents a very calm, soulful, or platonic love."
+    },
+    {
+      "q": "Can 🤍 be used for sympathy?",
+      "a": "Yes, it is widely considered the best heart emoji for expressing condolences and peace."
+    },
+    {
+      "q": "Is 🤍 a modern emoji?",
+      "a": "Yes, it was added to Unicode in 2019."
+    },
+    {
+      "q": "What is the difference between ❤️ and 🤍?",
+      "a": "❤️ represents passionate, fiery romance, while 🤍 represents peaceful, pure, and quiet affection."
+    }
+  ],
+
+  "when_to_use": "Use this emoji to express pure, calm, or platonic love, emotional peace, sympathy, or sincere appreciation.",
+  "when_not_to_use": "Avoid using it when strong passion, excitement, or high-energy celebration needs to be emphasized.",
+
+  "unicode_name": "WHITE HEART",
+  "unicode_version": "Unicode 12.0",
+  "codepoint": "U+1F90D",
+  "shortcodes": [":white_heart:"],
+
+  "related_emojis": [
+    "red-heart",
+    "blue-heart",
+    "black-heart"
+  ],
+
+  "detailed_meaning": [
+    "The White Heart emoji 🤍 symbolizes a love that is pure, honest, and completely transparent. It represents a state of emotional peace and a bond that is free from ulterior motives.",
+    "Because white is the color of clarity and beginnings, this heart often signifies a 'clean slate' or a love that is steady and spiritual."
+  ],
+
+  "real_life_usage": [
+    "It is a favorite for wedding-related social media posts, matching the white-dress theme and the idea of eternal purity.",
+    "People use it when they want to show support for a friend who is going through a loss or a difficult mental health struggle.",
+    "It is also the go-to heart for minimalists who want their text messages to look clean, elegant, and modern."
+  ],
+
+  "tone_impact": [
+    "This emoji sets a very calm, respectful, and sincere tone.",
+    "It makes a message feel 'lighter' and more peaceful, removing any pressure or loud emotional intensity."
+  ],
+
+  "misuse": [
+    "Using a white heart in a high-energy, rowdy party conversation can feel a bit too 'solemn' or mismatched.",
+    "It shouldn't be used to express hot passion, as its color profile is intentionally cool and serene."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a beautiful way to show genuine, quiet care.",
+    "In professional settings, it is a very safe and polite option for showing appreciation to a colleague or client without any romantic undertones."
+  ],
+
+  "platform_appearance": [
+    "Universally displays as a solid white heart.",
+    "Most platforms feature a thin grey or black outline around the heart to ensure it remains visible on white backgrounds and in light-mode apps."
+  ]
+}

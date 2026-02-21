@@ -1,0 +1,114 @@
+{
+  "slug": "crying-face",
+  "emoji": "😢",
+  "name": "Crying Face",
+  "category": "Sadness",
+
+  "meaning": "The Crying Face emoji represents sadness, emotional pain, and feeling hurt or disappointed. It is commonly used to express quiet sorrow, sympathy, or moments of emotional vulnerability.",
+
+  "usage_examples": [
+    "I didn’t expect this to happen 😢",
+    "That really made me sad 😢",
+    "I miss those days 😢"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Disappointment",
+      "person_a": "The plan got canceled",
+      "person_b": "That’s really sad 😢"
+    },
+    {
+      "context": "Emotional moment",
+      "person_a": "I tried my best but it didn’t work out",
+      "person_b": "I’m sorry 😢"
+    },
+    {
+      "context": "Missing someone",
+      "person_a": "It feels lonely without them",
+      "person_b": "I know, it hurts 😢"
+    }
+  ],
+
+  "fun_fact": "😢 is one of the oldest and most traditional ways to express sadness online. The single, distinct tear slipping down the cheek is a classic visual trope used in animation to show quiet, dignified sorrow.",
+
+  "faqs": [
+    {
+      "q": "What does the 😢 Crying Face emoji mean?",
+      "a": "It represents sadness, emotional pain, or feeling hurt."
+    },
+    {
+      "q": "Is 😢 the same as 😭?",
+      "a": "No, 😢 shows quiet sadness or a single tear, while 😭 represents intense, dramatic crying."
+    },
+    {
+      "q": "Can 😢 be used to show sympathy?",
+      "a": "Yes, it is commonly used to express empathy and concern for someone else's misfortune."
+    },
+    {
+      "q": "Is 😢 appropriate in professional chats?",
+      "a": "It may be used in informal or supportive work conversations to show empathy, but rarely in formal communication."
+    },
+    {
+      "q": "Does 😢 express grief?",
+      "a": "It can represent mild grief or emotional hurt, depending on context."
+    },
+    {
+      "q": "Is 😢 suitable for social media?",
+      "a": "Yes, it is frequently used in emotional posts and supportive comments."
+    },
+    {
+      "q": "Can 😢 be used sarcastically?",
+      "a": "Occasionally, to playfully complain about a minor inconvenience (like dropping a snack), but it is mostly genuine."
+    },
+    {
+      "q": "Is 😢 universally understood?",
+      "a": "Yes, it is globally recognized as a symbol of sadness."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when expressing sadness, emotional hurt, sympathy, or disappointment in a calm and sincere way.",
+  "when_not_to_use": "Avoid using it in happy, celebratory, or humorous conversations where sadness would feel confusing or out of place.",
+
+  "unicode_name": "CRYING FACE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F622",
+  "shortcodes": [":cry:"],
+
+  "related_emojis": [
+    "loudly-crying-face",
+    "pensive-face",
+    "broken-heart"
+  ],
+
+  "detailed_meaning": [
+    "The Crying Face emoji 😢 features a yellow face with a slight frown, furrowed eyebrows, and a single tear falling from one eye. It captures the initial moment of sadness or the quiet shedding of a tear.",
+    "Unlike the dramatic weeping of other emojis, this expression feels highly empathetic, vulnerable, and gently disappointed."
+  ],
+
+  "real_life_usage": [
+    "People frequently use it to react to moving or bittersweet news, such as a favorite TV show ending or a beautifully written book.",
+    "It is heavily used to offer sympathy when a friend is having a rough day or feeling under the weather.",
+    "Friends also use it to express a feeling of longing or nostalgia when reminiscing about past memories."
+  ],
+
+  "tone_impact": [
+    "This emoji introduces a tone of sincere empathy, gentle sadness, and emotional depth.",
+    "It softens the delivery of bad news or shows the recipient that the sender truly cares about their feelings."
+  ],
+
+  "misuse": [
+    "Using this emoji when someone is sharing exciting, celebratory news will make you appear unsupportive or jealous.",
+    "It should not be used when you are actually furiously angry, as the single tear implies surrender or vulnerability rather than frustration."
+  ],
+
+  "professional_vs_casual": [
+    "In personal texts, it is a brilliant way to offer a virtual shoulder to lean on.",
+    "In professional settings, it is best avoided, though it might occasionally be acceptable in a very relaxed team chat to react to minor bad news, such as the office coffee machine breaking."
+  ],
+
+  "platform_appearance": [
+    "Universally displays a face with a single blue tear dripping down the cheek.",
+    "On Apple and Google, the eyebrows dip downwards in the center to create a look of genuine concern, while Samsung's version has slightly more neutral eyes."
+  ]
+}

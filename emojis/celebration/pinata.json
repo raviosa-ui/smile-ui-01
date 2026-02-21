@@ -1,0 +1,116 @@
+{
+  "slug": "pinata",
+  "emoji": "🪅",
+  "name": "Piñata",
+  "category": "Celebration",
+
+  "meaning": "The piñata emoji represents fun-filled celebrations, parties, hidden surprises, and joyful moments deeply tied to cultural festivities.",
+
+  "usage_examples": [
+    "The party is going to be fun 🪅",
+    "Birthday vibes 🪅",
+    "Let’s celebrate together 🪅"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Party",
+      "person_a": "Are you coming to the birthday party?",
+      "person_b": "Of course, I wouldn't miss it 🪅"
+    },
+    {
+      "context": "Celebration",
+      "person_a": "The decorations are completely ready",
+      "person_b": "This is going to be so much fun 🪅"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "How was the event?",
+      "person_b": "Amazing!",
+      "person_a_2": "Everyone enjoyed it?",
+      "person_b_2": "Yes, total party vibes 🪅"
+    }
+  ],
+
+  "fun_fact": "The 🪅 Piñata emoji is deeply rooted in Mexican culture and history! While we associate it with candy today, traditional star-shaped piñatas had seven points to represent the seven deadly sins, and breaking it symbolized the triumph of good over evil.",
+
+  "faqs": [
+    {
+      "q": "What does the 🪅 Piñata emoji mean?",
+      "a": "It represents parties, celebrations, fun, and festive surprises."
+    },
+    {
+      "q": "Is 🪅 used mainly for birthdays?",
+      "a": "Yes, it is strongly associated with birthday parties and celebrations."
+    },
+    {
+      "q": "Can 🪅 be used casually?",
+      "a": "Yes, it works best in highly casual and playful conversations."
+    },
+    {
+      "q": "Is 🪅 suitable for professional use?",
+      "a": "Only in very informal workplace settings, such as planning an office party."
+    },
+    {
+      "q": "Why is 🪅 linked to fun?",
+      "a": "Because breaking a piñata is a communal activity that results in a shower of treats and surprises!"
+    },
+    {
+      "q": "Is 🪅 a positive emoji?",
+      "a": "Yes, it conveys happiness, playfulness, and celebration."
+    },
+    {
+      "q": "Can 🪅 replace 🎉?",
+      "a": "It can complement 🎉, but 🪅 focuses specifically on playful, game-centric party vibes."
+    },
+    {
+      "q": "When should 🪅 be avoided?",
+      "a": "Avoid it in serious, somber, or strictly professional discussions."
+    }
+  ],
+
+  "when_to_use": "Use this emoji for parties, birthdays, cultural festive events, or when hinting that you have a 'surprise' to share.",
+  "when_not_to_use": "Avoid using it in serious, professional, or emotionally sensitive situations.",
+
+  "unicode_name": "PINATA",
+  "unicode_version": "Unicode 13.0",
+  "codepoint": "U+1FA85",
+  "shortcodes": [":pinata:"],
+
+  "related_emojis": [
+    "balloon",
+    "confetti-ball",
+    "party-popper"
+  ],
+
+  "detailed_meaning": [
+    "The Piñata emoji 🪅 symbolizes the playful, game-centric aspect of a party. It is a visually colorful representation of communal joy, anticipation, and the reward of hidden treats.",
+    "Because a piñata must be broken to reveal what's inside, this emoji is also sometimes used metaphorically to represent 'spilling the secrets' or revealing a big surprise."
+  ],
+
+  "real_life_usage": [
+    "It is heavily used during Cinco de Mayo and other Mexican cultural celebrations to express pride and festivity.",
+    "Parents often use it when discussing planning a child's birthday party or preparing gift bags.",
+    "Friends use it to playfully hint that they are bringing a fun surprise (like gifts or snacks) to a get-together."
+  ],
+
+  "tone_impact": [
+    "This emoji adds a highly playful, colorful, and youthful tone to a message.",
+    "It shifts the focus of a celebration from a formal event to a fun, activity-based party."
+  ],
+
+  "misuse": [
+    "Using it to metaphorically describe 'beating up' or 'attacking' an opposing sports team or rival can be seen as aggressive and strays far from its intended joyful meaning.",
+    "It should not be used in formal business contexts."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a fantastic, colorful addition to party invitations and birthday texts.",
+    "In professional settings, it is generally too playful and culturally specific for standard emails, unless the team is actively planning a festive company gathering."
+  ],
+
+  "platform_appearance": [
+    "Across most platforms, it depicts a brightly colored, papier-mâché donkey decorated with vibrant fringe.",
+    "Google's design previously featured a traditional seven-pointed star piñata, but currently, almost all major platforms use the recognizable burro (donkey) shape adorned in pink, yellow, blue, and green stripes."
+  ]
+}

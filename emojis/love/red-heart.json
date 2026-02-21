@@ -1,0 +1,117 @@
+{
+  "slug": "red-heart",
+  "emoji": "❤️",
+  "name": "Red Heart",
+  "category": "Love",
+  
+  "meaning": "The Red Heart emoji represents love, affection, romance, and deep emotional connection between people.",
+  
+  "usage_examples": [
+    "I love you so much ❤️",
+    "Thinking of you today ❤️",
+    "This made my day ❤️"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Romantic message",
+      "person_a": "I miss you",
+      "person_b": "I miss you too ❤️"
+    },
+    {
+      "context": "Affection",
+      "person_a": "Thank you for being there for me",
+      "person_b": "Always ❤️"
+    },
+    {
+      "context": "Deep connection",
+      "person_a": "No matter what happens",
+      "person_b": "We’ll be okay ❤️",
+      "person_a_2": "I believe that",
+      "person_b_2": "Me too ❤️"
+    }
+  ],
+  
+  "fun_fact": "Despite being bright red, its official technical name is 'HEAVY BLACK HEART'! This is because it was added to Unicode way back in 1993 as a solid black dingbat character before color emojis existed. Also, while millennials use it for genuine love, Gen Z often uses the ❤️ in TikTok comment sections to deliver petty, passive-aggressive sarcasm (e.g., 'That’s crazy ❤️' or 'I love this for you ❤️').",
+  
+  "faqs": [
+    {
+      "q": "What does the ❤️ Red Heart emoji mean?",
+      "a": "It represents love, affection, romance, and emotional closeness."
+    },
+    {
+      "q": "Is ❤️ romantic or friendly?",
+      "a": "It is primarily romantic but can also express deep care and affection."
+    },
+    {
+      "q": "Can ❤️ be used with friends or family?",
+      "a": "Yes, it is commonly used to show love and care toward close friends and family."
+    },
+    {
+      "q": "Is ❤️ appropriate in professional messages?",
+      "a": "Generally no, as it is considered personal and emotionally expressive."
+    },
+    {
+      "q": "Does ❤️ always mean romantic love?",
+      "a": "Not always. It can also represent appreciation, support, or emotional warmth."
+    },
+    {
+      "q": "Why is ❤️ the most popular heart emoji?",
+      "a": "Because it universally represents love and is instantly understood across cultures."
+    },
+    {
+      "q": "Can ❤️ be used sarcastically?",
+      "a": "Yes, especially in modern internet slang, it is sometimes used to end a sarcastic or petty comment with a fake smile."
+    },
+    {
+      "q": "Does ❤️ look the same on all platforms?",
+      "a": "Designs vary slightly in shading, but the bright red meaning remains the same."
+    }
+  ],
+  
+  "when_to_use": "Use this emoji to express genuine love, affection, emotional support, or deep appreciation.",
+  "when_not_to_use": "Avoid using it in formal, professional, or emotionally sensitive conversations where affection may be inappropriate or misunderstood.",
+  
+  "unicode_name": "HEAVY BLACK HEART",
+  "unicode_version": "Unicode 1.1",
+  "codepoint": "U+2764",
+  "shortcodes": [":heart:"],
+  
+  "related_emojis": [
+    "two-hearts",
+    "sparkling-heart",
+    "heart-with-ribbon"
+  ],
+
+  "detailed_meaning": [
+    "The Red Heart emoji ❤️ is the ultimate, universal symbol for true love and deep romantic attachment. Unlike other colored hearts, the red heart specifically conveys passion, profound emotional bonds, and sincerity.",
+    "It bridges the emotional gap in digital communication, turning a simple text into a warm, heartfelt message. Its iconic status makes it the most recognizable expression of care across all cultures.",
+    "While primarily romantic, it is also widely used to show immense gratitude and unconditional love toward close family members and lifelong friends."
+  ],
+
+  "real_life_usage": [
+    "You will see the ❤️ emoji most frequently during romantic milestones like Valentine's Day, anniversaries, and in daily 'I love you' texts between partners.",
+    "It is heavily used on social media to express adoration for a partner in couple photos or wedding announcements.",
+    "Friends and family use it to offer deep emotional support during tough times or to show intense appreciation for a kind gesture."
+  ],
+
+  "tone_impact": [
+    "Adding the ❤️ emoji dramatically warms the tone of a message, making it feel intimate, sincere, and deeply affectionate.",
+    "It removes any ambiguity from a text, clearly signaling to the recipient that the sender cares for them deeply without needing extra words."
+  ],
+
+  "misuse": [
+    "Sending a ❤️ too early in a new relationship or dating phase can come across as overly intense or pushy to the recipient.",
+    "In a disagreement, using this emoji sarcastically can feel extremely dismissive and passive-aggressive, instantly escalating the tension."
+  ],
+  
+  "professional_vs_casual": [
+    "In casual settings among partners, friends, or family, the Red Heart is enthusiastically embraced to express affection without restraint.",
+    "However, in formal corporate communication or when speaking with clients, the stark red color and intense romantic association make it highly inappropriate. Stick to professional text or a simple 'Thumbs Up' instead."
+  ],
+  
+  "platform_appearance": [
+    "While Apple features a deep, glossy red heart with a subtle 3D shine, Android and Microsoft's versions are slightly flatter.",
+    "Despite these minor shading differences across operating systems, it is instantly recognized universally and its meaning never changes."
+  ]
+}

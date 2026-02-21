@@ -1,0 +1,114 @@
+{
+  "slug": "fearful-face",
+  "emoji": "😨",
+  "name": "Fearful Face",
+  "category": "Fear",
+  
+  "meaning": "The Fearful Face emoji represents fear, anxiety, and feeling scared or threatened. It is commonly used to express nervousness, shock, or emotional distress caused by something frightening or uncertain.",
+  
+  "usage_examples": [
+    "That situation really scared me 😨",
+    "I didn’t expect that at all 😨",
+    "This makes me nervous 😨"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Sudden fear",
+      "person_a": "Did you hear that noise?",
+      "person_b": "Yeah, that scared me 😨"
+    },
+    {
+      "context": "Anxiety",
+      "person_a": "I’m worried about the results",
+      "person_b": "I feel the same 😨"
+    },
+    {
+      "context": "Threat perception",
+      "person_a": "That didn’t feel safe",
+      "person_b": "I know, it was scary 😨"
+    }
+  ],
+  
+  "fun_fact": "😨 is often used to show fear mixed with anxiety and is less extreme than screaming or panic emojis. The pale blue top half of the face is meant to visualize the feeling of 'the blood draining from your face' when you get spooked!",
+  
+  "faqs": [
+    {
+      "q": "What does the 😨 Fearful Face emoji mean?",
+      "a": "It represents fear, nervousness, or feeling scared."
+    },
+    {
+      "q": "Is 😨 stronger than 😟?",
+      "a": "Yes, 😨 shows fear, while 😟 shows worry or concern."
+    },
+    {
+      "q": "Can 😨 express anxiety?",
+      "a": "Yes, it often represents anxious fear."
+    },
+    {
+      "q": "Is 😨 appropriate for work chats?",
+      "a": "It may be used in informal discussions, but not formal communication."
+    },
+    {
+      "q": "Does 😨 show panic?",
+      "a": "It shows fear, but not extreme panic."
+    },
+    {
+      "q": "Is 😨 suitable for social media?",
+      "a": "Yes, it is commonly used in reactions to scary or shocking content."
+    },
+    {
+      "q": "Can 😨 be exaggerated?",
+      "a": "Yes, it can be used dramatically depending on context."
+    },
+    {
+      "q": "Is 😨 universally understood?",
+      "a": "Yes, it is globally recognized as a fearful expression."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when expressing fear, nervousness, anxiety, or feeling threatened by a situation.",
+  "when_not_to_use": "Avoid using it in playful or celebratory conversations where fear would feel confusing or unnecessary.",
+
+  "unicode_name": "FEARFUL FACE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F628",
+  "shortcodes": [":fearful:"],
+
+  "related_emojis": [
+    "face-screaming-in-fear",
+    "anxious-face-with-sweat",
+    "worried-face"
+  ],
+
+  "detailed_meaning": [
+    "The Fearful Face emoji 😨 represents genuine apprehension and being unsettled. With its raised eyebrows and pale blue forehead, it captures the sensation of being 'stopped in your tracks' by something frightening.",
+    "Unlike the screaming face, this emoji feels much more serious, internalized, and grounded in real-world apprehension or dread."
+  ],
+
+  "real_life_usage": [
+    "It is widely used when discussing something spooky, like hearing a strange noise in the house at night or walking down a dark street.",
+    "People use it when they receive an ominous text message like 'we need to talk,' which instantly induces a feeling of dread.",
+    "It frequently appears in discussions about true crime podcasts or scary documentaries."
+  ],
+
+  "tone_impact": [
+    "This emoji sets a tense, unsettled, and highly cautious tone.",
+    "It clearly signals to the recipient that the sender is genuinely uncomfortable or nervous about the topic at hand."
+  ],
+
+  "misuse": [
+    "Using this emoji when someone is seeking reassurance from you can be counterproductive, as your fear will validate and amplify their anxiety.",
+    "Sending it as a reaction to a mild, non-threatening surprise will just confuse the recipient."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a relatable way to share your everyday fears and anxieties with friends.",
+    "In a corporate environment, displaying visual fear or dread is generally discouraged, as it projects a lack of confidence and composure under pressure."
+  ],
+
+  "platform_appearance": [
+    "Most platforms display a yellow face with raised eyebrows, small, open mouth, and a pale blue gradient across the upper half of the face.",
+    "Apple and Google’s designs perfectly capture the 'deer in the headlights' look, making the emotion of fear universally unmistakable."
+  ]
+}

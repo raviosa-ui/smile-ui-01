@@ -1,0 +1,92 @@
+{
+  "slug": "partying-face",
+  "emoji": "🥳",
+  "name": "Partying Face",
+  "category": "Celebration",
+
+  "meaning": "The Partying Face emoji represents excitement, fun, and personal celebration, often associated with parties, birthdays, and joyful moments.",
+
+  "usage_examples": [
+    "It’s my birthday today 🥳",
+    "We finally finished the project 🥳",
+    "Weekend plans are set 🥳"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Birthday",
+      "person_a": "It’s my birthday!",
+      "person_b": "Happy Birthday 🥳"
+    },
+    {
+      "context": "Good news",
+      "person_a": "I got the job offer",
+      "person_b": "That’s awesome! Time to celebrate 🥳"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "How was the party?",
+      "person_b": "So much fun",
+      "person_a_2": "Did you enjoy it?",
+      "person_b_2": "Absolutely 🥳"
+    }
+  ],
+
+  "fun_fact": "The 🥳 Partying Face emoji comes fully equipped for a celebration! It is one of the few emojis that combines three different props into one design: a party hat, a blowout noisemaker, and confetti.",
+
+  "faqs": [
+    { "q": "What does 🥳 Partying Face mean?", "a": "It represents fun, excitement, and personal celebration." },
+    { "q": "When should I use 🥳?", "a": "Use it for birthdays, parties, holidays, and happy personal news." },
+    { "q": "Is 🥳 different from 🎉?", "a": "Yes, 🥳 represents the emotion of the person celebrating, while 🎉 represents the event itself." },
+    { "q": "Can 🥳 be used professionally?", "a": "Only in informal or friendly work environments to cheer on a coworker." },
+    { "q": "Is 🥳 always positive?", "a": "Yes, it conveys pure joy and excitement." },
+    { "q": "Does 🥳 work for achievements?", "a": "Yes, it is great for personal wins like graduating or getting a new job." },
+    { "q": "Is 🥳 casual?", "a": "Yes, it is mostly used in highly casual, friendly conversations." },
+    { "q": "Can 🥳 replace words?", "a": "It enhances the emotion of a message but should generally support the text." }
+  ],
+
+  "when_to_use": "Use this emoji for birthdays, parties, personal achievements, and joyful announcements.",
+  "when_not_to_use": "Avoid using it in serious, formal, or sensitive discussions where partying imagery is disrespectful.",
+
+  "unicode_name": "PARTYING FACE",
+  "unicode_version": "Unicode 11.0",
+  "codepoint": "U+1F973",
+  "shortcodes": [":partying_face:"],
+
+  "related_emojis": [
+    "party-popper",
+    "confetti-ball",
+    "birthday-cake"
+  ],
+
+  "detailed_meaning": [
+    "The Partying Face emoji 🥳 perfectly captures the mood of someone who is ready to celebrate. Surrounded by confetti and blowing a party horn, it is the ultimate expression of 'woo-hoo!'",
+    "It is deeply tied to personal milestones and the feeling of letting loose and having a great time."
+  ],
+
+  "real_life_usage": [
+    "This is an absolute must-have emoji for wishing friends and family a 'Happy Birthday!' in text messages or social media comments.",
+    "People use it when sharing highly anticipated good news, such as officially clocking out of work for a long vacation.",
+    "It is also used to excitedly RSVP 'yes' to an upcoming social event or party."
+  ],
+
+  "tone_impact": [
+    "Adding this emoji makes a message feel incredibly loud, joyous, and enthusiastic.",
+    "It transforms a standard 'congratulations' into a highly expressive, cheering celebration."
+  ],
+
+  "misuse": [
+    "Using this emoji to celebrate a very minor, everyday task can feel a bit overly enthusiastic, though it is often done for comedic effect.",
+    "It should never be used in a context where someone is sharing bad news, as the party hat and horn will come across as mocking."
+  ],
+
+  "professional_vs_casual": [
+    "In personal chats, it is the perfect way to show you are thrilled for someone's success.",
+    "In the workplace, it is highly common in Slack channels for celebrating a colleague's work anniversary or wishing them a good weekend, but it should be kept out of formal client emails."
+  ],
+
+  "platform_appearance": [
+    "Universally, this is a yellow face wearing a colorful party hat, blowing a curled party horn, and surrounded by floating confetti.",
+    "The colors of the hat and horn vary slightly by platform, but the joyful, wide-eyed expression remains delightfully consistent."
+  ]
+}

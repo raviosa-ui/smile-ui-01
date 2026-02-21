@@ -1,0 +1,116 @@
+{
+  "slug": "trophy",
+  "emoji": "🏆",
+  "name": "Trophy",
+  "category": "Celebration",
+
+  "meaning": "The trophy emoji represents victory, achievement, success, and formal recognition earned through effort, talent, or competition.",
+
+  "usage_examples": [
+    "We won first place 🏆",
+    "Hard work pays off 🏆",
+    "Champion of the season 🏆"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Achievement",
+      "person_a": "We won the competition!",
+      "person_b": "Congratulations 🏆"
+    },
+    {
+      "context": "Sports",
+      "person_a": "Our team took the title",
+      "person_b": "Well deserved 🏆"
+    },
+    {
+      "context": "Big win",
+      "person_a": "Guess what?",
+      "person_b": "What happened?",
+      "person_a_2": "I won the award",
+      "person_b_2": "That’s amazing 🏆"
+    }
+  ],
+
+  "fun_fact": "The 🏆 Trophy emoji is not just for athletes! It is widely used online to playfully award someone for doing something completely mundane perfectly, like a 'Trophy for surviving Monday 🏆'.",
+
+  "faqs": [
+    {
+      "q": "What does the 🏆 emoji mean?",
+      "a": "It represents winning, success, championships, and recognition."
+    },
+    {
+      "q": "Is 🏆 only for sports?",
+      "a": "No, it widely applies to achievements in work, school, gaming, or personal goals."
+    },
+    {
+      "q": "Can 🏆 be used professionally?",
+      "a": "Yes, it is highly encouraged for acknowledging team accomplishments or corporate awards."
+    },
+    {
+      "q": "Is 🏆 a positive emoji?",
+      "a": "Yes, it strongly conveys ultimate success and pride."
+    },
+    {
+      "q": "When should 🏆 be avoided?",
+      "a": "Avoid using it in situations where boasting might hurt someone else's feelings."
+    },
+    {
+      "q": "Does 🏆 imply competition?",
+      "a": "Often yes, as trophies are usually won, but it can also symbolize overcoming a personal challenge."
+    },
+    {
+      "q": "Is 🏆 popular on social media?",
+      "a": "Yes, especially in achievement announcements and 'end of season' wrap-ups."
+    },
+    {
+      "q": "How does 🏆 differ from 🥇?",
+      "a": "🥇 specifically means first place in a race or ranking, while 🏆 represents winning the entire championship or overall award."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when celebrating major wins, official awards, championships, or incredible personal accomplishments.",
+  "when_not_to_use": "Avoid using it in casual updates where no clear achievement was made, or in sensitive contexts where boasting is inappropriate.",
+
+  "unicode_name": "TROPHY",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F3C6",
+  "shortcodes": [":trophy:"],
+
+  "related_emojis": [
+    "first-place-medal",
+    "party-popper",
+    "clinking-glasses"
+  ],
+
+  "detailed_meaning": [
+    "The Trophy emoji 🏆 is the ultimate digital symbol of being a champion. It represents reaching the pinnacle of a journey, overcoming obstacles, and being officially recognized as the best.",
+    "It signifies that hard work has paid off and that the sender or recipient has earned the right to be celebrated."
+  ],
+
+  "real_life_usage": [
+    "It is extensively used in sports communities to celebrate a team winning a championship, the Super Bowl, or the World Cup.",
+    "Gamers use it when they unlock a rare achievement or win an online tournament.",
+    "Parents proudly use it when their children graduate or win a school competition."
+  ],
+
+  "tone_impact": [
+    "This emoji carries a highly triumphant, proud, and authoritative tone.",
+    "It makes a standard congratulatory message feel official, indicating that the victory is a massive deal."
+  ],
+
+  "misuse": [
+    "Constantly using a trophy to describe your own everyday actions can come across as highly arrogant.",
+    "Sending it to a friend who just lost a competition or failed a test will be seen as mocking or cruel."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a fun way to crown your friends as the 'best' at something, even if it's just picking the best restaurant for dinner.",
+    "In professional settings, it is a fantastic and highly acceptable way for management to recognize an 'Employee of the Month' or celebrate a team hitting a record-breaking sales goal."
+  ],
+
+  "platform_appearance": [
+    "It universally displays a classic gold loving cup trophy resting on a brown or black base.",
+    "Some platforms include subtle light reflections on the gold surface to emphasize its shiny, premium nature."
+  ]
+}

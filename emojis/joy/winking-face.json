@@ -1,0 +1,67 @@
+{
+  "slug": "winking-face",
+  "emoji": "😉",
+  "name": "Winking Face",
+  "category": "Joy",
+  "meaning": "The Winking Face emoji represents a joke, a secret, subtle flirtation, or a hidden meaning that shouldn't be taken too seriously.",
+  "usage_examples": [
+    "Just kidding, you know I love you! 😉",
+    "I've got a little surprise waiting for you later 😉",
+    "Don't worry, your secret is safe with me 😉"
+  ],
+  "chat_examples": [
+    {
+      "context": "Playful joke",
+      "person_a": "I'm probably the best cook you'll ever meet.",
+      "person_b": "If you say so, I'll be the judge of that! 😉"
+    },
+    {
+      "context": "Flirting",
+      "person_a": "We should really hang out again sometime soon.",
+      "person_b": "I'd definitely like that. When are you free? 😉"
+    },
+    {
+      "context": "Shared Secret",
+      "person_a": "Did you manage to finish the report early?",
+      "person_b": "Already done, but let's keep the boss guessing for a bit 😉"
+    }
+  ],
+  "fun_fact": "😉 is one of the most useful emojis for preventing digital misunderstandings. It acts as a tonal 'shield,' signaling to the recipient that a sentence shouldn't be taken at face value!",
+  "faqs": [
+    { "q": "What does 😉 mean?", "a": "It indicates a joke, irony, playful mischief, or subtle flirting." },
+    { "q": "Is 😉 flirty?", "a": "It can be, but it is also used very often between friends just to show they are joking around." },
+    { "q": "What is the difference between 😉 and 😏?", "a": "😉 is friendly and lighthearted, while 😏 (Smirking Face) is more suggestive, smug, or confident." }
+  ],
+  "when_to_use": "Use this to soften a sarcastic comment, build a playful connection with a crush, or to show that you are 'in' on a secret.",
+  "when_not_to_use": "Avoid using it in formal emails or serious apologies, as it can make you seem unprofessional or like you aren't taking the matter seriously.",
+  "unicode_name": "WINKING FACE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F609",
+  "shortcodes": [":wink:"],
+  "related_emojis": ["slightly-smiling-face", "smirking-face", "grinning-face"],
+  "detailed_meaning": [
+    "The Winking Face 😉 is the digital equivalent of a physical wink. It creates an immediate 'just between us' atmosphere and signals that there is more to the message than just the words.",
+    "It is a powerful tool for indicating tone, specifically irony, affection, or playful mischief. It tells the reader to 'read between the lines.'"
+  ],
+  "real_life_usage": [
+    "Heavily used to 'soften' a potentially blunt or honest statement so it doesn't sound mean.",
+    "A staple in dating and early-stage flirting to build a playful, slightly mysterious connection.",
+    "Commonly used when making a 'dad joke' to acknowledge that you know the joke is cheesy."
+  ],
+  "tone_impact": [
+    "It adds a mischievous, playful, and friendly layer to the conversation, instantly lowering the tension.",
+    "It ensures the recipient knows the sender is in a good mood and is being lighthearted."
+  ],
+  "misuse": [
+    "Using it in a serious apology (e.g., 'I'm so sorry I forgot your birthday 😉') can make the apology look fake, mocking, or insincere.",
+    "Using it too much with a stranger or in a customer service context can sometimes come across as over-familiar or creepy."
+  ],
+  "professional_vs_casual": [
+    "In professional settings, it is best to avoid the wink unless you are very close with the coworker. It can sometimes be misinterpreted as being unprofessional or inappropriately flirty.",
+    "In casual settings, it is a top-tier emoji for maintaining a fun, witty, and engaging conversation flow."
+  ],
+  "platform_appearance": [
+    "The design is universally recognized with one eye closed and a slight smile across all devices.",
+    "Samsung and WhatsApp designs often feature a more pronounced 'squint' in the winking eye, while Apple and Google keep it a simple, clean dot-and-curve look."
+  ]
+}

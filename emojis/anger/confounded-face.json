@@ -1,0 +1,53 @@
+{
+  "slug": "confounded-face",
+  "emoji": "😖",
+  "name": "Confounded Face",
+  "category": "Sadness",
+  "meaning": "The Confounded Face emoji represents frustration, irritation, and a feeling of being 'done' with a difficult situation.",
+  "usage_examples": [
+    "I give up 😖",
+    "This is so frustrating 😖",
+    "I can't take this anymore 😖"
+  ],
+  "chat_examples": [
+    {
+      "context": "Physical discomfort",
+      "person_a": "My head hurts so much.",
+      "person_b": "I'm so sorry, rest up 😖"
+    },
+    {
+      "context": "Frustration",
+      "person_a": "I lost my keys right before leaving!",
+      "person_b": "That is the worst 😖"
+    },
+    {
+      "context": "Emotional strain",
+      "person_a": "Everything is going wrong today.",
+      "person_b": "I feel for you 😖"
+    }
+  ],
+  "fun_fact": "The 'X' shaped eyes in 😖 are a classic cartoon technique used to show that a character is experiencing intense internal struggle or a 'brain freeze.'",
+  "faqs": [
+    { "q": "What does 😖 mean?", "a": "It represents being overwhelmed, frustrated, or in mild pain." },
+    { "q": "Is 😖 angry or sad?", "a": "It is a mix of both—it shows the stress that comes from a frustrating situation." }
+  ],
+  "when_to_use": "Use this when you are feeling physically or mentally squeezed by a stressful situation.",
+  "when_not_to_use": "Avoid using it in happy conversations, as it carries a heavy sense of struggle.",
+  "unicode_name": "CONFOUNDED FACE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F616",
+  "shortcodes": [":confounded:"],
+  "related_emojis": ["worried-face", "disappointed-face", "angry-face"],
+  "detailed_meaning": [
+    "The Confounded Face 😖 is characterized by its scrunched, 'X' eyes and a jagged mouth. It visualizes the feeling of 'cringing' or being in a tight spot.",
+    "It communicates that the user is feeling the pressure and is struggling to keep their cool."
+  ],
+  "real_life_usage": [
+    "Used when someone makes a cringey comment or when experiencing a minor accident like stubbing a toe.",
+    "Frequently used by people who are 'fuming' but not quite ready to scream."
+  ],
+  "tone_impact": ["It adds a tense, strained, and highly stressed tone to any message."],
+  "misuse": ["Don't use it for serious tragedies, as the cartoonish face can look a bit too dramatic/silly."],
+  "professional_vs_casual": ["Avoid in professional emails as it projects a lack of emotional control."],
+  "platform_appearance": ["Design varies slightly, but always keeps the scrunched eyes and wavy mouth."]
+}

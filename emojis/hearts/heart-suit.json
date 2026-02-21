@@ -1,0 +1,102 @@
+{
+  "slug": "heart-suit",
+  "emoji": "♥️",
+  "name": "Heart Suit",
+  "category": "Hearts",
+  
+  "meaning": "The Heart Suit emoji represents love, romance, and emotional matters. While it originates from playing cards, it is widely used as a classic, understated symbol of affection.",
+  
+  "usage_examples": [
+    "Sending love your way ♥️",
+    "You’ll always have my heart ♥️",
+    "Pure love and respect ♥️"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Affectionate message",
+      "person_a": "Just wanted to say I care about you",
+      "person_b": "That means a lot ♥️"
+    },
+    {
+      "context": "Romantic text",
+      "person_a": "You’re always on my mind",
+      "person_b": "Always ♥️"
+    },
+    {
+      "context": "Emotional support",
+      "person_a": "Thank you for being there",
+      "person_b": "Anytime ♥️"
+    }
+  ],
+  
+  "fun_fact": "The ♥️ Heart Suit is one of the oldest symbols in Unicode, existing since 1993! It was originally designed to represent the suit of hearts in card games like Poker and Solitaire.",
+  
+  "faqs": [
+    {
+      "q": "What does the ♥️ Heart Suit emoji mean?",
+      "a": "It represents love, affection, and emotional connection."
+    },
+    {
+      "q": "Is ♥️ the same as ❤️?",
+      "a": "They are very similar, but ♥️ is often slightly darker and has a more matte, flat appearance compared to the glossy ❤️."
+    },
+    {
+      "q": "Can ♥️ be used romantically?",
+      "a": "Yes, it is a very common and safe way to express classic love and affection."
+    },
+    {
+      "q": "Is ♥️ an old emoji?",
+      "a": "Yes, it is one of the original symbols included in early digital character sets."
+    },
+    {
+      "q": "Can ♥️ be used platonically?",
+      "a": "Yes, depending on context, it can express general care or appreciation for friends and family."
+    }
+  ],
+
+  "when_to_use": "Use this emoji to express classic love, affection, emotional warmth, or heartfelt appreciation.",
+  "when_not_to_use": "Avoid using it in strictly professional or formal conversations where emotional symbols may be inappropriate.",
+
+  "unicode_name": "BLACK HEART SUIT",
+  "unicode_version": "Unicode 1.1",
+  "codepoint": "U+2665",
+  "shortcodes": [":hearts:"],
+
+  "related_emojis": [
+    "red-heart",
+    "two-hearts",
+    "heart-exclamation"
+  ],
+
+  "detailed_meaning": [
+    "The Heart Suit emoji ♥️ is a timeless representation of love. Because it lacks the bright, modern 'pop' of the Red Heart, it often feels more traditional, sincere, and grounded.",
+    "It is the digital equivalent of a classic love symbol you might find on a vintage greeting card or a deck of cards, carrying a sense of permanence and reliability."
+  ],
+
+  "real_life_usage": [
+    "It is heavily used by card game enthusiasts and casino fans when discussing games like Bridge or Hearts.",
+    "People who prefer a more subtle, 'low-key' look in their texts often use this heart instead of the more vibrant ❤️.",
+    "It is a staple in birthday and anniversary messages where a simple, classic expression of love is required."
+  ],
+
+  "tone_impact": [
+    "This emoji adds a tone of steady, reliable, and sincere affection.",
+    "It is less 'loud' than other hearts, making the message feel more thoughtful and mature."
+  ],
+
+  "misuse": [
+    "Using it to express high-energy excitement (like 'I'm so excited for the party! ♥️') might look a bit visually mismatched compared to a party emoji.",
+    "Sending it to a professional acquaintance can still be misinterpreted as overly personal, despite its classic look."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a versatile tool for showing love to anyone close to you.",
+    "In professional settings, it should generally be avoided unless you are specifically discussing themes of gaming or design."
+  ],
+
+  "platform_appearance": [
+    "Universally displays as a dark red, flat heart.",
+    "Unlike the standard Red Heart, which is often tilted or glossy, the Heart Suit is almost always perfectly symmetrical and matte across all platforms."
+  ]
+}

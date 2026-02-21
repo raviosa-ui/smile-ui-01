@@ -1,0 +1,115 @@
+{
+  "slug": "birthday-cake",
+  "emoji": "🎂",
+  "name": "Birthday Cake",
+  "category": "Celebration",
+
+  "meaning": "The birthday cake emoji represents birthdays, celebrations, milestones, and moments centered around personal achievements and special days.",
+
+  "usage_examples": [
+    "Happy Birthday 🎂",
+    "Make a wish 🎂",
+    "Celebrating another year 🎂"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Birthday",
+      "person_a": "Happy Birthday!",
+      "person_b": "Thank you so much 🎂"
+    },
+    {
+      "context": "Celebration",
+      "person_a": "It’s my birthday today",
+      "person_b": "Enjoy your special day 🎂"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "Guess what day it is?",
+      "person_b": "Your birthday?",
+      "person_a_2": "Yes!",
+      "person_b_2": "Happy Birthday! Let's celebrate 🎂"
+    }
+  ],
+
+  "when_to_use": "Use this emoji for birthdays, anniversaries, celebrations of age, or marking personal milestones.",
+  "when_not_to_use": "Avoid using it in non-celebratory or serious conversations.",
+
+  "unicode_name": "BIRTHDAY CAKE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F382",
+  "shortcodes": [":birthday:"],
+
+  "related_emojis": [
+    "party-popper",
+    "balloon",
+    "wrapped-gift"
+  ],
+
+  "fun_fact": "The 🎂 Birthday Cake emoji is one of the most universally recognized symbols for birthdays on the internet. Did you know that some platforms show a strawberry cake, while others show chocolate or vanilla?",
+
+  "faqs": [
+    {
+      "q": "What does the 🎂 emoji mean?",
+      "a": "It represents birthdays, celebrations, and special personal occasions."
+    },
+    {
+      "q": "Is 🎂 only for birthdays?",
+      "a": "Mostly, but it can also represent anniversaries, company milestones, or any sweet celebration."
+    },
+    {
+      "q": "Can 🎂 be used professionally?",
+      "a": "Yes, in casual or friendly workplace settings to acknowledge a coworker's special day."
+    },
+    {
+      "q": "Is 🎂 a positive emoji?",
+      "a": "Yes, it purely conveys happiness, treats, and celebration."
+    },
+    {
+      "q": "When should 🎂 be avoided?",
+      "a": "Avoid using it in serious or completely unrelated discussions where food or parties don't make sense."
+    },
+    {
+      "q": "Does 🎂 imply cake literally?",
+      "a": "Not always; it often symbolizes the act of celebrating itself, even if no real cake is present."
+    },
+    {
+      "q": "Is 🎂 popular on social media?",
+      "a": "Yes, it is practically mandatory for birthday shoutouts and celebration posts!"
+    },
+    {
+      "q": "Why is 🎂 associated with celebrations?",
+      "a": "Because cakes and lit candles are a timeless, global tradition used to mark milestones and make wishes."
+    }
+  ],
+
+  "detailed_meaning": [
+    "The Birthday Cake emoji 🎂 is the ultimate digital symbol for personal milestones. Featuring a frosted cake with lit candles, it visually represents the tradition of making a wish and celebrating another year of life.",
+    "Beyond just birthdays, it broadly signifies any momentous occasion that warrants a sweet celebration or a party."
+  ],
+
+  "real_life_usage": [
+    "This is heavily used across all social media platforms to flood friends' timelines and comment sections with birthday wishes.",
+    "It is also used to celebrate the anniversary of a business, reaching a milestone number of followers online, or even celebrating the 'gotcha day' for an adopted pet."
+  ],
+
+  "tone_impact": [
+    "It brings an immediate sense of warmth, importance, and festivity to a message.",
+    "It makes the recipient feel recognized, valued, and celebrated on their special day."
+  ],
+
+  "misuse": [
+    "Using this for a non-celebratory event or a somber anniversary can come across as deeply insensitive.",
+    "Sending it casually to someone who explicitly dislikes celebrating their birthday might also be unwanted, so it's best to know your audience."
+  ],
+
+  "professional_vs_casual": [
+    "It is widely accepted in both casual and relaxed professional settings. Using it to wish a colleague a happy birthday on Slack or Teams is very common.",
+    "However, it should be kept out of formal external emails, serious business reports, or client negotiations."
+  ],
+
+  "platform_appearance": [
+    "It universally features a beautifully frosted cake with lit candles on top.",
+    "Apple's design shows a strawberry shortcake with a single candle, while Google and Samsung feature a vanilla or chocolate cake with multiple candles. Regardless of the flavor, the message of celebration is clear!"
+  ]
+}

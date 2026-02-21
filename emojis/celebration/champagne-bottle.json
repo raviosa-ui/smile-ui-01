@@ -1,0 +1,116 @@
+{
+  "slug": "champagne-bottle",
+  "emoji": "🍾",
+  "name": "Champagne Bottle",
+  "category": "Celebration",
+
+  "meaning": "The champagne bottle emoji represents celebration, success, luxury, and major milestones. It is commonly used for big achievements, parties, and festive occasions.",
+
+  "usage_examples": [
+    "We finally did it 🍾",
+    "Time to celebrate 🍾",
+    "Big win tonight 🍾"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Achievement",
+      "person_a": "The deal is officially closed",
+      "person_b": "Amazing news! Let's celebrate 🍾"
+    },
+    {
+      "context": "Party",
+      "person_a": "Everyone is coming over tonight",
+      "person_b": "Champagne is ready 🍾"
+    },
+    {
+      "context": "Big celebration",
+      "person_a": "Guess what?",
+      "person_b": "What happened?",
+      "person_a_2": "We hit our yearly target",
+      "person_b_2": "That deserves champagne 🍾"
+    }
+  ],
+
+  "when_to_use": "Use this emoji when celebrating major achievements, milestones, victories, or luxurious events.",
+  "when_not_to_use": "Avoid using it in serious, sensitive, or non-celebratory discussions.",
+
+  "unicode_name": "BOTTLE WITH POPPING CORK",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F37E",
+  "shortcodes": [":champagne:"],
+
+  "related_emojis": [
+    "clinking-glasses",
+    "party-popper",
+    "trophy"
+  ],
+
+  "fun_fact": "Although we all call it the 'Champagne Bottle', its official Unicode name is simply 'Bottle with Popping Cork'. It was introduced to digital keyboards in 2015 as the ultimate symbol for ringing in the New Year!",
+
+  "faqs": [
+    {
+      "q": "What does the 🍾 emoji mean?",
+      "a": "It represents celebration, success, victory, and special occasions."
+    },
+    {
+      "q": "Is 🍾 only about alcohol?",
+      "a": "No, it is frequently used metaphorically to symbolize 'popping off' a celebration, even if no drinking is involved."
+    },
+    {
+      "q": "Can 🍾 be used professionally?",
+      "a": "Yes, in informal or celebratory professional settings to mark a big win or finished project."
+    },
+    {
+      "q": "Is 🍾 suitable for announcements?",
+      "a": "Yes, it is perfect for major life updates like a new job, a house purchase, or an engagement."
+    },
+    {
+      "q": "When should 🍾 be avoided?",
+      "a": "Avoid it in serious conversations, or when communicating with individuals where alcohol references may be inappropriate."
+    },
+    {
+      "q": "Does 🍾 imply luxury?",
+      "a": "Often yes, as champagne is traditionally associated with high-end, premium events."
+    },
+    {
+      "q": "Is 🍾 used worldwide?",
+      "a": "Yes, the popping of a cork is widely understood across cultures as a sign of success."
+    },
+    {
+      "q": "Can 🍾 replace 🎉?",
+      "a": "It can, especially for more adult, milestone, or premium celebrations."
+    }
+  ],
+
+  "detailed_meaning": [
+    "The Champagne Bottle emoji 🍾 captures the exhilarating moment of a cork popping, symbolizing a major victory, a grand celebration, or a luxurious event.",
+    "It represents the climax of a successful endeavor and the exhilarating feeling of 'popping bottles' to mark a significant achievement or life milestone."
+  ],
+
+  "real_life_usage": [
+    "It is frequently used when announcing a new job, closing a big business deal, buying a house, or celebrating New Year's Eve.",
+    "Friends use it to hype each other up before a glamorous night out, a wedding reception, or a weekend trip.",
+    "It is also a favorite for sports fans reacting to a championship win."
+  ],
+
+  "tone_impact": [
+    "This emoji adds a highly energetic, premium, and victorious tone to any announcement.",
+    "It elevates a simple 'congratulations' into a grand, high-energy celebratory cheer."
+  ],
+
+  "misuse": [
+    "Because it explicitly depicts an alcoholic beverage, using it in messages involving minors, recovery, or sober events can be inappropriate or insensitive.",
+    "It can also seem overly boastful or dramatic if used to celebrate a very minor, everyday task (like finishing the laundry)."
+  ],
+
+  "professional_vs_casual": [
+    "In casual chats, it is perfect for hyping up big life events and weekend plans.",
+    "In the workplace, it is heavily used on internal platforms like Slack to celebrate a team hitting a major sales goal or launching a project. However, it should still be avoided in strict, formal corporate emails to clients."
+  ],
+
+  "platform_appearance": [
+    "All major platforms depict a green glass bottle with a cork popping out, followed by a lively spray of bubbly liquid.",
+    "The dynamic motion lines perfectly translate the loud, exciting nature of a high-end celebration."
+  ]
+}

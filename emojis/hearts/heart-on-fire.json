@@ -1,0 +1,102 @@
+{
+  "slug": "heart-on-fire",
+  "emoji": "❤️‍🔥",
+  "name": "Heart on Fire",
+  "category": "Hearts",
+  
+  "meaning": "The Heart on Fire emoji represents intense passion, burning desire, deep romantic attraction, and love that feels powerful and unstoppable.",
+  
+  "usage_examples": [
+    "I can’t stop thinking about you ❤️‍🔥",
+    "This love is intense ❤️‍🔥",
+    "Madly in love right now ❤️‍🔥"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Intense romance",
+      "person_a": "I’ve never felt this way before",
+      "person_b": "That’s passion ❤️‍🔥"
+    },
+    {
+      "context": "Strong attraction",
+      "person_a": "Every time I see you, my heart races",
+      "person_b": "Same here ❤️‍🔥"
+    },
+    {
+      "context": "Fiery love",
+      "person_a": "This connection is unreal",
+      "person_b": "It’s burning bright ❤️‍🔥"
+    }
+  ],
+  
+  "fun_fact": "The ❤️‍🔥 Heart on Fire emoji is actually a 'ZWJ Sequence,' which means it is created by digitally combining the Red Heart and the Fire emoji into one single, powerful symbol!",
+  
+  "faqs": [
+    {
+      "q": "What does the ❤️‍🔥 Heart on Fire emoji mean?",
+      "a": "It represents intense passion, desire, or fiery love."
+    },
+    {
+      "q": "Is ❤️‍🔥 romantic?",
+      "a": "Yes, it strongly implies passionate romantic feelings and attraction."
+    },
+    {
+      "q": "Can ❤️‍🔥 be used for crushes?",
+      "a": "Yes, it is the perfect emoji to express a strong, 'burning' crush."
+    },
+    {
+      "q": "Is ❤️‍🔥 stronger than ❤️?",
+      "a": "Yes, it conveys a much more intense, energetic, and active emotional state."
+    },
+    {
+      "q": "Is ❤️‍🔥 a new emoji?",
+      "a": "Yes, it was introduced in 2021 as part of Unicode 13.1."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when expressing intense passion, strong attraction, fiery romance, or overwhelming love.",
+  "when_not_to_use": "Avoid using it in calm, platonic, or professional conversations where such high intensity would be inappropriate.",
+
+  "unicode_name": "HEART ON FIRE",
+  "unicode_version": "Unicode 13.1",
+  "codepoint": "U+2764 U+FE0F U+200D U+1F525",
+  "shortcodes": [":heart_on_fire:"],
+
+  "related_emojis": [
+    "red-heart",
+    "sparkling-heart",
+    "beating-heart"
+  ],
+
+  "detailed_meaning": [
+    "The Heart on Fire emoji ❤️‍🔥 is the ultimate digital expression of 'burning love.' It signifies a passion so strong it cannot be contained, representing desire, obsession, and extreme attraction.",
+    "Unlike the steady Red Heart, this emoji implies movement and heat. It suggests that the relationship or the feeling is currently at its absolute peak of intensity."
+  ],
+
+  "real_life_usage": [
+    "It is incredibly popular for reacting to a partner's attractive photo or a particularly flirty text message.",
+    "People use it when talking about their 'burning' ambitions, a new project they are obsessed with, or a hobby they are incredibly passionate about.",
+    "It is also a favorite for music fans when a singer drops an incredibly emotional or 'hot' new track."
+  ],
+
+  "tone_impact": [
+    "This emoji carries a very bold, high-energy, and unmistakably romantic tone.",
+    "It turns an ordinary 'I like you' into a dramatic, powerful confession of desire."
+  ],
+
+  "misuse": [
+    "Using this for a purely platonic friend or a coworker is extremely risky, as it carries heavy suggestive and romantic weight.",
+    "It is completely out of place in somber, sad, or serious discussions."
+  ],
+
+  "professional_vs_casual": [
+    "In casual and dating contexts, it is a high-impact tool for building chemistry and expressing excitement.",
+    "In professional settings, it should be strictly avoided. The combination of fire and hearts is far too suggestive and informal for any workplace scenario."
+  ],
+
+  "platform_appearance": [
+    "Universally displays a classic red heart engulfed in orange and yellow flames.",
+    "Apple and Google use a realistic flame design that wraps around the heart, while Microsoft's design features more stylized, cartoonish fire."
+  ]
+}

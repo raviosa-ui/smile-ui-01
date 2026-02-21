@@ -1,0 +1,68 @@
+{
+  "slug": "expressionless-face",
+  "emoji": "😑",
+  "name": "Expressionless Face",
+  "category": "Thinking",
+  "meaning": "The Expressionless Face emoji represents a total lack of excitement, extreme boredom, or the feeling of being completely unamused and 'over it.'",
+  "usage_examples": [
+    "I have no words for this 😑",
+    "This meeting could have been an email 😑",
+    "Really? The same mistake again? 😑"
+  ],
+  "chat_examples": [
+    {
+      "context": "Boredom",
+      "person_a": "The lecture is being extended by another forty minutes.",
+      "person_b": "You have to be kidding me 😑"
+    },
+    {
+      "context": "Unamused",
+      "person_a": "Did you hear the one about the guy with no left side? He's all right now!",
+      "person_b": "It was painful just reading that 😑"
+    },
+    {
+      "context": "Indifference",
+      "person_a": "I decided to wear blue socks instead of black ones today.",
+      "person_b": "Okay… and? 😑"
+    }
+  ],
+  "fun_fact": "😑 is the digital version of a 'deadpan' stare. Unlike the Neutral Face, the closed eyes here suggest that the person is so tired or unamused that they can't even bother to look at the situation anymore.",
+  "faqs": [
+    { "q": "What does 😑 mean?", "a": "It represents extreme boredom, being unamused, or an intentional lack of expression." },
+    { "q": "Is 😑 different from 😐?", "a": "Yes, 😐 is for neutral or awkward moments, while 😑 implies being fed up or totally bored." },
+    { "q": "Is 😑 rude?", "a": "It can be seen as dismissive, cold, or passive-aggressive depending on the context." },
+    { "q": "When should I use 😑?", "a": "Use it when you want to show you are unimpressed by a joke, a delay, or a repetitive event." }
+  ],
+  "when_to_use": "Use this when you are completely bored, unamused, or trying to show a 'straight face' reaction to something silly or annoying.",
+  "when_not_to_use": "Avoid using it in professional settings where you want to appear engaged, or when someone is sharing exciting news.",
+  "unicode_name": "EXPRESSIONLESS FACE",
+  "unicode_version": "Unicode 6.1",
+  "codepoint": "U+1F611",
+  "shortcodes": [":expressionless:"],
+  "related_emojis": ["neutral-face", "thinking-face", "zipper-mouth-face"],
+  "detailed_meaning": [
+    "The Expressionless Face emoji 😑 features a flat mouth and two straight, horizontal lines for eyes. It represents a state of being completely 'over it,' whether due to exhaustion or lack of interest.",
+    "It is the ultimate digital deadpan. While other emojis express a reaction, this emoji is unique because it represents the active choice to show no reaction at all, signaling that the subject is not worth the energy."
+  ],
+  "real_life_usage": [
+    "Commonly used when waiting in exceptionally long lines, dealing with slow technology, or experiencing a predictable inconvenience.",
+    "It is a staple among friends to react to 'dad jokes' or when a friend says something incredibly obvious or silly.",
+    "Used frequently on social media to react to cringey content or repetitive trends that have lost their appeal."
+  ],
+  "tone_impact": [
+    "This emoji creates an extremely dry, flat, and unenthusiastic tone that can instantly kill the 'vibe' of a high-energy conversation.",
+    "It acts as a visual 'sigh,' telling the recipient that the sender is bored, tired, or simply unimpressed with what has been said."
+  ],
+  "misuse": [
+    "Using this when someone shares a heartfelt story or a personal struggle can make you look incredibly uncaring, cold, and insensitive.",
+    "Sending this to a superior who is giving you instructions can be seen as a sign of disrespect or a lack of motivation."
+  ],
+  "professional_vs_casual": [
+    "In professional settings, this emoji is highly risky. It projects a 'bored' or 'uncooperative' attitude that is rarely appropriate for the workplace.",
+    "In casual settings, it is a brilliant tool for dry humor, sarcasm, and sharing the daily struggle of mundane tasks with friends."
+  ],
+  "platform_appearance": [
+    "The design is one of the most consistent in the Unicode library, appearing as a 'blank slate' face with flat features across all devices.",
+    "Apple and Google maintain a very minimalist look, ensuring the emotionless stare is flawlessly translated regardless of the recipient's phone."
+  ]
+}

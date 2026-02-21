@@ -1,0 +1,105 @@
+{
+  "slug": "slightly-smiling-face",
+  "emoji": "🙂",
+  "name": "Slightly Smiling Face",
+  "category": "Joy",
+
+  "meaning": "The Slightly Smiling Face emoji represents mild happiness, polite positivity, and calm agreement. However, depending on context, it is famously used to convey passive-aggression or a forced smile.",
+
+  "usage_examples": [
+    "That sounds good 🙂",
+    "I’m okay with that 🙂",
+    "Thanks for letting me know 🙂"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Polite response",
+      "person_a": "Let me know if this works for you",
+      "person_b": "Yes, that’s fine 🙂"
+    },
+    {
+      "context": "Calm agreement",
+      "person_a": "We’ll handle it tomorrow",
+      "person_b": "Alright 🙂"
+    },
+    {
+      "context": "Passive-aggression",
+      "person_a": "I forgot to do my part of the project again",
+      "person_b": "No worries, I will do it myself 🙂"
+    }
+  ],
+
+  "fun_fact": "While officially designed to show a gentle, polite smile, the internet has largely reclaimed 🙂 as the ultimate symbol for 'I am completely dead inside but pretending everything is fine.'",
+
+  "faqs": [
+    {
+      "q": "What does the 🙂 Slightly Smiling Face emoji mean?",
+      "a": "It represents mild happiness, politeness, calm positivity, or passive-aggression."
+    },
+    {
+      "q": "Is 🙂 different from 😊?",
+      "a": "Yes, 🙂 is highly neutral and subtle, while 😊 feels much warmer, kinder, and genuine."
+    },
+    {
+      "q": "Can 🙂 be passive-aggressive?",
+      "a": "Absolutely. In modern texting, it is frequently used to show a forced smile or hidden annoyance."
+    },
+    {
+      "q": "Is 🙂 appropriate for work chats?",
+      "a": "Yes, it is commonly used in professional communication to sound polite, but be mindful of its sarcastic potential."
+    },
+    {
+      "q": "Does 🙂 express excitement?",
+      "a": "No, it specifically conveys calm or understated emotion."
+    },
+    {
+      "q": "Why does 🙂 look sarcastic?",
+      "a": "The deadpan, staring eyes combined with a tiny smile make it look like someone is hiding their true frustration."
+    }
+  ],
+
+  "when_to_use": "Use this emoji to express mild happiness, polite agreement, calm positivity, or a friendly but reserved tone.",
+  "when_not_to_use": "Avoid using it when strong excitement, enthusiasm, or deep emotion needs to be conveyed.",
+
+  "unicode_name": "SLIGHTLY SMILING FACE",
+  "unicode_version": "Unicode 7.0",
+  "codepoint": "U+1F642",
+  "shortcodes": [":slightly_smiling_face:"],
+
+  "related_emojis": [
+    "grinning-face",
+    "smiling-face-with-smiling-eyes-soft",
+    "neutral-face"
+  ],
+
+  "detailed_meaning": [
+    "The Slightly Smiling Face emoji 🙂 features a very subtle, closed-mouth smile and wide, unblinking eyes. Officially, it is meant to represent a polite, gentle form of contentment.",
+    "However, culturally, it has taken on a second life. Because the eyes do not show any 'crinkling' or genuine joy, it is widely interpreted as a forced smile, representing someone who is secretly annoyed but maintaining their composure."
+  ],
+
+  "real_life_usage": [
+    "In its sincere form, it is used by older generations to politely end a conversation or confirm a plan.",
+    "In its modern form, younger generations use it heavily for sarcastic, passive-aggressive remarks, such as 'Everything is going wrong today 🙂' or 'Thanks for ignoring me 🙂'."
+  ],
+
+  "tone_impact": [
+    "If the context is positive, it sets a mild, polite, and completely calm tone.",
+    "If the context is negative or frustrating, it injects a highly sarcastic, passive-aggressive, and 'staring into the void' energy."
+  ],
+
+  "misuse": [
+    "Sending this emoji to a friend or partner during a sensitive conversation can trigger anxiety, as they will likely interpret the slight smile as thinly veiled anger.",
+    "It should not be used to respond to highly exciting news, as it looks far too apathetic."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a hilarious tool for deadpan humor and conveying sarcastic frustration.",
+    "In professional settings, it is usually viewed as a safe, polite sign-off. However, be careful using it when delivering criticism to a colleague, as it will almost certainly be read as passive-aggressive."
+  ],
+
+  "platform_appearance": [
+    "It universally features a yellow face with two dot-like eyes and a very faint, simple curved line for a smile.",
+    "The minimalist design is exactly what gives it that slightly uncanny, 'forced smile' appearance across all devices."
+  ]
+}

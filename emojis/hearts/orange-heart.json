@@ -1,0 +1,102 @@
+{
+  "slug": "orange-heart",
+  "emoji": "🧡",
+  "name": "Orange Heart",
+  "category": "Hearts",
+  
+  "meaning": "The Orange Heart emoji represents warm affection, encouragement, and friendly love that sits perfectly between the passion of romance and the safety of friendship.",
+  
+  "usage_examples": [
+    "So proud of you 🧡",
+    "Sending lots of warmth and support 🧡",
+    "This made me really happy 🧡"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Encouragement",
+      "person_a": "I’m nervous about tomorrow",
+      "person_b": "You’ve got this 🧡"
+    },
+    {
+      "context": "Friendly affection",
+      "person_a": "Thanks for always cheering me up",
+      "person_b": "Anytime 🧡"
+    },
+    {
+      "context": "Positive vibes",
+      "person_a": "That was such a fun day",
+      "person_b": "It really was 🧡"
+    }
+  ],
+  
+  "fun_fact": "The 🧡 Orange Heart was the very last color of the rainbow heart set to be added to Unicode! Before 2017, users had to jump from the romantic red heart straight to the friendly yellow one.",
+  
+  "faqs": [
+    {
+      "q": "What does the 🧡 Orange Heart emoji mean?",
+      "a": "It represents warmth, encouragement, and friendly affection."
+    },
+    {
+      "q": "Is 🧡 romantic?",
+      "a": "Not usually; it is often used to show a level of care that is deeper than friendship but not quite a full romantic confession."
+    },
+    {
+      "q": "Can 🧡 be used for motivation?",
+      "a": "Yes, it is one of the most popular emojis for encouraging or uplifting others."
+    },
+    {
+      "q": "Is 🧡 different from 💛?",
+      "a": "Yes, 💛 represents pure, cheerful friendship, while 🧡 adds a layer of warmth and enthusiastic support."
+    },
+    {
+      "q": "Is 🧡 widely supported?",
+      "a": "Yes, it is standard across all modern smartphones and computers."
+    }
+  ],
+
+  "when_to_use": "Use this emoji to express warmth, encouragement, friendly love, positivity, or supportive affection.",
+  "when_not_to_use": "Avoid using it when expressing deep romantic passion or intense emotional heartbreak.",
+
+  "unicode_name": "ORANGE HEART",
+  "unicode_version": "Unicode 10.0",
+  "codepoint": "U+1F9E1",
+  "shortcodes": [":orange_heart:"],
+
+  "related_emojis": [
+    "yellow-heart",
+    "red-heart",
+    "blue-heart"
+  ],
+
+  "detailed_meaning": [
+    "The Orange Heart emoji 🧡 represents a vibrant, energetic form of love. In color psychology, orange combines the energy of red with the happiness of yellow, making this heart the ultimate symbol of enthusiasm.",
+    "It is often used as a 'safe' heart—expressing a strong bond without the potential pressure or misunderstanding that a Red Heart might cause in a new or platonic relationship."
+  ],
+
+  "real_life_usage": [
+    "It is a staple for 'hype' messages, such as cheering on a friend before a big game or a job interview.",
+    "People use it during the autumn season to match the colors of falling leaves and cozy, pumpkin-themed aesthetics.",
+    "It is also heavily used on social media to show support for teams like the Netherlands national football team or the Phoenix Suns."
+  ],
+
+  "tone_impact": [
+    "This emoji sets an upbeat, energetic, and highly encouraging tone.",
+    "It makes the recipient feel seen and cheered for, adding a pop of bright energy to any text string."
+  ],
+
+  "misuse": [
+    "Using an orange heart to respond to a serious romantic declaration (like 'I love you') can feel like a 'downgrade' or an intentional step back into the friendzone.",
+    "It isn't well-suited for somber or sad conversations due to its high-energy color."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a fantastic all-around emoji for friends, coworkers, and family.",
+    "In professional settings, it is a great choice for internal team building and showing enthusiasm for a project without being overly emotional."
+  ],
+
+  "platform_appearance": [
+    "Universally displays as a solid orange heart.",
+    "The shade is consistent across Apple, Google, and Samsung, usually appearing as a bright, 'safety orange' or amber color."
+  ]
+}

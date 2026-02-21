@@ -1,0 +1,102 @@
+{
+  "slug": "mending-heart",
+  "emoji": "❤️‍🩹",
+  "name": "Mending Heart",
+  "category": "Hearts",
+  
+  "meaning": "The Mending Heart emoji represents healing after heartbreak, emotional recovery, forgiveness, and the process of moving forward after emotional pain.",
+  
+  "usage_examples": [
+    "Slowly healing, one day at a time ❤️‍🩹",
+    "Things are getting better now ❤️‍🩹",
+    "Learning to love again ❤️‍🩹"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Emotional recovery",
+      "person_a": "It still hurts, but I’m improving",
+      "person_b": "That’s healing ❤️‍🩹"
+    },
+    {
+      "context": "After breakup",
+      "person_a": "I thought I’d never move on",
+      "person_b": "You’re getting there ❤️‍🩹"
+    },
+    {
+      "context": "Supportive message",
+      "person_a": "Some days are harder than others",
+      "person_b": "Take your time ❤️‍🩹"
+    }
+  ],
+  
+  "fun_fact": "The ❤️‍🩹 Mending Heart emoji was created to bridge the gap between the Broken Heart and the Red Heart. It is the only heart emoji that specifically represents the *process* of getting better!",
+  
+  "faqs": [
+    {
+      "q": "What does the ❤️‍🩹 Mending Heart emoji mean?",
+      "a": "It represents healing, recovery, and emotional repair."
+    },
+    {
+      "q": "Is ❤️‍🩹 used after a breakup?",
+      "a": "Yes, it commonly symbolizes the slow process of healing after heartbreak."
+    },
+    {
+      "q": "Does ❤️‍🩹 mean love?",
+      "a": "It represents love in recovery or the hope of loving again after being hurt."
+    },
+    {
+      "q": "Can ❤️‍🩹 be used for mental health support?",
+      "a": "Yes, it is often used to show empathy for someone going through a tough time."
+    },
+    {
+      "q": "Is ❤️‍🩹 a new emoji?",
+      "a": "Yes, it was introduced in Unicode 13.1 and has quickly become a symbol of resilience."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when expressing emotional healing, recovery after heartbreak, self-care, or gradual emotional improvement.",
+  "when_not_to_use": "Avoid using it in purely cheerful or celebratory love moments where no context of healing exists.",
+
+  "unicode_name": "MENDING HEART",
+  "unicode_version": "Unicode 13.1",
+  "codepoint": "U+2764 U+FE0F U+200D U+1FA79",
+  "shortcodes": [":mending_heart: Sun"],
+
+  "related_emojis": [
+    "broken-heart",
+    "red-heart",
+    "beating-heart"
+  ],
+
+  "detailed_meaning": [
+    "The Mending Heart emoji ❤️‍🩹 features a red heart wrapped in a white bandage. It is a powerful symbol of resilience, indicating that while someone has been hurt, they are actively working to repair themselves.",
+    "It captures a bittersweet emotion—the acknowledgment of past pain combined with the optimistic hope for a better future."
+  ],
+
+  "real_life_usage": [
+    "It is the go-to emoji when checking in on a friend who recently went through a breakup or a family loss.",
+    "People use it in personal captions when sharing their journey of self-love and mental health recovery.",
+    "It is also used metaphorically to say 'let's make up' or 'let's fix this' after a minor argument with a partner."
+  ],
+
+  "tone_impact": [
+    "This emoji carries an incredibly gentle, supportive, and hopeful tone.",
+    "It validates the recipient's pain while simultaneously offering a virtual 'hug' and encouragement to keep going."
+  ],
+
+  "misuse": [
+    "Using it to react to a minor physical injury (like a stubbed toe) is common but technically a misuse, as the emoji is intended for *emotional* healing.",
+    "Sending it to someone who is currently in the middle of a crisis might feel premature; the Broken Heart is often better for the immediate shock."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a beautiful way to show empathy and shared vulnerability.",
+    "In professional settings, it should be used with extreme caution. It implies a level of personal emotional struggle that is usually too private for workplace communication."
+  ],
+
+  "platform_appearance": [
+    "Universally displays as a red heart with a white bandage wrapped diagonally around the center.",
+    "The design is highly consistent across platforms, ensuring the message of 'healing in progress' is always clear."
+  ]
+}

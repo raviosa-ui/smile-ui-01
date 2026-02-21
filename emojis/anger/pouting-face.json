@@ -1,0 +1,113 @@
+{
+  "slug": "pouting-face",
+  "emoji": "😡",
+  "name": "Pouting Face",
+  "category": "Anger",
+  
+  "meaning": "The Pouting Face emoji represents strong anger, frustration, and visible displeasure. It is used to express intense irritation or rage when emotions are no longer restrained.",
+  
+  "usage_examples": [
+    "This is completely unacceptable 😡",
+    "I’m extremely angry about this 😡",
+    "That crossed the line 😡"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Strong frustration",
+      "person_a": "They ignored everything we agreed on",
+      "person_b": "That makes me furious 😡"
+    },
+    {
+      "context": "Anger escalation",
+      "person_a": "They blamed me for their mistake",
+      "person_b": "That’s infuriating 😡"
+    },
+    {
+      "context": "Boundary violation",
+      "person_a": "They did it again after I warned them",
+      "person_b": "That’s not okay 😡"
+    }
+  ],
+  
+  "fun_fact": "Despite officially being named the 'Pouting Face' by Unicode, almost nobody uses it for a gentle pout. Because of its bright red gradient, internet users instantly claimed it as the universal symbol for boiling rage and fury!",
+  
+  "faqs": [
+    {
+      "q": "What does the 😡 Pouting Face emoji mean?",
+      "a": "It represents strong anger, rage, or intense frustration."
+    },
+    {
+      "q": "Is 😡 stronger than 😠?",
+      "a": "Yes, 😡 is bright red and shows much more intense, explosive anger than the yellow 😠 face."
+    },
+    {
+      "q": "Can 😡 express rage?",
+      "a": "Yes, it is one of the most common emojis used to show rage or fury."
+    },
+    {
+      "q": "Is 😡 appropriate for work chats?",
+      "a": "No, it is generally considered far too aggressive and emotional for professional communication."
+    },
+    {
+      "q": "Does 😡 show loss of control?",
+      "a": "It suggests a high emotional intensity and a lack of patience, though context matters."
+    },
+    {
+      "q": "Is 😡 suitable for social media?",
+      "a": "Yes, it is frequently used in comment sections to express outrage over unfair situations."
+    },
+    {
+      "q": "Can 😡 be sarcastic?",
+      "a": "Rarely; because of its severe color, it is almost always interpreted as genuine anger."
+    },
+    {
+      "q": "Is 😡 universally understood?",
+      "a": "Yes, the color red is globally recognized as a symbol of anger and heat."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when expressing strong anger, feeling deeply wronged, or conveying intense frustration where emotions are clearly heightened.",
+  "when_not_to_use": "Avoid using it in professional, diplomatic, or sensitive conversations where strong visual anger could escalate a conflict.",
+
+  "unicode_name": "POUTING FACE",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F621",
+  "shortcodes": [":rage:"],
+
+  "related_emojis": [
+    "angry-face",
+    "face-with-symbols-on-mouth",
+    "face-with-steam-from-nose"
+  ],
+
+  "detailed_meaning": [
+    "The Pouting Face emoji 😡 is visually identical to the Angry Face (😠), but it is colored bright red to indicate that the user's blood is boiling. It represents a state of being visibly, deeply upset.",
+    "It leaves no room for misinterpretation. When someone uses this emoji, it signals that their patience is entirely gone and they are feeling a genuine sense of outrage or injustice."
+  ],
+
+  "real_life_usage": [
+    "It is frequently used when reacting to major customer service failures, political news, or severe betrayals of trust.",
+    "Friends might use it in group chats when collectively expressing outrage on behalf of someone who was treated unfairly."
+  ],
+
+  "tone_impact": [
+    "This emoji carries a highly aggressive, severe, and confrontational tone.",
+    "It removes any sense of calm from the conversation, indicating that the sender is demanding to be heard and taken seriously."
+  ],
+
+  "misuse": [
+    "Using this in response to a lighthearted joke or friendly teasing can severely damage the interaction, as the recipient will assume they have deeply offended you.",
+    "Sending it to a partner during a minor disagreement can escalate the tension much faster than using words alone."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is an effective way to show solidarity in outrage when a friend is venting to you.",
+    "In a corporate environment, it should never be used. Sending a bright red, furious face to a colleague or boss is considered a major breach of professional etiquette."
+  ],
+
+  "platform_appearance": [
+    "Universally, this emoji features a face that transitions from orange to bright red, with deep, downward-angled eyebrows.",
+    "The color gradient across Apple and Google devices perfectly mimics the physical human response of 'flushing' red when furious."
+  ]
+}

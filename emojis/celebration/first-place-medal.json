@@ -1,0 +1,116 @@
+{
+  "slug": "first-place-medal",
+  "emoji": "🥇",
+  "name": "First Place Medal",
+  "category": "Celebration",
+
+  "meaning": "The first place medal emoji represents winning, top achievement, excellence, and coming out on top in a competition or goal.",
+
+  "usage_examples": [
+    "We finished first 🥇",
+    "Number one this year 🥇",
+    "Top performer of the team 🥇"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Competition",
+      "person_a": "We got first place!",
+      "person_b": "Amazing job 🥇"
+    },
+    {
+      "context": "Work achievement",
+      "person_a": "I was ranked #1 this quarter",
+      "person_b": "Well earned 🥇"
+    },
+    {
+      "context": "Big win",
+      "person_a": "Guess the results are out",
+      "person_b": "And?",
+      "person_a_2": "I came first!",
+      "person_b_2": "That’s incredible 🥇"
+    }
+  ],
+
+  "fun_fact": "The 🥇 First Place Medal emoji is widely used during the Olympics, but in everyday texting, it is frequently used to playfully award someone for being the 'best' at something, like 'Best Friend Award 🥇'.",
+
+  "faqs": [
+    {
+      "q": "What does the 🥇 emoji mean?",
+      "a": "It represents first place, winning, and top achievement."
+    },
+    {
+      "q": "Is 🥇 different from 🏆?",
+      "a": "Yes, 🥇 focuses on ranking first in a specific event, while 🏆 represents winning a competition overall."
+    },
+    {
+      "q": "Can 🥇 be used professionally?",
+      "a": "Yes, especially for rankings, awards, and performance recognition."
+    },
+    {
+      "q": "Is 🥇 always positive?",
+      "a": "Yes, it strongly conveys success, excellence, and pride."
+    },
+    {
+      "q": "When should 🥇 be avoided?",
+      "a": "Avoid using it when there is no competitive or ranking context, or if it might seem overly boastful."
+    },
+    {
+      "q": "Is 🥇 popular on social media?",
+      "a": "Yes, it’s commonly used in achievement and result announcements."
+    },
+    {
+      "q": "Does 🥇 imply competition?",
+      "a": "Yes, it usually implies outperforming others to reach the top spot."
+    },
+    {
+      "q": "Why is 🥇 widely understood?",
+      "a": "Gold medals are universally recognized as the ultimate symbol of first place."
+    }
+  ],
+
+  "when_to_use": "Use this emoji to celebrate first place finishes, top rankings, or being the absolute best at something.",
+  "when_not_to_use": "Avoid using it when there is no clear competition or ranking involved, as it can confuse the context.",
+
+  "unicode_name": "FIRST PLACE MEDAL",
+  "unicode_version": "Unicode 9.0",
+  "codepoint": "U+1F947",
+  "shortcodes": [":first_place_medal:"],
+
+  "related_emojis": [
+    "trophy",
+    "party-popper",
+    "confetti-ball"
+  ],
+
+  "detailed_meaning": [
+    "The First Place Medal emoji 🥇 specifically depicts a gold medal attached to a ribbon. It is the ultimate digital symbol of victory, outperforming the competition, and achieving the highest possible standard.",
+    "Beyond literal sports, it is used metaphorically to praise someone for their outstanding effort, essentially telling them they are 'number one' in your eyes."
+  ],
+
+  "real_life_usage": [
+    "It is heavily used during major sporting events like the Olympics or the World Cup to celebrate an athlete's victory.",
+    "Friends use it playfully to reward each other for mundane accomplishments, such as being the first person to arrive at a restaurant.",
+    "Gamers and fantasy sports players use it frequently when sharing their winning leaderboards."
+  ],
+
+  "tone_impact": [
+    "This emoji carries a highly triumphant, proud, and celebratory tone.",
+    "It elevates a standard congratulatory message by visually crowning the recipient as the undisputed winner."
+  ],
+
+  "misuse": [
+    "Using it to congratulate someone who came in second or third place can be seen as either a mistake or highly sarcastic.",
+    "Constantly using it to describe your own daily actions can come across as slightly arrogant or boastful."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a fun way to hype up your friends and celebrate their personal wins.",
+    "In professional settings, it is highly appropriate for acknowledging a top-performing salesperson, a team that won a corporate award, or an employee who exceeded their quarterly goals."
+  ],
+
+  "platform_appearance": [
+    "Most platforms display a shiny gold medallion featuring the number '1', attached to a striped ribbon.",
+    "Apple and Google use a classic red, white, and blue ribbon, while other platforms may use simple red or blue straps."
+  ]
+}

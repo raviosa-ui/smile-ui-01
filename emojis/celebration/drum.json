@@ -1,0 +1,116 @@
+{
+  "slug": "drum",
+  "emoji": "🥁",
+  "name": "Drum",
+  "category": "Celebration",
+
+  "meaning": "The drum emoji represents rhythm, excitement, announcements, and celebratory build-up before important moments or events.",
+
+  "usage_examples": [
+    "Big announcement coming 🥁",
+    "Let the celebration begin 🥁",
+    "Drumroll please 🥁"
+  ],
+
+  "chat_examples": [
+    {
+      "context": "Announcement",
+      "person_a": "We have some exciting news",
+      "person_b": "Drumroll please 🥁"
+    },
+    {
+      "context": "Event",
+      "person_a": "The show is about to start",
+      "person_b": "So excited 🥁"
+    },
+    {
+      "context": "Big moment",
+      "person_a": "Guess who won?",
+      "person_b": "Tell me!",
+      "person_a_2": "It’s official now",
+      "person_b_2": "This deserves a drumroll 🥁"
+    }
+  ],
+
+  "fun_fact": "The 🥁 Drum emoji is most famously used as the digital equivalent of a 'drumroll' to build suspense. It is also frequently used to punctuate a terrible dad joke with a classic 'ba-dum-tss!'",
+
+  "faqs": [
+    {
+      "q": "What does the 🥁 Drum emoji mean?",
+      "a": "It represents excitement, announcements, musical rhythm, and celebratory anticipation."
+    },
+    {
+      "q": "Why is 🥁 used before announcements?",
+      "a": "It perfectly mimics an auditory drumroll, which is traditionally used to build suspense before a big reveal."
+    },
+    {
+      "q": "Is 🥁 a celebration emoji?",
+      "a": "Yes, especially for moments involving exciting buildup and anticipation."
+    },
+    {
+      "q": "Can 🥁 be used professionally?",
+      "a": "Yes, in lighthearted professional communication when revealing a new project or winner."
+    },
+    {
+      "q": "Is 🥁 playful?",
+      "a": "Yes, it adds a fun, energetic, and slightly theatrical tone."
+    },
+    {
+      "q": "Does 🥁 work with 🎉?",
+      "a": "Absolutely! 🥁 is often used in the message *before* the reveal, and 🎉 is used in the message *after*."
+    },
+    {
+      "q": "Is 🥁 suitable for serious topics?",
+      "a": "No, treating a serious announcement with a theatrical drumroll is highly inappropriate."
+    },
+    {
+      "q": "What vibe does 🥁 give?",
+      "a": "Excitement, suspense, humor, and lively celebration."
+    }
+  ],
+
+  "when_to_use": "Use this emoji when building excitement, teasing announcements, delivering a punchline, or celebrating moments with anticipation.",
+  "when_not_to_use": "Avoid using it in calm, serious, or emotionally sensitive conversations where suspense would be disrespectful.",
+
+  "unicode_name": "DRUM WITH DRUMSTICKS",
+  "unicode_version": "Unicode 9.0",
+  "codepoint": "U+1F941",
+  "shortcodes": [":drum:"],
+
+  "related_emojis": [
+    "party-popper",
+    "confetti-ball",
+    "trumpet"
+  ],
+
+  "detailed_meaning": [
+    "The Drum emoji 🥁 is unique in the celebration category because it represents an action leading up to an event, rather than the event itself. It symbolizes anticipation, suspense, and the gathering of attention.",
+    "It is the digital equivalent of tapping your hands on a desk before making an exciting announcement."
+  ],
+
+  "real_life_usage": [
+    "People frequently use it on social media when writing 'I finally have some news to share... 🥁'.",
+    "It is a favorite for content creators announcing a giveaway winner or revealing a highly anticipated piece of art or music.",
+    "Friends use it humorously in group chats to demand an update from a friend who went on a date."
+  ],
+
+  "tone_impact": [
+    "It creates an immediate sense of suspense and commands the reader's attention.",
+    "It sets a highly playful, slightly dramatic, and incredibly engaging tone that makes the recipient eager to read the next text bubble."
+  ],
+
+  "misuse": [
+    "Using a drumroll before delivering bad news or criticism is jarring and inappropriate, as it sets the recipient up to expect something joyful.",
+    "Overusing it for entirely mundane updates ('I am having soup for lunch 🥁') diminishes its fun, suspenseful effect."
+  ],
+
+  "professional_vs_casual": [
+    "In casual text threads, it is a fun, interactive way to hold your friends in suspense.",
+    "In professional settings, it is a great tool for an internal newsletter or Slack message announcing an 'Employee of the Month' or revealing the location of the next company retreat."
+  ],
+
+  "platform_appearance": [
+    "The emoji displays a classic snare drum with two wooden drumsticks resting on top or striking the drumhead.",
+    "Apple and Google feature highly detailed snare drums with silver tension rods and bright blue or red rims, making it visually striking on a keyboard."
+  ]
+}

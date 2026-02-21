@@ -1,0 +1,102 @@
+{
+  "slug": "yellow-heart",
+  "emoji": "💛",
+  "name": "Yellow Heart",
+  "category": "Hearts",
+  
+  "meaning": "The Yellow Heart emoji represents happiness, friendship-based love, warmth, positivity, and cheerful affection without romantic intensity.",
+  
+  "usage_examples": [
+    "So grateful for our friendship 💛",
+    "Sending you positive vibes 💛",
+    "This made my day 💛"
+  ],
+  
+  "chat_examples": [
+    {
+      "context": "Friendship",
+      "person_a": "Thanks for always being there for me",
+      "person_b": "Always 💛"
+    },
+    {
+      "context": "Positive message",
+      "person_a": "Your message really cheered me up",
+      "person_b": "That makes me happy 💛"
+    },
+    {
+      "context": "Warm affection",
+      "person_a": "You have such good energy",
+      "person_b": "Right back at you 💛"
+    }
+  ],
+  
+  "fun_fact": "The 💛 Yellow Heart gained massive fame because of Snapchat! For a long time, it was the official icon that appeared next to your 'Best Friend'—the person you chatted with the most on the app!",
+  
+  "faqs": [
+    {
+      "q": "What does the 💛 Yellow Heart emoji mean?",
+      "a": "It represents happiness, friendship, and warm, sincere affection."
+    },
+    {
+      "q": "Is 💛 romantic?",
+      "a": "Usually no; it is the primary heart used for friends and family to show care without romantic intent."
+    },
+    {
+      "q": "Can 💛 be used for best friends?",
+      "a": "Yes, it is the most common heart emoji for expressing deep platonic bonds."
+    },
+    {
+      "q": "Is 💛 different from ❤️?",
+      "a": "Yes, ❤️ shows romantic passion, while 💛 shows sunny, cheerful friendship."
+    },
+    {
+      "q": "Is 💛 a positive emoji?",
+      "a": "Yes, it is one of the most purely positive and innocent emojis on the keyboard."
+    }
+  ],
+
+  "when_to_use": "Use this emoji to express friendly love, happiness, positivity, gratitude, or warm non-romantic affection.",
+  "when_not_to_use": "Avoid using it when strong romantic passion, heartbreak, or intense emotional despair is intended.",
+
+  "unicode_name": "YELLOW HEART",
+  "unicode_version": "Unicode 6.0",
+  "codepoint": "U+1F49B",
+  "shortcodes": [":yellow_heart: My"],
+
+  "related_emojis": [
+    "blue-heart",
+    "green-heart",
+    "orange-heart"
+  ],
+
+  "detailed_meaning": [
+    "The Yellow Heart emoji 💛 radiates warmth and kindness. Because yellow is the color of sunshine and joy, this heart represents a 'golden' relationship—one that is full of laughter, trust, and mutual respect.",
+    "It is a symbol of 'pure gold' intentions, indicating that the sender truly values the other person's presence in their life in a wholesome and happy way."
+  ],
+
+  "real_life_usage": [
+    "It is the absolute standard for texting best friends and close family members like siblings or parents.",
+    "People use it when sharing good news or 'thank you' messages to keep the tone bright and cheerful.",
+    "It is also used during the summer or to match yellow-themed photos, such as sunflowers or sunny beach days."
+  ],
+
+  "tone_impact": [
+    "This emoji sets a very sunny, cheerful, and approachable tone.",
+    "It acts as a digital smile, ensuring that the recipient feels a warm sense of companionship and safety."
+  ],
+
+  "misuse": [
+    "Sending a yellow heart during a serious romantic conflict can come across as a way of 'friendzoning' the other person or avoiding deep emotional intimacy.",
+    "It isn't powerful enough for expressing intense grief or anger."
+  ],
+
+  "professional_vs_casual": [
+    "In casual settings, it is a staple of friendly, happy communication.",
+    "In professional settings, it is a very safe choice for thanking a helpful coworker, as it is warm without any risk of being interpreted as unprofessional or romantic."
+  ],
+
+  "platform_appearance": [
+    "Universally displays as a solid yellow heart.",
+    "Apple uses a bright, golden-yellow with a slight glossy finish, while Google features a flatter, slightly more amber-colored heart."
+  ]
+}
