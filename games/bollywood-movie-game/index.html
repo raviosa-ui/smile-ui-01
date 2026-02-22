@@ -3,237 +3,349 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultimate Movie Quiz (Final)</title>
+
+    <title>Bollywood Movie Emoji Game | SmileyMeaning</title>
+
+    <meta name="description" content="Play the Ultimate Bollywood Movie Emoji Game! Can you guess the classic Hindi movies from just emojis? Fun interactive quiz for family and friends.">
+    <meta name="keywords" content="bollywood emoji game, guess the hindi movie, bollywood quiz, movie emoji puzzle, hindi cinema game, family party game">
+    <meta name="author" content="SmileyMeaning">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://smileymeaning.com/games/bollywood-movie-game/">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Guess the Bollywood Movie 🎬 | Emoji Game">
+    <meta property="og:description" content="Can you decode these famous Bollywood movies using only emojis? Challenge your friends!">
+    <meta property="og:url" content="https://smileymeaning.com/games/bollywood-movie-game/">
+    <meta property="og:image" content="https://smileymeaning.com/assets/emoji-game-cover.png">
+    <meta property="og:site_name" content="SmileyMeaning">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bollywood Emoji Game 🎬">
+    <meta name="twitter:description" content="Can you decode these famous Bollywood movies using only emojis? Challenge your friends!">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
     <style>
         body {
             margin: 0;
-            background-color: #1a1a2e;
+            /* Vibrant Bollywood-style gradient (Orange/Pink to Purple) */
+            background: linear-gradient(135deg, #f12711 0%, #f5af19 50%, #8e2de2 100%);
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
-            cursor: pointer;
+            cursor: pointer; 
             user-select: none;
             overflow: hidden;
+            box-sizing: border-box;
+            padding: 20px;
         }
 
-        #level {
-            font-size: 2.5vw;
-            background: #e94560;
+        /* Back Button */
+        .back-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: #fff;
+            background: rgba(0,0,0,0.3);
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            z-index: 100;
+            transition: background 0.2s;
+        }
+        .back-link:hover { background: rgba(0,0,0,0.6); }
+
+        /* Progress Tracker */
+        #progress {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        /* Category / Level */
+        #category {
+            font-size: clamp(1.2rem, 3vw, 2.5rem);
+            background: rgba(0,0,0,0.4);
             padding: 10px 30px;
             border-radius: 50px;
+            color: #ffde00; /* Gold */
             text-transform: uppercase;
             letter-spacing: 3px;
-            margin-bottom: 20px;
-            box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
-            transition: background 0.3s;
+            margin-top: 60px;
+            margin-bottom: 10px;
+            font-weight: 900;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
+        /* The Emoji Puzzle */
         #puzzle {
-            font-size: 10vw;
+            font-size: clamp(3rem, 10vw, 8rem); 
             margin: 10px 0;
             line-height: 1.3;
-            text-shadow: 0 0 30px rgba(0,0,0,0.7);
+            text-shadow: 0 0 30px rgba(0,0,0,0.5);
+            background: rgba(255,255,255,0.15);
+            padding: 20px 30px;
+            border-radius: 30px;
+            border: 4px dashed rgba(255,255,255,0.4);
+            max-width: 95vw; 
+            display: inline-block;
+            word-wrap: break-word; 
         }
 
+        /* Answer Container */
         #answer-container {
-            opacity: 0;
+            opacity: 0; 
             transition: opacity 0.3s ease;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 10px;
-            min-height: 100px;
+            min-height: 120px;
+            margin-top: 20px;
         }
 
+        /* The Answer text */
         #answer {
-            font-size: 5vw;
-            color: #4cd137;
-            font-weight: 800;
-            text-shadow: 2px 2px 0px #000;
-            margin-bottom: 10px;
+            font-size: clamp(2rem, 6vw, 4.5rem);
+            color: #a8ff78; /* Bright mint green */
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            margin-bottom: 5px;
         }
 
+        /* The Explanation text */
         #explanation {
-            font-size: 2vw;
-            color: #a4b0be;
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            color: #f1f2f6;
             font-style: italic;
-            max-width: 80%;
+            max-width: 90%;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
         }
 
         .hint {
             position: absolute;
-            bottom: 30px;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
             font-size: 1.2rem;
-            color: #6a6a8a;
+            color: rgba(255,255,255,0.8);
+            font-weight: bold;
+            animation: pulse 2s infinite;
+            width: 100%;
         }
-        
-        /* Start Button to unlock Audio */
-        #start-overlay {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.95);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 100; /* Ensure it is on top */
-        }
-        #start-btn {
-            padding: 20px 50px;
-            font-size: 30px;
-            background: #2ecc71;
-            color: white;
+
+        /* Play Again Button */
+        #play-again {
+            display: none;
+            margin-top: 20px;
+            padding: 15px 40px;
+            font-size: 2rem;
+            background-color: #ffde00;
             border: none;
-            border-radius: 10px;
+            border-radius: 40px;
+            color: #222;
+            font-weight: bold;
             cursor: pointer;
-            animation: pulse 1.5s infinite;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+            z-index: 10;
         }
-        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        #play-again:hover { transform: scale(1.1); }
+
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            #progress {
+                top: 70px;
+                right: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 1rem;
+                padding: 5px 15px;
+            }
+            #category { margin-top: 100px; } 
+            #puzzle { padding: 15px; } 
+        }
     </style>
 </head>
 <body>
 
-    <audio id="clapSound" crossorigin="anonymous">
-        <source src="https://cdn.pixabay.com/audio/2024/09/13/audio_8e8263172e.mp3" type="audio/mpeg">
-    </audio>
+    <a href="/games/" class="back-link">⬅️ Back to Games</a>
 
-    <div id="start-overlay">
-        <button id="start-btn">▶ START GAME</button>
-    </div>
-
-    <div id="level">GET READY</div>
-    <div id="puzzle">🎬</div>
+    <div id="progress">Puzzle 1 of X</div>
+    <div id="category">ROUND 1</div>
+    <div id="puzzle">❓</div>
     
     <div id="answer-container">
         <div id="answer"></div>
         <div id="explanation"></div>
     </div>
     
-    <div class="hint">(Tap screen to Reveal / Next)</div>
+    <button id="play-again">Play Again 🔄</button>
+    <div class="hint">(Tap anywhere to Reveal / Next)</div>
 
     <script>
+        // --- BUILT-IN SOUND SYNTHESIZER ---
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        
+        function playPopSound() {
+            if(audioCtx.state === 'suspended') audioCtx.resume();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(600, audioCtx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(1200, audioCtx.currentTime + 0.1);
+            gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.1);
+        }
+
+        function playWinSound() {
+            if(audioCtx.state === 'suspended') audioCtx.resume();
+            [440, 554, 659].forEach((freq, i) => {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.frequency.value = freq;
+                osc.type = 'triangle';
+                gain.gain.setValueAtTime(0.2, audioCtx.currentTime + (i*0.1));
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 1);
+                osc.start(audioCtx.currentTime + (i*0.1));
+                osc.stop(audioCtx.currentTime + 1);
+            });
+        }
+
+        // --- PURE BOLLYWOOD DATA ---
         const questions = [
-            // --- EASY ROUND ---
-            { lvl: "Round 1: Easy", puzzle: "🤪 🤪 🤪 📚", ans: "3 Idiots", note: "3 Crazy Faces + Books" },
-            { lvl: "Round 1: Easy", puzzle: "👽 📻 🌍", ans: "PK", note: "Alien + Radio + Earth" },
-            { lvl: "Round 1: Easy", puzzle: "🚂 👓 🥥", ans: "Chennai Express", note: "Train + Glasses + Coconut" },
-            { lvl: "Round 1: Easy", puzzle: "🚢 🧊 💔", ans: "Titanic", note: "Ship + Iceberg + Heartbreak" },
-            { lvl: "Round 1: Easy", puzzle: "🦕 🦖 🚙", ans: "Jurassic Park", note: "Dinosaurs + Jeep" },
-            { lvl: "Round 1: Easy", puzzle: "🦁 👑", ans: "The Lion King", note: "Lion + King's Crown" },
-            { lvl: "Round 1: Easy", puzzle: "🏰 🏹 💪", ans: "Baahubali", note: "Kingdom + Bow & Arrow + Strong" },
+            // EASY ROUND
+            { cat: "🎬 Round 1: Easy", puzzle: "🤪 🤪 🤪 📚", ans: "3 Idiots", note: "3 Crazy Faces + Books" },
+            { cat: "🎬 Round 1: Easy", puzzle: "🚂 👓 🥥", ans: "Chennai Express", note: "Train + Glasses + Coconut" },
+            { cat: "🎬 Round 1: Easy", puzzle: "👽 📻 🌍", ans: "PK", note: "Alien + Radio + Earth" },
+            { cat: "🎬 Round 1: Easy", puzzle: "🐒 👧 🇵🇰", ans: "Bajrangi Bhaijaan", note: "Monkey God + Little Girl + Pakistan" },
+            { cat: "🎬 Round 1: Easy", puzzle: "👨‍🏫 👽 🛸", ans: "Koi... Mil Gaya", note: "Guy + Alien + Spaceship" },
+            
+            // MEDIUM ROUND
+            { cat: "🎬 Round 2: Medium", puzzle: "🇪🇸 🍅 🤿", ans: "ZNMD", note: "Spain + Tomatoes + Scuba Diving" },
+            { cat: "🎬 Round 2: Medium", puzzle: "💍 🚂 🕊️", ans: "DDLJ", note: "Ring + Train + Pigeons" },
+            { cat: "🎬 Round 2: Medium", puzzle: "🤼‍♀️ 🏅 🇮🇳", ans: "Dangal", note: "Wrestling + Gold Medal + India" },
+            { cat: "🎬 Round 2: Medium", puzzle: "🏏 🇬🇧 🌧️", ans: "Lagaan", note: "Cricket + British Flag + Rain" },
+            { cat: "🎬 Round 2: Medium", puzzle: "👻 🏰 🗝️", ans: "Bhool Bhulaiyaa", note: "Ghost + Mansion + Key" },
 
-            // --- MEDIUM ROUND ---
-            { lvl: "Round 2: Medium", puzzle: "🇪🇸 🍅 🤿 ✈️", ans: "ZNMD", note: "Spain + Tomatoes + Scuba + Skydiving" },
-            { lvl: "Round 2: Medium", puzzle: "🖐️ 🪙 🐴", ans: "Sholay", note: "Thakur's Hand + Coin + Dhanno" },
-            { lvl: "Round 2: Medium", puzzle: "🤼‍♀️ 🏅 🇮🇳", ans: "Dangal", note: "Wrestling + Gold Medal + India" },
-            { lvl: "Round 2: Medium", puzzle: "🏏 🇬🇧 🌧️", ans: "Lagaan", note: "Cricket + British Flag + Rain" },
-            { lvl: "Round 2: Medium", puzzle: "🕶️ 🎹 🐱", ans: "Andhadhun", note: "Blind Glasses + Piano + The Cat" },
-            { lvl: "Round 2: Medium", puzzle: "💍 🚂 🕊️", ans: "DDLJ", note: "Engagement Ring + Train + Pigeons" },
-            { lvl: "Round 2: Medium", puzzle: "🕵️‍♂️ 🐅 💣", ans: "Ek Tha Tiger", note: "Spy + Tiger + Bomb" },
-
-            // --- TOUGH ROUND ---
-            { lvl: "Round 3: Tough", puzzle: "🏃 ➕ 🥛 ➕ 🏃", ans: "Bhaag Milkha Bhaag", note: "Run + Milk + Run" },
-            { lvl: "Round 3: Tough", puzzle: "🔑 ➕ 🚗", ans: "Ki & Ka", note: "Key + Car" },
-            { lvl: "Round 3: Tough", puzzle: "🔇 📻 🍰", ans: "Barfi", note: "Mute + Radio + Sweet" },
-            { lvl: "Round 3: Tough", puzzle: "🕉️ ☮️ 🕉️", ans: "Om Shanti Om", note: "Om Symbol x3" },
-            { lvl: "Round 3: Tough", puzzle: "🗓️ 🚌 👮‍♂️", ans: "Drishyam", note: "2nd Oct Calendar + Bus + Police" },
-            { lvl: "Round 3: Tough", puzzle: "🔥 🤝 🌊", ans: "RRR", note: "Fire + Friendship + Water" }
+            // TOUGH ROUND
+            { cat: "🎬 Round 3: Tough", puzzle: "🗓️ 🚌 👮‍♂️", ans: "Drishyam", note: "Date/Calendar + Bus + Police" },
+            { cat: "🎬 Round 3: Tough", puzzle: "🔇 📻 🍰", ans: "Barfi!", note: "Mute + Radio + Sweet" },
+            { cat: "🎬 Round 3: Tough", puzzle: "🏃 ➕ 🥛", ans: "Bhaag Milkha Bhaag", note: "Run + Milk" },
+            { cat: "🎬 Round 3: Tough", puzzle: "🕶️ 🎹 🐱", ans: "Andhadhun", note: "Blind Glasses + Piano + Cat" },
+            { cat: "🎬 Round 3: Tough", puzzle: "🔥 🤝 🌊", ans: "RRR", note: "Fire + Friendship + Water" }
         ];
 
-        let currentIndex = -1; 
-        let state = 1; 
-        const soundEffect = document.getElementById('clapSound');
-        soundEffect.volume = 1.0; 
+        let currentIndex = 0;
+        let state = 0; 
 
-        const lvlEl = document.getElementById('level');
+        const progressEl = document.getElementById('progress');
+        const catEl = document.getElementById('category');
         const puzEl = document.getElementById('puzzle');
         const ansContainer = document.getElementById('answer-container');
         const ansEl = document.getElementById('answer');
         const expEl = document.getElementById('explanation');
-        const startOverlay = document.getElementById('start-overlay');
-        const startBtn = document.getElementById('start-btn');
-
-        // --- NEW LOGIC: INSTANT START ---
-        startBtn.addEventListener('click', () => {
-            // 1. Hide Overlay Immediately (Don't wait for audio)
-            startOverlay.style.display = 'none';
-            
-            // 2. Start the Game Logic
-            currentIndex = 0;
-            state = 0;
-            updateScreen();
-
-            // 3. Try to load audio in background (Fire and forget)
-            soundEffect.play().then(() => {
-                soundEffect.pause();
-                soundEffect.currentTime = 0;
-            }).catch(e => {
-                console.log("Audio loading... game continues.");
-            });
-        });
-
-        function playClapping() {
-            soundEffect.currentTime = 0;
-            // Only play if ready
-            soundEffect.play().catch(e => console.log("Audio not ready yet"));
-        }
+        const hintEl = document.querySelector('.hint');
+        const playAgainBtn = document.getElementById('play-again');
 
         function updateScreen() {
             if (currentIndex >= questions.length) {
-                lvlEl.innerText = "THE END";
-                lvlEl.style.background = "#2ecc71";
-                puzEl.innerText = "🏆";
-                ansEl.innerText = "Well Played!";
-                expEl.innerText = "Thanks for playing";
+                progressEl.style.display = "none";
+                catEl.innerText = "BLOCKBUSTER!";
+                catEl.style.color = "#fff";
+                puzEl.innerText = "🏆🍿";
+                ansEl.innerText = "You are a Bollywood Expert!";
+                expEl.innerText = "Thanks for playing!";
                 ansContainer.style.opacity = 1;
-                playClapping(); 
+                hintEl.style.display = "none";
+                playAgainBtn.style.display = "inline-block";
+                
+                playWinSound(); 
+                confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } }); 
                 return;
             }
 
             const q = questions[currentIndex];
-            lvlEl.innerText = q.lvl;
-            
-            if(q.lvl.includes("Easy")) lvlEl.style.background = "#2ecc71"; 
-            if(q.lvl.includes("Medium")) lvlEl.style.background = "#f1c40f"; 
-            if(q.lvl.includes("Tough")) lvlEl.style.background = "#e74c3c"; 
-
+            progressEl.innerText = `Movie ${currentIndex + 1} of ${questions.length}`;
+            catEl.innerText = q.cat;
             puzEl.innerText = q.puzzle;
             
             if (state === 0) {
-                // HIDE ANSWER
-                ansContainer.style.opacity = 0;
-                ansEl.innerText = "";  // Clear text
+                // QUESTION MODE
+                ansContainer.style.opacity = 0; 
+                ansEl.innerText = ""; 
                 expEl.innerText = "";
             } else {
-                // REVEAL ANSWER
+                // REVEAL MODE
                 ansEl.innerText = q.ans;
-                expEl.innerText = "(" + q.note + ")"; 
+                expEl.innerText = "(" + q.note + ")";
                 ansContainer.style.opacity = 1; 
+                playPopSound(); 
             }
         }
 
+        // Handle Screen Taps
         document.body.addEventListener('click', (e) => {
-            if(e.target.id === 'start-btn') return;
-            if(startOverlay.style.display !== 'none') return;
+            if(e.target.id === 'play-again' || e.target.className === 'back-link') return;
+            
+            if(audioCtx.state === 'suspended') audioCtx.resume();
+
             if (currentIndex >= questions.length) return;
 
             if (state === 0) {
-                // Reveal Answer
-                state = 1;
-                playClapping();
+                state = 1; 
                 updateScreen();
             } else {
-                // Next Question
-                state = 0;
+                state = 0; 
                 currentIndex++;
                 updateScreen();
             }
         });
 
+        // Handle Play Again Button
+        playAgainBtn.addEventListener('click', () => {
+            currentIndex = 0;
+            state = 0;
+            progressEl.style.display = "block";
+            hintEl.style.display = "block";
+            playAgainBtn.style.display = "none";
+            catEl.style.color = "#ffde00"; // Reset category text color
+            updateScreen();
+        });
+
+        // Initialize game
+        updateScreen();
     </script>
 </body>
 </html>

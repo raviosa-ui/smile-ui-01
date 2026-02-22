@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Movie Quiz (Final)</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #1a1a2e;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            overflow: hidden;
+        }
+
+        #level {
+            font-size: 2.5vw;
+            background: #e94560;
+            padding: 10px 30px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+            transition: background 0.3s;
+        }
+
+        #puzzle {
+            font-size: 10vw;
+            margin: 10px 0;
+            line-height: 1.3;
+            text-shadow: 0 0 30px rgba(0,0,0,0.7);
+        }
+
+        #answer-container {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            min-height: 100px;
+        }
+
+        #answer {
+            font-size: 5vw;
+            color: #4cd137;
+            font-weight: 800;
+            text-shadow: 2px 2px 0px #000;
+            margin-bottom: 10px;
+        }
+
+        #explanation {
+            font-size: 2vw;
+            color: #a4b0be;
+            font-style: italic;
+            max-width: 80%;
+        }
+
+        .hint {
+            position: absolute;
+            bottom: 30px;
+            font-size: 1.2rem;
+            color: #6a6a8a;
+        }
+        
+        /* Start Button to unlock Audio */
+        #start-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100; /* Ensure it is on top */
+        }
+        #start-btn {
+            padding: 20px 50px;
+            font-size: 30px;
+            background: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+    </style>
+</head>
+<body>
+
+    <audio id="clapSound" crossorigin="anonymous">
+        <source src="https://cdn.pixabay.com/audio/2024/09/13/audio_8e8263172e.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="start-overlay">
+        <button id="start-btn">▶ START GAME</button>
+    </div>
+
+    <div id="level">GET READY</div>
+    <div id="puzzle">🎬</div>
+    
+    <div id="answer-container">
+        <div id="answer"></div>
+        <div id="explanation"></div>
+    </div>
+    
+    <div class="hint">(Tap screen to Reveal / Next)</div>
+
+    <script>
+        const questions = [
+            // --- EASY ROUND ---
+            { lvl: "Round 1: Easy", puzzle: "🤪 🤪 🤪 📚", ans: "3 Idiots", note: "3 Crazy Faces + Books" },
+            { lvl: "Round 1: Easy", puzzle: "👽 📻 🌍", ans: "PK", note: "Alien + Radio + Earth" },
+            { lvl: "Round 1: Easy", puzzle: "🚂 👓 🥥", ans: "Chennai Express", note: "Train + Glasses + Coconut" },
+            { lvl: "Round 1: Easy", puzzle: "🚢 🧊 💔", ans: "Titanic", note: "Ship + Iceberg + Heartbreak" },
+            { lvl: "Round 1: Easy", puzzle: "🦕 🦖 🚙", ans: "Jurassic Park", note: "Dinosaurs + Jeep" },
+            { lvl: "Round 1: Easy", puzzle: "🦁 👑", ans: "The Lion King", note: "Lion + King's Crown" },
+            { lvl: "Round 1: Easy", puzzle: "🏰 🏹 💪", ans: "Baahubali", note: "Kingdom + Bow & Arrow + Strong" },
+
+            // --- MEDIUM ROUND ---
+            { lvl: "Round 2: Medium", puzzle: "🇪🇸 🍅 🤿 ✈️", ans: "ZNMD", note: "Spain + Tomatoes + Scuba + Skydiving" },
+            { lvl: "Round 2: Medium", puzzle: "🖐️ 🪙 🐴", ans: "Sholay", note: "Thakur's Hand + Coin + Dhanno" },
+            { lvl: "Round 2: Medium", puzzle: "🤼‍♀️ 🏅 🇮🇳", ans: "Dangal", note: "Wrestling + Gold Medal + India" },
+            { lvl: "Round 2: Medium", puzzle: "🏏 🇬🇧 🌧️", ans: "Lagaan", note: "Cricket + British Flag + Rain" },
+            { lvl: "Round 2: Medium", puzzle: "🕶️ 🎹 🐱", ans: "Andhadhun", note: "Blind Glasses + Piano + The Cat" },
+            { lvl: "Round 2: Medium", puzzle: "💍 🚂 🕊️", ans: "DDLJ", note: "Engagement Ring + Train + Pigeons" },
+            { lvl: "Round 2: Medium", puzzle: "🕵️‍♂️ 🐅 💣", ans: "Ek Tha Tiger", note: "Spy + Tiger + Bomb" },
+
+            // --- TOUGH ROUND ---
+            { lvl: "Round 3: Tough", puzzle: "🏃 ➕ 🥛 ➕ 🏃", ans: "Bhaag Milkha Bhaag", note: "Run + Milk + Run" },
+            { lvl: "Round 3: Tough", puzzle: "🔑 ➕ 🚗", ans: "Ki & Ka", note: "Key + Car" },
+            { lvl: "Round 3: Tough", puzzle: "🔇 📻 🍰", ans: "Barfi", note: "Mute + Radio + Sweet" },
+            { lvl: "Round 3: Tough", puzzle: "🕉️ ☮️ 🕉️", ans: "Om Shanti Om", note: "Om Symbol x3" },
+            { lvl: "Round 3: Tough", puzzle: "🗓️ 🚌 👮‍♂️", ans: "Drishyam", note: "2nd Oct Calendar + Bus + Police" },
+            { lvl: "Round 3: Tough", puzzle: "🔥 🤝 🌊", ans: "RRR", note: "Fire + Friendship + Water" }
+        ];
+
+        let currentIndex = -1; 
+        let state = 1; 
+        const soundEffect = document.getElementById('clapSound');
+        soundEffect.volume = 1.0; 
+
+        const lvlEl = document.getElementById('level');
+        const puzEl = document.getElementById('puzzle');
+        const ansContainer = document.getElementById('answer-container');
+        const ansEl = document.getElementById('answer');
+        const expEl = document.getElementById('explanation');
+        const startOverlay = document.getElementById('start-overlay');
+        const startBtn = document.getElementById('start-btn');
+
+        // --- NEW LOGIC: INSTANT START ---
+        startBtn.addEventListener('click', () => {
+            // 1. Hide Overlay Immediately (Don't wait for audio)
+            startOverlay.style.display = 'none';
+            
+            // 2. Start the Game Logic
+            currentIndex = 0;
+            state = 0;
+            updateScreen();
+
+            // 3. Try to load audio in background (Fire and forget)
+            soundEffect.play().then(() => {
+                soundEffect.pause();
+                soundEffect.currentTime = 0;
+            }).catch(e => {
+                console.log("Audio loading... game continues.");
+            });
+        });
+
+        function playClapping() {
+            soundEffect.currentTime = 0;
+            // Only play if ready
+            soundEffect.play().catch(e => console.log("Audio not ready yet"));
+        }
+
+        function updateScreen() {
+            if (currentIndex >= questions.length) {
+                lvlEl.innerText = "THE END";
+                lvlEl.style.background = "#2ecc71";
+                puzEl.innerText = "🏆";
+                ansEl.innerText = "Well Played!";
+                expEl.innerText = "Thanks for playing";
+                ansContainer.style.opacity = 1;
+                playClapping(); 
+                return;
+            }
+
+            const q = questions[currentIndex];
+            lvlEl.innerText = q.lvl;
+            
+            if(q.lvl.includes("Easy")) lvlEl.style.background = "#2ecc71"; 
+            if(q.lvl.includes("Medium")) lvlEl.style.background = "#f1c40f"; 
+            if(q.lvl.includes("Tough")) lvlEl.style.background = "#e74c3c"; 
+
+            puzEl.innerText = q.puzzle;
+            
+            if (state === 0) {
+                // HIDE ANSWER
+                ansContainer.style.opacity = 0;
+                ansEl.innerText = "";  // Clear text
+                expEl.innerText = "";
+            } else {
+                // REVEAL ANSWER
+                ansEl.innerText = q.ans;
+                expEl.innerText = "(" + q.note + ")"; 
+                ansContainer.style.opacity = 1; 
+            }
+        }
+
+        document.body.addEventListener('click', (e) => {
+            if(e.target.id === 'start-btn') return;
+            if(startOverlay.style.display !== 'none') return;
+            if (currentIndex >= questions.length) return;
+
+            if (state === 0) {
+                // Reveal Answer
+                state = 1;
+                playClapping();
+                updateScreen();
+            } else {
+                // Next Question
+                state = 0;
+                currentIndex++;
+                updateScreen();
+            }
+        });
+
+    </script>
+</body>
+</html>
