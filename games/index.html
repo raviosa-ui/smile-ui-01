@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Emoji Games Hub 🎮 | SmileyMeaning</title>
+  <meta name="description" content="Play the best free interactive emoji games online! Test your emoji decoding skills with our fun puzzles for kids, adults, and family parties." />
+
+  <link rel="canonical" href="https://smileymeaning.com/games/" />
+
+  <meta property="og:title" content="Emoji Games Hub | SmileyMeaning" />
+  <meta property="og:description" content="Challenge your friends and family! Play our free interactive emoji guessing games." />
+  <meta property="og:url" content="https://smileymeaning.com/games/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Emoji Games Hub 🎮" />
+  <meta name="twitter:description" content="Challenge your friends and family! Play our free interactive emoji guessing games." />
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/static/style.css" />
+
+  <style>
+    /* --- GAMES HUB SPECIFIC STYLES --- */
+    
+    .games-hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 16px;
+      padding: 40px 20px;
+      color: white;
+      text-align: center;
+      margin: 20px 0 40px 0;
+      box-shadow: 0 10px 25px rgba(118, 75, 162, 0.3);
+    }
+    .games-hero h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    .games-hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    /* Games Grid */
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    /* Game Card */
+    .game-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text-dark);
+      display: flex;
+      flex-direction: column;
+    }
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+      border-color: var(--primary);
+    }
+    
+    .card-icon {
+      background: #f1f2f6;
+      font-size: 5rem;
+      padding: 40px 0;
+      margin: 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .card-content {
+      padding: 25px 20px;
+      flex-grow: 1;
+    }
+    .card-content h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.5rem;
+    }
+    .card-content p {
+      margin: 0 0 20px 0;
+      color: #666;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    .play-btn {
+      display: inline-block;
+      background: var(--primary, #ff4757);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background 0.2s;
+    }
+    .game-card:hover .play-btn {
+      background: var(--text-dark, #2d3436);
+    }
+
+    /* Viral Share Box */
+    .viral-share {
+      background: #FFF8E1;
+      border: 2px dashed #f1c40f;
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+      margin: 40px 0;
+    }
+    .viral-share h3 { margin-top: 0; }
+    .whatsapp-btn {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      margin-top: 10px;
+      transition: transform 0.2s;
+    }
+    .whatsapp-btn:hover {
+      transform: scale(1.05);
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="/">😊 SmileyMeaning</a>
+      </div>
+      <nav class="top-nav">
+        <a href="/all-emojis/">📋 All Emojis</a>
+        <a href="/quiz/">🧩 Quiz</a>
+        <a href="/emoji-mixer/">🎛️ Emoji Mixer</a>
+        <a href="/emoji-combo/">➕ Emoji Combo</a>
+        <a href="/emoji-history/">📖 History</a>
+        <a href="/trending-emojis/">🔥 Trending Emojis</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="games-hero">
+    <h1>🎮 Emoji Games Hub</h1>
+    <p>Are you an Emoji Master? Test your skills with our interactive puzzles!</p>
+  </section>
+
+  <section class="games-grid">
+    
+    <a href="/games/guess-the-emoji-game/" class="game-card">
+      <div class="card-icon">🤔💡</div>
+      <div class="card-content">
+        <h2>Guess the Emoji Game</h2>
+        <p>The ultimate family party game! Can you decode the chocolates, movies, and countries using only emojis? 90% of people fail the last level!</p>
+        <span class="play-btn">Play Now ✨</span>
+      </div>
+    </a>
+
+    </section>
+
+  <section class="viral-share">
+    <h3>Challenge Your Family & Friends! 🏆</h3>
+    <p>Who is the smartest in your family group chat? Send them this game and find out!</p>
+    <a href="https://api.whatsapp.com/send?text=Can%20you%20beat%20this%20Emoji%20Guessing%20Game?%20%F0%9F%A4%94%F0%9F%92%A1%20I%20challenge%20you!%20Play%20here:%20https://smileymeaning.com/games/guess-the-emoji-game/" target="_blank" class="whatsapp-btn">
+      📲 Share on WhatsApp
+    </a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 SmileyMeaning.com</p>
+    <nav class="footer-links">
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/about/">About Us</a>
+      <a href="/contact/">Contact Us</a>
+      <a href="/terms/">Terms</a>
+      <a href="/cookie-policy/">Cookie Policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
