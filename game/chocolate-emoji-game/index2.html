@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guess the Emoji Game: Kids & Family Edition | SmileyMeaning</title>
+
+    <meta name="description" content="Play the ultimate Guess the Emoji Game! A fun, interactive emoji puzzle party for kids and families. Guess chocolates, movies, and countries using emojis.">
+    <meta name="keywords" content="emoji game, guess the emoji, kids emoji game, family emoji puzzle, emoji puzzle party, chocolate emoji quiz, movie emoji game">
+    <meta name="author" content="SmileyMeaning">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://smileymeaning.com/games/chocolate-emoji-game/">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Guess the Emoji Game 🎮 | Kids & Family Edition">
+    <meta property="og:description" content="A fun interactive emoji quiz game for all ages. Guess the chocolates, movies, and countries!">
+    <meta property="og:url" content="https://smileymeaning.com/games/chocolate-emoji-game/">
+    <meta property="og:image" content="https://smileymeaning.com/assets/emoji-game-cover.png">
+    <meta property="og:site_name" content="SmileyMeaning">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Guess the Emoji Game 🎮">
+    <meta name="twitter:description" content="A fun interactive emoji quiz game for all ages. Can you beat all the levels?">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            /* Bright, playful animated gradient background */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            cursor: pointer; 
+            user-select: none;
+            overflow: hidden;
+        }
+
+        /* Back Button */
+        .back-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: #fff;
+            background: rgba(0,0,0,0.3);
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            z-index: 100;
+            transition: background 0.2s;
+        }
+        .back-link:hover { background: rgba(0,0,0,0.6); }
+
+        /* Progress Tracker */
+        #progress {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* The Topic (Chocolate, Country, Movie) */
+        #category {
+            font-size: 3.5vw; 
+            color: #ffde00; /* Bright yellow/gold */
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* The Emoji Puzzle */
+        #puzzle {
+            font-size: 12vw; 
+            margin: 10px 0;
+            line-height: 1.2;
+            text-shadow: 0 0 30px rgba(255,255,255,0.4);
+            background: rgba(0,0,0,0.2);
+            padding: 20px 40px;
+            border-radius: 30px;
+            border: 4px dashed rgba(255,255,255,0.3);
+        }
+
+        /* The Answer text */
+        #answer {
+            font-size: 6vw;
+            color: #a8ff78; /* Bright mint green */
+            font-weight: bold;
+            opacity: 0; 
+            transition: opacity 0.3s ease;
+            min-height: 100px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+
+        .hint {
+            position: absolute;
+            bottom: 20px;
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.7);
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        /* Play Again Button */
+        #play-again {
+            display: none;
+            margin-top: 20px;
+            padding: 15px 40px;
+            font-size: 2rem;
+            background-color: #ff4757;
+            border: none;
+            border-radius: 40px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+            z-index: 10;
+        }
+        #play-again:hover { transform: scale(1.1); }
+
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            #category { font-size: 6vw; }
+            #puzzle { font-size: 18vw; }
+            #answer { font-size: 10vw; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="/games/" class="back-link">⬅️ Back to Games</a>
+
+    <div id="progress">Puzzle 1 of X</div>
+    <div id="category">TOPIC</div>
+    <div id="puzzle">❓</div>
+    <div id="answer"></div> 
+    
+    <button id="play-again">Play Again 🔄</button>
+    <div class="hint">(Tap anywhere to Reveal / Next)</div>
+
+    <script>
+        // --- BUILT-IN SOUND SYNTHESIZER (No files needed!) ---
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        
+        function playPopSound() {
+            if(audioCtx.state === 'suspended') audioCtx.resume();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(600, audioCtx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(1200, audioCtx.currentTime + 0.1);
+            gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.1);
+        }
+
+        function playWinSound() {
+            if(audioCtx.state === 'suspended') audioCtx.resume();
+            // Plays a happy 3-note "Ta-Da!" chord
+            [440, 554, 659].forEach((freq, i) => {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.frequency.value = freq;
+                osc.type = 'triangle';
+                gain.gain.setValueAtTime(0.2, audioCtx.currentTime + (i*0.1));
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 1);
+                osc.start(audioCtx.currentTime + (i*0.1));
+                osc.stop(audioCtx.currentTime + 1);
+            });
+        }
+
+        // --- GAME DATA ---
+        const questions = [
+            // Chocolates
+            { cat: "🍫 Guess the Chocolate", puzzle: "🪁 ➕ 🐈", ans: "KitKat" },           
+            { cat: "🍫 Guess the Chocolate", puzzle: "5️⃣ ➕ ⭐️", ans: "5 Star" },           
+            { cat: "🍫 Guess the Chocolate", puzzle: "📔 ➕ 🥛", ans: "Dairy Milk" },       
+            { cat: "🍫 Guess the Chocolate", puzzle: "🥛 ➕ 🔑 ➕ 🛣️", ans: "Milky Way" }, 
+            { cat: "🍫 Guess the Chocolate", puzzle: "🐍 ➕ 🚗", ans: "Snickers" },         
+            { cat: "🍫 Guess the Chocolate", puzzle: "🎀 ➕ 🇳 ➕ ☕", ans: "Bounty" },      
+            // Countries
+            { cat: "🏳️ Guess the Country", puzzle: "🇯 ➕ 🍳", ans: "Japan" },              
+            { cat: "🏳️ Guess the Country", puzzle: "⛓️ ➕ 🅰️", ans: "China" },             
+            { cat: "🏳️ Guess the Country", puzzle: "2️⃣ ➕ 🇷 ➕ 🔑", ans: "Turkey" },       
+            // Movies
+            { cat: "🎬 Guess the Movie", puzzle: "❄️ ➕ 👸🏼", ans: "Frozen" },
+            { cat: "🎬 Guess the Movie", puzzle: "🦁 ➕ 👑", ans: "The Lion King" },
+            { cat: "🎬 Guess the Movie", puzzle: "🚢 ➕ 🧊 ➕ 💔", ans: "Titanic" }      
+        ];
+
+        let currentIndex = 0;
+        let state = 0; // 0 = Show Puzzle, 1 = Show Answer
+
+        const progressEl = document.getElementById('progress');
+        const catEl = document.getElementById('category');
+        const puzEl = document.getElementById('puzzle');
+        const ansEl = document.getElementById('answer');
+        const hintEl = document.querySelector('.hint');
+        const playAgainBtn = document.getElementById('play-again');
+
+        function updateScreen() {
+            // Check if game is over
+            if (currentIndex >= questions.length) {
+                progressEl.style.display = "none";
+                catEl.innerText = "YOU DID IT!";
+                puzEl.innerText = "🏆🎉";
+                ansEl.innerText = "Thanks for playing!";
+                ansEl.style.opacity = 1;
+                hintEl.style.display = "none";
+                playAgainBtn.style.display = "inline-block";
+                
+                playWinSound(); // Trigger happy sound
+                confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } }); // Trigger confetti
+                return;
+            }
+
+            const q = questions[currentIndex];
+            progressEl.innerText = `Puzzle ${currentIndex + 1} of ${questions.length}`;
+            catEl.innerText = q.cat;
+            puzEl.innerText = q.puzzle;
+            
+            if (state === 0) {
+                // QUESTION MODE
+                ansEl.style.opacity = 0; 
+                ansEl.innerText = ""; 
+            } else {
+                // REVEAL MODE
+                ansEl.innerText = q.ans;
+                ansEl.style.opacity = 1; 
+                playPopSound(); // Trigger pop sound
+            }
+        }
+
+        // Handle Screen Taps
+        document.body.addEventListener('click', (e) => {
+            // Ignore clicks if they clicked the play again or back button
+            if(e.target.id === 'play-again' || e.target.className === 'back-link') return;
+            
+            // Needs to unlock audio context on first interaction
+            if(audioCtx.state === 'suspended') audioCtx.resume();
+
+            if (currentIndex >= questions.length) return;
+
+            if (state === 0) {
+                state = 1; // Reveal Answer
+                updateScreen();
+            } else {
+                state = 0; // Next Question
+                currentIndex++;
+                updateScreen();
+            }
+        });
+
+        // Handle Play Again Button
+        playAgainBtn.addEventListener('click', () => {
+            currentIndex = 0;
+            state = 0;
+            progressEl.style.display = "block";
+            hintEl.style.display = "block";
+            playAgainBtn.style.display = "none";
+            updateScreen();
+        });
+
+        // Initialize game
+        updateScreen();
+    </script>
+</body>
+</html>
