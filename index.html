@@ -18,8 +18,7 @@
   <meta name="twitter:title" content="Emoji Meanings Explained | SmileyMeaning" />
   <meta name="twitter:description" content="Learn emoji meanings, context, and proper usage." />
 
- <!-- Favicons -->
-<link rel="icon" href="/favicon.ico" sizes="any">
+ <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -116,7 +115,7 @@
     }
     .challenge-btn:hover { background: #fff; color: #764ba2; }
 
-    /* 4. Popular Grid (Replaces List) */
+    /* 4. Popular Grid */
     .popular-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -159,9 +158,57 @@
     .mixer-visual { font-size: 40px; letter-spacing: 10px; }
     .mixer-cta { text-align: right; }
     
+    /* 6. Dynamic Games Block Styles */
+    .games-section { margin: 50px auto; }
+    .random-games-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .game-teaser-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text-dark);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .game-teaser-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      border-color: #ffde00;
+    }
+    .game-teaser-card .icon { font-size: 3.5rem; margin-bottom: 10px; }
+    .game-teaser-card h3 { margin: 0 0 10px 0; font-size: 1.3rem; }
+    .game-teaser-card p { margin: 0; color: #666; font-size: 0.95rem; }
+    
+    .all-games-block {
+      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+      color: #2d3436;
+      border-radius: 16px;
+      padding: 25px;
+      text-align: center;
+      display: block;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(255, 154, 158, 0.3);
+      transition: transform 0.2s;
+    }
+    .all-games-block:hover { transform: scale(1.02); }
+    .all-games-block h2 { margin: 0 0 5px 0; font-size: 1.8rem; }
+    .all-games-block p { margin: 0; color: #555; }
+
     @media(max-width: 600px) {
       .mixer-teaser { flex-direction: column; text-align: center; }
       .mixer-cta { text-align: center; }
+      .random-games-grid { grid-template-columns: 1fr; } /* Stack games on mobile */
     }
   </style>
 </head>
@@ -291,7 +338,19 @@
     </div>
   </section>
 
-<section class="container">
+  <section class="container games-section">
+    <h2>Play Emoji Games 🎮</h2>
+    <p style="color: #666; margin-top:-10px;">Test your decoding skills with our interactive puzzles!</p>
+    
+    <div class="random-games-grid" id="random-games-container"></div>
+    
+    <a href="/games/" class="all-games-block">
+      <h2>🚀 Explore the Full Games Hub</h2>
+      <p>Click here to see all our emoji puzzles and challenge your friends!</p>
+    </a>
+  </section>
+
+  <section class="container">
     <div class="mixer-teaser">
       <div class="mixer-visual">
         👀 + 👄 + 🎨 = ✨
@@ -329,7 +388,7 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>© 2025 SmileyMeaning.com</p>
+    <p>© 2026 SmileyMeaning.com</p>
     <nav class="footer-links">
       <a href="/privacy/">Privacy Policy</a>
       <a href="/about/">About Us</a>
@@ -342,20 +401,17 @@
 
 
 <script>
-  // Simple script to populate the trending ticker
+  // 1. Ticker Script
   document.addEventListener("DOMContentLoaded", function() {
     fetch('/daily-emoji-trends.json')
       .then(res => res.ok ? res.json() : [])
       .then(data => {
         const ticker = document.getElementById('ticker-data');
-        if (!data || data.length === 0) return; // Keep default loading text if empty
+        if (!data || data.length === 0) return;
 
-        // Create a repeating string for the ticker effect
         let itemsHtml = '';
-        // Take top 5 and repeat them to fill space
         const top5 = data.slice(0, 5);
         
-        // Repeat 4 times to ensure it spans the screen for animation
         for(let i=0; i<4; i++) {
           top5.forEach(item => {
             itemsHtml += `
@@ -365,10 +421,48 @@
             `;
           });
         }
-        
         ticker.innerHTML = itemsHtml;
       })
       .catch(err => console.log("Ticker info unavailable"));
+
+    // 2. Random Games Logic
+    const allGames = [
+      {
+        title: "Guess the Emoji Game",
+        desc: "Decode chocolates, movies, and countries. 90% of people fail the last level!",
+        icon: "🤔💡",
+        link: "/games/guess-the-emoji-game/"
+      },
+      {
+        title: "Bollywood Emoji Game",
+        desc: "Are you a Desi movie buff? Decode blockbusters from Sholay to 3 Idiots!",
+        icon: "🎬🇮🇳",
+        link: "/games/bollywood-movie-game/"
+      },
+      {
+        title: "Hollywood Emoji Game",
+        desc: "Lights, camera, action! Guess famous classics like Titanic and The Matrix!",
+        icon: "🍿🎥",
+        link: "/games/hollywood-movie-game/"
+      }
+    ];
+
+    // Shuffle the array and slice the first 2 items
+    const randomGames = allGames.sort(() => 0.5 - Math.random()).slice(0, 2);
+    
+    // Inject them into the container
+    const gamesContainer = document.getElementById('random-games-container');
+    let gamesHtml = '';
+    randomGames.forEach(game => {
+      gamesHtml += `
+        <a href="${game.link}" class="game-teaser-card">
+          <div class="icon">${game.icon}</div>
+          <h3>${game.title}</h3>
+          <p>${game.desc}</p>
+        </a>
+      `;
+    });
+    gamesContainer.innerHTML = gamesHtml;
   });
 </script>
 
