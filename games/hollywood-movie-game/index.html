@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hollywood Movie Emoji Game 🍿 | SmileyMeaning</title>
+
+    <meta name="description" content="Play the ultimate Hollywood Movie Emoji Game! Can you guess these classic blockbusters from just emojis? Perfect for movie buffs and family game nights.">
+    <meta name="keywords" content="hollywood emoji game, guess the movie, movie emoji quiz, cinema emoji puzzle, family party game, pop culture quiz">
+    <meta name="author" content="SmileyMeaning">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://smileymeaning.com/games/hollywood-movie-game/">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Guess the Hollywood Movie 🍿 | Emoji Game">
+    <meta property="og:description" content="Are you a true movie buff? Try to decode these famous Hollywood blockbusters using only emojis!">
+    <meta property="og:url" content="https://smileymeaning.com/games/hollywood-movie-game/">
+    <meta property="og:image" content="https://smileymeaning.com/assets/emoji-game-cover.png">
+    <meta property="og:site_name" content="SmileyMeaning">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hollywood Emoji Game 🍿">
+    <meta name="twitter:description" content="Can you decode these famous Hollywood movies using only emojis? Play the free game now!">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            /* Cinematic Spotlight Theme (Deep Red to Black) */
+            background: radial-gradient(circle at center, #4a0000 0%, #000000 100%);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            cursor: pointer; 
+            user-select: none;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        /* Back Button */
+        .back-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: #fff;
+            background: rgba(255,255,255,0.15);
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            z-index: 100;
+            transition: background 0.2s;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .back-link:hover { background: rgba(255,255,255,0.3); }
+
+        /* Progress Tracker */
+        #progress {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 215, 0, 0.2);
+            border: 1px solid #ffd700;
+            color: #ffd700;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            z-index: 100;
+        }
+
+        /* Category / Level */
+        #category {
+            font-size: clamp(1.2rem, 3vw, 2.5rem);
+            background: linear-gradient(135deg, #d4af37, #ffdf73);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-top: 60px;
+            margin-bottom: 15px;
+            font-weight: 900;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.8));
+        }
+
+        /* The Emoji Puzzle */
+        #puzzle {
+            font-size: clamp(3rem, 10vw, 8rem); 
+            margin: 10px 0;
+            line-height: 1.3;
+            text-shadow: 0 0 40px rgba(255,255,255,0.3);
+            background: rgba(0,0,0,0.4);
+            padding: 25px 40px;
+            border-radius: 20px;
+            border: 2px solid rgba(212, 175, 55, 0.3); /* Soft Gold Border */
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+            max-width: 95vw; 
+            display: inline-block;
+            word-wrap: break-word; 
+        }
+
+        /* Answer Container */
+        #answer-container {
+            opacity: 0; 
+            transition: opacity 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 120px;
+            margin-top: 20px;
+        }
+
+        /* The Answer text */
+        #answer {
+            font-size: clamp(2rem, 6vw, 4.5rem);
+            color: #4cd137; /* Hollywood bright green */
+            font-weight: 900;
+            text-shadow: 3px 3px 0px #000;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        /* The Explanation text */
+        #explanation {
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            color: #dcdde1;
+            font-style: italic;
+            max-width: 90%;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .hint {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.5);
+            font-weight: bold;
+            animation: pulse 2s infinite;
+            width: 100%;
+        }
+
+        /* Play Again Button */
+        #play-again {
+            display: none;
+            margin-top: 20px;
+            padding: 15px 40px;
+            font-size: 2rem;
+            background: linear-gradient(135deg, #d4af37, #f1c40f);
+            border: none;
+            border-radius: 40px;
+            color: #111;
+            font-weight: 900;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+            transition: transform 0.2s;
+            z-index: 10;
+        }
+        #play-again:hover { transform: scale(1.05); }
+
+        @keyframes pulse {
+            0% { opacity: 0.4; }
+            50% { opacity: 1; }
+            100% { opacity: 0.4; }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            #progress {
+                top: 70px;
+                right: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 1rem;
+                padding: 5px 15px;
+            }
+            #category { margin-top: 100px; } 
+            #puzzle { padding: 15px; } 
+        }
+    </style>
+</head>
+<body>
+
+    <a href="/games/" class="back-link">⬅️ Back to Games</a>
+
+    <div id="progress">Puzzle 1 of X</div>
+    <div id="category">ROUND 1</div>
+    <div id="puzzle">❓</div>
+    
+    <div id="answer-container">
+        <div id="answer"></div>
+        <div id="explanation"></div>
+    </div>
+    
+    <button id="play-again">Play Again 🔄</button>
+    <div class="hint">(Tap anywhere to Reveal / Next)</div>
+
+    <script>
+        // --- BUILT-IN SOUND SYNTHESIZER ---
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        
+        function playPopSound() {
+            if(audioCtx.state === 'suspended') audioCtx.resume();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(600, audioCtx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(1200, audioCtx.currentTime + 0.1);
+            gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.1);
+        }
+
+        function playWinSound() {
+            if(audioCtx.state === 'suspended') audioCtx.resume();
+            [440, 554, 659, 880].forEach((freq, i) => {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.frequency.value = freq;
+                osc.type = 'triangle';
+                gain.gain.setValueAtTime(0.2, audioCtx.currentTime + (i*0.1));
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 1.2);
+                osc.start(audioCtx.currentTime + (i*0.1));
+                osc.stop(audioCtx.currentTime + 1.2);
+            });
+        }
+
+        // --- HOLLYWOOD MOVIE DATA ---
+        const questions = [
+            // EASY ROUND
+            { cat: "🍿 Round 1: Easy", puzzle: "🧊 🚢 💔", ans: "Titanic", note: "Iceberg + Ship + Heartbreak" },
+            { cat: "🍿 Round 1: Easy", puzzle: "🦇 👨🏻", ans: "Batman", note: "Bat + Man" },
+            { cat: "🍿 Round 1: Easy", puzzle: "🦁 👑", ans: "The Lion King", note: "Lion + Crown" },
+            { cat: "🍿 Round 1: Easy", puzzle: "🕷️ 👨🏻 🕸️", ans: "Spider-Man", note: "Spider + Man + Web" },
+            { cat: "🍿 Round 1: Easy", puzzle: "🏴‍☠️ 🚢 ⚔️", ans: "Pirates of the Caribbean", note: "Pirate + Ship + Swords" },
+            
+            // MEDIUM ROUND
+            { cat: "🎥 Round 2: Medium", puzzle: "👽 🚲 🌕", ans: "E.T. the Extra-Terrestrial", note: "Alien + Bicycle + Full Moon" },
+            { cat: "🎥 Round 2: Medium", puzzle: "🦖 🦕 🚙", ans: "Jurassic Park", note: "T-Rex + Dinosaur + Jeep" },
+            { cat: "🎥 Round 2: Medium", puzzle: "💊 🔴 🔵 🕶️", ans: "The Matrix", note: "Red Pill + Blue Pill + Sunglasses" },
+            { cat: "🎥 Round 2: Medium", puzzle: "🎈 🤡 🛶", ans: "It", note: "Red Balloon + Clown + Paper Boat" },
+            { cat: "🎥 Round 2: Medium", puzzle: "🍫 🏭 🎩", ans: "Charlie and the Chocolate Factory", note: "Chocolate + Factory + Top Hat" },
+
+            // TOUGH ROUND
+            { cat: "🏆 Round 3: Tough", puzzle: "👦🏻 ⚡ 👓 🦉", ans: "Harry Potter", note: "Boy + Lightning Scar + Glasses + Owl" },
+            { cat: "🏆 Round 3: Tough", puzzle: "🐀 👨‍🍳 🍲", ans: "Ratatouille", note: "Rat + Chef + Stew" },
+            { cat: "🏆 Round 3: Tough", puzzle: "👨🏻‍🚀 🌌 ⏳", ans: "Interstellar", note: "Astronaut + Galaxy + Hourglass" },
+            { cat: "🏆 Round 3: Tough", puzzle: "🛏️ 🌀 ⏳ 🏙️", ans: "Inception", note: "Bed/Dream + Swirl + Hourglass + City" },
+            { cat: "🏆 Round 3: Tough", puzzle: "👴🏻 💍 🌋", ans: "The Lord of the Rings", note: "Wizard + Ring + Volcano" }
+        ];
+
+        let currentIndex = 0;
+        let state = 0; 
+
+        const progressEl = document.getElementById('progress');
+        const catEl = document.getElementById('category');
+        const puzEl = document.getElementById('puzzle');
+        const ansContainer = document.getElementById('answer-container');
+        const ansEl = document.getElementById('answer');
+        const expEl = document.getElementById('explanation');
+        const hintEl = document.querySelector('.hint');
+        const playAgainBtn = document.getElementById('play-again');
+
+        function updateScreen() {
+            if (currentIndex >= questions.length) {
+                progressEl.style.display = "none";
+                catEl.innerText = "OSCAR WINNER!";
+                catEl.style.background = "transparent";
+                catEl.style.webkitTextFillColor = "#d4af37";
+                puzEl.innerText = "🏆🌟";
+                ansEl.innerText = "You're a Movie Master!";
+                expEl.innerText = "Thanks for playing!";
+                ansContainer.style.opacity = 1;
+                hintEl.style.display = "none";
+                playAgainBtn.style.display = "inline-block";
+                
+                playWinSound(); 
+                confetti({ particleCount: 250, spread: 120, origin: { y: 0.6 }, colors: ['#d4af37', '#ffdf73', '#ffffff'] }); 
+                return;
+            }
+
+            const q = questions[currentIndex];
+            progressEl.innerText = `Movie ${currentIndex + 1} of ${questions.length}`;
+            catEl.innerText = q.cat;
+            puzEl.innerText = q.puzzle;
+            
+            if (state === 0) {
+                // QUESTION MODE
+                ansContainer.style.opacity = 0; 
+                ansEl.innerText = ""; 
+                expEl.innerText = "";
+            } else {
+                // REVEAL MODE
+                ansEl.innerText = q.ans;
+                expEl.innerText = "(" + q.note + ")";
+                ansContainer.style.opacity = 1; 
+                playPopSound(); 
+            }
+        }
+
+        // Handle Screen Taps
+        document.body.addEventListener('click', (e) => {
+            if(e.target.id === 'play-again' || e.target.className === 'back-link') return;
+            
+            if(audioCtx.state === 'suspended') audioCtx.resume();
+
+            if (currentIndex >= questions.length) return;
+
+            if (state === 0) {
+                state = 1; 
+                updateScreen();
+            } else {
+                state = 0; 
+                currentIndex++;
+                updateScreen();
+            }
+        });
+
+        // Handle Play Again Button
+        playAgainBtn.addEventListener('click', () => {
+            currentIndex = 0;
+            state = 0;
+            progressEl.style.display = "block";
+            hintEl.style.display = "block";
+            playAgainBtn.style.display = "none";
+            updateScreen();
+        });
+
+        // Initialize game
+        updateScreen();
+    </script>
+</body>
+</html>
