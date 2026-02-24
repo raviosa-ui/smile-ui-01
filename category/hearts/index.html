@@ -1,12 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Heart Emojis ❤️ – Meanings, Colors & Usage | SmileyMeaning</title>
-<meta name="description" content="Explore heart emojis of different colors and styles. Learn their meanings and how they are used in real conversations.">
-<link rel="canonical" href="https://smileymeaning.com/category/hearts/" />
-<link rel="stylesheet" href="/static/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Heart Emojis ❤️ – Meanings, Colors & Usage | SmileyMeaning</title>
+  <meta name="description" content="Explore heart emojis of different colors and styles. Learn their meanings and how they are used in real conversations.">
+  <link rel="canonical" href="https://smileymeaning.com/category/hearts/" />
+
+  <meta property="og:title" content="Heart Emojis ❤️ – Meanings & Usage" />
+  <meta property="og:description" content="Explore heart emojis of different colors and styles. Learn their meanings and real usage." />
+  <meta property="og:url" content="https://smileymeaning.com/category/hearts/" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="/static/style.css" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <style>
+    /* ===== PREMIUM CATEGORY STYLES ===== */
+
+    .category-hero {
+      padding: 60px 0 40px;
+      text-align: center;
+      background: linear-gradient(180deg, #fff, #fff0f3); /* Soft pink fade */
+      border-bottom: 1px dashed #ffd1dc;
+    }
+
+    .category-hero .emoji {
+      font-size: 72px;
+      display: block;
+      margin-bottom: 10px;
+      animation: beat 1.5s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    .category-hero p {
+      max-width: 700px;
+      margin: 15px auto 0;
+      color: #666;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Filter Buttons */
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 30px 0 20px;
+    }
+
+    .filter-btn {
+      padding: 10px 20px;
+      border: 2px solid #eee;
+      background: #fff;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #555;
+      transition: 0.2s;
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: #e74c3c;
+      color: white;
+      border-color: #e74c3c;
+    }
+
+    /* The Grid */
+    .emoji-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .emoji-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 16px;
+      padding: 20px 10px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      color: var(--text-dark);
+      text-decoration: none;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .emoji-card:hover {
+      transform: translateY(-5px);
+      border-color: #ffb7b2;
+      box-shadow: 0 10px 20px rgba(255, 107, 107, 0.15);
+    }
+
+    .emoji-card .icon {
+      font-size: 42px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .emoji-card h3 {
+      font-size: 1rem;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .emoji-card .desc {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 4px;
+      display: block;
+    }
+
+    /* Copy Feedback */
+    .copy-toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #222;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      z-index: 100;
+    }
+    .copy-toast.show { opacity: 1; }
+
+    /* Rich Text Info Box */
+    .rich-text-section {
+      background: #fff;
+      border: 1px solid #f0f0f0;
+      border-radius: 20px;
+      padding: 40px;
+      margin: 60px 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+    .rich-text-section h2 { margin-top: 0; color: #e74c3c; }
+    .rich-text-section p { color: #555; line-height: 1.7; }
+  </style>
 </head>
 
 <body>
@@ -14,7 +159,9 @@
 <header class="site-header">
   <div class="container">
     <div class="header-inner">
-      <div class="logo"><a href="/">😊 SmileyMeaning</a></div>
+      <div class="logo">
+        <a href="/">😊 SmileyMeaning</a>
+      </div>
       <nav class="top-nav">
         <a href="/all-emojis/">📋 All Emojis</a>
         <a href="/quiz/">🧩 Quiz</a>
@@ -29,47 +176,222 @@
 
 <main>
 
-<section class="category-hero">
-  <div class="container">
-    <span class="emoji">❤️</span>
-    <h1>Heart Emojis</h1>
-    <p>Heart emojis represent different types of love, friendship, support, passion, and emotional connections depending on their color and design.</p>
-  </div>
-</section>
+  <section class="category-hero">
+    <div class="container">
+      <span class="emoji">❤️</span>
+      <h1>Heart Emojis Dictionary</h1>
+      <p>
+        Not all hearts mean "I love you." Explore the hidden meanings behind every heart color, 
+        from the supportive <strong>Blue Heart 💙</strong> to the sorrowful <strong>Black Heart 🖤</strong>.
+      </p>
 
-<section class="container">
-  <h2>Common Heart Emojis</h2>
-  <div class="emoji-grid">
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterEmojis('all')">Show All</button>
+        <button class="filter-btn" onclick="filterEmojis('color')">Colors</button>
+        <button class="filter-btn" onclick="filterEmojis('special')">Specialty</button>
+      </div>
+    </div>
+  </section>
 
-    <a href="/emoji/heart-decoration/" class="emoji-card"><span class="icon">💟</span><span>Heart Decoration</span></a>
-    <a href="/emoji/broken-heart/" class="emoji-card"><span class="icon">💔</span><span>Broken Heart</span></a>
-    <a href="/emoji/mending-heart/" class="emoji-card"><span class="icon">❤️‍🩹</span><span>Mending Heart</span></a>
-    <a href="/emoji/heart-on-fire/" class="emoji-card"><span class="icon">❤️‍🔥</span><span>Heart on Fire</span></a>
-    <a href="/emoji/heart-suit/" class="emoji-card"><span class="icon">♥️</span><span>Heart Suit</span></a>
-    <a href="/emoji/white-heart/" class="emoji-card"><span class="icon">🤍</span><span>White Heart</span></a>
-    <a href="/emoji/black-heart/" class="emoji-card"><span class="icon">🖤</span><span>Black Heart</span></a>
-    <a href="/emoji/blue-heart/" class="emoji-card"><span class="icon">💙</span><span>Blue Heart</span></a>
-    <a href="/emoji/green-heart/" class="emoji-card"><span class="icon">💚</span><span>Green Heart</span></a>
-    <a href="/emoji/yellow-heart/" class="emoji-card"><span class="icon">💛</span><span>Yellow Heart</span></a>
-    <a href="/emoji/orange-heart/" class="emoji-card"><span class="icon">🧡</span><span>Orange Heart</span></a>
+  <section class="container">
+    <div class="emoji-grid">
+      
+      <a href="/emoji/red-heart/" class="emoji-card" data-cat="color" onclick="copyEmoji(event, '❤️')">
+        <span class="icon">❤️</span>
+        <h3>Red Heart</h3>
+        <span class="desc">True Love & Romance</span>
+      </a>
+      <a href="/emoji/orange-heart/" class="emoji-card" data-cat="color" onclick="copyEmoji(event, '🧡')">
+        <span class="icon">🧡</span>
+        <h3>Orange Heart</h3>
+        <span class="desc">Friendship & Warmth</span>
+      </a>
+      <a href="/emoji/yellow-heart/" class="emoji-card" data-cat="color" onclick="copyEmoji(event, '💛')">
+        <span class="icon">💛</span>
+        <h3>Yellow Heart</h3>
+        <span class="desc">Happiness & Positivity</span>
+      </a>
+      <a href="/emoji/green-heart/" class="emoji-card" data-cat="color" onclick="copyEmoji(event, '💚')">
+        <span class="icon">💚</span>
+        <h3>Green Heart</h3>
+        <span class="desc">Nature & Jealousy</span>
+      </a>
+      <a href="/emoji/blue-heart/" class="emoji-card" data-cat="color" onclick="copyEmoji(event, '💙')">
+        <span class="icon">💙</span>
+        <h3>Blue Heart</h3>
+        <span class="desc">Trust & Loyalty</span>
+      </a>
+      <a href="/emoji/light-blue-heart/" class="emoji-card" data-cat="color" onclick="copyEmoji(event, '🩵')">
+        <span class="icon">🩵</span>
+        <h3>Light Blue</h3>
+        <span class="desc">Casual & Peaceful</span>
+      </a>
+      <a href="/emoji/purple-heart/" class="emoji-card" data-cat="color" onclick="copyEmoji(event, '💜')">
+        <span class="icon">💜</span>
+        <h3>Purple Heart</h3>
+        <span class="desc">Luxury & BTS Army</span>
+      </a>
+      <a href="/emoji/pink-heart/" class="emoji-card" data-cat="color" onclick="copyEmoji(event, '🩷')">
+        <span class="icon">🩷</span>
+        <h3>Pink Heart</h3>
+        <span class="desc">Cute & Playful</span>
+      </a>
+      <a href="/emoji/brown-heart/" class="emoji-card" data-cat="color" onclick="copyEmoji(event, '🤎')">
+        <span class="icon">🤎</span>
+        <h3>Brown Heart</h3>
+        <span class="desc">Solidarity & Coffee</span>
+      </a>
+      <a href="/emoji/black-heart/" class="emoji-card" data-cat="color" onclick="copyEmoji(event, '🖤')">
+        <span class="icon">🖤</span>
+        <h3>Black Heart</h3>
+        <span class="desc">Grief & Dark Humor</span>
+      </a>
+      <a href="/emoji/grey-heart/" class="emoji-card" data-cat="color" onclick="copyEmoji(event, '🩶')">
+        <span class="icon">🩶</span>
+        <h3>Grey Heart</h3>
+        <span class="desc">Neutral & Balance</span>
+      </a>
+      <a href="/emoji/white-heart/" class="emoji-card" data-cat="color" onclick="copyEmoji(event, '🤍')">
+        <span class="icon">🤍</span>
+        <h3>White Heart</h3>
+        <span class="desc">Pure Love & Sympathy</span>
+      </a>
 
-  </div>
-</section>
+      <a href="/emoji/broken-heart/" class="emoji-card" data-cat="special" onclick="copyEmoji(event, '💔')">
+        <span class="icon">💔</span>
+        <h3>Broken Heart</h3>
+        <span class="desc">Heartbreak & Sorrow</span>
+      </a>
+      <a href="/emoji/heart-on-fire/" class="emoji-card" data-cat="special" onclick="copyEmoji(event, '❤️‍🔥')">
+        <span class="icon">❤️‍🔥</span>
+        <h3>Heart on Fire</h3>
+        <span class="desc">Passion & Lust</span>
+      </a>
+      <a href="/emoji/mending-heart/" class="emoji-card" data-cat="special" onclick="copyEmoji(event, '❤️‍🩹')">
+        <span class="icon">❤️‍🩹</span>
+        <h3>Mending Heart</h3>
+        <span class="desc">Healing & Recovery</span>
+      </a>
+      <a href="/emoji/heart-hands/" class="emoji-card" data-cat="special" onclick="copyEmoji(event, '🫶')">
+        <span class="icon">🫶</span>
+        <h3>Heart Hands</h3>
+        <span class="desc">Appreciation & Love</span>
+      </a>
+      <a href="/emoji/kiss-mark/" class="emoji-card" data-cat="special" onclick="copyEmoji(event, '💋')">
+        <span class="icon">💋</span>
+        <h3>Kiss Mark</h3>
+        <span class="desc">Flirty & Seductive</span>
+      </a>
+      <a href="/emoji/heart-decoration/" class="emoji-card" data-cat="special" onclick="copyEmoji(event, '💟')">
+        <span class="icon">💟</span>
+        <h3>Decoration</h3>
+        <span class="desc">Cute Accent</span>
+      </a>
+      <a href="/emoji/heart-suit/" class="emoji-card" data-cat="special" onclick="copyEmoji(event, '♥️')">
+        <span class="icon">♥️</span>
+        <h3>Heart Suit</h3>
+        <span class="desc">Card Games</span>
+      </a>
 
-<section class="related-categories">
-  <h3>Explore Related Categories</h3>
-  <a href="/category/love/">💖 Love</a>
-  <a href="/category/joy/">😊 Joy</a>
-  <a href="/category/sadness/">😢 Sadness</a>
-</section>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="rich-text-section">
+      <h2>Why Do Heart Colors Matter?</h2>
+      <p>
+        In digital communication, the color of the heart you send changes the entire tone of the message. 
+        Sending a <strong>Red Heart ❤️</strong> to a colleague might be seen as inappropriate, whereas a 
+        <strong>Blue Heart 💙</strong> is perfectly professional and signifies trust.
+      </p>
+      <p>
+        Similarly, the <strong>Purple Heart 💜</strong> has evolved from a military symbol into a global icon for 
+        K-Pop fandoms, while the <strong>White Heart 🤍</strong> is frequently used to offer condolences after a loss 
+        because it represents purity and angelic peace.
+      </p>
+      <p>
+        Use this dictionary to ensure you never send the wrong signal again!
+      </p>
+    </div>
+  </section>
+
+  <div id="toast" class="copy-toast">Copied to clipboard! ✨</div>
 
 </main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>© 2025 SmileyMeaning.com</p>
+    <p>© 2026 SmileyMeaning.com</p>
+    <nav class="footer-links">
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/about/">About Us</a>
+      <a href="/contact/">Contact Us</a>
+    </nav>
   </div>
 </footer>
+
+<script>
+  // 1. Filter Logic
+  function filterEmojis(category) {
+    const cards = document.querySelectorAll('.emoji-card');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    // Button Styling
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    // Filtering
+    cards.forEach(card => {
+      const cardCat = card.getAttribute('data-cat');
+      // If "all" is selected, show everything.
+      // If specific category is selected, show only matching cards.
+      if (category === 'all' || cardCat === category) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // 2. Click to Copy with Confetti
+  function copyEmoji(e, emoji) {
+    // Note: We do NOT use e.preventDefault() here because we want the user 
+    // to actually visit the dictionary page if they click!
+    // But we also copy it for convenience.
+    
+    navigator.clipboard.writeText(emoji).then(() => {
+      const toast = document.getElementById('toast');
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2000);
+      
+      // Simple Confetti Burst
+      createConfetti(e.clientX, e.clientY);
+    });
+  }
+
+  function createConfetti(x, y) {
+    for (let i = 0; i < 10; i++) {
+      const el = document.createElement('div');
+      el.innerText = ['❤️', '✨', '💖'][Math.floor(Math.random() * 3)];
+      el.style.position = 'fixed';
+      el.style.left = x + 'px';
+      el.style.top = y + 'px';
+      el.style.fontSize = '20px';
+      el.style.pointerEvents = 'none';
+      el.style.transform = `translate(${Math.random()*100 - 50}px, ${Math.random()*100 - 50}px)`;
+      el.style.opacity = '0';
+      el.style.transition = 'transform 0.8s, opacity 0.8s';
+      document.body.appendChild(el);
+
+      setTimeout(() => {
+        el.style.opacity = '1'; 
+        el.style.transform = `translate(${Math.random()*200 - 100}px, ${Math.random()*200 - 100}px)`;
+      }, 10);
+
+      setTimeout(() => el.remove(), 800);
+    }
+  }
+</script>
 
 </body>
 </html>
