@@ -1,11 +1,5 @@
 [
   {
-    "query": "face with tears of joy",
-    "value": "Viral",
-    "slug": "face-with-tears-of-joy",
-    "hasPage": false
-  },
-  {
     "query": "melting face",
     "value": "Viral",
     "slug": "melting-face",
@@ -24,15 +18,45 @@
     "hasPage": false
   },
   {
-    "query": "shushing face",
+    "query": "eyes",
     "value": "Viral",
-    "slug": "shushing-face",
+    "slug": "eyes",
     "hasPage": false
   },
   {
-    "query": "eyes",
+    "query": "face with tears of joy",
     "value": "High",
-    "slug": "eyes",
+    "slug": "face-with-tears-of-joy",
+    "hasPage": false
+  },
+  {
+    "query": "fire",
+    "value": "High",
+    "slug": "fire",
+    "hasPage": true
+  },
+  {
+    "query": "sparkles",
+    "value": "High",
+    "slug": "sparkles",
+    "hasPage": true
+  },
+  {
+    "query": "thinking face",
+    "value": "High",
+    "slug": "thinking-face",
+    "hasPage": true
+  },
+  {
+    "query": "partying face",
+    "value": "High",
+    "slug": "partying-face",
+    "hasPage": true
+  },
+  {
+    "query": "rolling on the floor laughing",
+    "value": "High",
+    "slug": "rolling-on-the-floor-laughing",
     "hasPage": false
   },
   {
@@ -42,28 +66,28 @@
     "hasPage": true
   },
   {
-    "query": "fire",
-    "value": "High",
-    "slug": "fire",
-    "hasPage": true
-  },
-  {
     "query": "thumbs up",
     "value": "Evergreen",
     "slug": "thumbs-up",
+    "hasPage": true
+  },
+  {
+    "query": "flexed biceps",
+    "value": "Evergreen",
+    "slug": "flexed-biceps",
     "hasPage": false
   },
   {
-    "query": "loudly crying face",
-    "value": "High",
-    "slug": "loudly-crying-face",
+    "query": "party popper",
+    "value": "Evergreen",
+    "slug": "party-popper",
     "hasPage": true
   },
   {
-    "query": "thinking face",
-    "value": "High",
-    "slug": "thinking-face",
-    "hasPage": true
+    "query": "rose",
+    "value": "Evergreen",
+    "slug": "rose",
+    "hasPage": false
   },
   {
     "query": "graduation cap",
@@ -78,45 +102,21 @@
     "hasPage": false
   },
   {
-    "query": "beach",
-    "value": "Seasonal",
-    "slug": "beach",
-    "hasPage": false
-  },
-  {
     "query": "ice cream",
     "value": "Seasonal",
     "slug": "ice-cream",
     "hasPage": false
   },
   {
-    "query": "cocktail glass",
+    "query": "butterfly",
     "value": "Seasonal",
-    "slug": "cocktail-glass",
+    "slug": "butterfly",
     "hasPage": false
   },
   {
-    "query": "flower",
+    "query": "american flag",
     "value": "Seasonal",
-    "slug": "flower",
-    "hasPage": false
-  },
-  {
-    "query": "party popper",
-    "value": "High",
-    "slug": "party-popper",
-    "hasPage": true
-  },
-  {
-    "query": "sparkles",
-    "value": "High",
-    "slug": "sparkles",
-    "hasPage": true
-  },
-  {
-    "query": "prayer hands",
-    "value": "Evergreen",
-    "slug": "prayer-hands",
+    "slug": "american-flag",
     "hasPage": false
   }
 ]
