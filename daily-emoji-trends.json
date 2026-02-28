@@ -1,7 +1,7 @@
 [
   {
     "query": "melting face",
-    "value": "Viral",
+    "value": "High",
     "slug": "melting-face",
     "hasPage": true
   },
@@ -12,10 +12,10 @@
     "hasPage": true
   },
   {
-    "query": "pleading face",
-    "value": "High",
-    "slug": "pleading-face",
-    "hasPage": false
+    "query": "clown face",
+    "value": "Viral",
+    "slug": "clown-face",
+    "hasPage": true
   },
   {
     "query": "eyes",
@@ -24,22 +24,22 @@
     "hasPage": false
   },
   {
-    "query": "red flag",
-    "value": "Viral",
-    "slug": "red-flag",
-    "hasPage": false
-  },
-  {
-    "query": "exploding head",
+    "query": "pink heart",
     "value": "High",
-    "slug": "exploding-head",
+    "slug": "pink-heart",
     "hasPage": true
   },
   {
-    "query": "graduation cap",
-    "value": "Seasonal",
-    "slug": "graduation-cap",
-    "hasPage": false
+    "query": "pensive face",
+    "value": "High",
+    "slug": "pensive-face",
+    "hasPage": true
+  },
+  {
+    "query": "partying face",
+    "value": "High",
+    "slug": "partying-face",
+    "hasPage": true
   },
   {
     "query": "rainbow flag",
@@ -48,21 +48,15 @@
     "hasPage": false
   },
   {
-    "query": "sun",
+    "query": "graduation cap",
     "value": "Seasonal",
-    "slug": "sun",
+    "slug": "graduation-cap",
     "hasPage": false
   },
   {
-    "query": "watermelon",
+    "query": "sun with face",
     "value": "Seasonal",
-    "slug": "watermelon",
-    "hasPage": false
-  },
-  {
-    "query": "beach",
-    "value": "Seasonal",
-    "slug": "beach",
+    "slug": "sun-with-face",
     "hasPage": false
   },
   {
@@ -72,9 +66,21 @@
     "hasPage": false
   },
   {
-    "query": "barbecue grill",
+    "query": "beach with umbrella",
     "value": "Seasonal",
-    "slug": "barbecue-grill",
+    "slug": "beach-with-umbrella",
+    "hasPage": false
+  },
+  {
+    "query": "wedding ring",
+    "value": "Seasonal",
+    "slug": "wedding-ring",
+    "hasPage": false
+  },
+  {
+    "query": "barbecue",
+    "value": "Seasonal",
+    "slug": "barbecue",
     "hasPage": false
   },
   {
@@ -85,9 +91,15 @@
   },
   {
     "query": "fire",
-    "value": "High",
+    "value": "Evergreen",
     "slug": "fire",
     "hasPage": true
+  },
+  {
+    "query": "crying laughing face",
+    "value": "Evergreen",
+    "slug": "crying-laughing-face",
+    "hasPage": false
   },
   {
     "query": "thumbs up",
@@ -96,27 +108,15 @@
     "hasPage": true
   },
   {
-    "query": "crying laughing",
-    "value": "Evergreen",
-    "slug": "crying-laughing",
-    "hasPage": false
-  },
-  {
-    "query": "thinking face",
-    "value": "High",
-    "slug": "thinking-face",
-    "hasPage": true
-  },
-  {
-    "query": "party popper",
-    "value": "Evergreen",
-    "slug": "party-popper",
-    "hasPage": true
-  },
-  {
     "query": "sparkles",
     "value": "Evergreen",
     "slug": "sparkles",
+    "hasPage": true
+  },
+  {
+    "query": "thinking face",
+    "value": "Evergreen",
+    "slug": "thinking-face",
     "hasPage": true
   }
 ]
